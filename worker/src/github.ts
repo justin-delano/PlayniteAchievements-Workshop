@@ -25,7 +25,24 @@ export class GitHubClient {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ title, body, labels }),
     });
-    return (await response.json()) as { number: number; html_url: string };
+    const issue = (await response.json()) as { number: number; html_url: string };
+
+    // GitHub drops `labels` on creation when the token is not counted as having push access
+    // (a fine-grained token scoped to Issues only). Add them in a second call and tolerate
+    // failure: the intake workflow also recognizes the "[Submission]" title and labels the issue.
+    if (labels.length > 0) {
+      try {
+        await this.call(`/repos/${this.repo}/issues/${issue.number}/labels`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ labels }),
+        });
+      } catch (e) {
+        console.warn(`Could not label issue #${issue.number}: ${e instanceof Error ? e.message : String(e)}`);
+      }
+    }
+
+    return issue;
   }
 
   async getIssue(number: number): Promise<Issue> {
