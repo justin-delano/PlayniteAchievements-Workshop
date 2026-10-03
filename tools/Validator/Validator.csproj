@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RollForward>LatestMajor</RollForward>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>Workshop.Validator</RootNamespace>
+    <AssemblyName>workshop-validator</AssemblyName>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <!-- XamlTemplateSanitizer.cs is a byte-identical copy of the extension's net462 file, which
+         has no nullable annotations; the drift workflow keeps it that way. -->
+    <NoWarn>$(NoWarn);nullable</NoWarn>
+  </PropertyGroup>
+
+</Project>
