@@ -3,8 +3,4 @@
 
 Sound sets for unlock notifications, one file per rarity tier. Install from the Workshop in Playnite, or download the `.pasounds` and import it under Settings > Notifications > Unlock sounds.
 
-1 item(s), most downloaded first.
-
-| Name | Author | Version | Downloads | Updated |
-|---|---|---|---:|---|
-| [Workshop smoke test](workshop-smoke-test/) | Justin | 1.0.0 | 0 | 2026-10-03 |
+Nothing here yet. Be the first: see [how to share](../README.md#sharing-your-own).

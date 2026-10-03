@@ -1,55 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-03T16:27:02Z",
-  "commit": "19bdc1db21c2ec86756d84441a14917a5ce27e75",
+  "generated": "2026-10-03T16:29:01Z",
+  "commit": "dc2af4ad3d2e2e92d50877c5dc9cc6c59f678465",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
-  "items": [
-    {
-      "schemaVersion": 1,
-      "id": "sound-packs/workshop-smoke-test",
-      "kind": "UnlockSounds",
-      "name": "Workshop smoke test",
-      "description": "A two-tier sound pack used to verify the submission pipeline end to end.",
-      "author": "Justin",
-      "ownerHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "maintainers": [],
-      "version": "1.0.0",
-      "license": "CC0-1.0",
-      "tags": [
-        "test"
-      ],
-      "minPluginVersion": "4.1.0",
-      "created": "2026-10-03",
-      "updated": "2026-10-03",
-      "contents": {
-        "slots": [
-          "Common",
-          "Rare"
-        ],
-        "files": 2
-      },
-      "package": {
-        "file": "workshop-smoke-test-1.0.0.pasounds",
-        "formatKind": "PlayniteAchievements.UnlockSounds",
-        "formatVersion": 1,
-        "sizeBytes": 483,
-        "sha256": "7b0b5e5e186f441d91e9578a0fb6e57f72ce00d1fb5b4d54ebb2c7e65d70aea9",
-        "release": {
-          "tag": "sound-packs/workshop-smoke-test",
-          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/sound-packs/workshop-smoke-test/workshop-smoke-test-1.0.0.pasounds"
-        }
-      },
-      "readme": "README.md",
-      "downloads": {
-        "total": 0,
-        "current": 0
-      },
-      "urls": {
-        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/sound-packs/workshop-smoke-test/workshop-smoke-test-1.0.0.pasounds",
-        "preview": null,
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@19bdc1db21c2ec86756d84441a14917a5ce27e75/sound-packs/workshop-smoke-test/README.md",
-        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/sound-packs/workshop-smoke-test"
-      }
-    }
-  ]
+  "items": []
 }
