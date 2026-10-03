@@ -23,6 +23,7 @@ const DOWNLOAD_URL_SECONDS = 3 * 24 * 60 * 60;
 const SINGLE_PUT_MAX_BYTES = 64 * 1024 * 1024;
 
 const KINDS = new Set([
+  "Colors",
   "Notification style",
   "Screenshot frame",
   "Showcase page",
