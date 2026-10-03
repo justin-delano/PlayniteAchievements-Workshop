@@ -8,7 +8,7 @@ compatibility_date = "2025-01-01"
 #   R2_SECRET_ACCESS_KEY
 [vars]
 GITHUB_REPO = "justin-delano/PlayniteAchievements-Workshop"
-R2_ACCOUNT_ID = "REPLACE_WITH_ACCOUNT_ID"
+R2_ACCOUNT_ID = "a2d426f66f674c044f729ed48220bd34"
 R2_BUCKET = "pa-workshop-uploads"
 # Uploads per client (by IP) per day; 0 disables the cap.
 DAILY_SUBMISSIONS_PER_IP = "10"
@@ -32,4 +32,4 @@ bucket_name = "pa-workshop-uploads"
 #   wrangler kv namespace create RATE   (then paste the id below)
 [[kv_namespaces]]
 binding = "RATE"
-id = "REPLACE_WITH_KV_ID"
+id = "d152e56d2b9f4d08b073446127da6a99"
