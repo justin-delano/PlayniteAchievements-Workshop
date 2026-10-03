@@ -1,12 +1,22 @@
 name: Intake submission
 
-# Turns a submission issue into a reviewed pull request: reassembles the attached package,
-# validates it, uploads it as the item's release asset, writes the item folder, and opens the PR.
+# Turns a submission issue into a reviewed pull request: fetches the package, validates it,
+# uploads it as the item's release asset, writes the item folder, and opens the PR.
 # Validation runs here because a PR opened with GITHUB_TOKEN does not trigger other workflows.
+# A submission is an issue carrying the "submission" label or a "[Submission]" title; the Worker
+# opens issues with a token that cannot always set labels, so the title is the fallback and this
+# workflow applies the label itself. Maintainers can re-run intake for any issue by dispatching
+# the workflow with its number.
 
 on:
   issues:
-    types: [opened, edited]
+    types: [opened, edited, labeled]
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: Issue number to (re)process
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -14,17 +24,20 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: intake-${{ github.event.issue.number }}
+  group: intake-${{ github.event.issue.number || inputs.issue }}
   cancel-in-progress: true
 
 jobs:
   intake:
-    if: contains(github.event.issue.labels.*.name, 'submission')
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      contains(github.event.issue.labels.*.name, 'submission') ||
+      startsWith(github.event.issue.title, '[Submission]')
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       REPO: ${{ github.repository }}
-      ISSUE: ${{ github.event.issue.number }}
+      ISSUE: ${{ github.event.issue.number || inputs.issue }}
       # The account whose token the Worker uses to open issues for Playnite users; those issues
       # identify the real submitter by hash, not by this login.
       WORKSHOP_BOT_LOGIN: ${{ vars.WORKSHOP_BOT_LOGIN }}
@@ -37,19 +50,28 @@ jobs:
         with:
           dotnet-version: 8.0.x
 
-      - name: Save the issue payload
+      # The "labeled" event fires once per label, so an issue that already carries the label
+      # when another is added would run twice; the concurrency group above cancels the older run.
+      - name: Fetch the issue
+        id: issue
         run: |
           mkdir -p work
-          cat > work/issue.json <<'EOF'
-          ${{ toJSON(github.event.issue) }}
-          EOF
+          gh api "repos/$REPO/issues/$ISSUE" > work/issue.json
+          echo "login=$(jq -r .user.login work/issue.json)" >> "$GITHUB_OUTPUT"
+          echo "state=$(jq -r .state work/issue.json)" >> "$GITHUB_OUTPUT"
+          gh issue edit "$ISSUE" --repo "$REPO" --add-label submission || true
 
-      - name: Reassemble and validate the package
+      - name: Stop on a closed issue
+        if: steps.issue.outputs.state != 'open'
+        run: echo "Issue #$ISSUE is closed; nothing to do."
+
+      - name: Validate the package
+        if: steps.issue.outputs.state == 'open'
         id: intake
         run: |
           dotnet run --project tools/Validator -c Release -- intake \
             --issue work/issue.json --work work --repo "$REPO" --root . \
-            --actor "${{ github.event.issue.user.login }}"
+            --actor "${{ steps.issue.outputs.login }}"
           echo "ok=$(jq -r .ok work/result.json)" >> "$GITHUB_OUTPUT"
           echo "remove=$(jq -r .remove work/result.json)" >> "$GITHUB_OUTPUT"
           echo "id=$(jq -r .id work/result.json)" >> "$GITHUB_OUTPUT"
@@ -58,7 +80,7 @@ jobs:
           echo "name=$(jq -r .name work/result.json)" >> "$GITHUB_OUTPUT"
 
       - name: Report validation errors
-        if: steps.intake.outputs.ok != 'true'
+        if: steps.issue.outputs.state == 'open' && steps.intake.outputs.ok != 'true'
         run: |
           {
             echo "The submission could not be accepted:"
@@ -72,7 +94,7 @@ jobs:
           exit 0
 
       - name: Upload the package to the item's release
-        if: steps.intake.outputs.ok == 'true' && steps.intake.outputs.remove != 'true'
+        if: steps.issue.outputs.state == 'open' && steps.intake.outputs.ok == 'true' && steps.intake.outputs.remove != 'true'
         run: |
           TAG="${{ steps.intake.outputs.tag }}"
           if ! gh release view "$TAG" --repo "$REPO" >/dev/null 2>&1; then
@@ -87,9 +109,10 @@ jobs:
             --item "work/item/${{ steps.intake.outputs.id }}" --asset-url "$ASSET_URL"
 
       - name: Open or update the pull request
-        if: steps.intake.outputs.ok == 'true'
+        if: steps.issue.outputs.state == 'open' && steps.intake.outputs.ok == 'true'
         run: |
           ID="${{ steps.intake.outputs.id }}"
+          LOGIN="${{ steps.issue.outputs.login }}"
           BRANCH="submission/$ISSUE"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -104,11 +127,11 @@ jobs:
             git add "$ID"
             TITLE="${{ steps.intake.outputs.name }} ($ID)"
           fi
-          git commit -q -m "$TITLE" -m "Submitted in #$ISSUE by @${{ github.event.issue.user.login }}" || true
+          git commit -q -m "$TITLE" -m "Submitted in #$ISSUE by @$LOGIN" || true
           git push -f origin "$BRANCH"
           if ! gh pr view "$BRANCH" --repo "$REPO" >/dev/null 2>&1; then
             gh pr create --repo "$REPO" --base main --head "$BRANCH" --title "$TITLE" \
-              --body "closes #$ISSUE"$'\n\n'"Submitted by @${{ github.event.issue.user.login }}. Validated by the intake workflow; review the README, preview and description, then merge." \
+              --body "closes #$ISSUE"$'\n\n'"Submitted by @$LOGIN. Validated by the intake workflow; review the README, preview and description, then merge." \
               --label submission
           fi
           PR_URL=$(gh pr view "$BRANCH" --repo "$REPO" --json url --jq .url)
