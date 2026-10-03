@@ -228,6 +228,18 @@ public static class IntakeCommand
         var extension = CanonicalExtension(report);
         var assetName = $"{slug}-{version}{extension}";
 
+        // An issue the Worker opened on a Playnite user's behalf is authored by the bot account
+        // and identifies the real submitter only by hash; a hand-filled form identifies them by
+        // login. A hash therefore means "hash-owned", and the opening login is not recorded.
+        var botLogin = Environment.GetEnvironmentVariable("WORKSHOP_BOT_LOGIN");
+        var isBotIssue = submitterHash.Length > 0 ||
+                         login.EndsWith("[bot]", StringComparison.Ordinal) ||
+                         (botLogin is not null && string.Equals(login, botLogin, StringComparison.OrdinalIgnoreCase));
+        if (isBotIssue && author == login)
+        {
+            errors.Add("Author name is required for submissions made from Playnite.");
+        }
+
         var manifest = new Manifest
         {
             Id = id,
@@ -235,7 +247,7 @@ public static class IntakeCommand
             Name = name,
             Description = description,
             Author = author,
-            AuthorGitHub = ManifestChecks.LoginPattern().IsMatch(login) && !login.EndsWith("[bot]", StringComparison.Ordinal) ? login : existing?.AuthorGitHub,
+            AuthorGitHub = !isBotIssue && ManifestChecks.LoginPattern().IsMatch(login) ? login : existing?.AuthorGitHub,
             OwnerHash = submitterHash.Length > 0 ? submitterHash : existing?.OwnerHash,
             Maintainers = existing?.Maintainers ?? new List<string>(),
             Version = version,

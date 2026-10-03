@@ -25,6 +25,9 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       REPO: ${{ github.repository }}
       ISSUE: ${{ github.event.issue.number }}
+      # The account whose token the Worker uses to open issues for Playnite users; those issues
+      # identify the real submitter by hash, not by this login.
+      WORKSHOP_BOT_LOGIN: ${{ vars.WORKSHOP_BOT_LOGIN }}
     steps:
       - uses: actions/checkout@v4
         with:

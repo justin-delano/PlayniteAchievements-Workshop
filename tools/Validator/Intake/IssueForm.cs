@@ -67,7 +67,11 @@ public sealed partial class IssueForm
         return false;
     }
 
-    /// <summary>Every attachment link in a field: markdown links, images, and bare GitHub attachment URLs.</summary>
+    /// <summary>
+    /// Every attachment link in a field: markdown links and images to any https URL (GitHub
+    /// attachments, or the presigned storage links the Worker writes), and bare GitHub
+    /// attachment URLs.
+    /// </summary>
     public IReadOnlyList<Attachment> Attachments(string fieldLabel)
     {
         var text = Get(fieldLabel);
