@@ -1,12 +1,13 @@
 # PlayniteAchievements Workshop
 
-User-made customizations for the [PlayniteAchievements](https://github.com/justin-delano/PlayniteAchievements) extension: notification styles, screenshot frames, showcase pages, unlock sound packs, full themes, and per-game custom achievement data such as icon sets, categories and capstones.
+User-made customizations for the [PlayniteAchievements](https://github.com/justin-delano/PlayniteAchievements) extension: color sets, notification styles, screenshot frames, showcase pages, unlock sound packs, themes that bundle those four looks, and per-game custom achievement data such as icon sets, categories and capstones.
 
 Browse the folders below, or open the Workshop inside Playnite to search and install with one click.
 
 | Type | Folder | File |
 |---|---|---|
-| Notification styles | [notification-styles/](notification-styles/) | `.panotif`, `.pastyle` |
+| Color sets | [colors/](colors/) | `.pacolors` |
+| Notification styles | [notification-styles/](notification-styles/) | `.panotif` |
 | Screenshot frames | [screenshot-frames/](screenshot-frames/) | `.paframe` |
 | Showcase pages | [showcase-pages/](showcase-pages/) | `.pashowcase` |
 | Unlock sound packs | [sound-packs/](sound-packs/) | `.pasounds` |
