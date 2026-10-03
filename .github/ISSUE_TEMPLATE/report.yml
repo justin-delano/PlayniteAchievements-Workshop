@@ -1,0 +1,32 @@
+name: Report a Workshop item
+description: Report an item that is broken, misleading, or infringes someone's rights.
+title: "[Report] "
+labels: ["report"]
+body:
+  - type: input
+    id: item_id
+    attributes:
+      label: Item id
+      description: From the item's manifest, for example `game-data/steam-440/better-icons`.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Reason
+      options:
+        - Does not install or breaks the extension
+        - Not what the description says
+        - Infringes a copyright or license
+        - Offensive or inappropriate content
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+    validations:
+      required: true

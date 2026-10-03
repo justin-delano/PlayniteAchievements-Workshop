@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: PlayniteAchievements bug reports and feature requests
+    url: https://github.com/justin-delano/PlayniteAchievements/issues
+    about: Problems with the extension itself belong in the extension's repository, not the Workshop.

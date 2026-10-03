@@ -1,0 +1,112 @@
+name: Submit or update a Workshop item
+description: Share a notification style, frame, showcase page, sound pack, theme, or per-game custom data. The extension's Share to Workshop button fills most of this in.
+title: "[Submission] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Drag the package file the extension exported into the **Files** box below, or paste a direct download link for packages over 25 MB.
+        A workflow checks the package and opens a pull request; a maintainer merges it. You can follow progress in the comments on this issue.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - Notification style
+        - Screenshot frame
+        - Showcase page
+        - Unlock sound pack
+        - Theme
+        - Per-game custom data
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Shown in the Workshop list. Up to 80 characters.
+      placeholder: Better icons
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: Author name
+      description: Shown as the item's author. Up to 40 characters. Leave empty to use your GitHub username.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: One or two sentences shown under the name. Up to 400 characters.
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Comma-separated, lowercase, up to 10. For example `icons, categories, minimal`.
+
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      description: See CONTENT-LICENSES.md. Both allow anyone to use and share the item; CC BY requires credit to you.
+      options:
+        - CC-BY-4.0
+        - CC0-1.0
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    id: existing_id
+    attributes:
+      label: Existing item id (updates only)
+      description: Leave empty for a new item. For an update, the id from the item's manifest, for example `notification-styles/neon-glow`. Only the item's author or a listed maintainer can update it.
+
+  - type: checkboxes
+    id: action
+    attributes:
+      label: Request
+      options:
+        - label: Remove this item from the Workshop (updates only; no file needed)
+
+  - type: textarea
+    id: readme
+    attributes:
+      label: README
+      description: Optional. Markdown shown on the item's page. Leave empty to use the description.
+
+  - type: textarea
+    id: files
+    attributes:
+      label: Files
+      description: Drag the package here (GitHub allows up to 25 MB per file), plus an optional preview image (PNG, JPG, GIF or WebP, up to 5 MB). Do not type anything else in this box.
+      placeholder: Drop files here.
+
+  - type: input
+    id: package_url
+    attributes:
+      label: Package URL (for packages over 25 MB)
+      description: A direct download link to the package instead of attaching it, for example a file on your own GitHub release, Google Drive or Dropbox. The Workshop copies the file to its own storage; the link only has to work until this submission is processed.
+      placeholder: https://
+
+  - type: input
+    id: submitter_hash
+    attributes:
+      label: Submitter key (filled in by the extension)
+      description: Leave empty when submitting by hand. The extension fills this in so it can update the item later without a GitHub account.
+
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights
+      options:
+        - label: Everything in this package is my own work or licensed for redistribution under the license above, and it contains no personal progress data I want to keep private.
+          required: true
