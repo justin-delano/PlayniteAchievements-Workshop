@@ -1,0 +1,113 @@
+name: Intake submission
+
+# Turns a submission issue into a reviewed pull request: reassembles the attached package,
+# validates it, uploads it as the item's release asset, writes the item folder, and opens the PR.
+# Validation runs here because a PR opened with GITHUB_TOKEN does not trigger other workflows.
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: intake-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  intake:
+    if: contains(github.event.issue.labels.*.name, 'submission')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      REPO: ${{ github.repository }}
+      ISSUE: ${{ github.event.issue.number }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Save the issue payload
+        run: |
+          mkdir -p work
+          cat > work/issue.json <<'EOF'
+          ${{ toJSON(github.event.issue) }}
+          EOF
+
+      - name: Reassemble and validate the package
+        id: intake
+        run: |
+          dotnet run --project tools/Validator -c Release -- intake \
+            --issue work/issue.json --work work --repo "$REPO" --root . \
+            --actor "${{ github.event.issue.user.login }}"
+          echo "ok=$(jq -r .ok work/result.json)" >> "$GITHUB_OUTPUT"
+          echo "remove=$(jq -r .remove work/result.json)" >> "$GITHUB_OUTPUT"
+          echo "id=$(jq -r .id work/result.json)" >> "$GITHUB_OUTPUT"
+          echo "tag=$(jq -r .tag work/result.json)" >> "$GITHUB_OUTPUT"
+          echo "asset=$(jq -r .assetName work/result.json)" >> "$GITHUB_OUTPUT"
+          echo "name=$(jq -r .name work/result.json)" >> "$GITHUB_OUTPUT"
+
+      - name: Report validation errors
+        if: steps.intake.outputs.ok != 'true'
+        run: |
+          {
+            echo "The submission could not be accepted:"
+            echo
+            jq -r '.errors[] | "- " + .' work/result.json
+            echo
+            echo "Edit this issue to fix the fields or attach a corrected package; the check runs again automatically."
+          } > work/comment.md
+          gh issue comment "$ISSUE" --repo "$REPO" --body-file work/comment.md
+          gh issue edit "$ISSUE" --repo "$REPO" --add-label needs-changes --remove-label in-review || true
+          exit 0
+
+      - name: Upload the package to the item's release
+        if: steps.intake.outputs.ok == 'true' && steps.intake.outputs.remove != 'true'
+        run: |
+          TAG="${{ steps.intake.outputs.tag }}"
+          if ! gh release view "$TAG" --repo "$REPO" >/dev/null 2>&1; then
+            gh release create "$TAG" --repo "$REPO" --title "${{ steps.intake.outputs.name }}" \
+              --notes "Workshop storage for \`${{ steps.intake.outputs.id }}\`. See the item folder for details." \
+              --latest=false
+          fi
+          gh release upload "$TAG" "work/package/${{ steps.intake.outputs.asset }}" --repo "$REPO" --clobber
+          ASSET_URL=$(gh release view "$TAG" --repo "$REPO" --json assets \
+            --jq '.assets[] | select(.name == "${{ steps.intake.outputs.asset }}") | .url')
+          dotnet run --project tools/Validator -c Release -- finalize \
+            --item "work/item/${{ steps.intake.outputs.id }}" --asset-url "$ASSET_URL"
+
+      - name: Open or update the pull request
+        if: steps.intake.outputs.ok == 'true'
+        run: |
+          ID="${{ steps.intake.outputs.id }}"
+          BRANCH="submission/$ISSUE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH" origin/main
+          if [ "${{ steps.intake.outputs.remove }}" = "true" ]; then
+            git rm -r --quiet "$ID"
+            TITLE="Remove ${{ steps.intake.outputs.name }} ($ID)"
+          else
+            rm -rf "$ID"
+            mkdir -p "$(dirname "$ID")"
+            cp -r "work/item/$ID" "$ID"
+            git add "$ID"
+            TITLE="${{ steps.intake.outputs.name }} ($ID)"
+          fi
+          git commit -q -m "$TITLE" -m "Submitted in #$ISSUE by @${{ github.event.issue.user.login }}" || true
+          git push -f origin "$BRANCH"
+          if ! gh pr view "$BRANCH" --repo "$REPO" >/dev/null 2>&1; then
+            gh pr create --repo "$REPO" --base main --head "$BRANCH" --title "$TITLE" \
+              --body "closes #$ISSUE"$'\n\n'"Submitted by @${{ github.event.issue.user.login }}. Validated by the intake workflow; review the README, preview and description, then merge." \
+              --label submission
+          fi
+          PR_URL=$(gh pr view "$BRANCH" --repo "$REPO" --json url --jq .url)
+          gh issue comment "$ISSUE" --repo "$REPO" --body "Thanks! The package passed validation and is waiting for review in $PR_URL. This issue closes automatically when it is merged."
+          gh issue edit "$ISSUE" --repo "$REPO" --add-label in-review --remove-label needs-changes || true

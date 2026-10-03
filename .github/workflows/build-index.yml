@@ -1,0 +1,59 @@
+name: Build index
+
+# Regenerates index/ and the per-type and per-game README tables from every manifest, with
+# download counts read from the releases. Runs on merges and once a day for the counts.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'notification-styles/**'
+      - 'screenshot-frames/**'
+      - 'showcase-pages/**'
+      - 'sound-packs/**'
+      - 'themes/**'
+      - 'game-data/**'
+      - 'tools/**'
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-index
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Fetch release metadata
+        run: gh api "repos/${{ github.repository }}/releases" --paginate > releases.json
+
+      - name: Build
+        run: |
+          dotnet run --project tools/Validator -c Release -- build-index \
+            --root . --releases releases.json --repo "${{ github.repository }}" --commit "${{ github.sha }}"
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index '*/README.md' 'game-data/*/README.md'
+          if git diff --cached --quiet; then
+            echo "Index unchanged."
+            exit 0
+          fi
+          git commit -q -m "chore(index): regenerate index and listings [skip ci]"
+          git push

@@ -1,0 +1,55 @@
+name: Validate items
+
+# Checks every item folder a pull request touches: manifest schema and version, README and
+# preview present, computed contents and hash matching the release asset, author on updates.
+# Intake-created PRs were already validated; this covers hand-made PRs and edits to them.
+
+on:
+  pull_request:
+    paths:
+      - 'notification-styles/**'
+      - 'screenshot-frames/**'
+      - 'showcase-pages/**'
+      - 'sound-packs/**'
+      - 'themes/**'
+      - 'game-data/**'
+      - 'tools/**'
+      - 'schema/**'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: List changed item folders
+        id: changed
+        run: |
+          git diff --name-only "origin/${{ github.base_ref }}"...HEAD \
+            | grep -E '^(notification-styles|screenshot-frames|showcase-pages|sound-packs|themes|game-data)/' \
+            | xargs -r -n1 dirname | sort -u > work-changed.txt || true
+          echo "count=$(wc -l < work-changed.txt)" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch release metadata
+        run: gh api "repos/${{ github.repository }}/releases" --paginate > releases.json
+
+      - name: Validate
+        run: |
+          if [ "${{ steps.changed.outputs.count }}" = "0" ]; then
+            dotnet run --project tools/Validator -c Release -- validate --root . --releases releases.json
+          else
+            dotnet run --project tools/Validator -c Release -- validate --root . --releases releases.json \
+              --changed work-changed.txt --base-ref "origin/${{ github.base_ref }}" \
+              --actor "${{ github.event.pull_request.user.login }}" --repo "${{ github.repository }}"
+          fi

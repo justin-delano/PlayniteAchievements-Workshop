@@ -1,0 +1,33 @@
+name: Sanitizer drift
+
+# The validator carries a copy of the extension's XamlTemplateSanitizer.cs so the same allowlist
+# runs here and inside the extension. This fails when the two files differ.
+
+on:
+  schedule:
+    - cron: '41 4 * * *'
+  pull_request:
+    paths:
+      - 'tools/Validator/XamlTemplateSanitizer.cs'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compare with the extension's dev branch
+        run: |
+          curl -fsSL -o upstream.cs \
+            https://raw.githubusercontent.com/justin-delano/PlayniteAchievements/dev/source/Services/UI/XamlTemplateSanitizer.cs
+          # Line endings differ between the repositories; compare content only.
+          if ! diff <(tr -d '\r' < upstream.cs) <(tr -d '\r' < tools/Validator/XamlTemplateSanitizer.cs) > drift.txt; then
+            echo "tools/Validator/XamlTemplateSanitizer.cs differs from the extension's copy:"
+            cat drift.txt
+            exit 1
+          fi
+          echo "In sync."
