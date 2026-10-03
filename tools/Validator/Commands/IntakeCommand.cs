@@ -356,8 +356,10 @@ public static class IntakeCommand
     {
         switch (report.Kind)
         {
+            case ItemKind.Colors:
+                return ".pacolors";
             case ItemKind.NotificationStyle:
-                return report.Contents["frameStyle"]?.GetValue<bool>() == true ? ".pastyle" : ".panotif";
+                return ".panotif";
             case ItemKind.ScreenshotFrame:
                 return ".paframe";
             case ItemKind.ShowcasePage:
