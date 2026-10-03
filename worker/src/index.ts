@@ -10,6 +10,7 @@ export interface Env {
   R2_BUCKET: string;
   DAILY_SUBMISSIONS_PER_IP: string;
   MAX_PACKAGE_BYTES: string;
+  STORAGE_CAP_BYTES: string;
   PART_SIZE_BYTES: string;
   UPLOADS: R2Bucket;
   RATE: KVNamespace;
@@ -93,6 +94,16 @@ async function beginUpload(request: Request, env: Env): Promise<Response> {
   const key = `${new Date().toISOString().slice(0, 10)}/${crypto.randomUUID()}/${safeName}`;
   const signer = makeSigner(env);
   const contentType = body.contentType ?? "application/octet-stream";
+
+  // The storage quota is enforced here, at the only place bytes can enter the bucket, so the
+  // bucket can never grow past the free tier regardless of how many uploads are in flight.
+  const cap = Number(env.STORAGE_CAP_BYTES);
+  if (Number.isFinite(cap) && cap > 0) {
+    const used = await signer.totalBytes();
+    if (used + size > cap) {
+      throw new HttpError(507, "The Workshop's upload storage is full right now. Try again in a few hours, when pending uploads have been processed.");
+    }
+  }
 
   if (size <= SINGLE_PUT_MAX_BYTES) {
     const putUrl = await signer.presignPut(key, UPLOAD_URL_SECONDS);

@@ -12,13 +12,18 @@ R2_ACCOUNT_ID = "REPLACE_WITH_ACCOUNT_ID"
 R2_BUCKET = "pa-workshop-uploads"
 # Uploads per client (by IP) per day; 0 disables the cap.
 DAILY_SUBMISSIONS_PER_IP = "10"
-# Largest package accepted, in bytes (2 GiB is GitHub's release asset cap).
-MAX_PACKAGE_BYTES = "2147483648"
+# Largest package accepted, in bytes (1 GiB; GitHub's release asset cap is 2 GiB).
+MAX_PACKAGE_BYTES = "1073741824"
+# Bytes the bucket may hold in total before new uploads are refused. R2's free tier is 10 GB-month;
+# 8 GiB leaves headroom for in-flight multipart parts. The Worker checks this before every upload.
+STORAGE_CAP_BYTES = "8589934592"
 PART_SIZE_BYTES = "33554432"
 
 # Temporary storage for uploads; objects are read once by the intake workflow. Give the bucket
-# a lifecycle rule that deletes objects after 2 days:
-#   wrangler r2 bucket lifecycle add pa-workshop-uploads --expire-days 2
+# lifecycle rules that delete objects after 1 day and abort stale multipart uploads (which also
+# count toward storage) after 1 day:
+#   wrangler r2 bucket lifecycle add pa-workshop-uploads --expire-days 1 --name expire-uploads
+#   wrangler r2 bucket lifecycle add pa-workshop-uploads --abort-multipart-days 1 --name abort-stale-parts
 [[r2_buckets]]
 binding = "UPLOADS"
 bucket_name = "pa-workshop-uploads"

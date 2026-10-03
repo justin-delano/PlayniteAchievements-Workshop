@@ -84,6 +84,37 @@ export class R2Signer {
     await this.client.fetch(this.objectUrl(key, { uploadId }).toString(), { method: "DELETE" });
   }
 
+  /**
+   * Bytes currently stored in the bucket, summed over every object. The bucket only ever holds
+   * uploads awaiting intake (a day at most), so this stays small and the listing is one or two
+   * requests.
+   */
+  async totalBytes(): Promise<number> {
+    let total = 0;
+    let continuation: string | undefined;
+    do {
+      const query: Record<string, string> = { "list-type": "2", "max-keys": "1000" };
+      if (continuation) {
+        query["continuation-token"] = continuation;
+      }
+      const url = new URL(`${this.endpoint}/${this.bucket}`);
+      for (const [name, value] of Object.entries(query)) {
+        url.searchParams.set(name, value);
+      }
+      const response = await this.client.fetch(url.toString(), { method: "GET" });
+      const text = await response.text();
+      if (!response.ok) {
+        throw new Error(`R2 ListObjectsV2 failed: ${response.status} ${text}`);
+      }
+      for (const match of text.matchAll(/<Size>(\d+)<\/Size>/g)) {
+        total += Number(match[1]);
+      }
+      const next = /<NextContinuationToken>([^<]+)<\/NextContinuationToken>/.exec(text);
+      continuation = next ? decodeXml(next[1]) : undefined;
+    } while (continuation);
+    return total;
+  }
+
   /** The object's size, or null when it does not exist. */
   async head(key: string): Promise<number | null> {
     const response = await this.client.fetch(this.objectUrl(key).toString(), { method: "HEAD" });
@@ -99,6 +130,10 @@ export class R2Signer {
 
 function encodeKey(key: string): string {
   return key.split("/").map(encodeURIComponent).join("/");
+}
+
+function decodeXml(value: string): string {
+  return value.replace(/&quot;/g, '"').replace(/&gt;/g, ">").replace(/&lt;/g, "<").replace(/&amp;/g, "&");
 }
 
 function escapeXml(value: string): string {

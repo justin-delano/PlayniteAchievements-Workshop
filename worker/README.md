@@ -42,10 +42,11 @@ Returns `{ "state": "validating" | "needs-changes" | "in-review" | "published" |
 
 ## Setup
 
-1. Create the bucket and the KV namespace, and give the bucket a 2-day expiry rule:
+1. Create the bucket and the KV namespace, and give the bucket its lifecycle rules:
    ```
    wrangler r2 bucket create pa-workshop-uploads
-   wrangler r2 bucket lifecycle add pa-workshop-uploads --expire-days 2
+   wrangler r2 bucket lifecycle add pa-workshop-uploads --expire-days 1 --name expire-uploads
+   wrangler r2 bucket lifecycle add pa-workshop-uploads --abort-multipart-days 1 --name abort-stale-parts
    wrangler kv namespace create RATE
    ```
    Paste the KV id and your account id into `wrangler.toml`.
@@ -58,6 +59,12 @@ Returns `{ "state": "validating" | "needs-changes" | "in-review" | "published" |
 3. In the Workshop repository, set the Actions variable `WORKSHOP_BOT_LOGIN` to the GitHub login the PAT belongs to, so intake records Playnite submitters by hash instead of by that login.
 4. `npm install` then `npm run deploy`. The printed `*.workers.dev` URL goes into the extension's Workshop settings.
 
-## Abuse limits
+## Limits and cost
 
-Per IP, `DAILY_SUBMISSIONS_PER_IP` submissions a day (KV counter). Package size is capped at `MAX_PACKAGE_BYTES`. Everything else is enforced by the intake workflow and by maintainer review of every pull request.
+The bucket is temporary storage only, and three things keep it inside R2's free tier (10 GB-month, no egress fees):
+
+- Before issuing upload URLs the Worker sums the bucket's current bytes and refuses when the new file would push it past `STORAGE_CAP_BYTES` (8 GiB by default). Every byte enters through the Worker, so this is a hard ceiling.
+- Objects expire after one day and stale multipart uploads are aborted after one day (lifecycle rules above). Intake reads a package within minutes of the issue opening.
+- A single package is capped at `MAX_PACKAGE_BYTES` (1 GiB).
+
+Per IP, `DAILY_SUBMISSIONS_PER_IP` submissions a day (KV counter). Everything else is enforced by the intake workflow and by maintainer review of every pull request. Workers free tier is 100,000 requests a day; a submission uses a handful.
