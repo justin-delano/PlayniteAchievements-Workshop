@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "notification-styles/test1",
+  "kind": "NotificationStyle",
+  "name": "test1",
+  "description": "testing",
+  "author": "jdd",
+  "ownerHash": "87e218caf5884b05ff2befd5f5b3fb591e691e445a46b8152438fa3ca414d4f6",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [],
+  "minPluginVersion": "4.0.0",
+  "created": "2026-10-03",
+  "updated": "2026-10-03",
+  "contents": {
+    "toastStyle": true,
+    "frameStyle": false,
+    "toastTemplate": false,
+    "frameTemplate": false,
+    "images": 1,
+    "kindStyles": 0
+  },
+  "package": {
+    "file": "test1-1.0.0.panotif",
+    "formatKind": "PlayniteAchievements.NotificationStyle",
+    "formatVersion": 3,
+    "sizeBytes": 5781731,
+    "sha256": "2f42c49342595685835bf25c9fb22e2dfe554285f8b1068ff8494f0674d86208",
+    "release": {
+      "tag": "notification-styles/test1",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/notification-styles/test1/test1-1.0.0.panotif"
+    }
+  },
+  "readme": "README.md"
+}
