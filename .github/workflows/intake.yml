@@ -135,5 +135,9 @@ jobs:
               --label submission
           fi
           PR_URL=$(gh pr view "$BRANCH" --repo "$REPO" --json url --jq .url)
-          gh issue comment "$ISSUE" --repo "$REPO" --body "Thanks! The package passed validation and is waiting for review in $PR_URL. This issue closes automatically when it is merged."
+          if [ "${{ steps.intake.outputs.remove }}" = "true" ]; then
+            gh issue comment "$ISSUE" --repo "$REPO" --body "Thanks! The removal is waiting for review in $PR_URL. This issue closes automatically when it is merged."
+          else
+            gh issue comment "$ISSUE" --repo "$REPO" --body "Thanks! The package passed validation and is waiting for review in $PR_URL. This issue closes automatically when it is merged."
+          fi
           gh issue edit "$ISSUE" --repo "$REPO" --add-label in-review --remove-label needs-changes || true
