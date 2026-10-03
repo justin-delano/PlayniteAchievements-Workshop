@@ -1,0 +1,30 @@
+name = "pa-workshop"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+# Non-secret configuration. Secrets are set with `wrangler secret put`:
+#   GITHUB_TOKEN          fine-grained PAT for the Workshop repository, Issues: read and write
+#   R2_ACCESS_KEY_ID      R2 API token with object read/write on the bucket below
+#   R2_SECRET_ACCESS_KEY
+[vars]
+GITHUB_REPO = "justin-delano/PlayniteAchievements-Workshop"
+R2_ACCOUNT_ID = "REPLACE_WITH_ACCOUNT_ID"
+R2_BUCKET = "pa-workshop-uploads"
+# Uploads per client (by IP) per day; 0 disables the cap.
+DAILY_SUBMISSIONS_PER_IP = "10"
+# Largest package accepted, in bytes (2 GiB is GitHub's release asset cap).
+MAX_PACKAGE_BYTES = "2147483648"
+PART_SIZE_BYTES = "33554432"
+
+# Temporary storage for uploads; objects are read once by the intake workflow. Give the bucket
+# a lifecycle rule that deletes objects after 2 days:
+#   wrangler r2 bucket lifecycle add pa-workshop-uploads --expire-days 2
+[[r2_buckets]]
+binding = "UPLOADS"
+bucket_name = "pa-workshop-uploads"
+
+# Per-IP daily counters for the submission cap.
+#   wrangler kv namespace create RATE   (then paste the id below)
+[[kv_namespaces]]
+binding = "RATE"
+id = "REPLACE_WITH_KV_ID"

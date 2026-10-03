@@ -3,3 +3,6 @@ obj/
 *.user
 .vs/
 work/
+node_modules/
+.wrangler/
+.dev.vars

@@ -1,0 +1,20 @@
+{
+  "name": "playniteachievements-workshop-worker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Transport for one-click Workshop submissions from Playnite: presigned R2 uploads and submission issues.",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "aws4fetch": "^1.0.20"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250101.0",
+    "typescript": "^5.6.0",
+    "wrangler": "^3.90.0"
+  }
+}
