@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/justin-delano/PlayniteAchievements-Workshop/main/schema/index.v1.schema.json",
+  "title": "PlayniteAchievements Workshop index (schema 1)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "generated", "commit", "repository", "items"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "generated": { "type": "string", "format": "date-time" },
+    "commit": { "type": "string", "pattern": "^[a-f0-9]{40}$" },
+    "repository": { "type": "string", "description": "owner/name" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "The item's manifest plus download statistics and resolved URLs.",
+        "required": ["id", "kind", "name", "version", "downloads", "urls"],
+        "properties": {
+          "downloads": {
+            "type": "object",
+            "required": ["total", "current"],
+            "properties": {
+              "total": { "type": "integer", "description": "Sum over every version's asset." },
+              "current": { "type": "integer", "description": "The current version's asset." }
+            }
+          },
+          "urls": {
+            "type": "object",
+            "required": ["package", "folder"],
+            "properties": {
+              "package": { "type": "string", "format": "uri" },
+              "preview": { "type": ["string", "null"], "format": "uri" },
+              "readme": { "type": ["string", "null"], "format": "uri" },
+              "folder": { "type": "string", "format": "uri" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

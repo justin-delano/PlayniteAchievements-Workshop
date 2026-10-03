@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/justin-delano/PlayniteAchievements-Workshop/main/schema/manifest.v1.schema.json",
+  "title": "PlayniteAchievements Workshop item manifest (schema 1)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "kind", "name", "description", "author", "version", "license", "minPluginVersion", "created", "updated", "contents", "package", "readme"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "id": {
+      "type": "string",
+      "description": "Repository path of the item folder, lowercase kebab-case segments.",
+      "pattern": "^(notification-styles|screenshot-frames|showcase-pages|sound-packs|themes)/[a-z0-9]+(-[a-z0-9]+)*$|^game-data/[a-z0-9]+(-[a-z0-9]+)*/[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "kind": { "enum": ["NotificationStyle", "ScreenshotFrame", "ShowcasePage", "UnlockSounds", "Theme", "GameCustomData"] },
+    "name": { "type": "string", "minLength": 1, "maxLength": 80 },
+    "description": { "type": "string", "minLength": 1, "maxLength": 400 },
+    "author": { "type": "string", "description": "Display name chosen by the submitter.", "minLength": 1, "maxLength": 40 },
+    "authorGitHub": { "type": ["string", "null"], "description": "GitHub login when submitted through the issue form by a GitHub user.", "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9]|-(?=[A-Za-z0-9])){0,38}$" },
+    "ownerHash": { "type": ["string", "null"], "description": "SHA-256 (hex) of the submitter key held by the extension that created the item; proves ownership on updates.", "pattern": "^[a-f0-9]{64}$" },
+    "maintainers": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "license": { "enum": ["CC-BY-4.0", "CC0-1.0"] },
+    "tags": { "type": "array", "maxItems": 10, "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" } },
+    "minPluginVersion": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "created": { "type": "string", "format": "date" },
+    "updated": { "type": "string", "format": "date" },
+    "game": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "keys"],
+      "properties": {
+        "name": { "type": "string" },
+        "platform": { "type": ["string", "null"] },
+        "keys": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "providerKey": { "type": ["string", "null"] },
+              "providerPlatformKey": { "type": ["string", "null"] },
+              "providerGameId": { "type": ["integer", "null"] },
+              "providerGameKey": { "type": ["string", "null"] },
+              "name": { "type": ["string", "null"] },
+              "platform": { "type": ["string", "null"] }
+            }
+          }
+        }
+      }
+    },
+    "contents": {
+      "type": "object",
+      "description": "What the package customizes, computed by the validator from the package itself.",
+      "additionalProperties": true
+    },
+    "package": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["file", "formatKind", "formatVersion", "sizeBytes", "sha256", "release"],
+      "properties": {
+        "file": { "type": "string" },
+        "formatKind": { "type": "string" },
+        "formatVersion": { "type": "integer" },
+        "sizeBytes": { "type": "integer", "minimum": 1 },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "release": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["tag", "url"],
+          "properties": {
+            "tag": { "type": "string" },
+            "url": { "type": "string", "format": "uri" }
+          }
+        }
+      }
+    },
+    "preview": { "type": ["string", "null"] },
+    "readme": { "type": "string" }
+  }
+}
