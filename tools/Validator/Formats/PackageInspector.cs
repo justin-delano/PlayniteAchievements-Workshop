@@ -38,6 +38,10 @@ public static class PackageInspector
         {
             InspectTheme(entries, report);
         }
+        else if (entries.ContainsKey(Kinds.ColorsManifest))
+        {
+            InspectColors(entries, report);
+        }
         else if (entries.ContainsKey(Kinds.NotificationStyleManifest))
         {
             InspectNotificationStyle(entries, report);
@@ -68,6 +72,36 @@ public static class PackageInspector
         }
 
         return report;
+    }
+
+    // ---- Colors --------------------------------------------------------------------------
+
+    private static void InspectColors(IReadOnlyDictionary<string, ZipArchiveEntry> entries, PackageReport report)
+    {
+        var manifest = ZipGuard.ReadJsonObject(entries[Kinds.ColorsManifest], report.Errors);
+        if (manifest is null || !ExpectKind(manifest, Kinds.ColorsFormat, report))
+        {
+            return;
+        }
+
+        var version = manifest["Version"]?.GetValue<int>() ?? 0;
+        if (version > Kinds.ColorsMaxVersion)
+        {
+            report.Error($"The color set is version {version}, newer than this validator understands ({Kinds.ColorsMaxVersion}).");
+            return;
+        }
+
+        CheckColors(manifest, report);
+
+        report.Kind = ItemKind.Colors;
+        report.FormatKind = Kinds.ColorsFormat;
+        report.FormatVersion = version;
+        report.Contents = new JsonObject
+        {
+            ["rarityColors"] = manifest["RarityColors"] is JsonObject,
+            ["providerColors"] = (manifest["ProviderColorOverrides"] as JsonObject)?.Count ?? 0,
+            ["resourceOverrides"] = (manifest["ResourceOverrides"] as JsonObject)?.Count ?? 0
+        };
     }
 
     // ---- Notification style / screenshot frame ------------------------------------------
@@ -261,28 +295,14 @@ public static class PackageInspector
                 var part = partNode?.GetValue<string>() ?? "";
                 switch (part)
                 {
+                    // Every part is an embedded standalone package, read by its own inspector.
                     case "Colors":
-                        if (manifest["Colors"] is not JsonObject colors)
-                        {
-                            report.Error("The theme declares a colors part but carries none.");
-                            break;
-                        }
-
-                        CheckColors(colors, report);
-                        parts.Add("Colors");
-                        contents["colors"] = new JsonObject
-                        {
-                            ["rarityColors"] = colors["RarityColors"] is JsonObject,
-                            ["providerColors"] = (colors["ProviderColorOverrides"] as JsonObject)?.Count ?? 0,
-                            ["resourceOverrides"] = (colors["ResourceOverrides"] as JsonObject)?.Count ?? 0
-                        };
-                        break;
-
                     case "Sounds":
                     case "Toast":
                     case "Frame":
                         var entryName = part switch
                         {
+                            "Colors" => "parts/colors.pacolors",
                             "Sounds" => "parts/sounds.pasounds",
                             "Toast" => "parts/toast.panotif",
                             _ => "parts/frame.paframe"
