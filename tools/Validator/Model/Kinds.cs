@@ -3,6 +3,7 @@ namespace Workshop.Validator.Model;
 /// <summary>The item kinds the Workshop lists, with their folder, package format and extension.</summary>
 public enum ItemKind
 {
+    Colors,
     NotificationStyle,
     ScreenshotFrame,
     ShowcasePage,
@@ -14,13 +15,16 @@ public enum ItemKind
 public static class Kinds
 {
     // Format discriminators written by the extension into each package's manifest entry.
+    public const string ColorsFormat = "PlayniteAchievements.Colors";
     public const string NotificationStyleFormat = "PlayniteAchievements.NotificationStyle";
     public const string ShowcasePageFormat = "PlayniteAchievements.ShowcasePage";
     public const string GameCustomDataFormat = "PlayniteAchievements.GameCustomData";
     public const string UnlockSoundsFormat = "PlayniteAchievements.UnlockSounds";
     public const string ThemeFormat = "PlayniteAchievements.Theme";
 
-    // Manifest entry names inside each package.
+    // Manifest entry names inside each package. The style manifest's name predates the split
+    // into .panotif/.paframe and stays for compatibility.
+    public const string ColorsManifest = "colors.json";
     public const string NotificationStyleManifest = "notification-style.pastyle";
     public const string ShowcasePageManifest = "showcase-page.json";
     public const string GameCustomDataManifest = "custom-data.pa";
@@ -30,6 +34,7 @@ public static class Kinds
 
     // Newest format version of each package type the validator understands. A package from a
     // newer extension is refused until the validator is updated.
+    public const int ColorsMaxVersion = 1;
     public const int NotificationStyleMaxVersion = 3;
     public const int ShowcasePageMaxVersion = 2;
     public const int GameCustomDataMaxSchema = 8;
@@ -38,11 +43,12 @@ public static class Kinds
 
     public static readonly string[] AllFolders =
     {
-        "notification-styles", "screenshot-frames", "showcase-pages", "sound-packs", "themes", "game-data"
+        "colors", "notification-styles", "screenshot-frames", "showcase-pages", "sound-packs", "themes", "game-data"
     };
 
     public static string Folder(ItemKind kind) => kind switch
     {
+        ItemKind.Colors => "colors",
         ItemKind.NotificationStyle => "notification-styles",
         ItemKind.ScreenshotFrame => "screenshot-frames",
         ItemKind.ShowcasePage => "showcase-pages",
@@ -54,6 +60,7 @@ public static class Kinds
 
     public static ItemKind? FromFolder(string folder) => folder switch
     {
+        "colors" => ItemKind.Colors,
         "notification-styles" => ItemKind.NotificationStyle,
         "screenshot-frames" => ItemKind.ScreenshotFrame,
         "showcase-pages" => ItemKind.ShowcasePage,
@@ -65,6 +72,7 @@ public static class Kinds
 
     public static string DisplayName(ItemKind kind) => kind switch
     {
+        ItemKind.Colors => "Color sets",
         ItemKind.NotificationStyle => "Notification styles",
         ItemKind.ScreenshotFrame => "Screenshot frames",
         ItemKind.ShowcasePage => "Showcase pages",
@@ -77,6 +85,7 @@ public static class Kinds
     /// <summary>The issue form's dropdown labels.</summary>
     public static ItemKind? FromFormLabel(string? label) => label?.Trim() switch
     {
+        "Colors" => ItemKind.Colors,
         "Notification style" => ItemKind.NotificationStyle,
         "Screenshot frame" => ItemKind.ScreenshotFrame,
         "Showcase page" => ItemKind.ShowcasePage,
@@ -89,8 +98,9 @@ public static class Kinds
     /// <summary>Package extensions accepted for a kind (lowercase, with the dot).</summary>
     public static string[] Extensions(ItemKind kind) => kind switch
     {
-        ItemKind.NotificationStyle => new[] { ".panotif", ".pastyle" },
-        ItemKind.ScreenshotFrame => new[] { ".paframe", ".pastyle" },
+        ItemKind.Colors => new[] { ".pacolors" },
+        ItemKind.NotificationStyle => new[] { ".panotif" },
+        ItemKind.ScreenshotFrame => new[] { ".paframe" },
         ItemKind.ShowcasePage => new[] { ".pashowcase" },
         ItemKind.UnlockSounds => new[] { ".pasounds" },
         ItemKind.Theme => new[] { ".patheme" },
@@ -100,7 +110,7 @@ public static class Kinds
 
     public static readonly string[] AllPackageExtensions =
     {
-        ".panotif", ".paframe", ".pastyle", ".pashowcase", ".pasounds", ".patheme", ".pa"
+        ".pacolors", ".panotif", ".paframe", ".pashowcase", ".pasounds", ".patheme", ".pa"
     };
 
     /// <summary>
@@ -109,8 +119,8 @@ public static class Kinds
     /// </summary>
     public static string MinPluginVersion(ItemKind kind, int formatVersion) => kind switch
     {
-        // Sound packs, themes and game keys in .pa files arrived with the Workshop release.
-        ItemKind.UnlockSounds or ItemKind.Theme => "4.1.0",
+        // Color sets, sound packs, themes and game keys in .pa files arrived with the Workshop release.
+        ItemKind.Colors or ItemKind.UnlockSounds or ItemKind.Theme => "4.1.0",
         ItemKind.GameCustomData => "4.1.0",
         _ => "4.0.0"
     };
