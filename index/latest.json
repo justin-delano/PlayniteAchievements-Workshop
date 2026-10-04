@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-04T09:43:52Z",
-  "commit": "60b5e1ea2b2c37a1a81a4f70532b35da85e4cc45",
+  "generated": "2026-10-04T11:55:43Z",
+  "commit": "5e2218593bc1dac566c93ad1899fe9c49b70b673",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -46,8 +46,80 @@
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/notification-styles/test1/test1-1.0.0.panotif",
         "preview": null,
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@60b5e1ea2b2c37a1a81a4f70532b35da85e4cc45/notification-styles/test1/README.md",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@5e2218593bc1dac566c93ad1899fe9c49b70b673/notification-styles/test1/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/notification-styles/test1"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/steam-2420110/horizon-forbidden-west-test",
+      "kind": "GameCustomData",
+      "name": "Horizon Forbidden West TEST",
+      "description": "25MB upload test",
+      "author": "Synkro",
+      "ownerHash": "848ca668d311d7a737b301a73ed198352cb733aba5f9b036b65ec4a64ab87d41",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "test"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-04",
+      "updated": "2026-10-04",
+      "game": {
+        "name": "Horizon Forbidden West",
+        "platform": "PC (Windows)",
+        "keys": [
+          {
+            "providerKey": "Steam",
+            "providerGameId": 2420110,
+            "name": "Horizon Forbidden West",
+            "platform": "PC (Windows)"
+          },
+          {
+            "name": "Horizon Forbidden West",
+            "platform": "PC (Windows)"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 160,
+        "lockedIcons": 14,
+        "customAchievements": 0,
+        "achievementOverrides": 80,
+        "categoryAssignments": 160,
+        "categories": 4,
+        "categoryImages": 3,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": true,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 90
+      },
+      "package": {
+        "file": "horizon-forbidden-west-test-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 28809835,
+        "sha256": "0d7a0d1ebb677169f57f9f184b4d85295c52dca726e685ee507ee2965bf300f2",
+        "release": {
+          "tag": "game-data/steam-2420110/horizon-forbidden-west-test",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-2420110/horizon-forbidden-west-test/horizon-forbidden-west-test-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "readme": "README.md",
+      "downloads": {
+        "total": 0,
+        "current": 0
+      },
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-2420110/horizon-forbidden-west-test/horizon-forbidden-west-test-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@5e2218593bc1dac566c93ad1899fe9c49b70b673/game-data/steam-2420110/horizon-forbidden-west-test/preview.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@5e2218593bc1dac566c93ad1899fe9c49b70b673/game-data/steam-2420110/horizon-forbidden-west-test/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-2420110/horizon-forbidden-west-test"
       }
     }
   ]
