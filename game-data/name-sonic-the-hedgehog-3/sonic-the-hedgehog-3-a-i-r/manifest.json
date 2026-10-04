@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-sonic-the-hedgehog-3/sonic-the-hedgehog-3-a-i-r",
+  "kind": "GameCustomData",
+  "name": "Sonic the Hedgehog 3 (A.I.R.)",
+  "description": "Custom/manual achievement set for Sonic 3: Angel Island Revisited (A.I.R.), a playable fan-made remaster of Sonic the Hedgehog 3 and Sonic & Knuckles for the SEGA Genesis/Mega Drive. Based on Sonic 3 A.I.R.'s in-game achievement system.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "sonic-the-hedgehog",
+    "sonic-3",
+    "a-i-r",
+    "angel-island-revisited",
+    "fanmade"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-04",
+  "updated": "2026-10-04",
+  "game": {
+    "name": "Sonic the Hedgehog 3",
+    "platform": "Computer",
+    "keys": [
+      {
+        "name": "Sonic the Hedgehog 3",
+        "platform": "Computer"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 21,
+    "achievementOverrides": 0,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 0,
+    "notes": 0,
+    "achievementOrder": true,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 21
+  },
+  "package": {
+    "file": "sonic-the-hedgehog-3-a-i-r-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 235405,
+    "sha256": "7d493622b884081bed1aa31ca74fe070a43d4dc4fd345e0ba02e64efa9f30f74",
+    "release": {
+      "tag": "game-data/name-sonic-the-hedgehog-3/sonic-the-hedgehog-3-a-i-r",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-3/sonic-the-hedgehog-3-a-i-r/sonic-the-hedgehog-3-a-i-r-1.0.0.pa"
+    }
+  },
+  "readme": "README.md"
+}

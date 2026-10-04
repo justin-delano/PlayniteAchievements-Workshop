@@ -1,0 +1,1 @@
+All achievements and icons taken directly from the achievement system already present in Sonic 3 A.I.R., with three additional achievements for completing the game with each playable character. Progress for all in-game achievements can be found in the game's Extras menu.
