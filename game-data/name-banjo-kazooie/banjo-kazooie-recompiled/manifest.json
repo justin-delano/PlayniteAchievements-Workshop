@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-banjo-kazooie/banjo-kazooie-recompiled",
+  "kind": "GameCustomData",
+  "name": "Banjo-Kazooie (Recompiled)",
+  "description": "Custom/manual achievement set for Banjo Recompiled, a playable fanmade recompilation of Banjo-Kazooie.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "banjo",
+    "banjo-kazooie",
+    "recompiled",
+    "decompilation"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-04",
+  "updated": "2026-10-04",
+  "game": {
+    "name": "Banjo-Kazooie",
+    "platform": "Computer",
+    "keys": [
+      {
+        "name": "Banjo-Kazooie",
+        "platform": "Computer"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 10,
+    "lockedIcons": 0,
+    "customAchievements": 11,
+    "achievementOverrides": 5,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 16
+  },
+  "package": {
+    "file": "banjo-kazooie-recompiled-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 1293273,
+    "sha256": "e42a8b0f77443987929f8b5bde61cc91f89aaef7a788bdcd4f340304733d51a7",
+    "release": {
+      "tag": "game-data/name-banjo-kazooie/banjo-kazooie-recompiled",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/banjo-kazooie-recompiled-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "readme": "README.md"
+}
