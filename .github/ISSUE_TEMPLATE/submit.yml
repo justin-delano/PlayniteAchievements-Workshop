@@ -88,7 +88,7 @@ body:
     id: files
     attributes:
       label: Files
-      description: Drag the package here (GitHub allows up to 25 MB per file), plus an optional preview image (PNG, JPG, GIF or WebP, up to 5 MB). When updating an existing item you may attach only a new preview image; the published package then stays as it is. Do not type anything else in this box.
+      description: Drag the package here (GitHub allows up to 25 MB per file), plus an optional preview image (PNG, JPG, GIF or WebP, up to 5 MB). Do not type anything else in this box.
       placeholder: Drop files here.
 
   - type: input
