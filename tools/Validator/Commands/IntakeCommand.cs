@@ -174,10 +174,7 @@ public static class IntakeCommand
         var previewAttachment = attachments.FirstOrDefault(a => a.IsImageLink || LooksLikeImage(a.Name));
         var packageUrl = form.Get(PackageUrlField).Trim();
         var sourceUrl = packageAttachment?.Url ?? (packageUrl.Length > 0 ? packageUrl : null);
-        // An update may carry only a new preview image; the published package, version and
-        // release asset then stay as they are.
-        var previewOnly = sourceUrl is null && existing is not null && previewAttachment is not null;
-        if (sourceUrl is null && !previewOnly)
+        if (sourceUrl is null)
         {
             errors.Add("Attach the package file or fill in the package URL.");
         }
@@ -190,27 +187,20 @@ public static class IntakeCommand
         var downloadDir = Path.Combine(work, "download");
         using var downloader = new Downloader(Environment.GetEnvironmentVariable("GH_TOKEN") ?? Environment.GetEnvironmentVariable("GITHUB_TOKEN"));
 
-        PackageReport? report = null;
-        string downloadedName = "";
+        var downloadedName = packageAttachment?.Name ?? Path.GetFileName(new Uri(sourceUrl!).AbsolutePath);
         var packagePath = Path.Combine(downloadDir, "package.bin");
-        if (!previewOnly)
+        await downloader.DownloadAsync(sourceUrl!, packagePath);
+
+        var report = PackageInspector.Inspect(packagePath, kind);
+        foreach (var error in report.Errors)
         {
-            downloadedName = packageAttachment?.Name ?? Path.GetFileName(new Uri(sourceUrl!).AbsolutePath);
-            await downloader.DownloadAsync(sourceUrl!, packagePath);
-
-            report = PackageInspector.Inspect(packagePath, kind);
-            foreach (var error in report.Errors)
-            {
-                errors.Add(error);
-            }
-
-            if (errors.Count > 0 || report.Kind is null)
-            {
-                return;
-            }
+            errors.Add(error);
         }
 
-        var itemKind = previewOnly ? existing!.Kind : report!.Kind!.Value;
+        if (errors.Count > 0 || report.Kind is null)
+        {
+            return;
+        }
 
         // Identity and version.
         var slug = existing is not null ? existing.Id.Split('/').Last() : Slug.From(name);
@@ -219,13 +209,13 @@ public static class IntakeCommand
         {
             id = existing.Id;
         }
-        else if (itemKind == ItemKind.GameCustomData)
+        else if (report.Kind == ItemKind.GameCustomData)
         {
-            id = $"{Kinds.Folder(itemKind)}/{report!.Game!.Keys[0].FolderKey()}/{slug}";
+            id = $"{Kinds.Folder(report.Kind.Value)}/{report.Game!.Keys[0].FolderKey()}/{slug}";
         }
         else
         {
-            id = $"{Kinds.Folder(itemKind)}/{slug}";
+            id = $"{Kinds.Folder(report.Kind.Value)}/{slug}";
         }
 
         if (existing is null && Directory.Exists(Path.Combine(root, id.Replace('/', Path.DirectorySeparatorChar))))
@@ -233,9 +223,10 @@ public static class IntakeCommand
             throw new ValidationException($"An item with id `{id}` already exists. To update it, fill in the existing item id; otherwise choose a different name.");
         }
 
-        var version = previewOnly ? existing!.Version : existing is null ? "1.0.0" : BumpPatch(existing.Version);
+        var version = existing is null ? "1.0.0" : BumpPatch(existing.Version);
         var today = DateTime.UtcNow.ToString("yyyy-MM-dd");
-        var assetName = previewOnly ? existing!.Package.File : $"{slug}-{version}{CanonicalExtension(report!)}";
+        var extension = CanonicalExtension(report);
+        var assetName = $"{slug}-{version}{extension}";
 
         // An issue the Worker opened on a Playnite user's behalf is authored by the bot account
         // and identifies the real submitter only by hash; a hand-filled form identifies them by
@@ -252,7 +243,7 @@ public static class IntakeCommand
         var manifest = new Manifest
         {
             Id = id,
-            Kind = itemKind,
+            Kind = report.Kind.Value,
             Name = name,
             Description = description,
             Author = author,
@@ -262,22 +253,20 @@ public static class IntakeCommand
             Version = version,
             License = license,
             Tags = tags,
-            MinPluginVersion = previewOnly ? existing!.MinPluginVersion : Kinds.MinPluginVersion(itemKind, report!.FormatVersion),
+            MinPluginVersion = Kinds.MinPluginVersion(report.Kind.Value, report.FormatVersion),
             Created = existing?.Created ?? today,
             Updated = today,
-            Game = previewOnly ? existing!.Game : report!.Game,
-            Contents = previewOnly ? existing!.Contents : report!.Contents,
-            Package = previewOnly
-                ? existing!.Package
-                : new PackageInfo
-                {
-                    File = assetName,
-                    FormatKind = report!.FormatKind,
-                    FormatVersion = report.FormatVersion,
-                    SizeBytes = new FileInfo(packagePath).Length,
-                    Sha256 = ZipGuard.Sha256Hex(packagePath),
-                    Release = new ReleaseInfo { Tag = id, Url = "" }
-                }
+            Game = report.Game,
+            Contents = report.Contents,
+            Package = new PackageInfo
+            {
+                File = assetName,
+                FormatKind = report.FormatKind,
+                FormatVersion = report.FormatVersion,
+                SizeBytes = new FileInfo(packagePath).Length,
+                Sha256 = ZipGuard.Sha256Hex(packagePath),
+                Release = new ReleaseInfo { Tag = id, Url = "" }
+            }
         };
 
         // The Worker-submitted bot issue carries the extension user's hash and no login; a
@@ -332,23 +321,17 @@ public static class IntakeCommand
         File.WriteAllText(Path.Combine(itemDir, "README.md"), readmeText.Replace("\r\n", "\n").TrimEnd() + "\n");
         manifest.Save(Path.Combine(itemDir, "manifest.json"));
 
-        if (!previewOnly)
-        {
-            var packageDir = Path.Combine(work, "package");
-            Directory.CreateDirectory(packageDir);
-            File.Copy(packagePath, Path.Combine(packageDir, assetName), overwrite: true);
-        }
+        var packageDir = Path.Combine(work, "package");
+        Directory.CreateDirectory(packageDir);
+        File.Copy(packagePath, Path.Combine(packageDir, assetName), overwrite: true);
 
         result["id"] = id;
         result["tag"] = id;
         result["name"] = name;
-        result["assetName"] = previewOnly ? "" : assetName;
-        result["previewOnly"] = previewOnly;
+        result["assetName"] = assetName;
         result["version"] = version;
         result["downloadedName"] = downloadedName;
-        Console.Error.WriteLine(previewOnly
-            ? $"Accepted a new preview for {id} v{version}; the package is unchanged."
-            : $"Accepted {id} v{version} ({manifest.Package.FormatKind} v{manifest.Package.FormatVersion}, {manifest.Package.SizeBytes} bytes).");
+        Console.Error.WriteLine($"Accepted {id} v{version} ({report.FormatKind} v{report.FormatVersion}, {manifest.Package.SizeBytes} bytes).");
     }
 
     private static bool LooksLikeImage(string name)
