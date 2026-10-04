@@ -11,7 +11,7 @@ on:
       - 'screenshot-frames/**'
       - 'showcase-pages/**'
       - 'sound-packs/**'
-      - 'themes/**'
+      - 'bundles/**'
       - 'game-data/**'
       - 'tools/**'
   schedule:
@@ -53,7 +53,7 @@ jobs:
           # Only the index and the generated listings; a pathspec that matches nothing (no game
           # folders yet) must not fail the step, so stage by listing instead of by glob.
           git add index
-          git ls-files -mo --exclude-standard -- colors notification-styles screenshot-frames showcase-pages sound-packs themes game-data \
+          git ls-files -mo --exclude-standard -- colors notification-styles screenshot-frames showcase-pages sound-packs bundles game-data \
             | grep '/README.md$' | xargs -r git add --
           if git diff --cached --quiet; then
             echo "Index unchanged."

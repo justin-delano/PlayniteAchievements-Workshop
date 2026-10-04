@@ -34,9 +34,9 @@ public static class PackageInspector
             return report;
         }
 
-        if (entries.ContainsKey(Kinds.ThemeManifest))
+        if (entries.ContainsKey(Kinds.BundleManifest))
         {
-            InspectTheme(entries, report);
+            InspectBundle(entries, report);
         }
         else if (entries.ContainsKey(Kinds.ColorsManifest))
         {
@@ -268,20 +268,20 @@ public static class PackageInspector
         report.Contents = new JsonObject { ["slots"] = slots, ["files"] = slots.Count };
     }
 
-    // ---- Theme bundle --------------------------------------------------------------------
+    // ---- Bundle --------------------------------------------------------------------
 
-    private static void InspectTheme(IReadOnlyDictionary<string, ZipArchiveEntry> entries, PackageReport report)
+    private static void InspectBundle(IReadOnlyDictionary<string, ZipArchiveEntry> entries, PackageReport report)
     {
-        var manifest = ZipGuard.ReadJsonObject(entries[Kinds.ThemeManifest], report.Errors);
-        if (manifest is null || !ExpectKind(manifest, Kinds.ThemeFormat, report))
+        var manifest = ZipGuard.ReadJsonObject(entries[Kinds.BundleManifest], report.Errors);
+        if (manifest is null || !ExpectKind(manifest, Kinds.BundleFormat, report))
         {
             return;
         }
 
         var version = manifest["Version"]?.GetValue<int>() ?? 0;
-        if (version > Kinds.ThemeMaxVersion)
+        if (version > Kinds.BundleMaxVersion)
         {
-            report.Error($"The theme is version {version}, newer than this validator understands ({Kinds.ThemeMaxVersion}).");
+            report.Error($"The bundle is version {version}, newer than this validator understands ({Kinds.BundleMaxVersion}).");
             return;
         }
 
@@ -309,7 +309,7 @@ public static class PackageInspector
                         };
                         if (!entries.TryGetValue(entryName, out var nested))
                         {
-                            report.Error($"The theme is missing its '{entryName}' part.");
+                            report.Error($"The bundle is missing its '{entryName}' part.");
                             break;
                         }
 
@@ -325,7 +325,7 @@ public static class PackageInspector
                         break;
 
                     default:
-                        report.Error($"The theme names an unknown part '{part}'.");
+                        report.Error($"The bundle names an unknown part '{part}'.");
                         break;
                 }
             }
@@ -337,11 +337,11 @@ public static class PackageInspector
 
         if (parts.Count == 0 && report.Ok)
         {
-            report.Error("The theme carries no parts.");
+            report.Error("The bundle carries no parts.");
         }
 
-        report.Kind = ItemKind.Theme;
-        report.FormatKind = Kinds.ThemeFormat;
+        report.Kind = ItemKind.Bundle;
+        report.FormatKind = Kinds.BundleFormat;
         report.FormatVersion = version;
         contents["parts"] = parts;
         report.Contents = contents;
@@ -358,7 +358,7 @@ public static class PackageInspector
             {
                 if (pair.Value is JsonValue value && !IsHex(value.GetValue<string>()))
                 {
-                    report.Error($"The theme's rarity color '{pair.Key}' is not a #RRGGBB or #AARRGGBB value.");
+                    report.Error($"The bundle's rarity color '{pair.Key}' is not a #RRGGBB or #AARRGGBB value.");
                 }
             }
         }
@@ -367,7 +367,7 @@ public static class PackageInspector
         {
             if (!IsHex(pair.Value?.GetValue<string>()))
             {
-                report.Error($"The theme's provider color for '{pair.Key}' is not a #RRGGBB or #AARRGGBB value.");
+                report.Error($"The bundle's provider color for '{pair.Key}' is not a #RRGGBB or #AARRGGBB value.");
             }
         }
 
@@ -381,7 +381,7 @@ public static class PackageInspector
             {
                 if (custom.Length > 128 || custom.Any(char.IsControl) || custom.Contains('<') || custom.Contains('{'))
                 {
-                    report.Error($"The theme's resource override '{pair.Key}' has an invalid value.");
+                    report.Error($"The bundle's resource override '{pair.Key}' has an invalid value.");
                 }
             }
         }

@@ -1,5 +1,5 @@
 name: Submit or update a Workshop item
-description: Share a notification style, frame, showcase page, sound pack, theme, or per-game custom data. The extension's Share to Workshop button fills most of this in.
+description: Share a notification style, frame, showcase page, sound pack, bundle, or per-game custom data. The extension's Share to Workshop button fills most of this in.
 title: "[Submission] "
 labels: ["submission"]
 body:
@@ -19,7 +19,7 @@ body:
         - Screenshot frame
         - Showcase page
         - Unlock sound pack
-        - Theme
+        - Bundle
         - Per-game custom data
     validations:
       required: true

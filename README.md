@@ -1,6 +1,6 @@
 # PlayniteAchievements Workshop
 
-User-made customizations for the [PlayniteAchievements](https://github.com/justin-delano/PlayniteAchievements) extension: color sets, notification styles, screenshot frames, showcase pages, unlock sound packs, themes that bundle those four looks, and per-game custom achievement data such as icon sets, categories and capstones.
+User-made customizations for the [PlayniteAchievements](https://github.com/justin-delano/PlayniteAchievements) extension: color sets, notification styles, screenshot frames, showcase pages, unlock sound packs, bundles of those four looks, and per-game custom achievement data such as icon sets, categories and capstones.
 
 Browse the folders below, or open the Workshop inside Playnite to search and install with one click.
 
@@ -11,7 +11,7 @@ Browse the folders below, or open the Workshop inside Playnite to search and ins
 | Screenshot frames | [screenshot-frames/](screenshot-frames/) | `.paframe` |
 | Showcase pages | [showcase-pages/](showcase-pages/) | `.pashowcase` |
 | Unlock sound packs | [sound-packs/](sound-packs/) | `.pasounds` |
-| Themes (bundles) | [themes/](themes/) | `.patheme` |
+| Bundles | [bundles/](bundles/) | `.pabundle` |
 | Per-game custom data | [game-data/](game-data/) | `.pa` |
 
 Each item is a folder with a `README.md` by its author, a `preview.png`, and a `manifest.json`.
@@ -26,7 +26,7 @@ Without the extension's Workshop view, download the package from the item's rele
 
 ## Sharing your own
 
-1. In Playnite, use Share to Workshop on the style, page, sound set, theme or game you want to share.
+1. In Playnite, use Share to Workshop on the style, page, sound set, bundle or game you want to share.
    The extension writes a package with your personal progress removed and opens the submission form in your browser with the details filled in.
 2. Drag the package into the form and submit.
    GitHub accepts attachments up to 25 MB; for a larger package, paste a direct download link (your own GitHub release, Google Drive, Dropbox) instead, and the Workshop copies it to its own storage.

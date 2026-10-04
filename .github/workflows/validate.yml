@@ -11,7 +11,7 @@ on:
       - 'screenshot-frames/**'
       - 'showcase-pages/**'
       - 'sound-packs/**'
-      - 'themes/**'
+      - 'bundles/**'
       - 'game-data/**'
       - 'tools/**'
       - 'schema/**'
@@ -37,7 +37,7 @@ jobs:
         id: changed
         run: |
           git diff --name-only "origin/${{ github.base_ref }}"...HEAD \
-            | grep -E '^(notification-styles|screenshot-frames|showcase-pages|sound-packs|themes|game-data)/' \
+            | grep -E '^(notification-styles|screenshot-frames|showcase-pages|sound-packs|bundles|game-data)/' \
             | xargs -r -n1 dirname | sort -u > work-changed.txt || true
           echo "count=$(wc -l < work-changed.txt)" >> "$GITHUB_OUTPUT"
 

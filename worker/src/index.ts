@@ -28,7 +28,7 @@ const KINDS = new Set([
   "Screenshot frame",
   "Showcase page",
   "Unlock sound pack",
-  "Theme",
+  "Bundle",
   "Per-game custom data",
 ]);
 const LICENSES = new Set(["CC-BY-4.0", "CC0-1.0"]);

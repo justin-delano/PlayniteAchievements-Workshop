@@ -31,7 +31,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           BRANCH="chore/migrate-manifests-$(date -u +%Y%m%d%H%M)"
           git checkout -b "$BRANCH"
-          git add -A -- colors notification-styles screenshot-frames showcase-pages sound-packs themes game-data
+          git add -A -- colors notification-styles screenshot-frames showcase-pages sound-packs bundles game-data
           if git diff --cached --quiet; then
             echo "Every manifest is already at the current schema."
             exit 0

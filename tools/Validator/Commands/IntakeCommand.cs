@@ -366,8 +366,8 @@ public static class IntakeCommand
                 return ".pashowcase";
             case ItemKind.UnlockSounds:
                 return ".pasounds";
-            case ItemKind.Theme:
-                return ".patheme";
+            case ItemKind.Bundle:
+                return ".pabundle";
             default:
                 return ".pa";
         }

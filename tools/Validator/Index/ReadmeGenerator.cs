@@ -147,12 +147,12 @@ public static class ReadmeGenerator
 
     private static string Intro(ItemKind kind) => kind switch
     {
-        ItemKind.Colors => "Color sets: rarity, completed-game and trophy colors, per-platform colors, and resource overrides. Install from the Workshop in Playnite, or download the `.pacolors` from the item's release and import it under Settings > Display > Colors.",
+        ItemKind.Colors => "Color sets: rarity, completed-game and trophy colors, per-platform colors, and resource overrides. Install from the Workshop in Playnite, or download the `.pacolors` from the item's release and import it under Settings > Workshop > Bundles.",
         ItemKind.NotificationStyle => "Looks for the unlock notification: colors, layout, badges, backgrounds, and optionally a custom template. Install from the Workshop in Playnite, or download the `.panotif` from the item's release and import it under Settings > Notifications > Appearance.",
         ItemKind.ScreenshotFrame => "Looks for the screenshot frame drawn around unlock captures. Install from the Workshop in Playnite, or download the `.paframe` from the item's release and import it under Settings > Notifications > Appearance.",
         ItemKind.ShowcasePage => "Showcase page layouts: which widgets, where, and how their grids are set up. Install from the Workshop in Playnite, or download the `.pashowcase` and import it from the Showcase page menu.",
         ItemKind.UnlockSounds => "Sound sets for unlock notifications, one file per rarity tier. Install from the Workshop in Playnite, or download the `.pasounds` and import it under Settings > Notifications > Unlock sounds.",
-        ItemKind.Theme => "Bundles of colors, unlock sounds, notification style and screenshot frame, installed together or part by part. Install from the Workshop in Playnite, or download the `.patheme` and import it under Settings > Display > Colors.",
+        ItemKind.Bundle => "Bundles of colors, unlock sounds, notification style and screenshot frame, each part saved as a preset on install. Install from the Workshop in Playnite, or download the `.pabundle` and import it under Settings > Workshop > Bundles.",
         ItemKind.GameCustomData => "Per-game customizations: icon sets, categories, capstones, custom achievements, notes and ordering, one folder per game. Install from the Workshop in Playnite (which matches the game in your library), or download the `.pa` and import it from the game's Manage Achievements window.",
         _ => ""
     };

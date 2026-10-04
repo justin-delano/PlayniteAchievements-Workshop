@@ -8,7 +8,7 @@ public enum ItemKind
     ScreenshotFrame,
     ShowcasePage,
     UnlockSounds,
-    Theme,
+    Bundle,
     GameCustomData
 }
 
@@ -20,7 +20,7 @@ public static class Kinds
     public const string ShowcasePageFormat = "PlayniteAchievements.ShowcasePage";
     public const string GameCustomDataFormat = "PlayniteAchievements.GameCustomData";
     public const string UnlockSoundsFormat = "PlayniteAchievements.UnlockSounds";
-    public const string ThemeFormat = "PlayniteAchievements.Theme";
+    public const string BundleFormat = "PlayniteAchievements.Bundle";
 
     // Manifest entry names inside each package. The style manifest's name predates the split
     // into .panotif/.paframe and stays for compatibility.
@@ -30,7 +30,7 @@ public static class Kinds
     public const string GameCustomDataManifest = "custom-data.pa";
     public const string CustomAchievementsCsv = "custom-achievements.csv";
     public const string UnlockSoundsManifest = "unlock-sounds.json";
-    public const string ThemeManifest = "theme.json";
+    public const string BundleManifest = "bundle.json";
 
     // Newest format version of each package type the validator understands. A package from a
     // newer extension is refused until the validator is updated.
@@ -39,11 +39,11 @@ public static class Kinds
     public const int ShowcasePageMaxVersion = 2;
     public const int GameCustomDataMaxSchema = 8;
     public const int UnlockSoundsMaxVersion = 1;
-    public const int ThemeMaxVersion = 1;
+    public const int BundleMaxVersion = 1;
 
     public static readonly string[] AllFolders =
     {
-        "colors", "notification-styles", "screenshot-frames", "showcase-pages", "sound-packs", "themes", "game-data"
+        "colors", "notification-styles", "screenshot-frames", "showcase-pages", "sound-packs", "bundles", "game-data"
     };
 
     public static string Folder(ItemKind kind) => kind switch
@@ -53,7 +53,7 @@ public static class Kinds
         ItemKind.ScreenshotFrame => "screenshot-frames",
         ItemKind.ShowcasePage => "showcase-pages",
         ItemKind.UnlockSounds => "sound-packs",
-        ItemKind.Theme => "themes",
+        ItemKind.Bundle => "bundles",
         ItemKind.GameCustomData => "game-data",
         _ => throw new ArgumentOutOfRangeException(nameof(kind))
     };
@@ -65,7 +65,7 @@ public static class Kinds
         "screenshot-frames" => ItemKind.ScreenshotFrame,
         "showcase-pages" => ItemKind.ShowcasePage,
         "sound-packs" => ItemKind.UnlockSounds,
-        "themes" => ItemKind.Theme,
+        "bundles" => ItemKind.Bundle,
         "game-data" => ItemKind.GameCustomData,
         _ => null
     };
@@ -77,7 +77,7 @@ public static class Kinds
         ItemKind.ScreenshotFrame => "Screenshot frames",
         ItemKind.ShowcasePage => "Showcase pages",
         ItemKind.UnlockSounds => "Unlock sound packs",
-        ItemKind.Theme => "Themes",
+        ItemKind.Bundle => "Bundles",
         ItemKind.GameCustomData => "Per-game custom data",
         _ => kind.ToString()
     };
@@ -90,7 +90,7 @@ public static class Kinds
         "Screenshot frame" => ItemKind.ScreenshotFrame,
         "Showcase page" => ItemKind.ShowcasePage,
         "Unlock sound pack" => ItemKind.UnlockSounds,
-        "Theme" => ItemKind.Theme,
+        "Bundle" => ItemKind.Bundle,
         "Per-game custom data" => ItemKind.GameCustomData,
         _ => null
     };
@@ -103,14 +103,14 @@ public static class Kinds
         ItemKind.ScreenshotFrame => new[] { ".paframe" },
         ItemKind.ShowcasePage => new[] { ".pashowcase" },
         ItemKind.UnlockSounds => new[] { ".pasounds" },
-        ItemKind.Theme => new[] { ".patheme" },
+        ItemKind.Bundle => new[] { ".pabundle" },
         ItemKind.GameCustomData => new[] { ".pa" },
         _ => Array.Empty<string>()
     };
 
     public static readonly string[] AllPackageExtensions =
     {
-        ".pacolors", ".panotif", ".paframe", ".pashowcase", ".pasounds", ".patheme", ".pa"
+        ".pacolors", ".panotif", ".paframe", ".pashowcase", ".pasounds", ".pabundle", ".pa"
     };
 
     /// <summary>
@@ -119,8 +119,8 @@ public static class Kinds
     /// </summary>
     public static string MinPluginVersion(ItemKind kind, int formatVersion) => kind switch
     {
-        // Color sets, sound packs, themes and game keys in .pa files arrived with the Workshop release.
-        ItemKind.Colors or ItemKind.UnlockSounds or ItemKind.Theme => "4.1.0",
+        // Color sets, sound packs, bundles and game keys in .pa files arrived with the Workshop release.
+        ItemKind.Colors or ItemKind.UnlockSounds or ItemKind.Bundle => "4.1.0",
         ItemKind.GameCustomData => "4.1.0",
         _ => "4.0.0"
     };

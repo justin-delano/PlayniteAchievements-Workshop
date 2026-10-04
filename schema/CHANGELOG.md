@@ -7,6 +7,8 @@ To change the schema: bump `ManifestSchema.Current` in `tools/Validator/Schema/M
 ## v1 (2026-10-03)
 
 Initial schema.
-Kinds: `Colors`, `NotificationStyle`, `ScreenshotFrame`, `ShowcasePage`, `UnlockSounds`, `Theme`, `GameCustomData`. A theme is the only bundle; it embeds standalone `.pacolors`, `.pasounds`, `.panotif` and `.paframe` packages as parts.
+Kinds: `Colors`, `NotificationStyle`, `ScreenshotFrame`, `ShowcasePage`, `UnlockSounds`, `Bundle`, `GameCustomData`. A bundle is the only composite; it embeds standalone `.pacolors`, `.pasounds`, `.panotif` and `.paframe` packages as parts.
 Fields: `schemaVersion`, `id`, `kind`, `name`, `description`, `author` (display name), `authorGitHub` (login, issue-form submissions), `ownerHash` (submitter key hash, Playnite submissions), `maintainers`, `version`, `license`, `tags`, `minPluginVersion`, `created`, `updated`, `game` (game-data only), `contents` (computed), `package` (computed; file, formatKind, formatVersion, sizeBytes, sha256, release.tag, release.url), `preview`, `readme`.
 Ownership for updates: the `authorGitHub` login or a listed maintainer, or a submitter whose key hashes to `ownerHash`.
+
+Before any bundle was published (2026-10-03) the kind `Theme` was renamed `Bundle`: folder `bundles/`, file `.pabundle`, manifest `bundle.json`, format kind `PlayniteAchievements.Bundle`. No migration exists because no manifest or release ever carried the old name.
