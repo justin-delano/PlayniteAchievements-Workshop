@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-04T02:43:02Z",
-  "commit": "f62e6882dc5515e7bc6b41b104f125b65eb3efd0",
+  "generated": "2026-10-04T09:43:52Z",
+  "commit": "60b5e1ea2b2c37a1a81a4f70532b35da85e4cc45",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -46,7 +46,7 @@
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/notification-styles/test1/test1-1.0.0.panotif",
         "preview": null,
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@f62e6882dc5515e7bc6b41b104f125b65eb3efd0/notification-styles/test1/README.md",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@60b5e1ea2b2c37a1a81a4f70532b35da85e4cc45/notification-styles/test1/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/notification-styles/test1"
       }
     }
