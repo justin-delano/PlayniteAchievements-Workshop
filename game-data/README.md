@@ -7,8 +7,8 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 
 | Game | Platform | Items | Downloads |
 |---|---|---:|---:|
-| [Atelier Sophie: The Alchemist of the Mysterious Book](steam-527270/) | PC (Windows) | 1 | 0 |
-| [Banjo-Kazooie](name-banjo-kazooie/) | Computer | 1 | 0 |
-| [Dead Space](steam-1693980/) | PC (Windows) | 1 | 0 |
-| [Horizon Forbidden West](steam-2420110/) | PC (Windows) | 1 | 0 |
-| [Sonic the Hedgehog 3](name-sonic-the-hedgehog-3/) | Computer | 1 | 0 |
+| [Atelier Sophie: The Alchemist of the Mysterious Book](steam-527270/) | PC (Windows) | 1 | 2 |
+| [Banjo-Kazooie](name-banjo-kazooie/) | Computer | 1 | 2 |
+| [Dead Space](steam-1693980/) | PC (Windows) | 1 | 4 |
+| [Horizon Forbidden West](steam-2420110/) | PC (Windows) | 1 | 2 |
+| [Sonic the Hedgehog 3](name-sonic-the-hedgehog-3/) | Computer | 1 | 1 |
