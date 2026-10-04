@@ -3,8 +3,11 @@
 
 Per-game customizations: icon sets, categories, capstones, custom achievements, notes and ordering, one folder per game. Install from the Workshop in Playnite (which matches the game in your library), or download the `.pa` and import it from the game's Manage Achievements window.
 
-1 game(s), 1 item(s).
+4 game(s), 4 item(s).
 
 | Game | Platform | Items | Downloads |
 |---|---|---:|---:|
+| [Atelier Sophie: The Alchemist of the Mysterious Book](steam-527270/) | PC (Windows) | 1 | 0 |
+| [Banjo-Kazooie](name-banjo-kazooie/) | Computer | 1 | 0 |
+| [Dead Space](steam-1693980/) | PC (Windows) | 1 | 0 |
 | [Horizon Forbidden West](steam-2420110/) | PC (Windows) | 1 | 0 |
