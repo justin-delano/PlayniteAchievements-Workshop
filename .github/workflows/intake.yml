@@ -101,7 +101,7 @@ jobs:
           if ! gh release view "$TAG" --repo "$REPO" >/dev/null 2>&1; then
             gh release create "$TAG" --repo "$REPO" --title "${{ steps.intake.outputs.name }}" \
               --notes "Workshop storage for \`${{ steps.intake.outputs.id }}\`. See the item folder for details." \
-              --latest=false
+              --latest=false --prerelease
           fi
           gh release upload "$TAG" "work/package/${{ steps.intake.outputs.asset }}" --repo "$REPO" --clobber
           ASSET_URL=$(gh release view "$TAG" --repo "$REPO" --json assets \
