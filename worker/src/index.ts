@@ -188,7 +188,10 @@ async function createSubmission(request: Request, env: Env): Promise<Response> {
     if (author.length === 0 || author.length > 40) throw new HttpError(400, "author is required (up to 40 characters).");
     if (description.length === 0 || description.length > 400) throw new HttpError(400, "description is required (up to 400 characters).");
     if (!LICENSES.has(license)) throw new HttpError(400, "license must be CC-BY-4.0 or CC0-1.0.");
-    if (!body.packageKey) throw new HttpError(400, "packageKey is required.");
+    // An update of a published item may send only a new preview image; intake then keeps the
+    // package, version and release asset as they are.
+    const previewOnly = !body.packageKey && existingId.length > 0 && !!body.previewKey;
+    if (!body.packageKey && !previewOnly) throw new HttpError(400, "packageKey is required unless an existing item gets only a new preview.");
   } else if (existingId.length === 0) {
     throw new HttpError(400, "existingId is required to remove an item.");
   }
@@ -196,14 +199,18 @@ async function createSubmission(request: Request, env: Env): Promise<Response> {
   const signer = makeSigner(env);
   const files: string[] = [];
   if (!remove) {
-    const packageKey = requireKey(body.packageKey);
-    const size = await signer.head(packageKey);
-    if (size === null) throw new HttpError(404, "The package upload was not found; upload it again.");
-    files.push(`[${fileNameOf(packageKey)}](${await signer.presignGet(packageKey, DOWNLOAD_URL_SECONDS)})`);
+    if (body.packageKey) {
+      const packageKey = requireKey(body.packageKey);
+      const size = await signer.head(packageKey);
+      if (size === null) throw new HttpError(404, "The package upload was not found; upload it again.");
+      files.push(`[${fileNameOf(packageKey)}](${await signer.presignGet(packageKey, DOWNLOAD_URL_SECONDS)})`);
+    }
     if (body.previewKey) {
       const previewKey = requireKey(body.previewKey);
       if ((await signer.head(previewKey)) !== null) {
         files.push(`![preview](${await signer.presignGet(previewKey, DOWNLOAD_URL_SECONDS)})`);
+      } else if (!body.packageKey) {
+        throw new HttpError(404, "The preview upload was not found; upload it again.");
       }
     }
   }
