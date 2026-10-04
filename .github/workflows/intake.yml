@@ -78,6 +78,7 @@ jobs:
           echo "id=$(jq -r .id work/result.json)" >> "$GITHUB_OUTPUT"
           echo "tag=$(jq -r .tag work/result.json)" >> "$GITHUB_OUTPUT"
           echo "asset=$(jq -r .assetName work/result.json)" >> "$GITHUB_OUTPUT"
+          echo "previewOnly=$(jq -r .previewOnly work/result.json)" >> "$GITHUB_OUTPUT"
           echo "name=$(jq -r .name work/result.json)" >> "$GITHUB_OUTPUT"
 
       - name: Report validation errors
@@ -94,8 +95,10 @@ jobs:
           gh issue edit "$ISSUE" --repo "$REPO" --add-label needs-changes --remove-label in-review || true
           exit 0
 
+      # A preview-only update keeps the published package, so there is nothing to upload and the
+      # manifest already carries the release URL.
       - name: Upload the package to the item's release
-        if: steps.issue.outputs.state == 'open' && steps.intake.outputs.ok == 'true' && steps.intake.outputs.remove != 'true'
+        if: steps.issue.outputs.state == 'open' && steps.intake.outputs.ok == 'true' && steps.intake.outputs.remove != 'true' && steps.intake.outputs.previewOnly != 'true'
         run: |
           TAG="${{ steps.intake.outputs.tag }}"
           if ! gh release view "$TAG" --repo "$REPO" >/dev/null 2>&1; then
@@ -141,6 +144,8 @@ jobs:
             gh workflow run build-index.yml --repo "$REPO" --ref main || true
             if [ "${{ steps.intake.outputs.remove }}" = "true" ]; then
               gh issue comment "$ISSUE" --repo "$REPO" --body "Done: the item was removed ($PR_URL). It disappears from the Workshop once the index rebuilds, usually within a couple of minutes."
+            elif [ "${{ steps.intake.outputs.previewOnly }}" = "true" ]; then
+              gh issue comment "$ISSUE" --repo "$REPO" --body "Done: the new preview was merged ($PR_URL); the package itself is unchanged. It shows in the Workshop once the index rebuilds, usually within a couple of minutes."
             else
               gh issue comment "$ISSUE" --repo "$REPO" --body "Done: the package passed validation and was merged ($PR_URL). It appears in the Workshop once the index rebuilds, usually within a couple of minutes."
             fi
