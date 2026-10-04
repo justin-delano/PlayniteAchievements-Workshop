@@ -113,8 +113,7 @@ jobs:
         if: steps.issue.outputs.state == 'open' && steps.intake.outputs.ok == 'true'
         run: |
           ID="${{ steps.intake.outputs.id }}"
-          LOGIN="${{ steps.issue.outputs.login }}"
-          BRANCH="submission/$ISSUE"
+         BRANCH="submission/$ISSUE"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -B "$BRANCH" origin/main
@@ -128,11 +127,11 @@ jobs:
             git add "$ID"
             TITLE="${{ steps.intake.outputs.name }} ($ID)"
           fi
-          git commit -q -m "$TITLE" -m "Submitted in #$ISSUE by @$LOGIN" || true
+          git commit -q -m "$TITLE" -m "Submitted in #$ISSUE" || true
           git push -f origin "$BRANCH"
           if ! gh pr view "$BRANCH" --repo "$REPO" >/dev/null 2>&1; then
             gh pr create --repo "$REPO" --base main --head "$BRANCH" --title "$TITLE" \
-              --body "closes #$ISSUE"$'\n\n'"Submitted by @$LOGIN. Validated by the intake workflow and merged automatically; revert this pull request to take the item down." \
+              --body "closes #$ISSUE"$'\n\n'"Submitted through #$ISSUE. Validated by the intake workflow and merged automatically; revert this pull request to take the item down." \
               --label submission
           fi
           PR_URL=$(gh pr view "$BRANCH" --repo "$REPO" --json url --jq .url)
