@@ -26,15 +26,14 @@ Without the extension's Workshop view, download the package from the item's rele
 
 ## Sharing your own
 
-1. In Playnite, use Share to Workshop on the style, page, sound set, bundle or game you want to share.
-   The extension writes a package with your personal progress removed and opens the submission form in your browser with the details filled in.
-2. Drag the package into the form and submit.
-   GitHub accepts attachments up to 25 MB; for a larger package, paste a direct download link (your own GitHub release, Google Drive, Dropbox) instead, and the Workshop copies it to its own storage.
-3. A workflow checks the package, creates its release, and opens a pull request.
-   A maintainer reviews it and merges; the item then appears in the Workshop.
+In Playnite, every Export menu has a **Share to Workshop** entry: on a color set, notification style, frame, sound pack, bundle, showcase page, saved preset, or a game's custom data.
+The extension strips your personal progress, uploads the package itself (no account, no size limit short of 1 GB), opens a submission here, and a workflow validates it, creates its release, and merges it.
+The item appears in the Workshop once the index rebuilds, usually within a couple of minutes.
 
-To update an item you submitted, use the same form and fill in the existing item id.
-Only the original author (or a listed maintainer) can update or remove an item.
+Submitting by hand works too: open a [submission issue](../../issues/new?template=submit.yml), attach the package (GitHub allows 25 MB per attachment) or paste a direct download link to it, and the same workflow takes it from there.
+
+To update an item, share it again from the same Playnite install, or fill in its id in the form.
+Only the original submitter (or a listed maintainer) can update or remove an item; maintainers can revert any merge.
 
 Submissions are licensed [CC BY 4.0](CONTENT-LICENSES.md) unless the author chooses CC0.
 Audio and artwork must be the author's own or licensed for redistribution.

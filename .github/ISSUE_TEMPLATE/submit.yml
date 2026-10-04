@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Drag the package file the extension exported into the **Files** box below, or paste a direct download link for packages over 25 MB.
-        A workflow checks the package and opens a pull request; a maintainer merges it. You can follow progress in the comments on this issue.
+        A workflow checks the package, creates its release and merges it; the item appears in the Workshop within a couple of minutes. You can follow progress in the comments on this issue.
 
   - type: dropdown
     id: kind
@@ -95,7 +95,7 @@ body:
     id: package_url
     attributes:
       label: Package URL (for packages over 25 MB)
-      description: A direct download link to the package instead of attaching it, for example a file on your own GitHub release, Google Drive or Dropbox. The Workshop copies the file to its own storage; the link only has to work until this submission is processed.
+      description: A direct download link to the package instead of attaching it, for packages over 25 MB. The Workshop copies the file to its own storage; the link only has to work until this submission is processed.
       placeholder: https://
 
   - type: input

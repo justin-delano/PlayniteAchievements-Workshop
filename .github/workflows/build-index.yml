@@ -41,23 +41,32 @@ jobs:
       - name: Fetch release metadata
         run: gh api "repos/${{ github.repository }}/releases" --paginate > releases.json
 
-      - name: Build
-        run: |
-          dotnet run --project tools/Validator -c Release -- build-index \
-            --root . --releases releases.json --repo "${{ github.repository }}" --commit "${{ github.sha }}"
-
-      - name: Commit generated files
+      - name: Build and commit generated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Only the index and the generated listings; a pathspec that matches nothing (no game
-          # folders yet) must not fail the step, so stage by listing instead of by glob.
-          git add index
-          git ls-files -mo --exclude-standard -- colors notification-styles screenshot-frames showcase-pages sound-packs bundles game-data \
-            | grep '/README.md$' | xargs -r git add --
-          if git diff --cached --quiet; then
-            echo "Index unchanged."
-            exit 0
-          fi
-          git commit -q -m "chore(index): regenerate index and listings [skip ci]"
-          git push
+          # Merges can land seconds apart (one per submission), so the push races the next
+          # merge. Regenerate from the current tip and push, and when main moved underneath,
+          # start over from the new tip instead of failing the run.
+          for attempt in 1 2 3 4 5; do
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            dotnet run --project tools/Validator -c Release -- build-index \
+              --root . --releases releases.json --repo "${{ github.repository }}" --commit "$(git rev-parse HEAD)"
+            # Only the index and the generated listings; a pathspec that matches nothing (no game
+            # folders yet) must not fail the step, so stage by listing instead of by glob.
+            git add index
+            git ls-files -mo --exclude-standard -- colors notification-styles screenshot-frames showcase-pages sound-packs bundles game-data \
+              | grep '/README.md$' | xargs -r git add --
+            if git diff --cached --quiet; then
+              echo "Index unchanged."
+              exit 0
+            fi
+            git commit -q -m "chore(index): regenerate index and listings [skip ci]"
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "main moved during attempt $attempt; regenerating from the new tip."
+          done
+          echo "Could not push the regenerated index after 5 attempts." >&2
+          exit 1

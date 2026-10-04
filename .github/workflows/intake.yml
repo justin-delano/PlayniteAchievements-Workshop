@@ -22,6 +22,7 @@ permissions:
   contents: write
   issues: write
   pull-requests: write
+  actions: write
 
 concurrency:
   group: intake-${{ github.event.issue.number || inputs.issue }}
@@ -131,13 +132,21 @@ jobs:
           git push -f origin "$BRANCH"
           if ! gh pr view "$BRANCH" --repo "$REPO" >/dev/null 2>&1; then
             gh pr create --repo "$REPO" --base main --head "$BRANCH" --title "$TITLE" \
-              --body "closes #$ISSUE"$'\n\n'"Submitted by @$LOGIN. Validated by the intake workflow; review the README, preview and description, then merge." \
+              --body "closes #$ISSUE"$'\n\n'"Submitted by @$LOGIN. Validated by the intake workflow and merged automatically; revert this pull request to take the item down." \
               --label submission
           fi
           PR_URL=$(gh pr view "$BRANCH" --repo "$REPO" --json url --jq .url)
-          if [ "${{ steps.intake.outputs.remove }}" = "true" ]; then
-            gh issue comment "$ISSUE" --repo "$REPO" --body "Thanks! The removal is waiting for review in $PR_URL. This issue closes automatically when it is merged."
+          # Validation is the review: merge straight away and rebuild the index. A merge made
+          # with the workflow token does not trigger the push workflow, so dispatch it here.
+          if gh pr merge "$BRANCH" --repo "$REPO" --merge --delete-branch; then
+            gh workflow run build-index.yml --repo "$REPO" --ref main || true
+            if [ "${{ steps.intake.outputs.remove }}" = "true" ]; then
+              gh issue comment "$ISSUE" --repo "$REPO" --body "Done: the item was removed ($PR_URL). It disappears from the Workshop once the index rebuilds, usually within a couple of minutes."
+            else
+              gh issue comment "$ISSUE" --repo "$REPO" --body "Done: the package passed validation and was merged ($PR_URL). It appears in the Workshop once the index rebuilds, usually within a couple of minutes."
+            fi
+            gh issue edit "$ISSUE" --repo "$REPO" --remove-label in-review --remove-label needs-changes || true
           else
-            gh issue comment "$ISSUE" --repo "$REPO" --body "Thanks! The package passed validation and is waiting for review in $PR_URL. This issue closes automatically when it is merged."
+            gh issue comment "$ISSUE" --repo "$REPO" --body "The package passed validation but could not be merged automatically; a maintainer will finish it in $PR_URL."
+            gh issue edit "$ISSUE" --repo "$REPO" --add-label in-review --remove-label needs-changes || true
           fi
-          gh issue edit "$ISSUE" --repo "$REPO" --add-label in-review --remove-label needs-changes || true
