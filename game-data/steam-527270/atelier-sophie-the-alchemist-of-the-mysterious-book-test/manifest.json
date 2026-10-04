@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test",
+  "kind": "GameCustomData",
+  "name": "Atelier Sophie: The Alchemist of the Mysterious Book TEST",
+  "description": "Test upload",
+  "author": "Synkro",
+  "ownerHash": "848ca668d311d7a737b301a73ed198352cb733aba5f9b036b65ec4a64ab87d41",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "test",
+    "playstation",
+    "trophy",
+    "jrpg",
+    "atelier"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-04",
+  "updated": "2026-10-04",
+  "game": {
+    "name": "Atelier Sophie: The Alchemist of the Mysterious Book",
+    "platform": "PC (Windows)",
+    "keys": [
+      {
+        "providerKey": "Steam",
+        "providerGameId": 527270,
+        "name": "Atelier Sophie: The Alchemist of the Mysterious Book",
+        "platform": "PC (Windows)"
+      },
+      {
+        "name": "Atelier Sophie: The Alchemist of the Mysterious Book",
+        "platform": "PC (Windows)"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 90,
+    "lockedIcons": 0,
+    "customAchievements": 0,
+    "achievementOverrides": 45,
+    "categoryAssignments": 0,
+    "categories": 1,
+    "categoryImages": 1,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 46
+  },
+  "package": {
+    "file": "atelier-sophie-the-alchemist-of-the-mysterious-book-test-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 3531797,
+    "sha256": "4d6f4fd28caa20977a3b9b24289b2afa908fb8d4a0a82c03062e6dc53f49e554",
+    "release": {
+      "tag": "game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/atelier-sophie-the-alchemist-of-the-mysterious-book-test-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "readme": "README.md"
+}
