@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-04T21:59:52Z",
-  "commit": "d5386b5668f5e015281fc5ddd6e715a8a2ae2a1c",
+  "generated": "2026-10-04T22:15:01Z",
+  "commit": "10f2ef060c729edd453128ae47224ed39238fbcc",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -46,7 +46,7 @@
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/notification-styles/test1/test1-1.0.0.panotif",
         "preview": null,
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@d5386b5668f5e015281fc5ddd6e715a8a2ae2a1c/notification-styles/test1/README.md",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/notification-styles/test1/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/notification-styles/test1"
       }
     },
@@ -114,8 +114,8 @@
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/banjo-kazooie-recompiled-1.0.0.pa",
-        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@d5386b5668f5e015281fc5ddd6e715a8a2ae2a1c/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/preview.png",
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@d5386b5668f5e015281fc5ddd6e715a8a2ae2a1c/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/README.md",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/preview.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-banjo-kazooie/banjo-kazooie-recompiled"
       }
     },
@@ -184,7 +184,7 @@
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-3/sonic-the-hedgehog-3-a-i-r/sonic-the-hedgehog-3-a-i-r-1.0.0.pa",
         "preview": null,
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@d5386b5668f5e015281fc5ddd6e715a8a2ae2a1c/game-data/name-sonic-the-hedgehog-3/sonic-the-hedgehog-3-a-i-r/README.md",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/game-data/name-sonic-the-hedgehog-3/sonic-the-hedgehog-3-a-i-r/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-sonic-the-hedgehog-3/sonic-the-hedgehog-3-a-i-r"
       }
     },
@@ -249,13 +249,13 @@
       },
       "readme": "README.md",
       "downloads": {
-        "total": 4,
-        "current": 4
+        "total": 6,
+        "current": 6
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-1693980/dead-space-test/dead-space-test-1.0.0.pa",
         "preview": null,
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@d5386b5668f5e015281fc5ddd6e715a8a2ae2a1c/game-data/steam-1693980/dead-space-test/README.md",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/game-data/steam-1693980/dead-space-test/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-1693980/dead-space-test"
       }
     },
@@ -321,13 +321,13 @@
       "preview": "preview.png",
       "readme": "README.md",
       "downloads": {
-        "total": 2,
-        "current": 2
+        "total": 3,
+        "current": 3
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-2420110/horizon-forbidden-west-test/horizon-forbidden-west-test-1.0.0.pa",
-        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@d5386b5668f5e015281fc5ddd6e715a8a2ae2a1c/game-data/steam-2420110/horizon-forbidden-west-test/preview.png",
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@d5386b5668f5e015281fc5ddd6e715a8a2ae2a1c/game-data/steam-2420110/horizon-forbidden-west-test/README.md",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/game-data/steam-2420110/horizon-forbidden-west-test/preview.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/game-data/steam-2420110/horizon-forbidden-west-test/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-2420110/horizon-forbidden-west-test"
       }
     },
@@ -397,13 +397,13 @@
       "preview": "preview.png",
       "readme": "README.md",
       "downloads": {
-        "total": 2,
-        "current": 2
+        "total": 3,
+        "current": 3
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/atelier-sophie-the-alchemist-of-the-mysterious-book-test-1.0.0.pa",
-        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@d5386b5668f5e015281fc5ddd6e715a8a2ae2a1c/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/preview.png",
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@d5386b5668f5e015281fc5ddd6e715a8a2ae2a1c/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/README.md",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/preview.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test"
       }
     }
