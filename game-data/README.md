@@ -3,7 +3,7 @@
 
 Per-game customizations: icon sets, categories, capstones, custom achievements, notes and ordering, one folder per game. Install from the Workshop in Playnite (which matches the game in your library), or download the `.pa` and import it from the game's Manage Achievements window.
 
-4 game(s), 4 item(s).
+5 game(s), 5 item(s).
 
 | Game | Platform | Items | Downloads |
 |---|---|---:|---:|
@@ -11,3 +11,4 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | [Banjo-Kazooie](name-banjo-kazooie/) | Computer | 1 | 0 |
 | [Dead Space](steam-1693980/) | PC (Windows) | 1 | 0 |
 | [Horizon Forbidden West](steam-2420110/) | PC (Windows) | 1 | 0 |
+| [Sonic the Hedgehog 3](name-sonic-the-hedgehog-3/) | Computer | 1 | 0 |
