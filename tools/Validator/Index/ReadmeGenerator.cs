@@ -41,12 +41,12 @@ public static class ReadmeGenerator
 
         sb.AppendLine($"{entries.Count} item(s), most downloaded first.");
         sb.AppendLine();
-        sb.AppendLine("| Name | Author | Version | Downloads | Updated |");
-        sb.AppendLine("|---|---|---|---:|---|");
+        sb.AppendLine("| | Name | Author | Version | Downloads | Updated |");
+        sb.AppendLine("|---|---|---|---|---:|---|");
         foreach (var (manifest, total, _) in entries.OrderByDescending(e => e.Total).ThenBy(e => e.Manifest.Name, StringComparer.OrdinalIgnoreCase))
         {
             var folder = manifest.Id.Split('/').Last();
-            sb.AppendLine($"| [{Escape(manifest.Name)}]({folder}/) | {Escape(manifest.Author)} | {manifest.Version} | {total} | {manifest.Updated} |");
+            sb.AppendLine($"| {Thumbnail(folder, manifest)} | [{Escape(manifest.Name)}]({folder}/) | {Escape(manifest.Author)} | {manifest.Version} | {total} | {manifest.Updated} |");
         }
 
         return sb.ToString();
@@ -74,13 +74,20 @@ public static class ReadmeGenerator
 
         sb.AppendLine($"{byGame.Count} game(s), {entries.Count} item(s).");
         sb.AppendLine();
-        sb.AppendLine("| Game | Platform | Items | Downloads |");
-        sb.AppendLine("|---|---|---:|---:|");
+        sb.AppendLine("| | Game | Platform | Items | Downloads |");
+        sb.AppendLine("|---|---|---|---:|---:|");
         foreach (var group in byGame)
         {
             var first = group.First().Manifest;
             var gameName = first.Game?.Name ?? group.Key;
-            sb.AppendLine($"| [{Escape(gameName)}]({group.Key}/) | {Escape(first.Game?.Platform ?? "")} | {group.Count()} | {group.Sum(e => e.Total)} |");
+            // The game's image is the most downloaded item's that has one.
+            var pictured = group
+                .OrderByDescending(e => e.Total)
+                .ThenBy(e => e.Manifest.Name, StringComparer.OrdinalIgnoreCase)
+                .Select(e => e.Manifest)
+                .FirstOrDefault(m => m.Cover is not null || m.Preview is not null);
+            var thumbnail = pictured is null ? "" : Thumbnail($"{group.Key}/{pictured.Id.Split('/').Last()}", pictured);
+            sb.AppendLine($"| {thumbnail} | [{Escape(gameName)}]({group.Key}/) | {Escape(first.Game?.Platform ?? "")} | {group.Count()} | {group.Sum(e => e.Total)} |");
 
             var gameDir = Path.Combine(root, "game-data", group.Key);
             Directory.CreateDirectory(gameDir);
@@ -102,12 +109,12 @@ public static class ReadmeGenerator
             sb.AppendLine();
         }
 
-        sb.AppendLine("| Name | Author | Version | Customizes | Downloads | Updated |");
-        sb.AppendLine("|---|---|---|---|---:|---|");
+        sb.AppendLine("| | Name | Author | Version | Customizes | Downloads | Updated |");
+        sb.AppendLine("|---|---|---|---|---|---:|---|");
         foreach (var (manifest, total, _) in entries.OrderByDescending(e => e.Total).ThenBy(e => e.Manifest.Name, StringComparer.OrdinalIgnoreCase))
         {
             var folder = manifest.Id.Split('/').Last();
-            sb.AppendLine($"| [{Escape(manifest.Name)}]({folder}/) | {Escape(manifest.Author)} | {manifest.Version} | {Summarize(manifest)} | {total} | {manifest.Updated} |");
+            sb.AppendLine($"| {Thumbnail(folder, manifest)} | [{Escape(manifest.Name)}]({folder}/) | {Escape(manifest.Author)} | {manifest.Version} | {Summarize(manifest)} | {total} | {manifest.Updated} |");
         }
 
         return sb.ToString();
@@ -156,6 +163,18 @@ public static class ReadmeGenerator
         ItemKind.GameCustomData => "Per-game customizations: icon sets, categories, capstones, custom achievements, notes and ordering, one folder per game. Install from the Workshop in Playnite (which matches the game in your library), or download the `.pa` and import it from the game's Manage Achievements window.",
         _ => ""
     };
+
+    /// <summary>
+    /// A fixed-width image for a table cell: the cover when the item has one, else the preview,
+    /// else nothing. <paramref name="itemFolder"/> is the item folder relative to the listing.
+    /// </summary>
+    private static string Thumbnail(string itemFolder, Manifest manifest)
+    {
+        var image = manifest.Cover ?? manifest.Preview;
+        return image is null ? "" : $"<img src=\"{itemFolder}/{image}\" width=\"{ThumbnailWidth}\">";
+    }
+
+    private const int ThumbnailWidth = 120;
 
     private static string Escape(string text) => text.Replace("|", "\\|").Replace("\n", " ").Trim();
 }
