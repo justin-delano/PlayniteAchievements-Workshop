@@ -167,11 +167,17 @@ public static class IntakeCommand
             errors.Add($"At most {ManifestChecks.MaxTags} tags.");
         }
 
-        // Files: the first non-image attachment is the package, the first image is the preview;
-        // a package URL replaces the attachment for large files.
+        // Files: the first non-image attachment is the package; a package URL replaces it for
+        // large files. Images are told apart by their markdown alt text, as the Worker writes
+        // them: "preview" is the image the extension drew, "cover" the one the sharer chose. An
+        // image without either (a hand-filled form) is the cover, since only the extension
+        // draws previews.
         var attachments = form.Attachments(FilesField);
         var packageAttachment = attachments.FirstOrDefault(a => !a.IsImageLink && !LooksLikeImage(a.Name));
-        var previewAttachment = attachments.FirstOrDefault(a => a.IsImageLink || LooksLikeImage(a.Name));
+        var images = attachments.Where(a => a.IsImageLink || LooksLikeImage(a.Name)).ToList();
+        var previewAttachment = images.FirstOrDefault(a => IsAlt(a, "preview"));
+        var coverAttachment = images.FirstOrDefault(a => IsAlt(a, "cover"))
+                              ?? images.FirstOrDefault(a => !IsAlt(a, "preview"));
         var packageUrl = form.Get(PackageUrlField).Trim();
         var sourceUrl = packageAttachment?.Url ?? (packageUrl.Length > 0 ? packageUrl : null);
         if (sourceUrl is null)
@@ -279,34 +285,8 @@ public static class IntakeCommand
         var itemDir = Path.Combine(work, "item", id.Replace('/', Path.DirectorySeparatorChar));
         Directory.CreateDirectory(itemDir);
 
-        if (previewAttachment is not null)
-        {
-            var previewTemp = Path.Combine(downloadDir, "preview.bin");
-            await downloader.DownloadAsync(previewAttachment.Url, previewTemp);
-            var previewExtension = ZipGuard.ImageExtensionFromMagic(ZipGuard.ReadHead(previewTemp));
-            if (previewExtension is null)
-            {
-                errors.Add("The preview is not a PNG, JPEG, GIF or WebP image.");
-            }
-            else if (new FileInfo(previewTemp).Length > ZipGuard.MaxPreviewBytes)
-            {
-                errors.Add($"The preview is larger than {ZipGuard.MaxPreviewBytes / (1024 * 1024)} MB.");
-            }
-            else
-            {
-                manifest.Preview = "preview" + previewExtension;
-                File.Copy(previewTemp, Path.Combine(itemDir, manifest.Preview), overwrite: true);
-            }
-        }
-        else if (existing?.Preview is not null && existingFolder is not null)
-        {
-            var previous = Path.Combine(existingFolder.Path, existing.Preview);
-            if (File.Exists(previous))
-            {
-                manifest.Preview = existing.Preview;
-                File.Copy(previous, Path.Combine(itemDir, existing.Preview), overwrite: true);
-            }
-        }
+        manifest.Preview = await TakeImageAsync(downloader, previewAttachment, "preview", existing?.Preview, existingFolder, downloadDir, itemDir, errors);
+        manifest.Cover = await TakeImageAsync(downloader, coverAttachment, "cover", existing?.Cover, existingFolder, downloadDir, itemDir, errors);
 
         if (errors.Count > 0)
         {
@@ -318,7 +298,7 @@ public static class IntakeCommand
             : existing is not null && existingFolder is not null && File.Exists(Path.Combine(existingFolder.Path, "README.md"))
                 ? File.ReadAllText(Path.Combine(existingFolder.Path, "README.md"))
                 : $"# {name}\n\n{description}\n";
-        File.WriteAllText(Path.Combine(itemDir, "README.md"), readmeText.Replace("\r\n", "\n").TrimEnd() + "\n");
+        File.WriteAllText(Path.Combine(itemDir, "README.md"), ItemReadme.WithImages(readmeText, manifest));
         manifest.Save(Path.Combine(itemDir, "manifest.json"));
 
         var packageDir = Path.Combine(work, "package");
@@ -332,6 +312,60 @@ public static class IntakeCommand
         result["version"] = version;
         result["downloadedName"] = downloadedName;
         Console.Error.WriteLine($"Accepted {id} v{version} ({report.FormatKind} v{report.FormatVersion}, {manifest.Package.SizeBytes} bytes).");
+    }
+
+    private static bool IsAlt(Attachment attachment, string alt) =>
+        string.Equals(attachment.Name, alt, StringComparison.OrdinalIgnoreCase);
+
+    /// <summary>
+    /// Saves an attached image as <paramref name="role"/> plus its extension in the item folder
+    /// and returns the file name. Without an attachment, an update keeps the previous image.
+    /// </summary>
+    private static async Task<string?> TakeImageAsync(
+        Downloader downloader,
+        Attachment? attachment,
+        string role,
+        string? previousFile,
+        ItemFolder? existingFolder,
+        string downloadDir,
+        string itemDir,
+        JsonArray errors)
+    {
+        if (attachment is null)
+        {
+            if (previousFile is null || existingFolder is null)
+            {
+                return null;
+            }
+
+            var previous = Path.Combine(existingFolder.Path, previousFile);
+            if (!File.Exists(previous))
+            {
+                return null;
+            }
+
+            File.Copy(previous, Path.Combine(itemDir, previousFile), overwrite: true);
+            return previousFile;
+        }
+
+        var temp = Path.Combine(downloadDir, role + ".bin");
+        await downloader.DownloadAsync(attachment.Url, temp);
+        var extension = ZipGuard.ImageExtensionFromMagic(ZipGuard.ReadHead(temp));
+        if (extension is null)
+        {
+            errors.Add($"The {role} image is not a PNG, JPEG, GIF or WebP image.");
+            return null;
+        }
+
+        if (new FileInfo(temp).Length > ZipGuard.MaxPreviewBytes)
+        {
+            errors.Add($"The {role} image is larger than {ZipGuard.MaxPreviewBytes / (1024 * 1024)} MB.");
+            return null;
+        }
+
+        var file = role + extension;
+        File.Copy(temp, Path.Combine(itemDir, file), overwrite: true);
+        return file;
     }
 
     private static bool LooksLikeImage(string name)
