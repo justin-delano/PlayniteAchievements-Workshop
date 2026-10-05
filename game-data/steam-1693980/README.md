@@ -5,4 +5,4 @@ Platform: PC (Windows)
 
 | | Name | Author | Version | Customizes | Downloads | Updated |
 |---|---|---|---|---|---:|---|
-|  | [Dead Space TEST](dead-space-test/) | Synkro | 1.0.0 | 94 icons, 1 custom achievements, 1 categories, 1 capstones, 47 overrides, order | 8 | 2026-10-04 |
+| <img src="dead-space-test/preview.png" width="120"> | [Dead Space update TEST](dead-space-test/) | Synkro | 1.0.1 | 94 icons, 1 custom achievements, 1 categories, 1 capstones, 47 overrides, order | 8 | 2026-10-05 |

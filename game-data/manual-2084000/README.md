@@ -5,4 +5,4 @@ Platform: PC (Windows)
 
 | | Name | Author | Version | Customizes | Downloads | Updated |
 |---|---|---|---|---|---:|---|
-| <img src="shogun-showdown/preview.png" width="120"> | [Shogun Showdown](shogun-showdown/) | jdd | 1.0.0 | 1 custom achievements, 1 capstones, 3 overrides | 0 | 2026-10-05 |
+| <img src="shogun-showdown/cover.jpg" width="120"> | [Shogun Showdown](shogun-showdown/) | jdd | 1.0.1 | 1 custom achievements, 1 capstones, 3 overrides | 0 | 2026-10-05 |
