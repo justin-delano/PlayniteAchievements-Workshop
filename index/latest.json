@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-04T22:15:01Z",
-  "commit": "10f2ef060c729edd453128ae47224ed39238fbcc",
+  "generated": "2026-10-05T02:21:40Z",
+  "commit": "4f284aa88ed1aad2b5ab2a2e16fa625f08d846fd",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -40,14 +40,87 @@
       },
       "readme": "README.md",
       "downloads": {
-        "total": 1,
-        "current": 1
+        "total": 2,
+        "current": 2
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/notification-styles/test1/test1-1.0.0.panotif",
         "preview": null,
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/notification-styles/test1/README.md",
+        "cover": null,
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@4f284aa88ed1aad2b5ab2a2e16fa625f08d846fd/notification-styles/test1/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/notification-styles/test1"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/manual-2084000/shogun-showdown",
+      "kind": "GameCustomData",
+      "name": "Shogun Showdown",
+      "description": "Manual tracking setup",
+      "author": "jdd",
+      "ownerHash": "87e218caf5884b05ff2befd5f5b3fb591e691e445a46b8152438fa3ca414d4f6",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-05",
+      "updated": "2026-10-05",
+      "game": {
+        "name": "Shogun Showdown",
+        "platform": "PC (Windows)",
+        "keys": [
+          {
+            "providerKey": "Manual",
+            "providerPlatformKey": "Steam",
+            "providerGameId": 2084000,
+            "name": "Shogun Showdown",
+            "platform": "PC (Windows)"
+          },
+          {
+            "name": "Shogun Showdown",
+            "platform": "PC (Windows)"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 1,
+        "achievementOverrides": 3,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": true,
+        "imageFiles": 1
+      },
+      "package": {
+        "file": "shogun-showdown-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 1514,
+        "sha256": "ff6b48bdd74655e8d52065bbc6ab6d812bba39e42b85bc17b57f085ae328a382",
+        "release": {
+          "tag": "game-data/manual-2084000/shogun-showdown",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/manual-2084000/shogun-showdown/shogun-showdown-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "readme": "README.md",
+      "downloads": {
+        "total": 0,
+        "current": 0
+      },
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/manual-2084000/shogun-showdown/shogun-showdown-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@4f284aa88ed1aad2b5ab2a2e16fa625f08d846fd/game-data/manual-2084000/shogun-showdown/preview.png",
+        "cover": null,
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@4f284aa88ed1aad2b5ab2a2e16fa625f08d846fd/game-data/manual-2084000/shogun-showdown/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/manual-2084000/shogun-showdown"
       }
     },
     {
@@ -106,7 +179,7 @@
           "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/banjo-kazooie-recompiled-1.0.0.pa"
         }
       },
-      "preview": "preview.png",
+      "cover": "cover.png",
       "readme": "README.md",
       "downloads": {
         "total": 2,
@@ -114,8 +187,9 @@
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/banjo-kazooie-recompiled-1.0.0.pa",
-        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/preview.png",
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/README.md",
+        "preview": null,
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@4f284aa88ed1aad2b5ab2a2e16fa625f08d846fd/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@4f284aa88ed1aad2b5ab2a2e16fa625f08d846fd/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-banjo-kazooie/banjo-kazooie-recompiled"
       }
     },
@@ -184,7 +258,8 @@
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-3/sonic-the-hedgehog-3-a-i-r/sonic-the-hedgehog-3-a-i-r-1.0.0.pa",
         "preview": null,
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/game-data/name-sonic-the-hedgehog-3/sonic-the-hedgehog-3-a-i-r/README.md",
+        "cover": null,
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@4f284aa88ed1aad2b5ab2a2e16fa625f08d846fd/game-data/name-sonic-the-hedgehog-3/sonic-the-hedgehog-3-a-i-r/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-sonic-the-hedgehog-3/sonic-the-hedgehog-3-a-i-r"
       }
     },
@@ -249,13 +324,14 @@
       },
       "readme": "README.md",
       "downloads": {
-        "total": 6,
-        "current": 6
+        "total": 8,
+        "current": 8
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-1693980/dead-space-test/dead-space-test-1.0.0.pa",
         "preview": null,
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/game-data/steam-1693980/dead-space-test/README.md",
+        "cover": null,
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@4f284aa88ed1aad2b5ab2a2e16fa625f08d846fd/game-data/steam-1693980/dead-space-test/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-1693980/dead-space-test"
       }
     },
@@ -318,7 +394,7 @@
           "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-2420110/horizon-forbidden-west-test/horizon-forbidden-west-test-1.0.0.pa"
         }
       },
-      "preview": "preview.png",
+      "cover": "cover.png",
       "readme": "README.md",
       "downloads": {
         "total": 3,
@@ -326,8 +402,9 @@
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-2420110/horizon-forbidden-west-test/horizon-forbidden-west-test-1.0.0.pa",
-        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/game-data/steam-2420110/horizon-forbidden-west-test/preview.png",
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/game-data/steam-2420110/horizon-forbidden-west-test/README.md",
+        "preview": null,
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@4f284aa88ed1aad2b5ab2a2e16fa625f08d846fd/game-data/steam-2420110/horizon-forbidden-west-test/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@4f284aa88ed1aad2b5ab2a2e16fa625f08d846fd/game-data/steam-2420110/horizon-forbidden-west-test/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-2420110/horizon-forbidden-west-test"
       }
     },
@@ -394,7 +471,7 @@
           "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/atelier-sophie-the-alchemist-of-the-mysterious-book-test-1.0.0.pa"
         }
       },
-      "preview": "preview.png",
+      "cover": "cover.png",
       "readme": "README.md",
       "downloads": {
         "total": 3,
@@ -402,8 +479,9 @@
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/atelier-sophie-the-alchemist-of-the-mysterious-book-test-1.0.0.pa",
-        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/preview.png",
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@10f2ef060c729edd453128ae47224ed39238fbcc/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/README.md",
+        "preview": null,
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@4f284aa88ed1aad2b5ab2a2e16fa625f08d846fd/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@4f284aa88ed1aad2b5ab2a2e16fa625f08d846fd/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test"
       }
     }

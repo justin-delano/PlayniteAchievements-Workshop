@@ -3,6 +3,6 @@
 
 Platform: Computer
 
-| Name | Author | Version | Customizes | Downloads | Updated |
-|---|---|---|---|---:|---|
-| [Sonic the Hedgehog 3 (A.I.R.)](sonic-the-hedgehog-3-a-i-r/) | IggniFyre | 1.0.0 | 21 custom achievements, order | 1 | 2026-10-04 |
+| | Name | Author | Version | Customizes | Downloads | Updated |
+|---|---|---|---|---|---:|---|
+|  | [Sonic the Hedgehog 3 (A.I.R.)](sonic-the-hedgehog-3-a-i-r/) | IggniFyre | 1.0.0 | 21 custom achievements, order | 1 | 2026-10-04 |

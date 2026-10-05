@@ -3,12 +3,13 @@
 
 Per-game customizations: icon sets, categories, capstones, custom achievements, notes and ordering, one folder per game. Install from the Workshop in Playnite (which matches the game in your library), or download the `.pa` and import it from the game's Manage Achievements window.
 
-5 game(s), 5 item(s).
+6 game(s), 6 item(s).
 
-| Game | Platform | Items | Downloads |
-|---|---|---:|---:|
-| [Atelier Sophie: The Alchemist of the Mysterious Book](steam-527270/) | PC (Windows) | 1 | 3 |
-| [Banjo-Kazooie](name-banjo-kazooie/) | Computer | 1 | 2 |
-| [Dead Space](steam-1693980/) | PC (Windows) | 1 | 6 |
-| [Horizon Forbidden West](steam-2420110/) | PC (Windows) | 1 | 3 |
-| [Sonic the Hedgehog 3](name-sonic-the-hedgehog-3/) | Computer | 1 | 1 |
+| | Game | Platform | Items | Downloads |
+|---|---|---|---:|---:|
+| <img src="steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/cover.png" width="120"> | [Atelier Sophie: The Alchemist of the Mysterious Book](steam-527270/) | PC (Windows) | 1 | 3 |
+| <img src="name-banjo-kazooie/banjo-kazooie-recompiled/cover.png" width="120"> | [Banjo-Kazooie](name-banjo-kazooie/) | Computer | 1 | 2 |
+|  | [Dead Space](steam-1693980/) | PC (Windows) | 1 | 8 |
+| <img src="steam-2420110/horizon-forbidden-west-test/cover.png" width="120"> | [Horizon Forbidden West](steam-2420110/) | PC (Windows) | 1 | 3 |
+| <img src="manual-2084000/shogun-showdown/preview.png" width="120"> | [Shogun Showdown](manual-2084000/) | PC (Windows) | 1 | 0 |
+|  | [Sonic the Hedgehog 3](name-sonic-the-hedgehog-3/) | Computer | 1 | 1 |

@@ -5,6 +5,6 @@ Looks for the unlock notification: colors, layout, badges, backgrounds, and opti
 
 1 item(s), most downloaded first.
 
-| Name | Author | Version | Downloads | Updated |
-|---|---|---|---:|---|
-| [test1](test1/) | jdd | 1.0.0 | 1 | 2026-10-03 |
+| | Name | Author | Version | Downloads | Updated |
+|---|---|---|---|---:|---|
+|  | [test1](test1/) | jdd | 1.0.0 | 2 | 2026-10-03 |
