@@ -37,6 +37,7 @@ public static class BuildIndexCommand
             {
                 ["package"] = manifest.Package.Release.Url,
                 ["preview"] = manifest.Preview is null ? null : Cdn(repo, commit, $"{manifest.Id}/{manifest.Preview}"),
+                ["cover"] = manifest.Cover is null ? null : Cdn(repo, commit, $"{manifest.Id}/{manifest.Cover}"),
                 ["readme"] = Cdn(repo, commit, $"{manifest.Id}/README.md"),
                 ["folder"] = $"https://github.com/{repo}/tree/main/{manifest.Id}"
             };
