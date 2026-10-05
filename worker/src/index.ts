@@ -164,6 +164,7 @@ interface SubmissionRequest {
   submitterHash?: string;
   packageKey?: string;
   previewKey?: string;
+  coverKey?: string;
   pluginVersion?: string;
 }
 
@@ -200,10 +201,13 @@ async function createSubmission(request: Request, env: Env): Promise<Response> {
     const size = await signer.head(packageKey);
     if (size === null) throw new HttpError(404, "The package upload was not found; upload it again.");
     files.push(`[${fileNameOf(packageKey)}](${await signer.presignGet(packageKey, DOWNLOAD_URL_SECONDS)})`);
-    if (body.previewKey) {
-      const previewKey = requireKey(body.previewKey);
-      if ((await signer.head(previewKey)) !== null) {
-        files.push(`![preview](${await signer.presignGet(previewKey, DOWNLOAD_URL_SECONDS)})`);
+    // The alt text tells the intake parser which image is which.
+    for (const [alt, key] of [["preview", body.previewKey], ["cover", body.coverKey]] as const) {
+      if (key) {
+        const imageKey = requireKey(key);
+        if ((await signer.head(imageKey)) !== null) {
+          files.push(`![${alt}](${await signer.presignGet(imageKey, DOWNLOAD_URL_SECONDS)})`);
+        }
       }
     }
   }
