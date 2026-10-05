@@ -76,7 +76,8 @@
         }
       }
     },
-    "preview": { "type": ["string", "null"] },
+    "preview": { "type": ["string", "null"], "description": "Image file in the item folder drawn by the extension from the package." },
+    "cover": { "type": ["string", "null"], "description": "Optional image file in the item folder chosen by the sharer for listings." },
     "readme": { "type": "string" }
   }
 }
