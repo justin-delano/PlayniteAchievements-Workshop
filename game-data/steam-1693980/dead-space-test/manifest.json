@@ -2,19 +2,17 @@
   "schemaVersion": 1,
   "id": "game-data/steam-1693980/dead-space-test",
   "kind": "GameCustomData",
-  "name": "Dead Space TEST",
-  "description": "TEST",
+  "name": "Dead Space update TEST",
+  "description": "update test",
   "author": "Synkro",
   "ownerHash": "848ca668d311d7a737b301a73ed198352cb733aba5f9b036b65ec4a64ab87d41",
   "maintainers": [],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "CC-BY-4.0",
-  "tags": [
-    "test"
-  ],
+  "tags": [],
   "minPluginVersion": "4.1.0",
   "created": "2026-10-04",
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "game": {
     "name": "Dead Space",
     "platform": "PC (Windows)",
@@ -47,15 +45,16 @@
     "imageFiles": 49
   },
   "package": {
-    "file": "dead-space-test-1.0.0.pa",
+    "file": "dead-space-test-1.0.1.pa",
     "formatKind": "PlayniteAchievements.GameCustomData",
     "formatVersion": 8,
-    "sizeBytes": 11396338,
-    "sha256": "b5ffb75ba5b36ab4f7ec44799ecffe50bd289813ff419ad03ae652255af1a58b",
+    "sizeBytes": 11396479,
+    "sha256": "f612dad956a299e6eb5a10cddded4d670705900d9181d8e338ab082bde1c6907",
     "release": {
       "tag": "game-data/steam-1693980/dead-space-test",
-      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-1693980/dead-space-test/dead-space-test-1.0.0.pa"
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-1693980/dead-space-test/dead-space-test-1.0.1.pa"
     }
   },
+  "preview": "preview.png",
   "readme": "README.md"
 }
