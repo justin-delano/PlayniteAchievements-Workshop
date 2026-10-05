@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/manual-2084000/shogun-showdown",
+  "kind": "GameCustomData",
+  "name": "Shogun Showdown",
+  "description": "Manual tracking setup",
+  "author": "jdd",
+  "ownerHash": "87e218caf5884b05ff2befd5f5b3fb591e691e445a46b8152438fa3ca414d4f6",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-05",
+  "updated": "2026-10-05",
+  "game": {
+    "name": "Shogun Showdown",
+    "platform": "PC (Windows)",
+    "keys": [
+      {
+        "providerKey": "Manual",
+        "providerPlatformKey": "Steam",
+        "providerGameId": 2084000,
+        "name": "Shogun Showdown",
+        "platform": "PC (Windows)"
+      },
+      {
+        "name": "Shogun Showdown",
+        "platform": "PC (Windows)"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 1,
+    "achievementOverrides": 3,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": true,
+    "imageFiles": 1
+  },
+  "package": {
+    "file": "shogun-showdown-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 1514,
+    "sha256": "ff6b48bdd74655e8d52065bbc6ab6d812bba39e42b85bc17b57f085ae328a382",
+    "release": {
+      "tag": "game-data/manual-2084000/shogun-showdown",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/manual-2084000/shogun-showdown/shogun-showdown-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "readme": "README.md"
+}
