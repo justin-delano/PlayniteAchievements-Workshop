@@ -160,6 +160,11 @@ public static partial class ManifestChecks
             errors.Add("preview must be a bare file name.");
         }
 
+        if (manifest.Cover is not null && (manifest.Cover.Contains('/') || manifest.Cover.Contains('\\')))
+        {
+            errors.Add("cover must be a bare file name.");
+        }
+
         return errors;
     }
 
