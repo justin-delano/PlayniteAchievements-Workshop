@@ -43,16 +43,16 @@ public static class Kinds
 
     public static readonly string[] AllFolders =
     {
-        "colors", "notification-styles", "screenshot-frames", "showcase-pages", "sound-packs", "bundles", "game-data"
+        "colors", "notifications", "frames", "showcase-pages", "sounds", "bundles", "game-data"
     };
 
     public static string Folder(ItemKind kind) => kind switch
     {
         ItemKind.Colors => "colors",
-        ItemKind.NotificationStyle => "notification-styles",
-        ItemKind.ScreenshotFrame => "screenshot-frames",
+        ItemKind.NotificationStyle => "notifications",
+        ItemKind.ScreenshotFrame => "frames",
         ItemKind.ShowcasePage => "showcase-pages",
-        ItemKind.UnlockSounds => "sound-packs",
+        ItemKind.UnlockSounds => "sounds",
         ItemKind.Bundle => "bundles",
         ItemKind.GameCustomData => "game-data",
         _ => throw new ArgumentOutOfRangeException(nameof(kind))
@@ -61,10 +61,10 @@ public static class Kinds
     public static ItemKind? FromFolder(string folder) => folder switch
     {
         "colors" => ItemKind.Colors,
-        "notification-styles" => ItemKind.NotificationStyle,
-        "screenshot-frames" => ItemKind.ScreenshotFrame,
+        "notifications" => ItemKind.NotificationStyle,
+        "frames" => ItemKind.ScreenshotFrame,
         "showcase-pages" => ItemKind.ShowcasePage,
-        "sound-packs" => ItemKind.UnlockSounds,
+        "sounds" => ItemKind.UnlockSounds,
         "bundles" => ItemKind.Bundle,
         "game-data" => ItemKind.GameCustomData,
         _ => null
@@ -73,10 +73,10 @@ public static class Kinds
     public static string DisplayName(ItemKind kind) => kind switch
     {
         ItemKind.Colors => "Color sets",
-        ItemKind.NotificationStyle => "Notification styles",
-        ItemKind.ScreenshotFrame => "Screenshot frames",
+        ItemKind.NotificationStyle => "Notifications",
+        ItemKind.ScreenshotFrame => "Frames",
         ItemKind.ShowcasePage => "Showcase pages",
-        ItemKind.UnlockSounds => "Unlock sound packs",
+        ItemKind.UnlockSounds => "Sounds",
         ItemKind.Bundle => "Bundles",
         ItemKind.GameCustomData => "Per-game custom data",
         _ => kind.ToString()
@@ -86,10 +86,10 @@ public static class Kinds
     public static ItemKind? FromFormLabel(string? label) => label?.Trim() switch
     {
         "Colors" => ItemKind.Colors,
-        "Notification style" => ItemKind.NotificationStyle,
-        "Screenshot frame" => ItemKind.ScreenshotFrame,
+        "Notifications" => ItemKind.NotificationStyle,
+        "Frames" => ItemKind.ScreenshotFrame,
         "Showcase page" => ItemKind.ShowcasePage,
-        "Unlock sound pack" => ItemKind.UnlockSounds,
+        "Sounds" => ItemKind.UnlockSounds,
         "Bundle" => ItemKind.Bundle,
         "Per-game custom data" => ItemKind.GameCustomData,
         _ => null
@@ -119,7 +119,7 @@ public static class Kinds
     /// </summary>
     public static string MinPluginVersion(ItemKind kind, int formatVersion) => kind switch
     {
-        // Color sets, sound packs, bundles and game keys in .pa files arrived with the Workshop release.
+        // Color sets, sounds, bundles and game keys in .pa files arrived with the Workshop release.
         ItemKind.Colors or ItemKind.UnlockSounds or ItemKind.Bundle => "4.1.0",
         ItemKind.GameCustomData => "4.1.0",
         _ => "4.0.0"
