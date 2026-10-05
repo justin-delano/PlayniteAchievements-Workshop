@@ -14,7 +14,7 @@ Browse the folders below, or open the Workshop inside Playnite to search and ins
 | Bundles | [bundles/](bundles/) | `.pabundle` |
 | Per-game custom data | [game-data/](game-data/) | `.pa` |
 
-Each item is a folder with a `README.md` by its author, a `preview.png`, and a `manifest.json`.
+Each item is a folder with a `README.md` by its author, a preview image drawn by the extension, an optional cover image chosen by the author, and a `manifest.json`.
 The package file itself is attached to the item's GitHub release, linked from the manifest and from the item's README.
 
 ## Installing
