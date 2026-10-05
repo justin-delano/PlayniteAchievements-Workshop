@@ -10,7 +10,7 @@
     "id": {
       "type": "string",
       "description": "Repository path of the item folder, lowercase kebab-case segments.",
-      "pattern": "^(colors|notification-styles|screenshot-frames|showcase-pages|sound-packs|bundles)/[a-z0-9]+(-[a-z0-9]+)*$|^game-data/[a-z0-9]+(-[a-z0-9]+)*/[a-z0-9]+(-[a-z0-9]+)*$"
+      "pattern": "^(colors|notifications|frames|showcase-pages|sounds|bundles)/[a-z0-9]+(-[a-z0-9]+)*$|^game-data/[a-z0-9]+(-[a-z0-9]+)*/[a-z0-9]+(-[a-z0-9]+)*$"
     },
     "kind": { "enum": ["Colors", "NotificationStyle", "ScreenshotFrame", "ShowcasePage", "UnlockSounds", "Bundle", "GameCustomData"] },
     "name": { "type": "string", "minLength": 1, "maxLength": 80 },
