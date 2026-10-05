@@ -10,5 +10,5 @@ Submitted content (packages, previews and READMEs under the type folders) is lic
 Each item's `manifest.json` names its license in the `license` field.
 
 By submitting, the author confirms that every file in the package is their own work or is licensed for redistribution under the chosen license.
-This matters most for audio in sound packs and for artwork in icon sets and backgrounds.
+This matters most for audio in sounds and for artwork in icon sets and backgrounds.
 Items that infringe a third party's rights are removed when reported.
