@@ -29,7 +29,10 @@ public sealed class Manifest
     [JsonPropertyName("game")] public GameInfo? Game { get; set; }
     [JsonPropertyName("contents")] public JsonObject Contents { get; set; } = new();
     [JsonPropertyName("package")] public PackageInfo Package { get; set; } = new();
+    /// <summary>Image the extension draws from the package.</summary>
     [JsonPropertyName("preview")] public string? Preview { get; set; }
+    /// <summary>Optional image the sharer chose for listings, such as game banner art.</summary>
+    [JsonPropertyName("cover")] public string? Cover { get; set; }
     [JsonPropertyName("readme")] public string Readme { get; set; } = "README.md";
 
     public static readonly JsonSerializerOptions JsonOptions = new()
