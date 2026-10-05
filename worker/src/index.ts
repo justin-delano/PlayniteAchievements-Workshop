@@ -24,10 +24,10 @@ const SINGLE_PUT_MAX_BYTES = 64 * 1024 * 1024;
 
 const KINDS = new Set([
   "Colors",
-  "Notification style",
-  "Screenshot frame",
+  "Notifications",
+  "Frames",
   "Showcase page",
-  "Unlock sound pack",
+  "Sounds",
   "Bundle",
   "Per-game custom data",
 ]);
