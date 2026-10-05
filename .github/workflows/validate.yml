@@ -8,10 +8,10 @@ on:
   pull_request:
     paths:
       - 'colors/**'
-      - 'notification-styles/**'
-      - 'screenshot-frames/**'
+      - 'notifications/**'
+      - 'frames/**'
       - 'showcase-pages/**'
-      - 'sound-packs/**'
+      - 'sounds/**'
       - 'bundles/**'
       - 'game-data/**'
       - 'tools/**'
@@ -38,7 +38,7 @@ jobs:
         id: changed
         run: |
           git diff --name-only "origin/${{ github.base_ref }}"...HEAD \
-            | grep -E '^(colors|notification-styles|screenshot-frames|showcase-pages|sound-packs|bundles|game-data)/' \
+            | grep -E '^(colors|notifications|frames|showcase-pages|sounds|bundles|game-data)/' \
             | xargs -r -n1 dirname | sort -u > work-changed.txt || true
           echo "count=$(wc -l < work-changed.txt)" >> "$GITHUB_OUTPUT"
 
