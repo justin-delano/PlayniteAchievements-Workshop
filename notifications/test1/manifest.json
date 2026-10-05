@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "notification-styles/test1",
+  "id": "notifications/test1",
   "kind": "NotificationStyle",
   "name": "test1",
   "description": "testing",
@@ -28,8 +28,8 @@
     "sizeBytes": 5781731,
     "sha256": "2f42c49342595685835bf25c9fb22e2dfe554285f8b1068ff8494f0674d86208",
     "release": {
-      "tag": "notification-styles/test1",
-      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/notification-styles/test1/test1-1.0.0.panotif"
+      "tag": "notifications/test1",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/notifications/test1/test1-1.0.0.panotif"
     }
   },
   "readme": "README.md"
