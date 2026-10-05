@@ -11,7 +11,7 @@ using Workshop.Validator.Model;
 namespace Workshop.Validator.Commands;
 
 /// <summary>
-/// Checks item folders: manifest rules, README and preview, and that the release asset the
+/// Checks item folders: manifest rules, README, preview and cover, and that the release asset the
 /// manifest points at exists, hashes as declared, and yields the declared contents. On a pull
 /// request it also checks that whoever changed an existing item may do so.
 /// </summary>
@@ -114,34 +114,35 @@ public static class ValidateCommand
             errors.Add("README.md is missing or empty.");
         }
 
-        if (manifest.Preview is not null)
-        {
-            var preview = Path.Combine(item.Path, manifest.Preview);
-            if (!File.Exists(preview))
-            {
-                errors.Add($"preview '{manifest.Preview}' is missing.");
-            }
-            else if (!ZipGuard.IsImage(ZipGuard.ReadHead(preview)))
-            {
-                errors.Add($"preview '{manifest.Preview}' is not a PNG, JPEG, GIF or WebP image.");
-            }
-            else if (new FileInfo(preview).Length > ZipGuard.MaxPreviewBytes)
-            {
-                errors.Add($"preview '{manifest.Preview}' is larger than {ZipGuard.MaxPreviewBytes / (1024 * 1024)} MB.");
-            }
-        }
-
         var allowed = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "manifest.json", "README.md" };
-        if (manifest.Preview is not null)
+        foreach (var (field, file) in new[] { ("preview", manifest.Preview), ("cover", manifest.Cover) })
         {
-            allowed.Add(manifest.Preview);
+            if (file is null)
+            {
+                continue;
+            }
+
+            allowed.Add(file);
+            var path = Path.Combine(item.Path, file);
+            if (!File.Exists(path))
+            {
+                errors.Add($"{field} '{file}' is missing.");
+            }
+            else if (!ZipGuard.IsImage(ZipGuard.ReadHead(path)))
+            {
+                errors.Add($"{field} '{file}' is not a PNG, JPEG, GIF or WebP image.");
+            }
+            else if (new FileInfo(path).Length > ZipGuard.MaxPreviewBytes)
+            {
+                errors.Add($"{field} '{file}' is larger than {ZipGuard.MaxPreviewBytes / (1024 * 1024)} MB.");
+            }
         }
 
         foreach (var file in Directory.GetFiles(item.Path))
         {
             if (!allowed.Contains(Path.GetFileName(file)))
             {
-                errors.Add($"Unexpected file '{Path.GetFileName(file)}'. An item folder holds only manifest.json, README.md and the preview; the package lives on the release.");
+                errors.Add($"Unexpected file '{Path.GetFileName(file)}'. An item folder holds only manifest.json, README.md, the preview and the cover; the package lives on the release.");
             }
         }
 
