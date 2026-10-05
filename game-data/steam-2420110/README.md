@@ -5,4 +5,4 @@ Platform: PC (Windows)
 
 | | Name | Author | Version | Customizes | Downloads | Updated |
 |---|---|---|---|---|---:|---|
-| <img src="horizon-forbidden-west-test/cover.png" width="120"> | [Horizon Forbidden West TEST](horizon-forbidden-west-test/) | Synkro | 1.0.0 | 160 icons, 4 categories, 1 capstones, 80 overrides, order | 3 | 2026-10-04 |
+| <img src="horizon-forbidden-west-test/cover.png" width="120"> | [Horizon Forbidden West TEST](horizon-forbidden-west-test/) | Synkro | 1.0.0 | 160 icons, 4 categories, 1 capstones, 80 overrides, order | 4 | 2026-10-04 |
