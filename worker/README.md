@@ -32,10 +32,11 @@ Body:
   "readme": "# Better icons\n…",
   "submitterHash": "<sha256 hex of the extension's submitter key>",
   "packageKey": "<key from /v1/uploads>",
-  "previewKey": "<optional key of an uploaded preview image>"
+  "previewKey": "<optional key of the preview image the extension drew>",
+  "coverKey": "<optional key of the cover image the sharer chose>"
 }
 ```
-Returns `{ "issueNumber", "issueUrl" }`. For a removal, `packageKey` is omitted and `existingId` and `remove` are set.
+Returns `{ "issueNumber", "issueUrl" }`. The issue links the images as `![preview](…)` and `![cover](…)`, which is how intake tells them apart. For a removal, `packageKey` is omitted and `existingId` and `remove` are set.
 
 `GET /v1/submissions/{issueNumber}`
 Returns `{ "state": "validating" | "needs-changes" | "in-review" | "published" | "closed", "message", "pullRequestUrl", "issueUrl" }` read from the issue's labels and the intake workflow's last comment.
