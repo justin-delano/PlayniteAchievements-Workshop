@@ -1,16 +1,16 @@
 # PlayniteAchievements Workshop
 
-User-made customizations for the [PlayniteAchievements](https://github.com/justin-delano/PlayniteAchievements) extension: color sets, notification styles, screenshot frames, showcase pages, unlock sound packs, bundles of those four looks, and per-game custom achievement data such as icon sets, categories and capstones.
+User-made customizations for the [PlayniteAchievements](https://github.com/justin-delano/PlayniteAchievements) extension: color sets, notifications, frames, showcase pages, sounds, bundles of those four looks, and per-game custom achievement data such as icon sets, categories and capstones.
 
 Browse the folders below, or open the Workshop inside Playnite to search and install with one click.
 
 | Type | Folder | File |
 |---|---|---|
 | Color sets | [colors/](colors/) | `.pacolors` |
-| Notification styles | [notification-styles/](notification-styles/) | `.panotif` |
-| Screenshot frames | [screenshot-frames/](screenshot-frames/) | `.paframe` |
+| Notifications | [notifications/](notifications/) | `.panotif` |
+| Frames | [frames/](frames/) | `.paframe` |
 | Showcase pages | [showcase-pages/](showcase-pages/) | `.pashowcase` |
-| Unlock sound packs | [sound-packs/](sound-packs/) | `.pasounds` |
+| Sounds | [sounds/](sounds/) | `.pasounds` |
 | Bundles | [bundles/](bundles/) | `.pabundle` |
 | Per-game custom data | [game-data/](game-data/) | `.pa` |
 
@@ -26,7 +26,7 @@ Without the extension's Workshop view, download the package from the item's rele
 
 ## Sharing your own
 
-In Playnite, every Export menu has a **Share to Workshop** entry: on a color set, notification style, frame, sound pack, bundle, showcase page, saved preset, or a game's custom data.
+In Playnite, every Export menu has a **Share to Workshop** entry: on a color set, notification, frame, sounds, bundle, showcase page, saved preset, or a game's custom data.
 The extension strips your personal progress, uploads the package itself (no account, no size limit short of 1 GB), opens a submission here, and a workflow validates it, creates its release, and merges it.
 The item appears in the Workshop once the index rebuilds, usually within a couple of minutes.
 
