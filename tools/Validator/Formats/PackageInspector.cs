@@ -66,7 +66,7 @@ public static class PackageInspector
 
         if (expectedKind is not null && report.Kind is not null && report.Kind != expectedKind)
         {
-            // A toast-only style submitted under "Screenshot frame" (or the reverse) is a form
+            // A toast-only style submitted under "Frames" (or the reverse) is a form
             // mistake worth catching; everything else is a different format entirely.
             report.Error($"The form says '{Kinds.DisplayName(expectedKind.Value)}' but the package is a {Kinds.DisplayName(report.Kind.Value).ToLowerInvariant()} package.");
         }
@@ -104,7 +104,7 @@ public static class PackageInspector
         };
     }
 
-    // ---- Notification style / screenshot frame ------------------------------------------
+    // ---- Notifications / frames ------------------------------------------------------------
 
     private static void InspectNotificationStyle(IReadOnlyDictionary<string, ZipArchiveEntry> entries, PackageReport report)
     {
@@ -213,7 +213,7 @@ public static class PackageInspector
         var version = manifest["Version"]?.GetValue<int>() ?? 0;
         if (version > Kinds.UnlockSoundsMaxVersion)
         {
-            report.Error($"The sound pack is version {version}, newer than this validator understands ({Kinds.UnlockSoundsMaxVersion}).");
+            report.Error($"The sounds package is version {version}, newer than this validator understands ({Kinds.UnlockSoundsMaxVersion}).");
             return;
         }
 
@@ -224,7 +224,7 @@ public static class PackageInspector
             var tier = tiers.FirstOrDefault(t => string.Equals(t, pair.Key, StringComparison.OrdinalIgnoreCase));
             if (tier is null)
             {
-                report.Error($"The sound pack names an unknown tier '{pair.Key}'.");
+                report.Error($"The sounds package names an unknown tier '{pair.Key}'.");
                 continue;
             }
 
@@ -244,7 +244,7 @@ public static class PackageInspector
 
             if (!entries.TryGetValue(entryName!, out var entry))
             {
-                report.Error($"The sound pack is missing '{entryName}'.");
+                report.Error($"The sounds package is missing '{entryName}'.");
                 continue;
             }
 
@@ -259,7 +259,7 @@ public static class PackageInspector
 
         if (slots.Count == 0 && report.Ok)
         {
-            report.Error("The sound pack carries no sounds.");
+            report.Error("The sounds package carries no sounds.");
         }
 
         report.Kind = ItemKind.UnlockSounds;
