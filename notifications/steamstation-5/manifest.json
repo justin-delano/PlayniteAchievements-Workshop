@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "notification-styles/steamstation-5",
+  "id": "notifications/steamstation-5",
   "kind": "NotificationStyle",
   "name": "SteamStation 5",
   "description": "PlayStation inspired notifications for Steam (with animated logo)",
@@ -32,8 +32,8 @@
     "sizeBytes": 12301444,
     "sha256": "d33e0a452381bbc97d96744835ec71087bccac70196136f31e034f66434d1255",
     "release": {
-      "tag": "notification-styles/steamstation-5",
-      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/notification-styles/steamstation-5/steamstation-5-1.0.0.panotif"
+      "tag": "notifications/steamstation-5",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/notifications/steamstation-5/steamstation-5-1.0.0.panotif"
     }
   },
   "preview": "preview.png",
