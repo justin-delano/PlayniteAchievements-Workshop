@@ -145,6 +145,9 @@ jobs:
               gh issue comment "$ISSUE" --repo "$REPO" --body "Done: the package passed validation and was merged ($PR_URL). It appears in the Workshop once the index rebuilds, usually within a couple of minutes."
             fi
             gh issue edit "$ISSUE" --repo "$REPO" --remove-label in-review --remove-label needs-changes || true
+            # "closes #N" in the PR body does nothing when the workflow token merges, so the
+            # submission issue is closed here.
+            gh issue close "$ISSUE" --repo "$REPO" --reason completed || true
           else
             gh issue comment "$ISSUE" --repo "$REPO" --body "The package passed validation but could not be merged automatically; a maintainer will finish it in $PR_URL."
             gh issue edit "$ISSUE" --repo "$REPO" --add-label in-review --remove-label needs-changes || true
