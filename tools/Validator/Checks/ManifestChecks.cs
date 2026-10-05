@@ -188,7 +188,7 @@ public static partial class ManifestChecks
         }
     }
 
-    [GeneratedRegex(@"^(colors|notification-styles|screenshot-frames|showcase-pages|sound-packs|bundles)/[a-z0-9]+(-[a-z0-9]+)*$|^game-data/[a-z0-9]+(-[a-z0-9]+)*/[a-z0-9]+(-[a-z0-9]+)*$")]
+    [GeneratedRegex(@"^(colors|notifications|frames|showcase-pages|sounds|bundles)/[a-z0-9]+(-[a-z0-9]+)*$|^game-data/[a-z0-9]+(-[a-z0-9]+)*/[a-z0-9]+(-[a-z0-9]+)*$")]
     private static partial Regex IdPattern();
 
     [GeneratedRegex(@"^[A-Za-z0-9](?:[A-Za-z0-9]|-(?=[A-Za-z0-9])){0,38}$")]
