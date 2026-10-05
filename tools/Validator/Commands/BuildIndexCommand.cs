@@ -8,8 +8,8 @@ namespace Workshop.Validator.Commands;
 
 /// <summary>
 /// Writes index/v1.json (and latest.json) from every manifest, with download counts from the
-/// releases and URLs the extension can fetch, then regenerates the per-type and per-game
-/// README listings.
+/// releases and URLs the extension can fetch, refreshes the image block in each item README,
+/// then regenerates the per-type and per-game README listings.
 /// </summary>
 public static class BuildIndexCommand
 {
@@ -30,6 +30,7 @@ public static class BuildIndexCommand
             var total = releases.TotalDownloads(manifest.Package.Release.Tag);
             var current = releases.Asset(manifest.Package.Release.Tag, manifest.Package.File)?.DownloadCount ?? 0;
             entries.Add((manifest, total, current));
+            RefreshItemReadme(item.Path, manifest);
 
             var node = JsonSerializer.SerializeToNode(manifest, Manifest.JsonOptions)!.AsObject();
             node["downloads"] = new JsonObject { ["total"] = total, ["current"] = current };
@@ -62,6 +63,26 @@ public static class BuildIndexCommand
         ReadmeGenerator.WriteAll(root, repo, entries);
         Console.WriteLine($"{entries.Count} item(s) indexed.");
         return 0;
+    }
+
+    /// <summary>
+    /// Rewrites the image block at the top of an item's README from its manifest, so items keep
+    /// it in step without a resubmission. The file is written only when the text changes.
+    /// </summary>
+    private static void RefreshItemReadme(string itemPath, Manifest manifest)
+    {
+        var path = Path.Combine(itemPath, "README.md");
+        if (!File.Exists(path))
+        {
+            return;
+        }
+
+        var current = File.ReadAllText(path);
+        var updated = ItemReadme.WithImages(current, manifest);
+        if (!string.Equals(current, updated, StringComparison.Ordinal))
+        {
+            File.WriteAllText(path, updated);
+        }
     }
 
     /// <summary>jsDelivr URL pinned to the commit, so the CDN's copy never goes stale.</summary>
