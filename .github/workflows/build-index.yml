@@ -71,3 +71,19 @@ jobs:
           done
           echo "Could not push the regenerated index after 5 attempts." >&2
           exit 1
+
+      # Each storage release shows the item's cover, preview, description and folder link, so
+      # the release page reads like the item page. Images stay links rather than release assets,
+      # because download counts are summed over assets. Only releases whose notes differ are
+      # edited.
+      - name: Refresh release notes
+        run: |
+          node .github/scripts/release-notes.mjs index/v1.json | while IFS= read -r line; do
+            tag=$(node -e 'console.log(JSON.parse(process.argv[1]).tag)' "$line")
+            node -e 'process.stdout.write(JSON.parse(process.argv[1]).body)' "$line" > notes.md
+            current=$(gh release view "$tag" --repo "${{ github.repository }}" --json body -q .body 2>/dev/null) || { echo "No release for $tag"; continue; }
+            if [ "$current" = "$(cat notes.md)" ]; then
+              continue
+            fi
+            gh release edit "$tag" --repo "${{ github.repository }}" --notes-file notes.md > /dev/null && echo "Updated notes for $tag"
+          done
