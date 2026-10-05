@@ -1,4 +1,6 @@
 <!-- workshop:images -->
+![Cover](cover.jpg)
+
 ![Preview](preview.png)
 <!-- /workshop:images -->
 

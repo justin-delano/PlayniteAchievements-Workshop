@@ -3,11 +3,11 @@
   "id": "game-data/manual-2084000/shogun-showdown",
   "kind": "GameCustomData",
   "name": "Shogun Showdown",
-  "description": "Manual tracking setup",
+  "description": "Manual achievements testing",
   "author": "jdd",
   "ownerHash": "87e218caf5884b05ff2befd5f5b3fb591e691e445a46b8152438fa3ca414d4f6",
   "maintainers": [],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "CC-BY-4.0",
   "tags": [],
   "minPluginVersion": "4.1.0",
@@ -46,16 +46,17 @@
     "imageFiles": 1
   },
   "package": {
-    "file": "shogun-showdown-1.0.0.pa",
+    "file": "shogun-showdown-1.0.1.pa",
     "formatKind": "PlayniteAchievements.GameCustomData",
     "formatVersion": 8,
     "sizeBytes": 1514,
-    "sha256": "ff6b48bdd74655e8d52065bbc6ab6d812bba39e42b85bc17b57f085ae328a382",
+    "sha256": "ad9d4fb07693f5a5a60e431452f64a546e4eadbebadff1c83571133f397d4463",
     "release": {
       "tag": "game-data/manual-2084000/shogun-showdown",
-      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/manual-2084000/shogun-showdown/shogun-showdown-1.0.0.pa"
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/manual-2084000/shogun-showdown/shogun-showdown-1.0.1.pa"
     }
   },
   "preview": "preview.png",
+  "cover": "cover.jpg",
   "readme": "README.md"
 }
