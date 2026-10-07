@@ -62,7 +62,7 @@ jobs:
 
       - name: Stop on a closed issue
         if: steps.issue.outputs.state != 'open'
-        run: echo "Issue #$ISSUE is closed; nothing to do."
+        run: 'echo "Issue #$ISSUE is closed; nothing to do."'
 
       - name: Validate the package
         if: steps.issue.outputs.state == 'open'
