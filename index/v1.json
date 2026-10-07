@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-07T13:41:51Z",
-  "commit": "ab146363d6364dc4cc21b5b4d8b2de6ed1f0eba2",
+  "generated": "2026-10-07T14:25:20Z",
+  "commit": "0ad6081a8c81bc261d376a18722cc765f3872ade",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -45,14 +45,14 @@
       "cover": "cover.png",
       "readme": "README.md",
       "downloads": {
-        "total": 9,
-        "current": 0
+        "total": 11,
+        "current": 2
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/notifications/steamstation-5/steamstation-5-1.0.1.panotif",
-        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ab146363d6364dc4cc21b5b4d8b2de6ed1f0eba2/notifications/steamstation-5/preview.png",
-        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ab146363d6364dc4cc21b5b4d8b2de6ed1f0eba2/notifications/steamstation-5/cover.png",
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ab146363d6364dc4cc21b5b4d8b2de6ed1f0eba2/notifications/steamstation-5/README.md",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/notifications/steamstation-5/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/notifications/steamstation-5/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/notifications/steamstation-5/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/notifications/steamstation-5"
       }
     },
@@ -123,9 +123,9 @@
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/manual-2084000/shogun-showdown/shogun-showdown-1.0.1.pa",
-        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ab146363d6364dc4cc21b5b4d8b2de6ed1f0eba2/game-data/manual-2084000/shogun-showdown/preview.png",
-        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ab146363d6364dc4cc21b5b4d8b2de6ed1f0eba2/game-data/manual-2084000/shogun-showdown/cover.jpg",
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ab146363d6364dc4cc21b5b4d8b2de6ed1f0eba2/game-data/manual-2084000/shogun-showdown/README.md",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/manual-2084000/shogun-showdown/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/manual-2084000/shogun-showdown/cover.jpg",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/manual-2084000/shogun-showdown/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/manual-2084000/shogun-showdown"
       }
     },
@@ -194,8 +194,8 @@
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/banjo-kazooie-recompiled-1.0.0.pa",
         "preview": null,
-        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ab146363d6364dc4cc21b5b4d8b2de6ed1f0eba2/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/cover.png",
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ab146363d6364dc4cc21b5b4d8b2de6ed1f0eba2/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/README.md",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-banjo-kazooie/banjo-kazooie-recompiled"
       }
     },
@@ -265,8 +265,89 @@
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-3/sonic-the-hedgehog-3-a-i-r/sonic-the-hedgehog-3-a-i-r-1.0.0.pa",
         "preview": null,
         "cover": null,
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ab146363d6364dc4cc21b5b4d8b2de6ed1f0eba2/game-data/name-sonic-the-hedgehog-3/sonic-the-hedgehog-3-a-i-r/README.md",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/name-sonic-the-hedgehog-3/sonic-the-hedgehog-3-a-i-r/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-sonic-the-hedgehog-3/sonic-the-hedgehog-3-a-i-r"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/retroachievements-2739/grand-theft-auto-vice-city-categories",
+      "kind": "GameCustomData",
+      "name": "Grand Theft Auto - Vice City categories!",
+      "description": "Categories for EVERYTHING! Only the 100% (Capstone) achievement is not categorized - still in Base!",
+      "author": "EazyCheeze1978",
+      "ownerHash": "6f0ce6cd3794a5fb1e3d7b5afcab3ccdb77655e755e885143f6439364e5f699d",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "ps2",
+        "emulation",
+        "vice-city",
+        "gta",
+        "completionist",
+        "sandbox",
+        "crime",
+        "categories"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-07",
+      "updated": "2026-10-07",
+      "game": {
+        "name": "Grand Theft Auto - Vice City",
+        "platform": "Sony PlayStation 2",
+        "keys": [
+          {
+            "providerKey": "RetroAchievements",
+            "providerGameId": 2739,
+            "name": "Grand Theft Auto - Vice City",
+            "platform": "Sony PlayStation 2"
+          },
+          {
+            "name": "Grand Theft Auto - Vice City",
+            "platform": "Sony PlayStation 2"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 0,
+        "achievementOverrides": 125,
+        "categoryAssignments": 250,
+        "categories": 35,
+        "categoryImages": 14,
+        "capstones": 2,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 14
+      },
+      "package": {
+        "file": "grand-theft-auto-vice-city-categories-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 1411931,
+        "sha256": "dfc545ffa0074c46a66c08fe8b5ebaee385466b8301ab9fba6e26e6634e0dc4f",
+        "release": {
+          "tag": "game-data/retroachievements-2739/grand-theft-auto-vice-city-categories",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/retroachievements-2739/grand-theft-auto-vice-city-categories/grand-theft-auto-vice-city-categories-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.jpg",
+      "readme": "README.md",
+      "downloads": {
+        "total": 0,
+        "current": 0
+      },
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/retroachievements-2739/grand-theft-auto-vice-city-categories/grand-theft-auto-vice-city-categories-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/retroachievements-2739/grand-theft-auto-vice-city-categories/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/retroachievements-2739/grand-theft-auto-vice-city-categories/cover.jpg",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/retroachievements-2739/grand-theft-auto-vice-city-categories/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/retroachievements-2739/grand-theft-auto-vice-city-categories"
       }
     },
     {
@@ -334,9 +415,9 @@
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-1693980/dead-space-test/dead-space-test-1.0.1.pa",
-        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ab146363d6364dc4cc21b5b4d8b2de6ed1f0eba2/game-data/steam-1693980/dead-space-test/preview.png",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/steam-1693980/dead-space-test/preview.png",
         "cover": null,
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ab146363d6364dc4cc21b5b4d8b2de6ed1f0eba2/game-data/steam-1693980/dead-space-test/README.md",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/steam-1693980/dead-space-test/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-1693980/dead-space-test"
       }
     },
@@ -408,8 +489,8 @@
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-2420110/horizon-forbidden-west-test/horizon-forbidden-west-test-1.0.0.pa",
         "preview": null,
-        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ab146363d6364dc4cc21b5b4d8b2de6ed1f0eba2/game-data/steam-2420110/horizon-forbidden-west-test/cover.png",
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ab146363d6364dc4cc21b5b4d8b2de6ed1f0eba2/game-data/steam-2420110/horizon-forbidden-west-test/README.md",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/steam-2420110/horizon-forbidden-west-test/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/steam-2420110/horizon-forbidden-west-test/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-2420110/horizon-forbidden-west-test"
       }
     },
@@ -485,8 +566,8 @@
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/atelier-sophie-the-alchemist-of-the-mysterious-book-test-1.0.0.pa",
         "preview": null,
-        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ab146363d6364dc4cc21b5b4d8b2de6ed1f0eba2/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/cover.png",
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ab146363d6364dc4cc21b5b4d8b2de6ed1f0eba2/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/README.md",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test"
       }
     }
