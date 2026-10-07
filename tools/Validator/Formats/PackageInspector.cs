@@ -585,7 +585,7 @@ public static class PackageInspector
         {
             var name = pair.Key;
             var isUnderFolder = name.StartsWith(folder + "/", StringComparison.OrdinalIgnoreCase);
-            if (!isUnderFolder && !(allowAnyFolder && ZipGuard.ImageExtensionFromMagic(ZipGuard.ReadHead(pair.Value)) is not null))
+            if (!isUnderFolder && !(allowAnyFolder && ZipGuard.PackageImageExtensionFromMagic(ZipGuard.ReadHead(pair.Value, ZipGuard.PackageImageHeadBytes)) is not null))
             {
                 continue;
             }
@@ -596,9 +596,9 @@ public static class PackageInspector
                 continue;
             }
 
-            if (ZipGuard.ImageExtensionFromMagic(ZipGuard.ReadHead(pair.Value)) is null)
+            if (ZipGuard.PackageImageExtensionFromMagic(ZipGuard.ReadHead(pair.Value, ZipGuard.PackageImageHeadBytes)) is null)
             {
-                report.Error($"'{name}' is not a PNG, JPEG, GIF or WebP image.");
+                report.Error($"'{name}' is not a PNG, JPEG, GIF, WebP or WebM image.");
                 continue;
             }
 
