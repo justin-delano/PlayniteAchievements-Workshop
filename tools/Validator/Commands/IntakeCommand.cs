@@ -12,7 +12,7 @@ namespace Workshop.Validator.Commands;
 /// <summary>
 /// Turns a submission issue into a validated item folder and a package ready for upload.
 /// Writes <c>work/result.json</c> for the workflow in every case: errors go back to the issue
-/// as a comment, success continues to the release upload and the pull request.
+/// as a comment, success continues to the release upload and the commit to main.
 /// </summary>
 public static class IntakeCommand
 {
