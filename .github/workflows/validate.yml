@@ -22,6 +22,8 @@ permissions:
 
 jobs:
   validate:
+    # Intake opens its pull requests as the bot after validating them itself.
+    if: github.event.pull_request.user.login != 'github-actions[bot]'
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
