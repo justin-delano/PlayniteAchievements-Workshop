@@ -1,8 +1,7 @@
 name: Intake submission
 
-# Turns a submission issue into a reviewed pull request: fetches the package, validates it,
-# uploads it as the item's release asset, writes the item folder, and opens the PR.
-# Validation runs here because a PR opened with GITHUB_TOKEN does not trigger other workflows.
+# Turns a submission issue into a commit on main: fetches the package, validates it, uploads it
+# as the item's release asset, and commits the item folder. Validation here is the review.
 # A submission is an issue carrying the "submission" label or a "[Submission]" title; the Worker
 # opens issues with a token that cannot always set labels, so the title is the fallback and this
 # workflow applies the label itself. Maintainers can re-run intake for any issue by dispatching
@@ -21,7 +20,6 @@ on:
 permissions:
   contents: write
   issues: write
-  pull-requests: write
   actions: write
 
 concurrency:
@@ -109,46 +107,55 @@ jobs:
           dotnet run --project tools/Validator -c Release -- finalize \
             --item "work/item/${{ steps.intake.outputs.id }}" --asset-url "$ASSET_URL"
 
-      - name: Open or update the pull request
+      - name: Commit the item to main
         if: steps.issue.outputs.state == 'open' && steps.intake.outputs.ok == 'true'
         run: |
           ID="${{ steps.intake.outputs.id }}"
-          BRANCH="submission/$ISSUE"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -B "$BRANCH" origin/main
           if [ "${{ steps.intake.outputs.remove }}" = "true" ]; then
-            git rm -r --quiet "$ID"
             TITLE="Remove ${{ steps.intake.outputs.name }} ($ID)"
           else
-            rm -rf "$ID"
-            mkdir -p "$(dirname "$ID")"
-            cp -r "work/item/$ID" "$ID"
-            git add "$ID"
             TITLE="${{ steps.intake.outputs.name }} ($ID)"
           fi
-          git commit -q -m "$TITLE" -m "Submitted in #$ISSUE" || true
-          git push -f origin "$BRANCH"
-          if ! gh pr view "$BRANCH" --repo "$REPO" >/dev/null 2>&1; then
-            gh pr create --repo "$REPO" --base main --head "$BRANCH" --title "$TITLE" \
-              --body "closes #$ISSUE"$'\n\n'"Submitted through #$ISSUE. Validated by the intake workflow and merged automatically; revert this pull request to take the item down." \
-              --label submission
-          fi
-          PR_URL=$(gh pr view "$BRANCH" --repo "$REPO" --json url --jq .url)
-          # Validation is the review: merge straight away and rebuild the index. A merge made
-          # with the workflow token does not trigger the push workflow, so dispatch it here.
-          if gh pr merge "$BRANCH" --repo "$REPO" --merge --delete-branch; then
-            gh workflow run build-index.yml --repo "$REPO" --ref main || true
+          # Validation is the review, so the item goes straight to main; reverting the commit
+          # takes it down. Another submission may land meanwhile: rebuild the commit on the new
+          # main and push again.
+          pushed=false
+          for attempt in 1 2 3 4 5; do
+            git fetch -q origin main
+            git checkout -q -B intake-commit origin/main
             if [ "${{ steps.intake.outputs.remove }}" = "true" ]; then
-              gh issue comment "$ISSUE" --repo "$REPO" --body "Done: the item was removed ($PR_URL). It disappears from the Workshop once the index rebuilds, usually within a couple of minutes."
+              git rm -r --quiet --ignore-unmatch "$ID"
             else
-              gh issue comment "$ISSUE" --repo "$REPO" --body "Done: the package passed validation and was merged ($PR_URL). It appears in the Workshop once the index rebuilds, usually within a couple of minutes."
+              rm -rf "$ID"
+              mkdir -p "$(dirname "$ID")"
+              cp -r "work/item/$ID" "$ID"
+              git add "$ID"
             fi
-            gh issue edit "$ISSUE" --repo "$REPO" --remove-label in-review --remove-label needs-changes || true
-            # "closes #N" in the PR body does nothing when the workflow token merges, so the
-            # submission issue is closed here.
-            gh issue close "$ISSUE" --repo "$REPO" --reason completed || true
-          else
-            gh issue comment "$ISSUE" --repo "$REPO" --body "The package passed validation but could not be merged automatically; a maintainer will finish it in $PR_URL."
+            if git diff --cached --quiet; then
+              pushed=true
+              break
+            fi
+            git commit -q -m "$TITLE" -m "Submitted in #$ISSUE"
+            if git push -q origin HEAD:main; then
+              pushed=true
+              break
+            fi
+            sleep $((attempt * 3))
+          done
+          if [ "$pushed" != "true" ]; then
+            gh issue comment "$ISSUE" --repo "$REPO" --body "The package passed validation but could not be committed automatically; a maintainer will finish it."
             gh issue edit "$ISSUE" --repo "$REPO" --add-label in-review --remove-label needs-changes || true
+            exit 1
           fi
+          COMMIT_URL="https://github.com/$REPO/commit/$(git rev-parse HEAD)"
+          # A push made with the workflow token does not trigger the push workflow, so dispatch it here.
+          gh workflow run build-index.yml --repo "$REPO" --ref main || true
+          if [ "${{ steps.intake.outputs.remove }}" = "true" ]; then
+            gh issue comment "$ISSUE" --repo "$REPO" --body "Done: the item was removed ($COMMIT_URL). It disappears from the Workshop once the index rebuilds, usually within a couple of minutes."
+          else
+            gh issue comment "$ISSUE" --repo "$REPO" --body "Done: the package passed validation and was committed ($COMMIT_URL). It appears in the Workshop once the index rebuilds, usually within a couple of minutes."
+          fi
+          gh issue edit "$ISSUE" --repo "$REPO" --remove-label in-review --remove-label needs-changes || true
+          gh issue close "$ISSUE" --repo "$REPO" --reason completed || true
