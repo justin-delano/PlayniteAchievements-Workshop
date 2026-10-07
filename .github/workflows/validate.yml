@@ -2,7 +2,7 @@ name: Validate items
 
 # Checks every item folder a pull request touches: manifest schema and version, README and
 # preview present, computed contents and hash matching the release asset, author on updates.
-# Intake-created PRs were already validated; this covers hand-made PRs and edits to them.
+# Intake commits submissions straight to main after validating them; this covers hand-made PRs.
 
 on:
   pull_request:
@@ -22,8 +22,6 @@ permissions:
 
 jobs:
   validate:
-    # Intake opens its pull requests as the bot after validating them itself.
-    if: github.event.pull_request.user.login != 'github-actions[bot]'
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
