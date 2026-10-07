@@ -22,8 +22,16 @@ jobs:
 
       - name: Compare with the extension's dev branch
         run: |
-          curl -fsSL -o upstream.cs \
-            https://raw.githubusercontent.com/justin-delano/PlayniteAchievements/dev/source/Services/UI/XamlTemplateSanitizer.cs
+          status=$(curl -sSL -o upstream.cs -w '%{http_code}' \
+            https://raw.githubusercontent.com/justin-delano/PlayniteAchievements/dev/source/Services/UI/XamlTemplateSanitizer.cs)
+          if [ "$status" = "404" ]; then
+            echo "::notice::The extension's dev branch has no XamlTemplateSanitizer.cs yet; nothing to compare."
+            exit 0
+          fi
+          if [ "$status" != "200" ]; then
+            echo "Fetching the extension's copy failed with HTTP $status."
+            exit 1
+          fi
           # Line endings differ between the repositories; compare content only.
           if ! diff <(tr -d '\r' < upstream.cs) <(tr -d '\r' < tools/Validator/XamlTemplateSanitizer.cs) > drift.txt; then
             echo "tools/Validator/XamlTemplateSanitizer.cs differs from the extension's copy:"
