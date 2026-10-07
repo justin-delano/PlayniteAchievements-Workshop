@@ -179,6 +179,27 @@ public static class ZipGuard
 
     public static bool IsImage(byte[] head) => ImageExtensionFromMagic(head) is not null;
 
+    /// <summary>Bytes to read for <see cref="PackageImageExtensionFromMagic"/>: the WebM DocType sits past the first 16.</summary>
+    public const int PackageImageHeadBytes = 64;
+
+    /// <summary>A WebM file: an EBML header whose DocType is "webm".</summary>
+    public static bool IsWebm(byte[] head)
+    {
+        if (head.Length < 4 || head[0] != 0x1A || head[1] != 0x45 || head[2] != 0xDF || head[3] != 0xA3)
+        {
+            return false;
+        }
+
+        return System.Text.Encoding.ASCII.GetString(head).Contains("webm", StringComparison.Ordinal);
+    }
+
+    /// <summary>
+    /// Images a package may carry for the extension to show: the still formats plus animated WebM.
+    /// Covers and previews stay still images, since GitHub pages and release notes show those.
+    /// </summary>
+    public static string? PackageImageExtensionFromMagic(byte[] head) =>
+        ImageExtensionFromMagic(head) ?? (IsWebm(head) ? ".webm" : null);
+
     public static bool IsAudio(byte[] head, string extension)
     {
         switch (extension.ToLowerInvariant())
