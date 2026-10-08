@@ -180,7 +180,11 @@ public static class IntakeCommand
                               ?? images.FirstOrDefault(a => !IsAlt(a, "preview"));
         var packageUrl = form.Get(PackageUrlField).Trim();
         var sourceUrl = packageAttachment?.Url ?? (packageUrl.Length > 0 ? packageUrl : null);
-        if (sourceUrl is null)
+
+        // An update without a package changes only the item's details: the package, its
+        // version and everything read from it stay as published, so installs see no update.
+        var metadataOnly = sourceUrl is null && existing is not null;
+        if (sourceUrl is null && existing is null)
         {
             errors.Add("Attach the package file or fill in the package URL.");
         }
@@ -193,20 +197,28 @@ public static class IntakeCommand
         var downloadDir = Path.Combine(work, "download");
         using var downloader = new Downloader(Environment.GetEnvironmentVariable("GH_TOKEN") ?? Environment.GetEnvironmentVariable("GITHUB_TOKEN"));
 
-        var downloadedName = packageAttachment?.Name ?? Path.GetFileName(new Uri(sourceUrl!).AbsolutePath);
-        var packagePath = Path.Combine(downloadDir, "package.bin");
-        await downloader.DownloadAsync(sourceUrl!, packagePath);
-
-        var report = PackageInspector.Inspect(packagePath, kind);
-        foreach (var error in report.Errors)
+        string? downloadedName = null;
+        string? packagePath = null;
+        PackageReport? report = null;
+        if (!metadataOnly)
         {
-            errors.Add(error);
+            downloadedName = packageAttachment?.Name ?? Path.GetFileName(new Uri(sourceUrl!).AbsolutePath);
+            packagePath = Path.Combine(downloadDir, "package.bin");
+            await downloader.DownloadAsync(sourceUrl!, packagePath);
+
+            report = PackageInspector.Inspect(packagePath, kind);
+            foreach (var error in report.Errors)
+            {
+                errors.Add(error);
+            }
+
+            if (errors.Count > 0 || report.Kind is null)
+            {
+                return;
+            }
         }
 
-        if (errors.Count > 0 || report.Kind is null)
-        {
-            return;
-        }
+        var itemKind = metadataOnly ? existing!.Kind : report!.Kind!.Value;
 
         // Identity and version.
         var slug = existing is not null ? existing.Id.Split('/').Last() : Slug.From(name);
@@ -215,13 +227,13 @@ public static class IntakeCommand
         {
             id = existing.Id;
         }
-        else if (report.Kind == ItemKind.GameCustomData)
+        else if (itemKind == ItemKind.GameCustomData)
         {
-            id = $"{Kinds.Folder(report.Kind.Value)}/{report.Game!.Keys[0].FolderKey()}/{slug}";
+            id = $"{Kinds.Folder(itemKind)}/{report!.Game!.Keys[0].FolderKey()}/{slug}";
         }
         else
         {
-            id = $"{Kinds.Folder(report.Kind.Value)}/{slug}";
+            id = $"{Kinds.Folder(itemKind)}/{slug}";
         }
 
         if (existing is null && Directory.Exists(Path.Combine(root, id.Replace('/', Path.DirectorySeparatorChar))))
@@ -229,10 +241,9 @@ public static class IntakeCommand
             throw new ValidationException($"An item with id `{id}` already exists. To update it, fill in the existing item id; otherwise choose a different name.");
         }
 
-        var version = existing is null ? "1.0.0" : BumpPatch(existing.Version);
+        var version = existing is null ? "1.0.0" : metadataOnly ? existing.Version : BumpPatch(existing.Version);
         var today = DateTime.UtcNow.ToString("yyyy-MM-dd");
-        var extension = CanonicalExtension(report);
-        var assetName = $"{slug}-{version}{extension}";
+        var assetName = metadataOnly ? "" : $"{slug}-{version}{CanonicalExtension(report!)}";
 
         // An issue the Worker opened on a Playnite user's behalf is authored by the bot account
         // and identifies the real submitter only by hash; a hand-filled form identifies them by
@@ -249,7 +260,7 @@ public static class IntakeCommand
         var manifest = new Manifest
         {
             Id = id,
-            Kind = report.Kind.Value,
+            Kind = itemKind,
             Name = name,
             Description = description,
             Author = author,
@@ -259,20 +270,22 @@ public static class IntakeCommand
             Version = version,
             License = license,
             Tags = tags,
-            MinPluginVersion = Kinds.MinPluginVersion(report.Kind.Value, report.FormatVersion),
+            MinPluginVersion = metadataOnly ? existing!.MinPluginVersion : Kinds.MinPluginVersion(itemKind, report!.FormatVersion),
             Created = existing?.Created ?? today,
             Updated = today,
-            Game = report.Game,
-            Contents = report.Contents,
-            Package = new PackageInfo
-            {
-                File = assetName,
-                FormatKind = report.FormatKind,
-                FormatVersion = report.FormatVersion,
-                SizeBytes = new FileInfo(packagePath).Length,
-                Sha256 = ZipGuard.Sha256Hex(packagePath),
-                Release = new ReleaseInfo { Tag = id, Url = "" }
-            }
+            Game = metadataOnly ? existing!.Game : report!.Game,
+            Contents = metadataOnly ? existing!.Contents : report!.Contents,
+            Package = metadataOnly
+                ? existing!.Package
+                : new PackageInfo
+                {
+                    File = assetName,
+                    FormatKind = report!.FormatKind,
+                    FormatVersion = report.FormatVersion,
+                    SizeBytes = new FileInfo(packagePath!).Length,
+                    Sha256 = ZipGuard.Sha256Hex(packagePath!),
+                    Release = new ReleaseInfo { Tag = id, Url = "" }
+                }
         };
 
         // The Worker-submitted bot issue carries the extension user's hash and no login; a
@@ -301,9 +314,12 @@ public static class IntakeCommand
         File.WriteAllText(Path.Combine(itemDir, "README.md"), ItemReadme.WithImages(readmeText, manifest));
         manifest.Save(Path.Combine(itemDir, "manifest.json"));
 
-        var packageDir = Path.Combine(work, "package");
-        Directory.CreateDirectory(packageDir);
-        File.Copy(packagePath, Path.Combine(packageDir, assetName), overwrite: true);
+        if (!metadataOnly)
+        {
+            var packageDir = Path.Combine(work, "package");
+            Directory.CreateDirectory(packageDir);
+            File.Copy(packagePath!, Path.Combine(packageDir, assetName), overwrite: true);
+        }
 
         result["id"] = id;
         result["tag"] = id;
@@ -311,7 +327,10 @@ public static class IntakeCommand
         result["assetName"] = assetName;
         result["version"] = version;
         result["downloadedName"] = downloadedName;
-        Console.Error.WriteLine($"Accepted {id} v{version} ({report.FormatKind} v{report.FormatVersion}, {manifest.Package.SizeBytes} bytes).");
+        result["metadataOnly"] = metadataOnly;
+        Console.Error.WriteLine(metadataOnly
+            ? $"Accepted details of {id} v{version}; package unchanged."
+            : $"Accepted {id} v{version} ({report!.FormatKind} v{report.FormatVersion}, {manifest.Package.SizeBytes} bytes).");
     }
 
     private static bool IsAlt(Attachment attachment, string alt) =>
