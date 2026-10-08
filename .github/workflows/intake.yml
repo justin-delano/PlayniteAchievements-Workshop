@@ -77,6 +77,7 @@ jobs:
           echo "tag=$(jq -r .tag work/result.json)" >> "$GITHUB_OUTPUT"
           echo "asset=$(jq -r .assetName work/result.json)" >> "$GITHUB_OUTPUT"
           echo "name=$(jq -r .name work/result.json)" >> "$GITHUB_OUTPUT"
+          echo "metadataOnly=$(jq -r '.metadataOnly // false' work/result.json)" >> "$GITHUB_OUTPUT"
 
       - name: Report validation errors
         if: steps.issue.outputs.state == 'open' && steps.intake.outputs.ok != 'true'
@@ -93,7 +94,7 @@ jobs:
           exit 0
 
       - name: Upload the package to the item's release
-        if: steps.issue.outputs.state == 'open' && steps.intake.outputs.ok == 'true' && steps.intake.outputs.remove != 'true'
+        if: steps.issue.outputs.state == 'open' && steps.intake.outputs.ok == 'true' && steps.intake.outputs.remove != 'true' && steps.intake.outputs.metadataOnly != 'true'
         run: |
           TAG="${{ steps.intake.outputs.tag }}"
           if ! gh release view "$TAG" --repo "$REPO" >/dev/null 2>&1; then
@@ -154,6 +155,8 @@ jobs:
           gh workflow run build-index.yml --repo "$REPO" --ref main || true
           if [ "${{ steps.intake.outputs.remove }}" = "true" ]; then
             gh issue comment "$ISSUE" --repo "$REPO" --body "Done: the item was removed ($COMMIT_URL). It disappears from the Workshop once the index rebuilds, usually within a couple of minutes."
+          elif [ "${{ steps.intake.outputs.metadataOnly }}" = "true" ]; then
+            gh issue comment "$ISSUE" --repo "$REPO" --body "Done: the item's details were updated and its package is unchanged ($COMMIT_URL). The Workshop shows them once the index rebuilds, usually within a couple of minutes."
           else
             gh issue comment "$ISSUE" --repo "$REPO" --body "Done: the package passed validation and was committed ($COMMIT_URL). It appears in the Workshop once the index rebuilds, usually within a couple of minutes."
           fi
