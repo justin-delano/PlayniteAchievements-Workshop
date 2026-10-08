@@ -21,6 +21,7 @@ public static class BuildIndexCommand
         var repo = args.Require("repo");
         var commit = args.Get("commit") ?? "0000000000000000000000000000000000000000";
         var releases = Releases.Load(args.Get("releases"));
+        var fileCommits = FileCommits.Load(root);
 
         var entries = new List<(Manifest Manifest, long Total, long Current)>();
         var items = new JsonArray();
@@ -37,9 +38,9 @@ public static class BuildIndexCommand
             node["urls"] = new JsonObject
             {
                 ["package"] = manifest.Package.Release.Url,
-                ["preview"] = manifest.Preview is null ? null : Cdn(repo, commit, $"{manifest.Id}/{manifest.Preview}"),
-                ["cover"] = manifest.Cover is null ? null : Cdn(repo, commit, $"{manifest.Id}/{manifest.Cover}"),
-                ["readme"] = Cdn(repo, commit, $"{manifest.Id}/README.md"),
+                ["preview"] = manifest.Preview is null ? null : Cdn(repo, fileCommits, commit, $"{manifest.Id}/{manifest.Preview}"),
+                ["cover"] = manifest.Cover is null ? null : Cdn(repo, fileCommits, commit, $"{manifest.Id}/{manifest.Cover}"),
+                ["readme"] = Cdn(repo, fileCommits, commit, $"{manifest.Id}/README.md"),
                 ["folder"] = $"https://github.com/{repo}/tree/main/{manifest.Id}"
             };
             items.Add(node);
@@ -85,7 +86,13 @@ public static class BuildIndexCommand
         }
     }
 
-    /// <summary>jsDelivr URL pinned to the commit, so the CDN's copy never goes stale.</summary>
-    private static string Cdn(string repo, string commit, string path) =>
-        $"https://cdn.jsdelivr.net/gh/{repo}@{commit}/{path}";
+    /// <summary>
+    /// jsDelivr URL pinned to the last commit that changed the file, so the CDN's copy never goes
+    /// stale and the URL stays the same across rebuilds until the file itself changes. A file with
+    /// no history yet (an uncommitted local run) falls back to the build commit. A README whose
+    /// image block this run rewrites keeps its previous commit until the next rebuild; the
+    /// extension strips that block, so the text it shows is unchanged.
+    /// </summary>
+    private static string Cdn(string repo, FileCommits fileCommits, string fallbackCommit, string path) =>
+        $"https://cdn.jsdelivr.net/gh/{repo}@{fileCommits.For(path, fallbackCommit)}/{path}";
 }
