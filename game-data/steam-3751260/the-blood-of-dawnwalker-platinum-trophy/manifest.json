@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy",
+  "kind": "GameCustomData",
+  "name": "The Blood of Dawnwalker - Platinum Trophy",
+  "description": "Adds a Platinum trophy (capstone)",
+  "author": "Luxas",
+  "ownerHash": "8a0b56d82c6786d91fd7a6b02188d94d9f8a98b551f342ff44bfc48df1d973af",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "steam",
+    "playstation"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-08",
+  "updated": "2026-10-08",
+  "game": {
+    "name": "The Blood of Dawnwalker",
+    "platform": "PC (Windows)",
+    "keys": [
+      {
+        "providerKey": "Steam",
+        "providerGameId": 3751260,
+        "name": "The Blood of Dawnwalker",
+        "platform": "PC (Windows)"
+      },
+      {
+        "name": "The Blood of Dawnwalker",
+        "platform": "PC (Windows)"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 1,
+    "achievementOverrides": 1,
+    "categoryAssignments": 2,
+    "categories": 1,
+    "categoryImages": 0,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": true,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 1
+  },
+  "package": {
+    "file": "the-blood-of-dawnwalker-platinum-trophy-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 244355,
+    "sha256": "b8812a02338a069f7ae5b2e76cd1ce2f84591987d70af43b09e7d7d492738516",
+    "release": {
+      "tag": "game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy/the-blood-of-dawnwalker-platinum-trophy-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.jpg",
+  "readme": "README.md"
+}
