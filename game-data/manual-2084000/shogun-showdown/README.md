@@ -6,4 +6,4 @@
 
 # Shogun Showdown
 
-Manual tracking setup
+Manual tracking setup, now updated
