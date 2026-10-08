@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-08T21:14:06Z",
-  "commit": "0a38a4b5e3c77b6b0bb0b85e852d8cb1de5eeb81",
+  "generated": "2026-10-08T21:15:41Z",
+  "commit": "2e8794e4a0f74f2a26c9568335847d764f644731",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -70,7 +70,7 @@
       "tags": [],
       "minPluginVersion": "4.1.0",
       "created": "2026-10-05",
-      "updated": "2026-10-05",
+      "updated": "2026-10-08",
       "game": {
         "name": "Shogun Showdown",
         "platform": "PC (Windows)",
@@ -125,7 +125,7 @@
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/manual-2084000/shogun-showdown/shogun-showdown-1.0.1.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@918240ff12733ed1f3f3fd6620671af00517fc71/game-data/manual-2084000/shogun-showdown/preview.png",
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@918240ff12733ed1f3f3fd6620671af00517fc71/game-data/manual-2084000/shogun-showdown/cover.jpg",
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@918240ff12733ed1f3f3fd6620671af00517fc71/game-data/manual-2084000/shogun-showdown/README.md",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@2e8794e4a0f74f2a26c9568335847d764f644731/game-data/manual-2084000/shogun-showdown/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/manual-2084000/shogun-showdown"
       }
     },
