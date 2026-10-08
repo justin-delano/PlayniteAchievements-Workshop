@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-08T23:29:56Z",
-  "commit": "989ceda221058032fc3c935563252af52938b520",
+  "generated": "2026-10-08T23:37:09Z",
+  "commit": "cbabcb1d204a4f62b8fb24dbb4239b3ab883dc14",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -712,6 +712,81 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@fb550f87551c6f8a724414a9e1d0b181074e2684/game-data/steam-3669870/control-resonant-platinum/cover.jpg",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@fb550f87551c6f8a724414a9e1d0b181074e2684/game-data/steam-3669870/control-resonant-platinum/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-3669870/control-resonant-platinum"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy",
+      "kind": "GameCustomData",
+      "name": "The Blood of Dawnwalker - Platinum Trophy",
+      "description": "Adds a Platinum trophy (capstone)",
+      "author": "Luxas",
+      "ownerHash": "8a0b56d82c6786d91fd7a6b02188d94d9f8a98b551f342ff44bfc48df1d973af",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "steam",
+        "playstation"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-08",
+      "updated": "2026-10-08",
+      "game": {
+        "name": "The Blood of Dawnwalker",
+        "platform": "PC (Windows)",
+        "keys": [
+          {
+            "providerKey": "Steam",
+            "providerGameId": 3751260,
+            "name": "The Blood of Dawnwalker",
+            "platform": "PC (Windows)"
+          },
+          {
+            "name": "The Blood of Dawnwalker",
+            "platform": "PC (Windows)"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 1,
+        "achievementOverrides": 1,
+        "categoryAssignments": 2,
+        "categories": 1,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": true,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 1
+      },
+      "package": {
+        "file": "the-blood-of-dawnwalker-platinum-trophy-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 244355,
+        "sha256": "b8812a02338a069f7ae5b2e76cd1ce2f84591987d70af43b09e7d7d492738516",
+        "release": {
+          "tag": "game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy/the-blood-of-dawnwalker-platinum-trophy-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.jpg",
+      "readme": "README.md",
+      "downloads": {
+        "total": 0,
+        "current": 0
+      },
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy/the-blood-of-dawnwalker-platinum-trophy-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@cbabcb1d204a4f62b8fb24dbb4239b3ab883dc14/game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@cbabcb1d204a4f62b8fb24dbb4239b3ab883dc14/game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy/cover.jpg",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@cbabcb1d204a4f62b8fb24dbb4239b3ab883dc14/game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy"
       }
     },
     {
