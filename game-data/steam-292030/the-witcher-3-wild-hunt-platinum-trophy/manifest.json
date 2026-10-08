@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/steam-292030/the-witcher-3-wild-hunt-platinum-trophy",
+  "kind": "GameCustomData",
+  "name": "The Witcher 3: Wild Hunt - Platinum Trophy",
+  "description": "Add a Platinum trophy to the game",
+  "author": "Luxas",
+  "ownerHash": "8a0b56d82c6786d91fd7a6b02188d94d9f8a98b551f342ff44bfc48df1d973af",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "steam",
+    "playstation"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-08",
+  "updated": "2026-10-08",
+  "game": {
+    "name": "The Witcher 3: Wild Hunt — Remastered",
+    "platform": "PC (Windows)",
+    "keys": [
+      {
+        "providerKey": "Steam",
+        "providerGameId": 292030,
+        "name": "The Witcher 3: Wild Hunt — Remastered",
+        "platform": "PC (Windows)"
+      },
+      {
+        "name": "The Witcher 3: Wild Hunt — Remastered",
+        "platform": "PC (Windows)"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 1,
+    "achievementOverrides": 1,
+    "categoryAssignments": 2,
+    "categories": 1,
+    "categoryImages": 0,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": true,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 1
+  },
+  "package": {
+    "file": "the-witcher-3-wild-hunt-platinum-trophy-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 26178,
+    "sha256": "599286cd1c624cc20bc55d47ec9c2d97ff546be4c7cdf6b5892e440736827c85",
+    "release": {
+      "tag": "game-data/steam-292030/the-witcher-3-wild-hunt-platinum-trophy",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-292030/the-witcher-3-wild-hunt-platinum-trophy/the-witcher-3-wild-hunt-platinum-trophy-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.jpg",
+  "readme": "README.md"
+}
