@@ -5,4 +5,4 @@ Platform: Sony PlayStation 2
 
 | | Name | Author | Version | Customizes | Downloads | Updated |
 |---|---|---|---|---|---:|---|
-| <img src="grand-theft-auto-vice-city-categories/cover.jpg" width="120"> | [Grand Theft Auto - Vice City categories!](grand-theft-auto-vice-city-categories/) | EazyCheeze1978 | 1.0.0 | 35 categories, 2 capstones, 125 overrides | 15 | 2026-10-07 |
+| <img src="grand-theft-auto-vice-city-categories/cover.jpg" width="120"> | [Grand Theft Auto - Vice City categories!](grand-theft-auto-vice-city-categories/) | EazyCheeze1978 | 1.0.0 | 35 categories, 2 capstones, 125 overrides | 15 | 2026-10-08 |
