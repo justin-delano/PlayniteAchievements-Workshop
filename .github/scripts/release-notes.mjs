@@ -1,6 +1,6 @@
 // Prints one JSON line per published item, {"tag": ..., "body": ...}, with the release notes
 // the item's storage release should carry: name, author and version, the description, the
-// cover and preview images (pinned to the index commit, as the index pins them), and a link
+// cover and preview images (pinned to each file's last commit, as the index pins them), and a link
 // to the item's folder. build-index.yml compares each body with the live release and edits
 // only the ones that differ.
 //
