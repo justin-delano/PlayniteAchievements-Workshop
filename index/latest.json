@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-08T22:46:14Z",
-  "commit": "0a16ddfc1ba03f3ec8fbad618afef983bccbd1f1",
+  "generated": "2026-10-08T23:24:03Z",
+  "commit": "fb550f87551c6f8a724414a9e1d0b181074e2684",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -45,8 +45,8 @@
       "cover": "cover.png",
       "readme": "README.md",
       "downloads": {
-        "total": 12,
-        "current": 3
+        "total": 13,
+        "current": 4
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/notifications/steamstation-5/steamstation-5-1.0.1.panotif",
@@ -562,6 +562,81 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@f5e220b92a17954b81463a4fd989ded4b5285702/game-data/steam-2420110/horizon-forbidden-west-test/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@53a240167aeff99b2818d8a557c23dca77454e83/game-data/steam-2420110/horizon-forbidden-west-test/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-2420110/horizon-forbidden-west-test"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/steam-3669870/control-resonant-platinum",
+      "kind": "GameCustomData",
+      "name": "CONTROL Resonant - Platinum",
+      "description": "Add a Platinum trophy to Control Resonant (identical to Playstation)",
+      "author": "Luxas",
+      "ownerHash": "8a0b56d82c6786d91fd7a6b02188d94d9f8a98b551f342ff44bfc48df1d973af",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "steam",
+        "playstation"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-08",
+      "updated": "2026-10-08",
+      "game": {
+        "name": "CONTROL Resonant",
+        "platform": "PC (Windows)",
+        "keys": [
+          {
+            "providerKey": "Steam",
+            "providerGameId": 3669870,
+            "name": "CONTROL Resonant",
+            "platform": "PC (Windows)"
+          },
+          {
+            "name": "CONTROL Resonant",
+            "platform": "PC (Windows)"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 1,
+        "achievementOverrides": 1,
+        "categoryAssignments": 2,
+        "categories": 1,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": true,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 1
+      },
+      "package": {
+        "file": "control-resonant-platinum-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 25408,
+        "sha256": "446462327d1085e2bdbd9e4d4836e07055300ec99efd8ea15fd5ce4370015aa7",
+        "release": {
+          "tag": "game-data/steam-3669870/control-resonant-platinum",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-3669870/control-resonant-platinum/control-resonant-platinum-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.jpg",
+      "readme": "README.md",
+      "downloads": {
+        "total": 0,
+        "current": 0
+      },
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-3669870/control-resonant-platinum/control-resonant-platinum-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@fb550f87551c6f8a724414a9e1d0b181074e2684/game-data/steam-3669870/control-resonant-platinum/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@fb550f87551c6f8a724414a9e1d0b181074e2684/game-data/steam-3669870/control-resonant-platinum/cover.jpg",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@fb550f87551c6f8a724414a9e1d0b181074e2684/game-data/steam-3669870/control-resonant-platinum/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-3669870/control-resonant-platinum"
       }
     },
     {
