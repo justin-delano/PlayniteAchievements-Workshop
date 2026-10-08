@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/steam-3669870/control-resonant-platinum",
+  "kind": "GameCustomData",
+  "name": "CONTROL Resonant - Platinum",
+  "description": "Add a Platinum trophy to Control Resonant (identical to Playstation)",
+  "author": "Luxas",
+  "ownerHash": "8a0b56d82c6786d91fd7a6b02188d94d9f8a98b551f342ff44bfc48df1d973af",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "steam",
+    "playstation"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-08",
+  "updated": "2026-10-08",
+  "game": {
+    "name": "CONTROL Resonant",
+    "platform": "PC (Windows)",
+    "keys": [
+      {
+        "providerKey": "Steam",
+        "providerGameId": 3669870,
+        "name": "CONTROL Resonant",
+        "platform": "PC (Windows)"
+      },
+      {
+        "name": "CONTROL Resonant",
+        "platform": "PC (Windows)"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 1,
+    "achievementOverrides": 1,
+    "categoryAssignments": 2,
+    "categories": 1,
+    "categoryImages": 0,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": true,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 1
+  },
+  "package": {
+    "file": "control-resonant-platinum-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 25408,
+    "sha256": "446462327d1085e2bdbd9e4d4836e07055300ec99efd8ea15fd5ce4370015aa7",
+    "release": {
+      "tag": "game-data/steam-3669870/control-resonant-platinum",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-3669870/control-resonant-platinum/control-resonant-platinum-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.jpg",
+  "readme": "README.md"
+}
