@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-08T23:37:09Z",
-  "commit": "cbabcb1d204a4f62b8fb24dbb4239b3ab883dc14",
+  "generated": "2026-10-09T10:29:26Z",
+  "commit": "50d725f785b07b7c45e416a1d8da19566eead4a9",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -45,8 +45,8 @@
       "cover": "cover.png",
       "readme": "README.md",
       "downloads": {
-        "total": 13,
-        "current": 4
+        "total": 14,
+        "current": 5
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/notifications/steamstation-5/steamstation-5-1.0.1.panotif",
@@ -628,8 +628,8 @@
       "cover": "cover.jpg",
       "readme": "README.md",
       "downloads": {
-        "total": 0,
-        "current": 0
+        "total": 1,
+        "current": 1
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-292030/the-witcher-3-wild-hunt-platinum-trophy/the-witcher-3-wild-hunt-platinum-trophy-1.0.0.pa",
