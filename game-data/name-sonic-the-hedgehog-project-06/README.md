@@ -5,4 +5,4 @@ Platform: Computer
 
 | | Name | Author | Version | Customizes | Downloads | Updated |
 |---|---|---|---|---|---:|---|
-| <img src="sonic-the-hedgehog-project-06/cover.png" width="120"> | [Sonic the Hedgehog: Project 06](sonic-the-hedgehog-project-06/) | IggniFyre | 1.0.0 | 8 custom achievements, 1 capstones | 1 | 2026-10-08 |
+| <img src="sonic-the-hedgehog-project-06/cover.png" width="120"> | [Sonic the Hedgehog: Project 06](sonic-the-hedgehog-project-06/) | IggniFyre | 1.0.0 | 8 custom achievements, 1 capstones | 2 | 2026-10-08 |

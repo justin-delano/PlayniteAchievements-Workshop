@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-09T10:29:26Z",
-  "commit": "50d725f785b07b7c45e416a1d8da19566eead4a9",
+  "generated": "2026-10-09T11:44:16Z",
+  "commit": "252246c92b02a4c759f108aff65825db5d5130d3",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -328,8 +328,8 @@
       "cover": "cover.png",
       "readme": "README.md",
       "downloads": {
-        "total": 1,
-        "current": 1
+        "total": 2,
+        "current": 2
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06-1.0.0.pa",
@@ -637,6 +637,83 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@989ceda221058032fc3c935563252af52938b520/game-data/steam-292030/the-witcher-3-wild-hunt-platinum-trophy/cover.jpg",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@989ceda221058032fc3c935563252af52938b520/game-data/steam-292030/the-witcher-3-wild-hunt-platinum-trophy/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-292030/the-witcher-3-wild-hunt-platinum-trophy"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/steam-2962810/galaxy-idle-clicker-categories",
+      "kind": "GameCustomData",
+      "name": "Galaxy Idle Clicker - Categories!",
+      "description": "Full sub-category sets for all 1600+ achievements - more may be added with future updates, will try to keep up :)",
+      "author": "EazyCheeze1978",
+      "ownerHash": "6f0ce6cd3794a5fb1e3d7b5afcab3ccdb77655e755e885143f6439364e5f699d",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "idler",
+        "clicker",
+        "space",
+        "incremental"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-09",
+      "updated": "2026-10-09",
+      "game": {
+        "name": "Galaxy Idle Clicker",
+        "platform": "PC (Windows)",
+        "keys": [
+          {
+            "providerKey": "Steam",
+            "providerGameId": 2962810,
+            "name": "Galaxy Idle Clicker",
+            "platform": "PC (Windows)"
+          },
+          {
+            "name": "Galaxy Idle Clicker",
+            "platform": "PC (Windows)"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 1,
+        "achievementOverrides": 1633,
+        "categoryAssignments": 3266,
+        "categories": 36,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 1
+      },
+      "package": {
+        "file": "galaxy-idle-clicker-categories-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 124570,
+        "sha256": "2182888d5644fc0b7f40b5ee3f0e6cf13ad4002ceb1228be680406c9d00318bf",
+        "release": {
+          "tag": "game-data/steam-2962810/galaxy-idle-clicker-categories",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-2962810/galaxy-idle-clicker-categories/galaxy-idle-clicker-categories-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.jpg",
+      "readme": "README.md",
+      "downloads": {
+        "total": 0,
+        "current": 0
+      },
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-2962810/galaxy-idle-clicker-categories/galaxy-idle-clicker-categories-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@252246c92b02a4c759f108aff65825db5d5130d3/game-data/steam-2962810/galaxy-idle-clicker-categories/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@252246c92b02a4c759f108aff65825db5d5130d3/game-data/steam-2962810/galaxy-idle-clicker-categories/cover.jpg",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@252246c92b02a4c759f108aff65825db5d5130d3/game-data/steam-2962810/galaxy-idle-clicker-categories/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-2962810/galaxy-idle-clicker-categories"
       }
     },
     {
