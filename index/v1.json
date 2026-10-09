@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-09T11:44:16Z",
-  "commit": "252246c92b02a4c759f108aff65825db5d5130d3",
+  "generated": "2026-10-09T17:59:42Z",
+  "commit": "c405182448e1d76028122c320bc01aff0cc61c83",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -274,20 +274,21 @@
       "id": "game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06",
       "kind": "GameCustomData",
       "name": "Sonic the Hedgehog: Project 06",
-      "description": "Custom/manual achievements for Sonic: Project 06, a fanmade remake of Sonic the Hedgehog (2006).\nMost achievement progress can be checked by viewing your rank result on the stage select screen.\nRenders used for achievement icons created by ChaosX, the creator of Project 06.",
+      "description": "Custom/manual achievements for Sonic: Project 06, a fanmade remake of Sonic the Hedgehog (2006). Most achievement progress can be checked by viewing your rank result on the stage select screen. Renders used for achievement icons created by ChaosX, the creator of Project 06.",
       "author": "IggniFyre",
       "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
       "maintainers": [],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "license": "CC-BY-4.0",
       "tags": [
         "sonic-the-hedgehog",
         "2006",
-        "project-06"
+        "project-06",
+        "p-06"
       ],
       "minPluginVersion": "4.1.0",
       "created": "2026-10-08",
-      "updated": "2026-10-08",
+      "updated": "2026-10-09",
       "game": {
         "name": "Sonic the Hedgehog: Project 06",
         "platform": "Computer",
@@ -314,14 +315,14 @@
         "imageFiles": 8
       },
       "package": {
-        "file": "sonic-the-hedgehog-project-06-1.0.0.pa",
+        "file": "sonic-the-hedgehog-project-06-1.0.1.pa",
         "formatKind": "PlayniteAchievements.GameCustomData",
         "formatVersion": 8,
         "sizeBytes": 657503,
-        "sha256": "34ac1c7fd8d950a24a5cbcb1953a2a9c87a8c01c39449fb948a2ab90885c538d",
+        "sha256": "a9e5322c336b97e75f2000ff23167ac39fcafa1bc6652c28692034cb3818e924",
         "release": {
           "tag": "game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06",
-          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06-1.0.0.pa"
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06-1.0.1.pa"
         }
       },
       "preview": "preview.png",
@@ -329,12 +330,12 @@
       "readme": "README.md",
       "downloads": {
         "total": 2,
-        "current": 2
+        "current": 0
       },
       "urls": {
-        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06-1.0.0.pa",
-        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@2fb45fbccee673a7ab85a151827825334676fc4e/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/preview.png",
-        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@2fb45fbccee673a7ab85a151827825334676fc4e/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/cover.png",
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06-1.0.1.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@c405182448e1d76028122c320bc01aff0cc61c83/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@c405182448e1d76028122c320bc01aff0cc61c83/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@2fb45fbccee673a7ab85a151827825334676fc4e/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06"
       }
