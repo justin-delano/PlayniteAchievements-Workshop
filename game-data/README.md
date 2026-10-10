@@ -3,7 +3,7 @@
 
 Per-game customizations: icon sets, categories, capstones, custom achievements, notes and ordering, one folder per game. Install from the Workshop in Playnite (which matches the game in your library), or download the `.pa` and import it from the game's Manage Achievements window.
 
-13 game(s), 13 item(s).
+14 game(s), 14 item(s).
 
 | | Game | Platform | Items | Downloads |
 |---|---|---|---:|---:|
@@ -16,6 +16,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="retroachievements-2739/grand-theft-auto-vice-city-categories/cover.jpg" width="120"> | [Grand Theft Auto - Vice City](retroachievements-2739/) | Sony PlayStation 2 | 1 | 15 |
 | <img src="steam-2420110/horizon-forbidden-west-test/cover.png" width="120"> | [Horizon Forbidden West](steam-2420110/) | PC (Windows) | 1 | 4 |
 | <img src="manual-2084000/shogun-showdown/cover.jpg" width="120"> | [Shogun Showdown](manual-2084000/) | PC (Windows) | 1 | 3 |
+| <img src="name-sonic-the-hedgehog/sonic-1-forever/cover.png" width="120"> | [Sonic the Hedgehog](name-sonic-the-hedgehog/) | Computer | 1 | 0 |
 |  | [Sonic the Hedgehog 3](name-sonic-the-hedgehog-3/) | Computer | 1 | 1 |
 | <img src="name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/cover.png" width="120"> | [Sonic the Hedgehog: Project 06](name-sonic-the-hedgehog-project-06/) | Computer | 1 | 2 |
 | <img src="steam-3751260/the-blood-of-dawnwalker-platinum-trophy/cover.jpg" width="120"> | [The Blood of Dawnwalker](steam-3751260/) | PC (Windows) | 1 | 1 |
