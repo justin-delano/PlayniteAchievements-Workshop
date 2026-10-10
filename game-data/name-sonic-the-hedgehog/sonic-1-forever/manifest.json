@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-sonic-the-hedgehog/sonic-1-forever",
+  "kind": "GameCustomData",
+  "name": "Sonic 1 Forever",
+  "description": "Manual PlayniteAchievements set for Sonic 1 Absolute, a fanmade recompiled native PC port of Sonic the Hedghehog released on Android with additional features.\nAll manual achievements and icons taken directly from Sonic 1 Forever's existing in-game achievements, with additional custom achievements for each playable character.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "sonic-1-forever",
+    "android",
+    "recompilation",
+    "sonic-the-hedgehog"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-10",
+  "updated": "2026-10-10",
+  "game": {
+    "name": "Sonic the Hedgehog",
+    "platform": "Computer",
+    "keys": [
+      {
+        "name": "Sonic the Hedgehog",
+        "platform": "Computer"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 23,
+    "achievementOverrides": 0,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 0,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 23
+  },
+  "package": {
+    "file": "sonic-1-forever-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 700376,
+    "sha256": "7ec9f998b0880ec1f32220100ab7aa4e42e362ed01229d7625316e61c2040911",
+    "release": {
+      "tag": "game-data/name-sonic-the-hedgehog/sonic-1-forever",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog/sonic-1-forever/sonic-1-forever-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}
