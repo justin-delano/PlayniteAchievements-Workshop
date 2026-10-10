@@ -1,5 +1,7 @@
 <!-- workshop:images -->
 ![Cover](cover.png)
+
+![Preview](preview.png)
 <!-- /workshop:images -->
 
 Achievements designed to be easily tracked, all progression can be checked through the in-game 'View Totals' screen.
