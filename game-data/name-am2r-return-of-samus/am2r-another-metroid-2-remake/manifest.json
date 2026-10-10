@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-am2r-return-of-samus/am2r-another-metroid-2-remake",
+  "kind": "GameCustomData",
+  "name": "AM2R: Another Metroid 2 Remake",
+  "description": "Custom/manual achievements for AM2R, a fanmade remake of Metroid II. Requires at least v1.4 of AM2R for the added game modes.\nMost achievement progress can be checked on the main menu through the Gallery and the stats listed on save files.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "am2r",
+    "metroid-ii",
+    "metroid-2"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-10",
+  "updated": "2026-10-10",
+  "game": {
+    "name": "AM2R: Return of Samus",
+    "platform": "Computer",
+    "keys": [
+      {
+        "name": "AM2R: Return of Samus",
+        "platform": "Computer"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 7,
+    "achievementOverrides": 0,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 7
+  },
+  "package": {
+    "file": "am2r-another-metroid-2-remake-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 433431,
+    "sha256": "3cd2241c8ff11144203507cd25850ce5e215f5476467b175e192f8203fbe5ac0",
+    "release": {
+      "tag": "game-data/name-am2r-return-of-samus/am2r-another-metroid-2-remake",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-am2r-return-of-samus/am2r-another-metroid-2-remake/am2r-another-metroid-2-remake-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}
