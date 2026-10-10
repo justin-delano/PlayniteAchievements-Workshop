@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-10T09:36:14Z",
-  "commit": "12c4a3916ac7620d9a388d29b228687ad1d898c3",
+  "generated": "2026-10-10T09:42:23Z",
+  "commit": "6867b30d7fc9492a14e72ea202d9fb35c08aa896",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -127,6 +127,76 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@918240ff12733ed1f3f3fd6620671af00517fc71/game-data/manual-2084000/shogun-showdown/cover.jpg",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@2e8794e4a0f74f2a26c9568335847d764f644731/game-data/manual-2084000/shogun-showdown/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/manual-2084000/shogun-showdown"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-am2r-return-of-samus/am2r-another-metroid-2-remake",
+      "kind": "GameCustomData",
+      "name": "AM2R: Another Metroid 2 Remake",
+      "description": "Custom/manual achievements for AM2R, a fanmade remake of Metroid II. Requires at least v1.4 of AM2R for the added game modes.\nMost achievement progress can be checked on the main menu through the Gallery and the stats listed on save files.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "am2r",
+        "metroid-ii",
+        "metroid-2"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-10",
+      "updated": "2026-10-10",
+      "game": {
+        "name": "AM2R: Return of Samus",
+        "platform": "Computer",
+        "keys": [
+          {
+            "name": "AM2R: Return of Samus",
+            "platform": "Computer"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 7,
+        "achievementOverrides": 0,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 7
+      },
+      "package": {
+        "file": "am2r-another-metroid-2-remake-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 433431,
+        "sha256": "3cd2241c8ff11144203507cd25850ce5e215f5476467b175e192f8203fbe5ac0",
+        "release": {
+          "tag": "game-data/name-am2r-return-of-samus/am2r-another-metroid-2-remake",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-am2r-return-of-samus/am2r-another-metroid-2-remake/am2r-another-metroid-2-remake-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "downloads": {
+        "total": 0,
+        "current": 0
+      },
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-am2r-return-of-samus/am2r-another-metroid-2-remake/am2r-another-metroid-2-remake-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@6867b30d7fc9492a14e72ea202d9fb35c08aa896/game-data/name-am2r-return-of-samus/am2r-another-metroid-2-remake/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@6867b30d7fc9492a14e72ea202d9fb35c08aa896/game-data/name-am2r-return-of-samus/am2r-another-metroid-2-remake/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@6867b30d7fc9492a14e72ea202d9fb35c08aa896/game-data/name-am2r-return-of-samus/am2r-another-metroid-2-remake/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-am2r-return-of-samus/am2r-another-metroid-2-remake"
       }
     },
     {

@@ -3,10 +3,11 @@
 
 Per-game customizations: icon sets, categories, capstones, custom achievements, notes and ordering, one folder per game. Install from the Workshop in Playnite (which matches the game in your library), or download the `.pa` and import it from the game's Manage Achievements window.
 
-12 game(s), 12 item(s).
+13 game(s), 13 item(s).
 
 | | Game | Platform | Items | Downloads |
 |---|---|---|---:|---:|
+| <img src="name-am2r-return-of-samus/am2r-another-metroid-2-remake/cover.png" width="120"> | [AM2R: Return of Samus](name-am2r-return-of-samus/) | Computer | 1 | 0 |
 | <img src="steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/cover.png" width="120"> | [Atelier Sophie: The Alchemist of the Mysterious Book](steam-527270/) | PC (Windows) | 1 | 5 |
 | <img src="name-banjo-kazooie/banjo-kazooie-recompiled/cover.png" width="120"> | [Banjo-Kazooie](name-banjo-kazooie/) | Computer | 1 | 3 |
 | <img src="steam-3669870/control-resonant-platinum/cover.jpg" width="120"> | [CONTROL Resonant](steam-3669870/) | PC (Windows) | 1 | 0 |
