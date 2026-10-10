@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-09T17:59:42Z",
-  "commit": "c405182448e1d76028122c320bc01aff0cc61c83",
+  "generated": "2026-10-10T09:36:14Z",
+  "commit": "12c4a3916ac7620d9a388d29b228687ad1d898c3",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -45,8 +45,8 @@
       "cover": "cover.png",
       "readme": "README.md",
       "downloads": {
-        "total": 14,
-        "current": 5
+        "total": 15,
+        "current": 6
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/notifications/steamstation-5/steamstation-5-1.0.1.panotif",
@@ -134,21 +134,20 @@
       "id": "game-data/name-banjo-kazooie/banjo-kazooie-recompiled",
       "kind": "GameCustomData",
       "name": "Banjo-Kazooie (Recompiled)",
-      "description": "Custom/manual achievement set for Banjo Recompiled, a playable fanmade recompilation of Banjo-Kazooie.",
+      "description": "Custom/manual achievements for Banjo Recompiled, a fanmade native PC port of Banjo-Kazooie.\nAchievements designed so that achievement progress can checked through the 'View Totals' screen on the in-game pause menu.",
       "author": "IggniFyre",
       "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
       "maintainers": [],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "license": "CC-BY-4.0",
       "tags": [
-        "banjo",
         "banjo-kazooie",
-        "recompiled",
+        "banjo-recompiled",
         "decompilation"
       ],
       "minPluginVersion": "4.1.0",
       "created": "2026-10-04",
-      "updated": "2026-10-04",
+      "updated": "2026-10-10",
       "game": {
         "name": "Banjo-Kazooie",
         "platform": "Computer",
@@ -169,33 +168,34 @@
         "categoryImages": 0,
         "capstones": 1,
         "notes": 0,
-        "achievementOrder": false,
+        "achievementOrder": true,
         "notificationStyle": false,
         "manualLink": false,
         "imageFiles": 16
       },
       "package": {
-        "file": "banjo-kazooie-recompiled-1.0.0.pa",
+        "file": "banjo-kazooie-recompiled-1.0.1.pa",
         "formatKind": "PlayniteAchievements.GameCustomData",
         "formatVersion": 8,
-        "sizeBytes": 1293273,
-        "sha256": "e42a8b0f77443987929f8b5bde61cc91f89aaef7a788bdcd4f340304733d51a7",
+        "sizeBytes": 1293320,
+        "sha256": "7d32ef0ec4b1063cb1cc30914855a922ae4b27209316075b2ba0e801c525daff",
         "release": {
           "tag": "game-data/name-banjo-kazooie/banjo-kazooie-recompiled",
-          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/banjo-kazooie-recompiled-1.0.0.pa"
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/banjo-kazooie-recompiled-1.0.1.pa"
         }
       },
+      "preview": "preview.png",
       "cover": "cover.png",
       "readme": "README.md",
       "downloads": {
-        "total": 2,
-        "current": 2
+        "total": 3,
+        "current": 0
       },
       "urls": {
-        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/banjo-kazooie-recompiled-1.0.0.pa",
-        "preview": null,
-        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@4f284aa88ed1aad2b5ab2a2e16fa625f08d846fd/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/cover.png",
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@53a240167aeff99b2818d8a557c23dca77454e83/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/README.md",
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/banjo-kazooie-recompiled-1.0.1.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@12c4a3916ac7620d9a388d29b228687ad1d898c3/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@12c4a3916ac7620d9a388d29b228687ad1d898c3/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@12c4a3916ac7620d9a388d29b228687ad1d898c3/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-banjo-kazooie/banjo-kazooie-recompiled"
       }
     },
@@ -481,8 +481,8 @@
       "preview": "preview.png",
       "readme": "README.md",
       "downloads": {
-        "total": 15,
-        "current": 7
+        "total": 16,
+        "current": 8
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-1693980/dead-space-test/dead-space-test-1.0.1.pa",
@@ -856,8 +856,8 @@
       "cover": "cover.jpg",
       "readme": "README.md",
       "downloads": {
-        "total": 0,
-        "current": 0
+        "total": 1,
+        "current": 1
       },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy/the-blood-of-dawnwalker-platinum-trophy-1.0.0.pa",
