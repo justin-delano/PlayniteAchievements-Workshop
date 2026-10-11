@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-11T07:36:35Z",
-  "commit": "fec2e43b7e267c5b6bfbc3aa08cbf53fe843c433",
+  "generated": "2026-10-11T07:43:25Z",
+  "commit": "94d8e5ee18780b37e54034aaff64196a6633ef44",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -338,6 +338,78 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@58988aca306a8b1482f06bb0a2eee2bc49d09dff/game-data/name-sonic-the-hedgehog/sonic-1-forever/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@58988aca306a8b1482f06bb0a2eee2bc49d09dff/game-data/name-sonic-the-hedgehog/sonic-1-forever/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-sonic-the-hedgehog/sonic-1-forever"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-sonic-the-hedgehog-2/sonic-2-absolute",
+      "kind": "GameCustomData",
+      "name": "Sonic 2 Absolute",
+      "description": "Manual PlayniteAchievements set for Sonic 2 Absolute, a fanmade recompiled native PC port of the RetroEngine version of Sonic the Hedghehog 2 released on Android with additional features, created by Team Forever.\nAll manual achievements and icons taken directly from Sonic 2 Absolute's existing in-game achievements, with additional custom achievements for each playable character.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "sonic-the-hedgehog-2",
+        "sonic-2-absolute",
+        "team-forever",
+        "retroengine",
+        "recompilation"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-11",
+      "updated": "2026-10-11",
+      "game": {
+        "name": "Sonic the Hedgehog 2",
+        "platform": "Computer",
+        "keys": [
+          {
+            "name": "Sonic the Hedgehog 2",
+            "platform": "Computer"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 14,
+        "achievementOverrides": 0,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 0,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 14
+      },
+      "package": {
+        "file": "sonic-2-absolute-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 263948,
+        "sha256": "7f812c6e6e972a4f91ea627d879a8091a5bff8df6e9abd356331e7b27fbda6d1",
+        "release": {
+          "tag": "game-data/name-sonic-the-hedgehog-2/sonic-2-absolute",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-2/sonic-2-absolute/sonic-2-absolute-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "downloads": {
+        "total": 0,
+        "current": 0
+      },
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-2/sonic-2-absolute/sonic-2-absolute-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@94d8e5ee18780b37e54034aaff64196a6633ef44/game-data/name-sonic-the-hedgehog-2/sonic-2-absolute/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@94d8e5ee18780b37e54034aaff64196a6633ef44/game-data/name-sonic-the-hedgehog-2/sonic-2-absolute/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@94d8e5ee18780b37e54034aaff64196a6633ef44/game-data/name-sonic-the-hedgehog-2/sonic-2-absolute/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-sonic-the-hedgehog-2/sonic-2-absolute"
       }
     },
     {
