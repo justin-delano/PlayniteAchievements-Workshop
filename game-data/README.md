@@ -3,7 +3,7 @@
 
 Per-game customizations: icon sets, categories, capstones, custom achievements, notes and ordering, one folder per game. Install from the Workshop in Playnite (which matches the game in your library), or download the `.pa` and import it from the game's Manage Achievements window.
 
-15 game(s), 16 item(s).
+15 game(s), 15 item(s).
 
 | | Game | Platform | Items | Downloads |
 |---|---|---|---:|---:|
@@ -18,7 +18,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="manual-2084000/shogun-showdown/cover.jpg" width="120"> | [Shogun Showdown](manual-2084000/) | PC (Windows) | 1 | 3 |
 | <img src="name-sonic-the-hedgehog/sonic-1-forever/cover.png" width="120"> | [Sonic the Hedgehog](name-sonic-the-hedgehog/) | Computer | 1 | 0 |
 | <img src="name-sonic-the-hedgehog-2/sonic-2-absolute/cover.png" width="120"> | [Sonic the Hedgehog 2](name-sonic-the-hedgehog-2/) | Computer | 1 | 0 |
-| <img src="name-sonic-the-hedgehog-3/sonic-3-a-i-r/cover.png" width="120"> | [Sonic the Hedgehog 3](name-sonic-the-hedgehog-3/) | Computer | 2 | 1 |
+| <img src="name-sonic-the-hedgehog-3/sonic-3-a-i-r/cover.png" width="120"> | [Sonic the Hedgehog 3](name-sonic-the-hedgehog-3/) | Computer | 1 | 0 |
 | <img src="name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/cover.png" width="120"> | [Sonic the Hedgehog: Project 06](name-sonic-the-hedgehog-project-06/) | Computer | 1 | 2 |
 | <img src="steam-3751260/the-blood-of-dawnwalker-platinum-trophy/cover.jpg" width="120"> | [The Blood of Dawnwalker](steam-3751260/) | PC (Windows) | 1 | 1 |
 | <img src="steam-292030/the-witcher-3-wild-hunt-platinum-trophy/cover.jpg" width="120"> | [The Witcher 3: Wild Hunt — Remastered](steam-292030/) | PC (Windows) | 1 | 1 |

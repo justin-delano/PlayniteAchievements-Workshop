@@ -5,5 +5,4 @@ Platform: Computer
 
 | | Name | Author | Version | Customizes | Downloads | Updated |
 |---|---|---|---|---|---:|---|
-|  | [Sonic the Hedgehog 3 (A.I.R.)](sonic-the-hedgehog-3-a-i-r/) | IggniFyre | 1.0.0 | 21 custom achievements, order | 1 | 2026-10-04 |
 | <img src="sonic-3-a-i-r/cover.png" width="120"> | [Sonic 3 A.I.R.](sonic-3-a-i-r/) | IggniFyre | 1.0.0 | 21 custom achievements, order | 0 | 2026-10-11 |
