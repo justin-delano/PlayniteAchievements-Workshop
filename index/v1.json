@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-10T09:47:09Z",
-  "commit": "d2f0663ae0fa03ecd7d7374e6fe6eca632a8807d",
+  "generated": "2026-10-11T07:36:35Z",
+  "commit": "fec2e43b7e267c5b6bfbc3aa08cbf53fe843c433",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -274,21 +274,21 @@
       "id": "game-data/name-sonic-the-hedgehog/sonic-1-forever",
       "kind": "GameCustomData",
       "name": "Sonic 1 Forever",
-      "description": "Manual PlayniteAchievements set for Sonic 1 Absolute, a fanmade recompiled native PC port of Sonic the Hedghehog released on Android with additional features.\nAll manual achievements and icons taken directly from Sonic 1 Forever's existing in-game achievements, with additional custom achievements for each playable character.",
+      "description": "Manual PlayniteAchievements set for Sonic 1 Forever, a fanmade recompiled native PC port of the RetroEngine version of Sonic the Hedghehog released on Android with additional features, created by Team Forever.\nAll manual achievements and icons taken directly from Sonic 1 Forever's existing in-game achievements, with additional custom achievements for each playable character.",
       "author": "IggniFyre",
       "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
       "maintainers": [],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "license": "CC-BY-4.0",
       "tags": [
+        "sonic-the-hedgehog",
         "sonic-1-forever",
-        "android",
         "recompilation",
-        "sonic-the-hedgehog"
+        "retroengine"
       ],
       "minPluginVersion": "4.1.0",
       "created": "2026-10-10",
-      "updated": "2026-10-10",
+      "updated": "2026-10-11",
       "game": {
         "name": "Sonic the Hedgehog",
         "platform": "Computer",
@@ -315,14 +315,14 @@
         "imageFiles": 23
       },
       "package": {
-        "file": "sonic-1-forever-1.0.0.pa",
+        "file": "sonic-1-forever-1.0.1.pa",
         "formatKind": "PlayniteAchievements.GameCustomData",
         "formatVersion": 8,
         "sizeBytes": 700376,
-        "sha256": "7ec9f998b0880ec1f32220100ab7aa4e42e362ed01229d7625316e61c2040911",
+        "sha256": "b63b5be644a096fb79ced7778d207f38f5b5521e0d4be72d05f365b26ac96315",
         "release": {
           "tag": "game-data/name-sonic-the-hedgehog/sonic-1-forever",
-          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog/sonic-1-forever/sonic-1-forever-1.0.0.pa"
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog/sonic-1-forever/sonic-1-forever-1.0.1.pa"
         }
       },
       "preview": "preview.png",
@@ -333,7 +333,7 @@
         "current": 0
       },
       "urls": {
-        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog/sonic-1-forever/sonic-1-forever-1.0.0.pa",
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog/sonic-1-forever/sonic-1-forever-1.0.1.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@58988aca306a8b1482f06bb0a2eee2bc49d09dff/game-data/name-sonic-the-hedgehog/sonic-1-forever/preview.png",
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@58988aca306a8b1482f06bb0a2eee2bc49d09dff/game-data/name-sonic-the-hedgehog/sonic-1-forever/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@58988aca306a8b1482f06bb0a2eee2bc49d09dff/game-data/name-sonic-the-hedgehog/sonic-1-forever/README.md",
