@@ -5,4 +5,4 @@ Platform: PC (Windows)
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="atelier-sophie-the-alchemist-of-the-mysterious-book-test/cover.png" width="120"> | [Atelier Sophie: The Alchemist of the Mysterious Book TEST](atelier-sophie-the-alchemist-of-the-mysterious-book-test/) | Synkro | 1.0.0 | 90 icons, 1 categories, 1 capstones, 45 overrides | 0 | 0 | 2026-10-04 |
+| <img src="atelier-sophie-the-alchemist-of-the-mysterious-book-test/cover.png" width="120"> | [Atelier Sophie: The Alchemist of the Mysterious Book TEST](atelier-sophie-the-alchemist-of-the-mysterious-book-test/) | Synkro | 1.0.0 | 90 icons, 1 categories, 1 capstones, 45 overrides | 0 | 1 | 2026-10-04 |
