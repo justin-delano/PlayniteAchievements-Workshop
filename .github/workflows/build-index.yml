@@ -1,7 +1,7 @@
 name: Build index
 
-# Regenerates index/ and the per-type and per-game README tables from every manifest, with
-# download counts read from the releases. Runs on merges and once a day for the counts.
+# Regenerates index/ and the per-type and per-game README tables from every manifest. The tables
+# carry the Workshop service's install and like counts. Runs on merges and once a day for those.
 
 on:
   push:
@@ -43,8 +43,10 @@ jobs:
         with:
           dotnet-version: 8.0.x
 
-      - name: Fetch release metadata
-        run: gh api "repos/${{ github.repository }}/releases" --paginate > releases.json
+      - name: Fetch Workshop statistics
+        # The listings carry install and like counts; a service that cannot be reached leaves
+        # them at zero rather than failing the build.
+        run: curl -sS --max-time 30 https://pa-workshop.playniteachievements-workshop-worker.workers.dev/v1/stats > stats.json || echo '{}' > stats.json
 
       - name: Build and commit generated files
         run: |
@@ -57,7 +59,7 @@ jobs:
             git fetch -q origin main
             git reset -q --hard origin/main
             dotnet run --project tools/Validator -c Release -- build-index \
-              --root . --releases releases.json --repo "${{ github.repository }}" --commit "$(git rev-parse HEAD)"
+              --root . --stats stats.json --repo "${{ github.repository }}" --commit "$(git rev-parse HEAD)"
             # Only the index and the generated listings; a pathspec that matches nothing (no game
             # folders yet) must not fail the step, so stage by listing instead of by glob.
             git add index
@@ -78,7 +80,7 @@ jobs:
 
       # Each storage release shows the item's cover, preview, description and folder link, so
       # the release page reads like the item page. Images stay links rather than release assets,
-      # because download counts are summed over assets. Only releases whose notes differ are
+      # because a release asset is the package itself. Only releases whose notes differ are
       # edited.
       - name: Refresh release notes
         run: |
