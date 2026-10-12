@@ -3,7 +3,7 @@ using System.Text.Json.Nodes;
 
 namespace Workshop.Validator.Index;
 
-public sealed record ReleaseAsset(string Name, long Size, long DownloadCount, string BrowserDownloadUrl);
+public sealed record ReleaseAsset(string Name, long Size, string BrowserDownloadUrl);
 
 /// <summary>
 /// The repository's releases as `gh api repos/:o/:r/releases --paginate` prints them: one JSON
@@ -68,7 +68,6 @@ public sealed class Releases
                     assets.Add(new ReleaseAsset(
                         asset["name"]?.GetValue<string>() ?? "",
                         asset["size"]?.GetValue<long>() ?? 0,
-                        asset["download_count"]?.GetValue<long>() ?? 0,
                         asset["browser_download_url"]?.GetValue<string>() ?? ""));
                 }
 
@@ -86,6 +85,4 @@ public sealed class Releases
 
     public ReleaseAsset? Asset(string tag, string fileName) =>
         AssetsFor(tag).FirstOrDefault(asset => string.Equals(asset.Name, fileName, StringComparison.OrdinalIgnoreCase));
-
-    public long TotalDownloads(string tag) => AssetsFor(tag).Sum(asset => asset.DownloadCount);
 }
