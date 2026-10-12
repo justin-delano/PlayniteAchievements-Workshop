@@ -4,10 +4,4 @@
 ![Preview](preview.png)
 <!-- /workshop:images -->
 
-# Metro Exodus
-
-Added Auto Capstone
-Added Categories
-Added Trophy Ranks
-High Resolution Icons
-Edited Descriptions
+Updated to fix spoilers in images.
