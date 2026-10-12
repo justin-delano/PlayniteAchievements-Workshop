@@ -14,3 +14,5 @@ Ownership for updates: the `authorGitHub` login or a listed maintainer, or a sub
 Before any bundle was published (2026-10-03) the kind `Theme` was renamed `Bundle`: folder `bundles/`, file `.pabundle`, manifest `bundle.json`, format kind `PlayniteAchievements.Bundle`. No migration exists because no manifest or release ever carried the old name.
 
 Optional field `cover` added to schema 1 (2026-10-04): an image file in the item folder chosen by the sharer for listings, validated like `preview`, published in the index as `urls.cover`. The schema version stays 1 because the field is optional and older readers ignore it.
+
+Index field `downloads` removed from schema 1 (2026-10-12): counts now come from the Workshop service (`GET /v1/stats`), which counts installs the extension reports and likes people give, rather than GitHub release asset downloads, which also counted previews and retries. The index carries no counts at all. The schema version stays 1 because no released extension read the field.
