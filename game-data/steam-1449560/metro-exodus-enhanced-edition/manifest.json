@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/steam-1449560/metro-exodus-enhanced-edition",
+  "kind": "GameCustomData",
+  "name": "Metro Exodus Enhanced Edition",
+  "description": "Added Auto Capstone\nAdded Categories\nAdded Trophy Ranks\nHigh Resolution Icons\nEdited Descriptions",
+  "author": "Synkro",
+  "ownerHash": "848ca668d311d7a737b301a73ed198352cb733aba5f9b036b65ec4a64ab87d41",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-12",
+  "updated": "2026-10-12",
+  "game": {
+    "name": "Metro Exodus Enhanced Edition",
+    "platform": "PC (Windows)",
+    "keys": [
+      {
+        "providerKey": "Steam",
+        "providerGameId": 1449560,
+        "name": "Metro Exodus Enhanced Edition",
+        "platform": "PC (Windows)"
+      },
+      {
+        "name": "Metro Exodus Enhanced Edition",
+        "platform": "PC (Windows)"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 136,
+    "lockedIcons": 0,
+    "customAchievements": 1,
+    "achievementOverrides": 69,
+    "categoryAssignments": 138,
+    "categories": 5,
+    "categoryImages": 4,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": true,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 73
+  },
+  "package": {
+    "file": "metro-exodus-enhanced-edition-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 15186372,
+    "sha256": "d34f951337eec3fab62e77eea775bf52ede0b4dfd5c31eeca205ce3429823bb5",
+    "release": {
+      "tag": "game-data/steam-1449560/metro-exodus-enhanced-edition",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-1449560/metro-exodus-enhanced-edition/metro-exodus-enhanced-edition-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}
