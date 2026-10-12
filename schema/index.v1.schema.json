@@ -14,17 +14,9 @@
       "type": "array",
       "items": {
         "type": "object",
-        "description": "The item's manifest plus download statistics and resolved URLs.",
-        "required": ["id", "kind", "name", "version", "downloads", "urls"],
+        "description": "The item's manifest plus resolved URLs. Install and like counts are not in the index: the extension reads them live from the Workshop service.",
+        "required": ["id", "kind", "name", "version", "urls"],
         "properties": {
-          "downloads": {
-            "type": "object",
-            "required": ["total", "current"],
-            "properties": {
-              "total": { "type": "integer", "description": "Sum over every version's asset." },
-              "current": { "type": "integer", "description": "The current version's asset." }
-            }
-          },
           "urls": {
             "type": "object",
             "required": ["package", "folder"],
