@@ -7,9 +7,9 @@ using Workshop.Validator.Model;
 namespace Workshop.Validator.Commands;
 
 /// <summary>
-/// Writes index/v1.json (and latest.json) from every manifest, with download counts from the
-/// releases and URLs the extension can fetch, refreshes the image block in each item README,
-/// then regenerates the per-type and per-game README listings.
+/// Writes index/v1.json (and latest.json) from every manifest, with URLs the extension can
+/// fetch, refreshes the image block in each item README, then regenerates the per-type and
+/// per-game README listings with the Workshop service's install and like counts.
 /// </summary>
 public static class BuildIndexCommand
 {
@@ -20,21 +20,18 @@ public static class BuildIndexCommand
         var root = Path.GetFullPath(args.Get("root") ?? ".");
         var repo = args.Require("repo");
         var commit = args.Get("commit") ?? "0000000000000000000000000000000000000000";
-        var releases = Releases.Load(args.Get("releases"));
+        var stats = Stats.Load(args.Get("stats"));
         var fileCommits = FileCommits.Load(root);
 
-        var entries = new List<(Manifest Manifest, long Total, long Current)>();
+        var entries = new List<(Manifest Manifest, long Installs, long Likes)>();
         var items = new JsonArray();
         foreach (var item in ItemLocator.All(root))
         {
             var manifest = Manifest.Load(Path.Combine(item.Path, "manifest.json"));
-            var total = releases.TotalDownloads(manifest.Package.Release.Tag);
-            var current = releases.Asset(manifest.Package.Release.Tag, manifest.Package.File)?.DownloadCount ?? 0;
-            entries.Add((manifest, total, current));
+            entries.Add((manifest, stats.Installs(manifest.Id), stats.Likes(manifest.Id)));
             RefreshItemReadme(item.Path, manifest);
 
             var node = JsonSerializer.SerializeToNode(manifest, Manifest.JsonOptions)!.AsObject();
-            node["downloads"] = new JsonObject { ["total"] = total, ["current"] = current };
             node["urls"] = new JsonObject
             {
                 ["package"] = manifest.Package.Release.Url,
