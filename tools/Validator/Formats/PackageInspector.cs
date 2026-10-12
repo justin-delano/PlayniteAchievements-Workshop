@@ -438,15 +438,40 @@ public static class PackageInspector
         CheckNoPersonalState(manifest, report);
 
         var overrides = manifest["AchievementOverrides"] as JsonObject ?? new JsonObject();
-        var unlockedIcons = overrides.Count(p => (p.Value as JsonObject)?["UnlockedIconPath"] is not null)
-                            + ((manifest["AchievementUnlockedIconOverrides"] as JsonObject)?.Count ?? 0);
-        var lockedIcons = overrides.Count(p => (p.Value as JsonObject)?["LockedIconPath"] is not null)
-                          + ((manifest["AchievementLockedIconOverrides"] as JsonObject)?.Count ?? 0);
-        var notes = overrides.Count(p => !string.IsNullOrWhiteSpace((p.Value as JsonObject)?["Note"]?.GetValue<string>()))
-                    + ((manifest["AchievementNotes"] as JsonObject)?.Count ?? 0);
+
+        // A package writes each per-achievement value twice: on the schema-8 override and in the
+        // schema-7 map beside it, which older plugins read. Counting the achievements the two
+        // name between them is what reports one icon per icon.
+        int CountAchievements(string field, string legacyMap, Func<JsonNode?, bool> filled)
+        {
+            var names = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            foreach (var pair in overrides)
+            {
+                if (filled((pair.Value as JsonObject)?[field]))
+                {
+                    names.Add(pair.Key);
+                }
+            }
+
+            foreach (var pair in manifest[legacyMap] as JsonObject ?? new JsonObject())
+            {
+                if (filled(pair.Value))
+                {
+                    names.Add(pair.Key);
+                }
+            }
+
+            return names.Count;
+        }
+
+        static bool Present(JsonNode? node) => node is not null;
+        static bool HasText(JsonNode? node) => !string.IsNullOrWhiteSpace(node?.GetValue<string>());
+
+        var unlockedIcons = CountAchievements("UnlockedIconPath", "AchievementUnlockedIconOverrides", Present);
+        var lockedIcons = CountAchievements("LockedIconPath", "AchievementLockedIconOverrides", Present);
+        var notes = CountAchievements("Note", "AchievementNotes", HasText);
         var customAchievements = (manifest["CustomAchievements"] as JsonArray)?.Count ?? 0;
-        var categoryAssignments = overrides.Count(p => (p.Value as JsonObject)?["Category"] is not null)
-                                  + ((manifest["AchievementCategoryOverrides"] as JsonObject)?.Count ?? 0);
+        var categoryAssignments = CountAchievements("Category", "AchievementCategoryOverrides", Present);
         var categories = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
         foreach (var pair in overrides)
         {
