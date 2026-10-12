@@ -3,6 +3,6 @@
 
 Platform: PC (Windows)
 
-| | Name | Author | Version | Customizes | Downloads | Updated |
-|---|---|---|---|---|---:|---|
-| <img src="control-resonant-platinum/cover.jpg" width="120"> | [CONTROL Resonant - Platinum](control-resonant-platinum/) | Luxas | 1.0.0 | 1 custom achievements, 1 categories, 1 capstones, 1 overrides, order | 0 | 2026-10-08 |
+| | Name | Author | Version | Customizes | Installs | Likes | Updated |
+|---|---|---|---|---|---:|---:|---|
+| <img src="control-resonant-platinum/cover.jpg" width="120"> | [CONTROL Resonant - Platinum](control-resonant-platinum/) | Luxas | 1.0.0 | 1 custom achievements, 1 categories, 1 capstones, 1 overrides, order | 0 | 0 | 2026-10-08 |

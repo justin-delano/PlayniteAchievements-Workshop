@@ -3,6 +3,6 @@
 
 Platform: Computer
 
-| | Name | Author | Version | Customizes | Downloads | Updated |
-|---|---|---|---|---|---:|---|
-| <img src="sonic-2-absolute/cover.png" width="120"> | [Sonic 2 Absolute](sonic-2-absolute/) | IggniFyre | 1.0.0 | 14 custom achievements | 0 | 2026-10-11 |
+| | Name | Author | Version | Customizes | Installs | Likes | Updated |
+|---|---|---|---|---|---:|---:|---|
+| <img src="sonic-2-absolute/cover.png" width="120"> | [Sonic 2 Absolute](sonic-2-absolute/) | IggniFyre | 1.0.0 | 14 custom achievements | 0 | 0 | 2026-10-11 |

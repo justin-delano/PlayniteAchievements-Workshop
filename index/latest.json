@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-12T10:43:50Z",
-  "commit": "7a8c623237f23e0ebf79f29b830eb5bf467f106a",
+  "generated": "2026-10-12T20:55:18Z",
+  "commit": "e54cdb90289f771f29a04f27d8288a1a607d470f",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -44,10 +44,6 @@
       "preview": "preview.png",
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 15,
-        "current": 6
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/notifications/steamstation-5/steamstation-5-1.0.1.panotif",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@e600ed7e5a67b0edd4a209d3b2c5e3fcfa3c8065/notifications/steamstation-5/preview.png",
@@ -117,10 +113,6 @@
       "preview": "preview.png",
       "cover": "cover.jpg",
       "readme": "README.md",
-      "downloads": {
-        "total": 3,
-        "current": 3
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/manual-2084000/shogun-showdown/shogun-showdown-1.0.1.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@918240ff12733ed1f3f3fd6620671af00517fc71/game-data/manual-2084000/shogun-showdown/preview.png",
@@ -187,10 +179,6 @@
       "preview": "preview.png",
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 0,
-        "current": 0
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-am2r-return-of-samus/am2r-another-metroid-2-remake/am2r-another-metroid-2-remake-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@6867b30d7fc9492a14e72ea202d9fb35c08aa896/game-data/name-am2r-return-of-samus/am2r-another-metroid-2-remake/preview.png",
@@ -257,10 +245,6 @@
       "preview": "preview.png",
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 3,
-        "current": 0
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/banjo-kazooie-recompiled-1.0.1.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@12c4a3916ac7620d9a388d29b228687ad1d898c3/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/preview.png",
@@ -328,10 +312,6 @@
       "preview": "preview.png",
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 0,
-        "current": 0
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog/sonic-1-forever/sonic-1-forever-1.0.1.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@58988aca306a8b1482f06bb0a2eee2bc49d09dff/game-data/name-sonic-the-hedgehog/sonic-1-forever/preview.png",
@@ -400,10 +380,6 @@
       "preview": "preview.png",
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 0,
-        "current": 0
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-2/sonic-2-absolute/sonic-2-absolute-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@94d8e5ee18780b37e54034aaff64196a6633ef44/game-data/name-sonic-the-hedgehog-2/sonic-2-absolute/preview.png",
@@ -472,10 +448,6 @@
       "preview": "preview.png",
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 0,
-        "current": 0
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-3/sonic-3-a-i-r/sonic-3-a-i-r-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@3e67b7772fdcaf39161929cc531614e29407b8cb/game-data/name-sonic-the-hedgehog-3/sonic-3-a-i-r/preview.png",
@@ -543,10 +515,6 @@
       "preview": "preview.png",
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 2,
-        "current": 0
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06-1.0.1.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@c405182448e1d76028122c320bc01aff0cc61c83/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/preview.png",
@@ -624,10 +592,6 @@
       "preview": "preview.png",
       "cover": "cover.jpg",
       "readme": "README.md",
-      "downloads": {
-        "total": 15,
-        "current": 15
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/retroachievements-2739/grand-theft-auto-vice-city-categories/grand-theft-auto-vice-city-categories-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/retroachievements-2739/grand-theft-auto-vice-city-categories/preview.png",
@@ -695,10 +659,6 @@
       },
       "preview": "preview.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 16,
-        "current": 8
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-1693980/dead-space-test/dead-space-test-1.0.1.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@bab91aed43ebaf21beb7b60d37e52a303145dbae/game-data/steam-1693980/dead-space-test/preview.png",
@@ -768,10 +728,6 @@
       },
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 4,
-        "current": 4
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-2420110/horizon-forbidden-west-test/horizon-forbidden-west-test-1.0.0.pa",
         "preview": null,
@@ -843,10 +799,6 @@
       "preview": "preview.png",
       "cover": "cover.jpg",
       "readme": "README.md",
-      "downloads": {
-        "total": 1,
-        "current": 1
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-292030/the-witcher-3-wild-hunt-platinum-trophy/the-witcher-3-wild-hunt-platinum-trophy-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@989ceda221058032fc3c935563252af52938b520/game-data/steam-292030/the-witcher-3-wild-hunt-platinum-trophy/preview.png",
@@ -920,10 +872,6 @@
       "preview": "preview.png",
       "cover": "cover.jpg",
       "readme": "README.md",
-      "downloads": {
-        "total": 0,
-        "current": 0
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-2962810/galaxy-idle-clicker-categories/galaxy-idle-clicker-categories-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@252246c92b02a4c759f108aff65825db5d5130d3/game-data/steam-2962810/galaxy-idle-clicker-categories/preview.png",
@@ -995,10 +943,6 @@
       "preview": "preview.png",
       "cover": "cover.jpg",
       "readme": "README.md",
-      "downloads": {
-        "total": 0,
-        "current": 0
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-3669870/control-resonant-platinum/control-resonant-platinum-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@fb550f87551c6f8a724414a9e1d0b181074e2684/game-data/steam-3669870/control-resonant-platinum/preview.png",
@@ -1070,10 +1014,6 @@
       "preview": "preview.png",
       "cover": "cover.jpg",
       "readme": "README.md",
-      "downloads": {
-        "total": 1,
-        "current": 1
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy/the-blood-of-dawnwalker-platinum-trophy-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@cbabcb1d204a4f62b8fb24dbb4239b3ab883dc14/game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy/preview.png",
@@ -1147,10 +1087,6 @@
       },
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 5,
-        "current": 5
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/atelier-sophie-the-alchemist-of-the-mysterious-book-test-1.0.0.pa",
         "preview": null,
