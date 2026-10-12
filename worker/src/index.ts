@@ -1,5 +1,6 @@
 import { GitHubClient } from "./github";
 import { R2Signer } from "./r2";
+import { countFor, isItemId, isVoter, itemExists, readCounts, readVoted, setLike } from "./likes";
 
 export interface Env {
   GITHUB_REPO: string;
@@ -10,11 +11,14 @@ export interface Env {
   R2_BUCKET: string;
   DAILY_SUBMISSIONS_PER_IP: string;
   DAILY_UPLOADS_PER_IP: string;
+  DAILY_LIKES_PER_IP: string;
+  LIKES_INDEX_URL: string;
   MAX_PACKAGE_BYTES: string;
   STORAGE_CAP_BYTES: string;
   PART_SIZE_BYTES: string;
   UPLOADS: R2Bucket;
   RATE: KVNamespace;
+  LIKES: D1Database;
 }
 
 // Presigned URLs live long enough for a slow upload and for the intake workflow to fetch the
@@ -22,6 +26,9 @@ export interface Env {
 const UPLOAD_URL_SECONDS = 6 * 60 * 60;
 const DOWNLOAD_URL_SECONDS = 3 * 24 * 60 * 60;
 const SINGLE_PUT_MAX_BYTES = 64 * 1024 * 1024;
+// How long a client may reuse a like listing. Counts are a soft number; a press shows immediately
+// in the extension because it applies its own change before asking.
+const LIKES_MAX_AGE_SECONDS = 60;
 
 const KINDS = new Set([
   "Colors",
@@ -50,6 +57,12 @@ export default {
       }
       if (request.method === "POST" && url.pathname === "/v1/submissions") {
         return cors(await createSubmission(request, env));
+      }
+      if (request.method === "GET" && url.pathname === "/v1/likes") {
+        return cors(await getLikes(url, env));
+      }
+      if (request.method === "POST" && url.pathname === "/v1/likes") {
+        return cors(await setLikeFor(request, env));
       }
       const status = /^\/v1\/submissions\/(\d+)$/.exec(url.pathname);
       if (request.method === "GET" && status) {
@@ -273,6 +286,54 @@ async function getSubmission(number: number, env: Env): Promise<Response> {
   });
 }
 
+// ---- likes -----------------------------------------------------------------------------------
+
+/**
+ * Every item's like count, and with <c>?voter=</c> the items that voter has liked, so an install
+ * that carries its submitter key to another machine keeps its likes with it.
+ */
+async function getLikes(url: URL, env: Env): Promise<Response> {
+  const counts = await readCounts(env);
+  const voter = url.searchParams.get("voter");
+  if (voter === null) {
+    return json({ counts }, 200, `public, max-age=${LIKES_MAX_AGE_SECONDS}`);
+  }
+
+  if (!isVoter(voter)) {
+    throw new HttpError(400, "voter must be a SHA-256 hex string.");
+  }
+
+  return json({ counts, mine: await readVoted(env, voter.toLowerCase()) });
+}
+
+interface LikeRequest {
+  itemId?: string;
+  voterHash?: string;
+  liked?: boolean;
+}
+
+/** Records or withdraws one voter's like for one item and answers with the item's fresh count. */
+async function setLikeFor(request: Request, env: Env): Promise<Response> {
+  await enforceRateLimit(request, env, "like", env.DAILY_LIKES_PER_IP, "like");
+  const body = (await readJson(request)) as LikeRequest;
+  const itemId = (body.itemId ?? "").trim();
+  const voter = (body.voterHash ?? "").trim().toLowerCase();
+  const liked = body.liked !== false;
+
+  if (!isItemId(itemId)) {
+    throw new HttpError(400, "itemId is not a Workshop item id.");
+  }
+  if (!isVoter(voter)) {
+    throw new HttpError(400, "voterHash must be a SHA-256 hex string.");
+  }
+  if (liked && !(await itemExists(env, itemId))) {
+    throw new HttpError(404, "The Workshop has no such item.");
+  }
+
+  await setLike(env, itemId, voter, liked);
+  return json({ itemId, liked, count: await countFor(env, itemId) });
+}
+
 // ---- helpers -----------------------------------------------------------------------------------
 
 class HttpError extends Error {
@@ -330,8 +391,13 @@ async function enforceRateLimit(request: Request, env: Env, bucket: string, limi
   await env.RATE.put(key, String(current + 1), { expirationTtl: 2 * 24 * 60 * 60 });
 }
 
-function json(value: unknown, status = 200): Response {
-  return new Response(JSON.stringify(value), { status, headers: { "Content-Type": "application/json" } });
+function json(value: unknown, status = 200, cacheControl?: string): Response {
+  const headers: Record<string, string> = { "Content-Type": "application/json" };
+  if (cacheControl) {
+    headers["Cache-Control"] = cacheControl;
+  }
+
+  return new Response(JSON.stringify(value), { status, headers });
 }
 
 function error(status: number, message: string): Response {
