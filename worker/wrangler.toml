@@ -10,8 +10,13 @@ compatibility_date = "2025-01-01"
 GITHUB_REPO = "justin-delano/PlayniteAchievements-Workshop"
 R2_ACCOUNT_ID = "a2d426f66f674c044f729ed48220bd34"
 R2_BUCKET = "pa-workshop-uploads"
-# Uploads per client (by IP) per day; 0 disables the cap.
-DAILY_SUBMISSIONS_PER_IP = "10"
+# Per-IP daily caps, each counted in its own bucket; 0 disables a cap. A share sends one upload
+# request per file (package, preview, cover) and one submission request, so the upload cap needs
+# room for several files per share.
+DAILY_SUBMISSIONS_PER_IP = "100"
+DAILY_UPLOADS_PER_IP = "500"
+# Like and unlike presses per client (by IP) per day.
+DAILY_LIKES_PER_IP = "200"
 # Largest package accepted, in bytes (1 GiB; GitHub's release asset cap is 2 GiB).
 MAX_PACKAGE_BYTES = "1073741824"
 # Bytes the bucket may hold in total before new uploads are refused. R2's free tier is 10 GB-month;

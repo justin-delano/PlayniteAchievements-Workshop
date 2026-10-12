@@ -9,6 +9,7 @@ export interface Env {
   R2_SECRET_ACCESS_KEY: string;
   R2_BUCKET: string;
   DAILY_SUBMISSIONS_PER_IP: string;
+  DAILY_UPLOADS_PER_IP: string;
   MAX_PACKAGE_BYTES: string;
   STORAGE_CAP_BYTES: string;
   PART_SIZE_BYTES: string;
@@ -80,7 +81,7 @@ interface BeginUploadRequest {
 }
 
 async function beginUpload(request: Request, env: Env): Promise<Response> {
-  await enforceRateLimit(request, env, "upload");
+  await enforceRateLimit(request, env, "upload", env.DAILY_UPLOADS_PER_IP, "upload");
   const body = (await readJson(request)) as BeginUploadRequest;
   const size = Number(body.sizeBytes);
   const max = Number(env.MAX_PACKAGE_BYTES);
@@ -169,7 +170,7 @@ interface SubmissionRequest {
 }
 
 async function createSubmission(request: Request, env: Env): Promise<Response> {
-  await enforceRateLimit(request, env, "submission");
+  await enforceRateLimit(request, env, "submission", env.DAILY_SUBMISSIONS_PER_IP, "submission");
   const body = (await readJson(request)) as SubmissionRequest;
 
   const kind = (body.kind ?? "").trim();
@@ -308,8 +309,14 @@ function sanitizeFileName(name: string): string {
   return base.length > 0 ? base : "package.zip";
 }
 
-async function enforceRateLimit(request: Request, env: Env, bucket: string): Promise<void> {
-  const limit = Number(env.DAILY_SUBMISSIONS_PER_IP);
+/**
+ * Counts one request against this IP's daily allowance for a bucket. Each bucket has its own
+ * limit and its own counter: a share sends one request per file to /v1/uploads and one to
+ * /v1/submissions, so charging them together let three shares exhaust a limit of ten. A limit
+ * of 0 disables the bucket.
+ */
+async function enforceRateLimit(request: Request, env: Env, bucket: string, limitValue: string, noun: string): Promise<void> {
+  const limit = Number(limitValue);
   if (!Number.isFinite(limit) || limit <= 0) {
     return;
   }
@@ -318,7 +325,7 @@ async function enforceRateLimit(request: Request, env: Env, bucket: string): Pro
   const key = `${bucket}:${day}:${ip}`;
   const current = Number((await env.RATE.get(key)) ?? "0");
   if (current >= limit) {
-    throw new HttpError(429, `Daily submission limit reached (${limit}). Try again tomorrow.`);
+    throw new HttpError(429, `Daily ${noun} limit reached (${limit}). Try again tomorrow.`);
   }
   await env.RATE.put(key, String(current + 1), { expirationTtl: 2 * 24 * 60 * 60 });
 }
