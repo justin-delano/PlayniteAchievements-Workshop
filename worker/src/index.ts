@@ -1,6 +1,6 @@
 import { GitHubClient } from "./github";
 import { R2Signer } from "./r2";
-import { countFor, isItemId, isVoter, itemExists, readCounts, readVoted, setLike } from "./likes";
+import { addInstall, isItemId, isVoter, itemExists, likeCountFor, readInstalls, readLikes, readVoted, setLike } from "./stats";
 
 export interface Env {
   GITHUB_REPO: string;
@@ -12,13 +12,14 @@ export interface Env {
   DAILY_SUBMISSIONS_PER_IP: string;
   DAILY_UPLOADS_PER_IP: string;
   DAILY_LIKES_PER_IP: string;
-  LIKES_INDEX_URL: string;
+  DAILY_INSTALLS_PER_IP: string;
+  STATS_INDEX_URL: string;
   MAX_PACKAGE_BYTES: string;
   STORAGE_CAP_BYTES: string;
   PART_SIZE_BYTES: string;
   UPLOADS: R2Bucket;
   RATE: KVNamespace;
-  LIKES: D1Database;
+  STATS: D1Database;
 }
 
 // Presigned URLs live long enough for a slow upload and for the intake workflow to fetch the
@@ -26,9 +27,9 @@ export interface Env {
 const UPLOAD_URL_SECONDS = 6 * 60 * 60;
 const DOWNLOAD_URL_SECONDS = 3 * 24 * 60 * 60;
 const SINGLE_PUT_MAX_BYTES = 64 * 1024 * 1024;
-// How long a client may reuse a like listing. Counts are a soft number; a press shows immediately
-// in the extension because it applies its own change before asking.
-const LIKES_MAX_AGE_SECONDS = 60;
+// How long a client may reuse a statistics listing. Counts are a soft number; a like press shows
+// immediately in the extension because it applies its own change before asking.
+const STATS_MAX_AGE_SECONDS = 60;
 
 const KINDS = new Set([
   "Colors",
@@ -58,11 +59,14 @@ export default {
       if (request.method === "POST" && url.pathname === "/v1/submissions") {
         return cors(await createSubmission(request, env));
       }
-      if (request.method === "GET" && url.pathname === "/v1/likes") {
-        return cors(await getLikes(url, env));
+      if (request.method === "GET" && url.pathname === "/v1/stats") {
+        return cors(await getStats(url, env));
       }
       if (request.method === "POST" && url.pathname === "/v1/likes") {
         return cors(await setLikeFor(request, env));
+      }
+      if (request.method === "POST" && url.pathname === "/v1/installs") {
+        return cors(await recordInstall(request, env));
       }
       const status = /^\/v1\/submissions\/(\d+)$/.exec(url.pathname);
       if (request.method === "GET" && status) {
@@ -286,24 +290,46 @@ async function getSubmission(number: number, env: Env): Promise<Response> {
   });
 }
 
-// ---- likes -----------------------------------------------------------------------------------
+// ---- stats -----------------------------------------------------------------------------------
 
 /**
- * Every item's like count, and with <c>?voter=</c> the items that voter has liked, so an install
- * that carries its submitter key to another machine keeps its likes with it.
+ * Every item's like and install counts, and with <c>?voter=</c> the items that voter has liked,
+ * so an install that carries its submitter key to another machine keeps its likes with it.
  */
-async function getLikes(url: URL, env: Env): Promise<Response> {
-  const counts = await readCounts(env);
+async function getStats(url: URL, env: Env): Promise<Response> {
+  const [likes, installs] = await Promise.all([readLikes(env), readInstalls(env)]);
   const voter = url.searchParams.get("voter");
   if (voter === null) {
-    return json({ counts }, 200, `public, max-age=${LIKES_MAX_AGE_SECONDS}`);
+    return json({ likes, installs }, 200, `public, max-age=${STATS_MAX_AGE_SECONDS}`);
   }
 
   if (!isVoter(voter)) {
     throw new HttpError(400, "voter must be a SHA-256 hex string.");
   }
 
-  return json({ counts, mine: await readVoted(env, voter.toLowerCase()) });
+  return json({ likes, installs, mine: await readVoted(env, voter.toLowerCase()) });
+}
+
+interface InstallRequest {
+  itemId?: string;
+}
+
+/**
+ * Adds one to an item's install count. The extension calls this once an install has succeeded,
+ * which is what makes the number mean installs rather than package fetches.
+ */
+async function recordInstall(request: Request, env: Env): Promise<Response> {
+  await enforceRateLimit(request, env, "install", env.DAILY_INSTALLS_PER_IP, "install");
+  const body = (await readJson(request)) as InstallRequest;
+  const itemId = (body.itemId ?? "").trim();
+  if (!isItemId(itemId)) {
+    throw new HttpError(400, "itemId is not a Workshop item id.");
+  }
+  if (!(await itemExists(env, itemId))) {
+    throw new HttpError(404, "The Workshop has no such item.");
+  }
+
+  return json({ itemId, count: await addInstall(env, itemId) });
 }
 
 interface LikeRequest {
@@ -331,7 +357,7 @@ async function setLikeFor(request: Request, env: Env): Promise<Response> {
   }
 
   await setLike(env, itemId, voter, liked);
-  return json({ itemId, liked, count: await countFor(env, itemId) });
+  return json({ itemId, liked, count: await likeCountFor(env, itemId) });
 }
 
 // ---- helpers -----------------------------------------------------------------------------------

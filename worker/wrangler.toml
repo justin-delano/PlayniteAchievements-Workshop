@@ -17,8 +17,10 @@ DAILY_SUBMISSIONS_PER_IP = "100"
 DAILY_UPLOADS_PER_IP = "500"
 # Like and unlike presses per client (by IP) per day.
 DAILY_LIKES_PER_IP = "200"
-# The index a like is checked against, so an unknown item id cannot seed a row.
-LIKES_INDEX_URL = "https://raw.githubusercontent.com/justin-delano/PlayniteAchievements-Workshop/main/index/v1.json"
+# Installs recorded per client (by IP) per day.
+DAILY_INSTALLS_PER_IP = "500"
+# The index a like or an install is checked against, so an unknown item id cannot seed a row.
+STATS_INDEX_URL = "https://raw.githubusercontent.com/justin-delano/PlayniteAchievements-Workshop/main/index/v1.json"
 # Largest package accepted, in bytes (1 GiB; GitHub's release asset cap is 2 GiB).
 MAX_PACKAGE_BYTES = "1073741824"
 # Bytes the bucket may hold in total before new uploads are refused. R2's free tier is 10 GB-month;
@@ -41,10 +43,10 @@ bucket_name = "pa-workshop-uploads"
 binding = "RATE"
 id = "d152e56d2b9f4d08b073446127da6a99"
 
-# Likes, one row per item and voter. Create it and apply schema.sql before deploying:
-#   wrangler d1 create pa-workshop-likes   (then paste the id below)
-#   wrangler d1 execute pa-workshop-likes --remote --file schema.sql
+# Likes and install counts. Create it and apply schema.sql before deploying:
+#   wrangler d1 create pa-workshop-stats   (then paste the id below)
+#   wrangler d1 execute pa-workshop-stats --remote --file schema.sql
 [[d1_databases]]
-binding = "LIKES"
-database_name = "pa-workshop-likes"
-database_id = "PASTE_D1_DATABASE_ID"
+binding = "STATS"
+database_name = "pa-workshop-stats"
+database_id = "23f243d7-5de6-4910-bc12-1cac0e03dd6e"
