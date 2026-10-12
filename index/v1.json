@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-12T23:11:08Z",
-  "commit": "e93f9b6833c81f140da4083a95f839b4a36b6eda",
+  "generated": "2026-10-12T23:45:57Z",
+  "commit": "461e7030e213c112819c68922a5ffd35f7f18fca",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -1086,7 +1086,7 @@
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-412020/metro-exodus/metro-exodus-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@e93f9b6833c81f140da4083a95f839b4a36b6eda/game-data/steam-412020/metro-exodus/preview.png",
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@e93f9b6833c81f140da4083a95f839b4a36b6eda/game-data/steam-412020/metro-exodus/cover.png",
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@e93f9b6833c81f140da4083a95f839b4a36b6eda/game-data/steam-412020/metro-exodus/README.md",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@461e7030e213c112819c68922a5ffd35f7f18fca/game-data/steam-412020/metro-exodus/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-412020/metro-exodus"
       }
     },
