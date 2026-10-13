@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-13T16:59:53Z",
-  "commit": "86d13b3435681d448326388506063569492ea9aa",
+  "generated": "2026-10-13T17:01:44Z",
+  "commit": "f1a06af75f4c02db8cece82a3b18496033d4e37a",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -317,6 +317,72 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@86d13b3435681d448326388506063569492ea9aa/game-data/name-rayman-2-the-great-escape/rayman-2-the-great-escape/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@86d13b3435681d448326388506063569492ea9aa/game-data/name-rayman-2-the-great-escape/rayman-2-the-great-escape/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-rayman-2-the-great-escape/rayman-2-the-great-escape"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc",
+      "kind": "GameCustomData",
+      "name": "Rayman 3: Hoodlum Havoc",
+      "description": "Custom/Manual achievements for Rayman 3: Hoodlum Havoc, for those that prefer playing the original PC or GOG versions of Rayman 3 instead of using RetroAchievements compatible versions of the game.\nAchievements primarily based on completion so progress can be checked through the in-game pause menu.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "rayman-3",
+        "hoodlum-havoc",
+        "gog"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-13",
+      "updated": "2026-10-13",
+      "game": {
+        "name": "Rayman 3: Hoodlum Havoc",
+        "platform": "Computer",
+        "keys": [
+          {
+            "name": "Rayman 3: Hoodlum Havoc",
+            "platform": "Computer"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 35,
+        "achievementOverrides": 1,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 0,
+        "notes": 2,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 35
+      },
+      "package": {
+        "file": "rayman-3-hoodlum-havoc-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 3701779,
+        "sha256": "286ffac0a9a369ee4e0b55ffbfe5e73f4f11f0c33ccdbdbf0cd3cd6925630671",
+        "release": {
+          "tag": "game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@f1a06af75f4c02db8cece82a3b18496033d4e37a/game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@f1a06af75f4c02db8cece82a3b18496033d4e37a/game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@f1a06af75f4c02db8cece82a3b18496033d4e37a/game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc"
       }
     },
     {
