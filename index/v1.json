@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-13T17:01:44Z",
-  "commit": "f1a06af75f4c02db8cece82a3b18496033d4e37a",
+  "generated": "2026-10-13T17:04:29Z",
+  "commit": "698eb076c5b4eebb4f52e2377451b6ab5ceec615",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -514,6 +514,70 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@f63ff2200db50b6a637809640a62044519bf2dbd/game-data/name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@f63ff2200db50b6a637809640a62044519bf2dbd/game-data/name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-sonic-heroes/sonic-heroes",
+      "kind": "GameCustomData",
+      "name": "Sonic Heroes",
+      "description": "Custom/Manual achievements for Sonic Heroes, for those that prefer playing the original PC version instead of using RetroAchievements compatible versions of the game.\nAll achievement progress can be checked through the game's file select and Story menu.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "sonic-heroes"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-13",
+      "updated": "2026-10-13",
+      "game": {
+        "name": "Sonic Heroes",
+        "platform": "Computer",
+        "keys": [
+          {
+            "name": "Sonic Heroes",
+            "platform": "Computer"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 19,
+        "achievementOverrides": 0,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 19
+      },
+      "package": {
+        "file": "sonic-heroes-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 1445638,
+        "sha256": "509e327e296774e080881844999f54d0e191ee8101e2c7bc05039ac82447d477",
+        "release": {
+          "tag": "game-data/name-sonic-heroes/sonic-heroes",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-heroes/sonic-heroes/sonic-heroes-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-heroes/sonic-heroes/sonic-heroes-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@698eb076c5b4eebb4f52e2377451b6ab5ceec615/game-data/name-sonic-heroes/sonic-heroes/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@698eb076c5b4eebb4f52e2377451b6ab5ceec615/game-data/name-sonic-heroes/sonic-heroes/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@698eb076c5b4eebb4f52e2377451b6ab5ceec615/game-data/name-sonic-heroes/sonic-heroes/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-sonic-heroes/sonic-heroes"
       }
     },
     {
