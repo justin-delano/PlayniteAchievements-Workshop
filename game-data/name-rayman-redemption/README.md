@@ -5,4 +5,4 @@ Platform: Computer
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="rayman-redemption/cover.png" width="120"> | [Rayman Redemption](rayman-redemption/) | IggniFyre | 1.0.0 | 38 custom achievements, 1 capstones | 0 | 0 | 2026-10-13 |
+| <img src="rayman-redemption/cover.png" width="120"> | [Rayman Redemption](rayman-redemption/) | IggniFyre | 1.0.0 | 38 custom achievements, 1 capstones | 0 | 1 | 2026-10-13 |

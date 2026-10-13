@@ -5,4 +5,4 @@ Platform: Computer
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="super-mario-64/cover.png" width="120"> | [Super Mario 64](super-mario-64/) | IggniFyre | 1.0.0 | 18 custom achievements | 0 | 0 | 2026-10-13 |
+| <img src="super-mario-64/cover.png" width="120"> | [Super Mario 64](super-mario-64/) | IggniFyre | 1.0.0 | 18 custom achievements | 0 | 1 | 2026-10-13 |
