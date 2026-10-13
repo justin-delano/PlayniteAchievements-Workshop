@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-metroid-dread/metroid-dread",
+  "kind": "GameCustomData",
+  "name": "Metroid Dread",
+  "description": "Custom Nintendo Switch achievement set for Metroid Dread.\nAll achievements based on the unlockables in the Gallery found in the main menu, so all achievement progress can be checked in the Gallery, with the exception of one sequence break achievement.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "metroid-dread",
+    "nintendo-switch"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-13",
+  "updated": "2026-10-13",
+  "game": {
+    "name": "Metroid Dread",
+    "platform": "Nintendo Switch",
+    "keys": [
+      {
+        "name": "Metroid Dread",
+        "platform": "Nintendo Switch"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 18,
+    "achievementOverrides": 0,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 18
+  },
+  "package": {
+    "file": "metroid-dread-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 1924616,
+    "sha256": "a0f4dbe987d9b62cf37af57e9b634cc825b75cf430aaa39a607236ae64de3103",
+    "release": {
+      "tag": "game-data/name-metroid-dread/metroid-dread",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-metroid-dread/metroid-dread/metroid-dread-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}
