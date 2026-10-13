@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-13T16:50:33Z",
-  "commit": "a41e1fbcbdf4c65866d623bb1657682463b0e650",
+  "generated": "2026-10-13T16:54:18Z",
+  "commit": "6c333b71b5fa14d8cbe9673de833962593469838",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -790,6 +790,74 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@a41e1fbcbdf4c65866d623bb1657682463b0e650/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@a41e1fbcbdf4c65866d623bb1657682463b0e650/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight",
+      "kind": "GameCustomData",
+      "name": "The Legend of Zelda: Twilight Princess (Dusklight)",
+      "description": "Manual PlayniteAchievements set for Dusklight, a playable fanmade recompilation of The Legend of Zelda: Twilight Princess.\nAll achievements taken directly from Dusklight's own in-game achievement system.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "the-legend-of-zelda",
+        "twilight-princess",
+        "dusklight",
+        "dawnlight",
+        "recompilation"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-13",
+      "updated": "2026-10-13",
+      "game": {
+        "name": "The Legend of Zelda: Twilight Princess",
+        "platform": "Computer",
+        "keys": [
+          {
+            "name": "The Legend of Zelda: Twilight Princess",
+            "platform": "Computer"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 38,
+        "achievementOverrides": 0,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": true,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 38
+      },
+      "package": {
+        "file": "the-legend-of-zelda-twilight-princess-dusklight-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 3102106,
+        "sha256": "8e5d8d4dd6dc254adee7eb397750e06dabe2e09b6f9d147d9550556cd159ea9b",
+        "release": {
+          "tag": "game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/the-legend-of-zelda-twilight-princess-dusklight-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/the-legend-of-zelda-twilight-princess-dusklight-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@6c333b71b5fa14d8cbe9673de833962593469838/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@6c333b71b5fa14d8cbe9673de833962593469838/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@6c333b71b5fa14d8cbe9673de833962593469838/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight"
       }
     },
     {
