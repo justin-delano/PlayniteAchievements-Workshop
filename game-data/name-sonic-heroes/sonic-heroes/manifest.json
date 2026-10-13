@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-sonic-heroes/sonic-heroes",
+  "kind": "GameCustomData",
+  "name": "Sonic Heroes",
+  "description": "Custom/Manual achievements for Sonic Heroes, for those that prefer playing the original PC version instead of using RetroAchievements compatible versions of the game.\nAll achievement progress can be checked through the game's file select and Story menu.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "sonic-heroes"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-13",
+  "updated": "2026-10-13",
+  "game": {
+    "name": "Sonic Heroes",
+    "platform": "Computer",
+    "keys": [
+      {
+        "name": "Sonic Heroes",
+        "platform": "Computer"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 19,
+    "achievementOverrides": 0,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 19
+  },
+  "package": {
+    "file": "sonic-heroes-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 1445638,
+    "sha256": "509e327e296774e080881844999f54d0e191ee8101e2c7bc05039ac82447d477",
+    "release": {
+      "tag": "game-data/name-sonic-heroes/sonic-heroes",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-heroes/sonic-heroes/sonic-heroes-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}
