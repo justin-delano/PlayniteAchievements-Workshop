@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-13T16:37:13Z",
-  "commit": "f63ff2200db50b6a637809640a62044519bf2dbd",
+  "generated": "2026-10-13T16:43:57Z",
+  "commit": "de68973bc51c618bd8f32eb4c4c79b5c7b1b79e1",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -652,6 +652,77 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@c405182448e1d76028122c320bc01aff0cc61c83/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@2fb45fbccee673a7ab85a151827825334676fc4e/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-super-mario-64/super-mario-64",
+      "kind": "GameCustomData",
+      "name": "Super Mario 64",
+      "description": "Custom/Manual achievements for Super Mario 64 to be used on any of the fanmade PC ports of the Super Mario 64 decompilation, such as Render96, Super Mario 64 Plus, sm64coop, etc.\nMost achievements based on level completion so that progression can be easily checked through the in-game pause menu.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "super-mario-64",
+        "sm64-plus",
+        "render96",
+        "sm64coop",
+        "sm64ex",
+        "sm64pcbuilder2",
+        "recompilation",
+        "fanmade"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-13",
+      "updated": "2026-10-13",
+      "game": {
+        "name": "Super Mario 64",
+        "platform": "Computer",
+        "keys": [
+          {
+            "name": "Super Mario 64",
+            "platform": "Computer"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 18,
+        "achievementOverrides": 0,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 0,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 18
+      },
+      "package": {
+        "file": "super-mario-64-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 1348307,
+        "sha256": "74693dd72fec013063fc739203e04a9455517bcf4770f8827fd26b72fef0c038",
+        "release": {
+          "tag": "game-data/name-super-mario-64/super-mario-64",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-super-mario-64/super-mario-64/super-mario-64-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-super-mario-64/super-mario-64/super-mario-64-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@de68973bc51c618bd8f32eb4c4c79b5c7b1b79e1/game-data/name-super-mario-64/super-mario-64/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@de68973bc51c618bd8f32eb4c4c79b5c7b1b79e1/game-data/name-super-mario-64/super-mario-64/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@de68973bc51c618bd8f32eb4c4c79b5c7b1b79e1/game-data/name-super-mario-64/super-mario-64/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-super-mario-64/super-mario-64"
       }
     },
     {
