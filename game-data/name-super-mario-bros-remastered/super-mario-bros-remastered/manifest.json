@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-super-mario-bros-remastered/super-mario-bros-remastered",
+  "kind": "GameCustomData",
+  "name": "Super Mario Bros. Remastered",
+  "description": "Manual PlayniteAchievements set for Super Mario Bros. Remastered, a fanmade remaster of the original Super Mario Bros. with many additional features.\nAll achievements and icons taken directly from the in-game achievement system, progression can be checked through the Extras menu.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "super-mario-bros",
+    "remastered",
+    "recompilation",
+    "fanmade"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-13",
+  "updated": "2026-10-13",
+  "game": {
+    "name": "Super Mario Bros. Remastered",
+    "platform": "Computer",
+    "keys": [
+      {
+        "name": "Super Mario Bros. Remastered",
+        "platform": "Computer"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 28,
+    "achievementOverrides": 0,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 0,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 28
+  },
+  "package": {
+    "file": "super-mario-bros-remastered-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 69485,
+    "sha256": "862259632dd86376db34004feda6354bfc0e472cb29c7d6d8e13580fa592982b",
+    "release": {
+      "tag": "game-data/name-super-mario-bros-remastered/super-mario-bros-remastered",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/super-mario-bros-remastered-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}

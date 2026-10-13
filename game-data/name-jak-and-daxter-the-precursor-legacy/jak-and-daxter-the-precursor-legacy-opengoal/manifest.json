@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal",
+  "kind": "GameCustomData",
+  "name": "Jak and Daxter: The Precursor Legacy (OpenGOAL)",
+  "description": "Custom/manual achievements for Jak and Daxter: The Precursor Legacy through OpenGOAL, the playable fanmade recompilation/PC port of the original engine used for the Jak trilogy.\nAchievements primarily based on level completion, achievement progress can be checked through the pause menu's level overview and file select screen.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "jak-and-daxter",
+    "the-precursor-legacy",
+    "opengoal",
+    "recompilation"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-13",
+  "updated": "2026-10-13",
+  "game": {
+    "name": "Jak and Daxter: The Precursor Legacy",
+    "platform": "Sony Playstation 2",
+    "keys": [
+      {
+        "name": "Jak and Daxter: The Precursor Legacy",
+        "platform": "Sony Playstation 2"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 19,
+    "achievementOverrides": 0,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 0,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 19
+  },
+  "package": {
+    "file": "jak-and-daxter-the-precursor-legacy-opengoal-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 1962606,
+    "sha256": "0d734e760bb35d6c5be592f352250291eb30a0143c1e8bf356e4c248be1226dd",
+    "release": {
+      "tag": "game-data/name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal/jak-and-daxter-the-precursor-legacy-opengoal-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}

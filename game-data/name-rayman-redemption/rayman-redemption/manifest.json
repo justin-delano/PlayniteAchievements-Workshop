@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-rayman-redemption/rayman-redemption",
+  "kind": "GameCustomData",
+  "name": "Rayman Redemption",
+  "description": "Manual PlayniteAchievements set for Rayman Redemption, a fanmade remake of the original Rayman.\nAll achievements taken directly from the in-game achievement system and can be tracked through the Extras menu.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "rayman",
+    "rayman-redemption"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-13",
+  "updated": "2026-10-13",
+  "game": {
+    "name": "Rayman Redemption",
+    "platform": "Computer",
+    "keys": [
+      {
+        "name": "Rayman Redemption",
+        "platform": "Computer"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 38,
+    "achievementOverrides": 0,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 38
+  },
+  "package": {
+    "file": "rayman-redemption-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 2121142,
+    "sha256": "7eaa59ca1ad16668d05078529a4d491ed5c53907333e84900f3bf6ddc1e643b0",
+    "release": {
+      "tag": "game-data/name-rayman-redemption/rayman-redemption",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-rayman-redemption/rayman-redemption/rayman-redemption-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}

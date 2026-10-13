@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-12T10:43:50Z",
-  "commit": "7a8c623237f23e0ebf79f29b830eb5bf467f106a",
+  "generated": "2026-10-13T17:12:03Z",
+  "commit": "3a76a0759268d2f69f79d8c0725da9588e37d1cb",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -44,10 +44,6 @@
       "preview": "preview.png",
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 15,
-        "current": 6
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/notifications/steamstation-5/steamstation-5-1.0.1.panotif",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@e600ed7e5a67b0edd4a209d3b2c5e3fcfa3c8065/notifications/steamstation-5/preview.png",
@@ -117,10 +113,6 @@
       "preview": "preview.png",
       "cover": "cover.jpg",
       "readme": "README.md",
-      "downloads": {
-        "total": 3,
-        "current": 3
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/manual-2084000/shogun-showdown/shogun-showdown-1.0.1.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@918240ff12733ed1f3f3fd6620671af00517fc71/game-data/manual-2084000/shogun-showdown/preview.png",
@@ -187,10 +179,6 @@
       "preview": "preview.png",
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 0,
-        "current": 0
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-am2r-return-of-samus/am2r-another-metroid-2-remake/am2r-another-metroid-2-remake-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@6867b30d7fc9492a14e72ea202d9fb35c08aa896/game-data/name-am2r-return-of-samus/am2r-another-metroid-2-remake/preview.png",
@@ -257,16 +245,471 @@
       "preview": "preview.png",
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 3,
-        "current": 0
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/banjo-kazooie-recompiled-1.0.1.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@12c4a3916ac7620d9a388d29b228687ad1d898c3/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/preview.png",
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@12c4a3916ac7620d9a388d29b228687ad1d898c3/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@12c4a3916ac7620d9a388d29b228687ad1d898c3/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-banjo-kazooie/banjo-kazooie-recompiled"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal",
+      "kind": "GameCustomData",
+      "name": "Jak and Daxter: The Precursor Legacy (OpenGOAL)",
+      "description": "Custom/manual achievements for Jak and Daxter: The Precursor Legacy through OpenGOAL, the playable fanmade recompilation/PC port of the original engine used for the Jak trilogy.\nAchievements primarily based on level completion, achievement progress can be checked through the pause menu's level overview and file select screen.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "jak-and-daxter",
+        "the-precursor-legacy",
+        "opengoal",
+        "recompilation"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-13",
+      "updated": "2026-10-13",
+      "game": {
+        "name": "Jak and Daxter: The Precursor Legacy",
+        "platform": "Sony Playstation 2",
+        "keys": [
+          {
+            "name": "Jak and Daxter: The Precursor Legacy",
+            "platform": "Sony Playstation 2"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 19,
+        "achievementOverrides": 0,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 0,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 19
+      },
+      "package": {
+        "file": "jak-and-daxter-the-precursor-legacy-opengoal-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 1962606,
+        "sha256": "0d734e760bb35d6c5be592f352250291eb30a0143c1e8bf356e4c248be1226dd",
+        "release": {
+          "tag": "game-data/name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal/jak-and-daxter-the-precursor-legacy-opengoal-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal/jak-and-daxter-the-precursor-legacy-opengoal-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@3a76a0759268d2f69f79d8c0725da9588e37d1cb/game-data/name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@3a76a0759268d2f69f79d8c0725da9588e37d1cb/game-data/name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@3a76a0759268d2f69f79d8c0725da9588e37d1cb/game-data/name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-metroid-dread/metroid-dread",
+      "kind": "GameCustomData",
+      "name": "Metroid Dread",
+      "description": "Custom Nintendo Switch achievement set for Metroid Dread.\nAll achievements based on the unlockables in the Gallery found in the main menu, so all achievement progress can be checked in the Gallery, with the exception of one sequence break achievement.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "metroid-dread",
+        "nintendo-switch"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-13",
+      "updated": "2026-10-13",
+      "game": {
+        "name": "Metroid Dread",
+        "platform": "Nintendo Switch",
+        "keys": [
+          {
+            "name": "Metroid Dread",
+            "platform": "Nintendo Switch"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 18,
+        "achievementOverrides": 0,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 18
+      },
+      "package": {
+        "file": "metroid-dread-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 1924616,
+        "sha256": "a0f4dbe987d9b62cf37af57e9b634cc825b75cf430aaa39a607236ae64de3103",
+        "release": {
+          "tag": "game-data/name-metroid-dread/metroid-dread",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-metroid-dread/metroid-dread/metroid-dread-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-metroid-dread/metroid-dread/metroid-dread-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@34b1db940c7e80f7db776693ba10e4940e4396b7/game-data/name-metroid-dread/metroid-dread/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@34b1db940c7e80f7db776693ba10e4940e4396b7/game-data/name-metroid-dread/metroid-dread/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@34b1db940c7e80f7db776693ba10e4940e4396b7/game-data/name-metroid-dread/metroid-dread/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-metroid-dread/metroid-dread"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-rayman-2-the-great-escape/rayman-2-the-great-escape",
+      "kind": "GameCustomData",
+      "name": "Rayman 2: The Great Escape",
+      "description": "Custom/Manual achievements for Rayman 2: The Great Escape, for those that prefer playing the original PC or GOG versions of Rayman 2 instead of using RetroAchievements compatible versions of the game.\nAchievements primarily based on completion so progress can be checked through the in-game level select or file select menu.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "rayman-2",
+        "the-great-escape",
+        "gog"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-13",
+      "updated": "2026-10-13",
+      "game": {
+        "name": "Rayman 2: The Great Escape",
+        "platform": "Computer",
+        "keys": [
+          {
+            "name": "Rayman 2: The Great Escape",
+            "platform": "Computer"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 25,
+        "achievementOverrides": 0,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 25
+      },
+      "package": {
+        "file": "rayman-2-the-great-escape-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 2082841,
+        "sha256": "38e91c296bfcc8870faf783f70844dde4dc55af2146e578ce75dcaa7c7eb08e8",
+        "release": {
+          "tag": "game-data/name-rayman-2-the-great-escape/rayman-2-the-great-escape",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-rayman-2-the-great-escape/rayman-2-the-great-escape/rayman-2-the-great-escape-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-rayman-2-the-great-escape/rayman-2-the-great-escape/rayman-2-the-great-escape-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@86d13b3435681d448326388506063569492ea9aa/game-data/name-rayman-2-the-great-escape/rayman-2-the-great-escape/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@86d13b3435681d448326388506063569492ea9aa/game-data/name-rayman-2-the-great-escape/rayman-2-the-great-escape/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@86d13b3435681d448326388506063569492ea9aa/game-data/name-rayman-2-the-great-escape/rayman-2-the-great-escape/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-rayman-2-the-great-escape/rayman-2-the-great-escape"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc",
+      "kind": "GameCustomData",
+      "name": "Rayman 3: Hoodlum Havoc",
+      "description": "Custom/Manual achievements for Rayman 3: Hoodlum Havoc, for those that prefer playing the original PC or GOG versions of Rayman 3 instead of using RetroAchievements compatible versions of the game.\nAchievements primarily based on completion so progress can be checked through the in-game pause menu.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "rayman-3",
+        "hoodlum-havoc",
+        "gog"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-13",
+      "updated": "2026-10-13",
+      "game": {
+        "name": "Rayman 3: Hoodlum Havoc",
+        "platform": "Computer",
+        "keys": [
+          {
+            "name": "Rayman 3: Hoodlum Havoc",
+            "platform": "Computer"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 35,
+        "achievementOverrides": 1,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 0,
+        "notes": 2,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 35
+      },
+      "package": {
+        "file": "rayman-3-hoodlum-havoc-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 3701779,
+        "sha256": "286ffac0a9a369ee4e0b55ffbfe5e73f4f11f0c33ccdbdbf0cd3cd6925630671",
+        "release": {
+          "tag": "game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@f1a06af75f4c02db8cece82a3b18496033d4e37a/game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@f1a06af75f4c02db8cece82a3b18496033d4e37a/game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@f1a06af75f4c02db8cece82a3b18496033d4e37a/game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-rayman-redemption/rayman-redemption",
+      "kind": "GameCustomData",
+      "name": "Rayman Redemption",
+      "description": "Manual PlayniteAchievements set for Rayman Redemption, a fanmade remake of the original Rayman.\nAll achievements taken directly from the in-game achievement system and can be tracked through the Extras menu.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "rayman",
+        "rayman-redemption"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-13",
+      "updated": "2026-10-13",
+      "game": {
+        "name": "Rayman Redemption",
+        "platform": "Computer",
+        "keys": [
+          {
+            "name": "Rayman Redemption",
+            "platform": "Computer"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 38,
+        "achievementOverrides": 0,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 38
+      },
+      "package": {
+        "file": "rayman-redemption-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 2121142,
+        "sha256": "7eaa59ca1ad16668d05078529a4d491ed5c53907333e84900f3bf6ddc1e643b0",
+        "release": {
+          "tag": "game-data/name-rayman-redemption/rayman-redemption",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-rayman-redemption/rayman-redemption/rayman-redemption-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-rayman-redemption/rayman-redemption/rayman-redemption-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@b7e9408128209494cb296780958cb4965e7a169f/game-data/name-rayman-redemption/rayman-redemption/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@b7e9408128209494cb296780958cb4965e7a169f/game-data/name-rayman-redemption/rayman-redemption/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@b7e9408128209494cb296780958cb4965e7a169f/game-data/name-rayman-redemption/rayman-redemption/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-rayman-redemption/rayman-redemption"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition",
+      "kind": "GameCustomData",
+      "name": "Sonic and the Secret Rings (Project Reignition)",
+      "description": "Manual PlayniteAchievement set for Sonic Project Reignition, a fanmade remake for Sonic and the Secret Rings.\nContains all achievements from the in-game achievement system, with additional achievements for unlocking the other extras in the Special Book.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "sonic-and-the-secret-rings",
+        "project-reignition",
+        "fanmade"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-13",
+      "updated": "2026-10-13",
+      "game": {
+        "name": "Sonic and the Secret Rings",
+        "platform": "Computer",
+        "keys": [
+          {
+            "name": "Sonic and the Secret Rings",
+            "platform": "Computer"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 46,
+        "achievementOverrides": 0,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": true,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 46
+      },
+      "package": {
+        "file": "sonic-and-the-secret-rings-project-reignition-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 4906191,
+        "sha256": "357af843d9457e99d2c21b8fcfee7ddd3d2b1098e3be607e30d550a723ffdc27",
+        "release": {
+          "tag": "game-data/name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition/sonic-and-the-secret-rings-project-reignition-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition/sonic-and-the-secret-rings-project-reignition-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@f63ff2200db50b6a637809640a62044519bf2dbd/game-data/name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@f63ff2200db50b6a637809640a62044519bf2dbd/game-data/name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@f63ff2200db50b6a637809640a62044519bf2dbd/game-data/name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-sonic-heroes/sonic-heroes",
+      "kind": "GameCustomData",
+      "name": "Sonic Heroes",
+      "description": "Custom/Manual achievements for Sonic Heroes, for those that prefer playing the original PC version instead of using RetroAchievements compatible versions of the game.\nAll achievement progress can be checked through the game's file select and Story menu.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "sonic-heroes"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-13",
+      "updated": "2026-10-13",
+      "game": {
+        "name": "Sonic Heroes",
+        "platform": "Computer",
+        "keys": [
+          {
+            "name": "Sonic Heroes",
+            "platform": "Computer"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 19,
+        "achievementOverrides": 0,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 19
+      },
+      "package": {
+        "file": "sonic-heroes-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 1445638,
+        "sha256": "509e327e296774e080881844999f54d0e191ee8101e2c7bc05039ac82447d477",
+        "release": {
+          "tag": "game-data/name-sonic-heroes/sonic-heroes",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-heroes/sonic-heroes/sonic-heroes-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-heroes/sonic-heroes/sonic-heroes-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@698eb076c5b4eebb4f52e2377451b6ab5ceec615/game-data/name-sonic-heroes/sonic-heroes/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@698eb076c5b4eebb4f52e2377451b6ab5ceec615/game-data/name-sonic-heroes/sonic-heroes/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@698eb076c5b4eebb4f52e2377451b6ab5ceec615/game-data/name-sonic-heroes/sonic-heroes/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-sonic-heroes/sonic-heroes"
       }
     },
     {
@@ -328,10 +771,6 @@
       "preview": "preview.png",
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 0,
-        "current": 0
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog/sonic-1-forever/sonic-1-forever-1.0.1.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@58988aca306a8b1482f06bb0a2eee2bc49d09dff/game-data/name-sonic-the-hedgehog/sonic-1-forever/preview.png",
@@ -400,10 +839,6 @@
       "preview": "preview.png",
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 0,
-        "current": 0
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-2/sonic-2-absolute/sonic-2-absolute-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@94d8e5ee18780b37e54034aaff64196a6633ef44/game-data/name-sonic-the-hedgehog-2/sonic-2-absolute/preview.png",
@@ -472,10 +907,6 @@
       "preview": "preview.png",
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 0,
-        "current": 0
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-3/sonic-3-a-i-r/sonic-3-a-i-r-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@3e67b7772fdcaf39161929cc531614e29407b8cb/game-data/name-sonic-the-hedgehog-3/sonic-3-a-i-r/preview.png",
@@ -543,16 +974,218 @@
       "preview": "preview.png",
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 2,
-        "current": 0
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06-1.0.1.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@c405182448e1d76028122c320bc01aff0cc61c83/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/preview.png",
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@c405182448e1d76028122c320bc01aff0cc61c83/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@2fb45fbccee673a7ab85a151827825334676fc4e/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-super-mario-64/super-mario-64",
+      "kind": "GameCustomData",
+      "name": "Super Mario 64",
+      "description": "Custom/Manual achievements for Super Mario 64 to be used on any of the fanmade PC ports of the Super Mario 64 decompilation, such as Render96, Super Mario 64 Plus, sm64coop, etc.\nMost achievements based on level completion so that progression can be easily checked through the in-game pause menu.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "super-mario-64",
+        "sm64-plus",
+        "render96",
+        "sm64coop",
+        "sm64ex",
+        "sm64pcbuilder2",
+        "recompilation",
+        "fanmade"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-13",
+      "updated": "2026-10-13",
+      "game": {
+        "name": "Super Mario 64",
+        "platform": "Computer",
+        "keys": [
+          {
+            "name": "Super Mario 64",
+            "platform": "Computer"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 18,
+        "achievementOverrides": 0,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 0,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 18
+      },
+      "package": {
+        "file": "super-mario-64-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 1348307,
+        "sha256": "74693dd72fec013063fc739203e04a9455517bcf4770f8827fd26b72fef0c038",
+        "release": {
+          "tag": "game-data/name-super-mario-64/super-mario-64",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-super-mario-64/super-mario-64/super-mario-64-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-super-mario-64/super-mario-64/super-mario-64-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@de68973bc51c618bd8f32eb4c4c79b5c7b1b79e1/game-data/name-super-mario-64/super-mario-64/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@de68973bc51c618bd8f32eb4c4c79b5c7b1b79e1/game-data/name-super-mario-64/super-mario-64/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@de68973bc51c618bd8f32eb4c4c79b5c7b1b79e1/game-data/name-super-mario-64/super-mario-64/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-super-mario-64/super-mario-64"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-super-mario-bros-remastered/super-mario-bros-remastered",
+      "kind": "GameCustomData",
+      "name": "Super Mario Bros. Remastered",
+      "description": "Manual PlayniteAchievements set for Super Mario Bros. Remastered, a fanmade remaster of the original Super Mario Bros. with many additional features.\nAll achievements and icons taken directly from the in-game achievement system, progression can be checked through the Extras menu.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "super-mario-bros",
+        "remastered",
+        "recompilation",
+        "fanmade"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-13",
+      "updated": "2026-10-13",
+      "game": {
+        "name": "Super Mario Bros. Remastered",
+        "platform": "Computer",
+        "keys": [
+          {
+            "name": "Super Mario Bros. Remastered",
+            "platform": "Computer"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 28,
+        "achievementOverrides": 0,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 0,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 28
+      },
+      "package": {
+        "file": "super-mario-bros-remastered-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 69485,
+        "sha256": "862259632dd86376db34004feda6354bfc0e472cb29c7d6d8e13580fa592982b",
+        "release": {
+          "tag": "game-data/name-super-mario-bros-remastered/super-mario-bros-remastered",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/super-mario-bros-remastered-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/super-mario-bros-remastered-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@a41e1fbcbdf4c65866d623bb1657682463b0e650/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@a41e1fbcbdf4c65866d623bb1657682463b0e650/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@a41e1fbcbdf4c65866d623bb1657682463b0e650/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight",
+      "kind": "GameCustomData",
+      "name": "The Legend of Zelda: Twilight Princess (Dusklight)",
+      "description": "Manual PlayniteAchievements set for Dusklight, a playable fanmade recompilation of The Legend of Zelda: Twilight Princess.\nAll achievements taken directly from Dusklight's own in-game achievement system.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "the-legend-of-zelda",
+        "twilight-princess",
+        "dusklight",
+        "dawnlight",
+        "recompilation"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-13",
+      "updated": "2026-10-13",
+      "game": {
+        "name": "The Legend of Zelda: Twilight Princess",
+        "platform": "Computer",
+        "keys": [
+          {
+            "name": "The Legend of Zelda: Twilight Princess",
+            "platform": "Computer"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 38,
+        "achievementOverrides": 0,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": true,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 38
+      },
+      "package": {
+        "file": "the-legend-of-zelda-twilight-princess-dusklight-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 3102106,
+        "sha256": "8e5d8d4dd6dc254adee7eb397750e06dabe2e09b6f9d147d9550556cd159ea9b",
+        "release": {
+          "tag": "game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/the-legend-of-zelda-twilight-princess-dusklight-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/the-legend-of-zelda-twilight-princess-dusklight-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@6c333b71b5fa14d8cbe9673de833962593469838/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@6c333b71b5fa14d8cbe9673de833962593469838/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@6c333b71b5fa14d8cbe9673de833962593469838/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight"
       }
     },
     {
@@ -624,16 +1257,80 @@
       "preview": "preview.png",
       "cover": "cover.jpg",
       "readme": "README.md",
-      "downloads": {
-        "total": 15,
-        "current": 15
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/retroachievements-2739/grand-theft-auto-vice-city-categories/grand-theft-auto-vice-city-categories-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/retroachievements-2739/grand-theft-auto-vice-city-categories/preview.png",
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/retroachievements-2739/grand-theft-auto-vice-city-categories/cover.jpg",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0a16ddfc1ba03f3ec8fbad618afef983bccbd1f1/game-data/retroachievements-2739/grand-theft-auto-vice-city-categories/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/retroachievements-2739/grand-theft-auto-vice-city-categories"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/steam-1449560/metro-exodus-enhanced-edition",
+      "kind": "GameCustomData",
+      "name": "Metro Exodus Enhanced Edition",
+      "description": "Added Auto Capstone\nAdded Categories\nAdded Trophy Ranks\nHigh Resolution Icons\nEdited Descriptions",
+      "author": "Synkro",
+      "ownerHash": "848ca668d311d7a737b301a73ed198352cb733aba5f9b036b65ec4a64ab87d41",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-12",
+      "updated": "2026-10-12",
+      "game": {
+        "name": "Metro Exodus Enhanced Edition",
+        "platform": "PC (Windows)",
+        "keys": [
+          {
+            "providerKey": "Steam",
+            "providerGameId": 1449560,
+            "name": "Metro Exodus Enhanced Edition",
+            "platform": "PC (Windows)"
+          },
+          {
+            "name": "Metro Exodus Enhanced Edition",
+            "platform": "PC (Windows)"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 136,
+        "lockedIcons": 0,
+        "customAchievements": 1,
+        "achievementOverrides": 69,
+        "categoryAssignments": 138,
+        "categories": 5,
+        "categoryImages": 4,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": true,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 73
+      },
+      "package": {
+        "file": "metro-exodus-enhanced-edition-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 15186372,
+        "sha256": "d34f951337eec3fab62e77eea775bf52ede0b4dfd5c31eeca205ce3429823bb5",
+        "release": {
+          "tag": "game-data/steam-1449560/metro-exodus-enhanced-edition",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-1449560/metro-exodus-enhanced-edition/metro-exodus-enhanced-edition-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-1449560/metro-exodus-enhanced-edition/metro-exodus-enhanced-edition-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@1ef93cf6a8546005aa16f1387279ee9bd61492bb/game-data/steam-1449560/metro-exodus-enhanced-edition/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@1ef93cf6a8546005aa16f1387279ee9bd61492bb/game-data/steam-1449560/metro-exodus-enhanced-edition/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@1ef93cf6a8546005aa16f1387279ee9bd61492bb/game-data/steam-1449560/metro-exodus-enhanced-edition/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-1449560/metro-exodus-enhanced-edition"
       }
     },
     {
@@ -695,10 +1392,6 @@
       },
       "preview": "preview.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 16,
-        "current": 8
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-1693980/dead-space-test/dead-space-test-1.0.1.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@bab91aed43ebaf21beb7b60d37e52a303145dbae/game-data/steam-1693980/dead-space-test/preview.png",
@@ -768,10 +1461,6 @@
       },
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 4,
-        "current": 4
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-2420110/horizon-forbidden-west-test/horizon-forbidden-west-test-1.0.0.pa",
         "preview": null,
@@ -843,10 +1532,6 @@
       "preview": "preview.png",
       "cover": "cover.jpg",
       "readme": "README.md",
-      "downloads": {
-        "total": 1,
-        "current": 1
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-292030/the-witcher-3-wild-hunt-platinum-trophy/the-witcher-3-wild-hunt-platinum-trophy-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@989ceda221058032fc3c935563252af52938b520/game-data/steam-292030/the-witcher-3-wild-hunt-platinum-trophy/preview.png",
@@ -920,10 +1605,6 @@
       "preview": "preview.png",
       "cover": "cover.jpg",
       "readme": "README.md",
-      "downloads": {
-        "total": 0,
-        "current": 0
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-2962810/galaxy-idle-clicker-categories/galaxy-idle-clicker-categories-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@252246c92b02a4c759f108aff65825db5d5130d3/game-data/steam-2962810/galaxy-idle-clicker-categories/preview.png",
@@ -995,10 +1676,6 @@
       "preview": "preview.png",
       "cover": "cover.jpg",
       "readme": "README.md",
-      "downloads": {
-        "total": 0,
-        "current": 0
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-3669870/control-resonant-platinum/control-resonant-platinum-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@fb550f87551c6f8a724414a9e1d0b181074e2684/game-data/steam-3669870/control-resonant-platinum/preview.png",
@@ -1070,16 +1747,80 @@
       "preview": "preview.png",
       "cover": "cover.jpg",
       "readme": "README.md",
-      "downloads": {
-        "total": 1,
-        "current": 1
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy/the-blood-of-dawnwalker-platinum-trophy-1.0.0.pa",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@cbabcb1d204a4f62b8fb24dbb4239b3ab883dc14/game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy/preview.png",
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@cbabcb1d204a4f62b8fb24dbb4239b3ab883dc14/game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy/cover.jpg",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@cbabcb1d204a4f62b8fb24dbb4239b3ab883dc14/game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-3751260/the-blood-of-dawnwalker-platinum-trophy"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/steam-412020/metro-exodus",
+      "kind": "GameCustomData",
+      "name": "Metro Exodus",
+      "description": "Added Auto Capstone\nAdded Categories\nAdded Trophy Ranks\nHigh Resolution Icons\nEdited Descriptions",
+      "author": "Synkro",
+      "ownerHash": "848ca668d311d7a737b301a73ed198352cb733aba5f9b036b65ec4a64ab87d41",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-12",
+      "updated": "2026-10-12",
+      "game": {
+        "name": "Metro Exodus",
+        "platform": "PC (Windows)",
+        "keys": [
+          {
+            "providerKey": "Steam",
+            "providerGameId": 412020,
+            "name": "Metro Exodus",
+            "platform": "PC (Windows)"
+          },
+          {
+            "name": "Metro Exodus",
+            "platform": "PC (Windows)"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 136,
+        "lockedIcons": 0,
+        "customAchievements": 1,
+        "achievementOverrides": 69,
+        "categoryAssignments": 138,
+        "categories": 5,
+        "categoryImages": 4,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": true,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 73
+      },
+      "package": {
+        "file": "metro-exodus-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 15186528,
+        "sha256": "11a073403b262d62c20fe9884aac983ebf0390ad330676b9d6418a924f8ac6d3",
+        "release": {
+          "tag": "game-data/steam-412020/metro-exodus",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-412020/metro-exodus/metro-exodus-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-412020/metro-exodus/metro-exodus-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@e93f9b6833c81f140da4083a95f839b4a36b6eda/game-data/steam-412020/metro-exodus/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@e93f9b6833c81f140da4083a95f839b4a36b6eda/game-data/steam-412020/metro-exodus/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@461e7030e213c112819c68922a5ffd35f7f18fca/game-data/steam-412020/metro-exodus/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-412020/metro-exodus"
       }
     },
     {
@@ -1147,10 +1888,6 @@
       },
       "cover": "cover.png",
       "readme": "README.md",
-      "downloads": {
-        "total": 5,
-        "current": 5
-      },
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/atelier-sophie-the-alchemist-of-the-mysterious-book-test-1.0.0.pa",
         "preview": null,
