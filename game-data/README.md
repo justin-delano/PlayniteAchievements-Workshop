@@ -3,7 +3,7 @@
 
 Per-game customizations: icon sets, categories, capstones, custom achievements, notes and ordering, one folder per game. Install from the Workshop in Playnite (which matches the game in your library), or download the `.pa` and import it from the game's Manage Achievements window.
 
-22 game(s), 22 item(s).
+23 game(s), 23 item(s).
 
 | | Game | Platform | Items | Installs |
 |---|---|---|---:|---:|
@@ -17,6 +17,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="steam-2420110/horizon-forbidden-west-test/cover.png" width="120"> | [Horizon Forbidden West](steam-2420110/) | PC (Windows) | 1 | 0 |
 | <img src="steam-412020/metro-exodus/cover.png" width="120"> | [Metro Exodus](steam-412020/) | PC (Windows) | 1 | 1 |
 | <img src="steam-1449560/metro-exodus-enhanced-edition/cover.png" width="120"> | [Metro Exodus Enhanced Edition](steam-1449560/) | PC (Windows) | 1 | 1 |
+| <img src="name-rayman-2-the-great-escape/rayman-2-the-great-escape/cover.png" width="120"> | [Rayman 2: The Great Escape](name-rayman-2-the-great-escape/) | Computer | 1 | 0 |
 | <img src="name-rayman-redemption/rayman-redemption/cover.png" width="120"> | [Rayman Redemption](name-rayman-redemption/) | Computer | 1 | 0 |
 | <img src="manual-2084000/shogun-showdown/cover.jpg" width="120"> | [Shogun Showdown](manual-2084000/) | PC (Windows) | 1 | 0 |
 | <img src="name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition/cover.png" width="120"> | [Sonic and the Secret Rings](name-sonic-and-the-secret-rings/) | Computer | 1 | 0 |
