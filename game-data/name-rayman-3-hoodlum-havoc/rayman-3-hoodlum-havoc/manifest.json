@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc",
+  "kind": "GameCustomData",
+  "name": "Rayman 3: Hoodlum Havoc",
+  "description": "Custom/Manual achievements for Rayman 3: Hoodlum Havoc, for those that prefer playing the original PC or GOG versions of Rayman 3 instead of using RetroAchievements compatible versions of the game.\nAchievements primarily based on completion so progress can be checked through the in-game pause menu.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "rayman-3",
+    "hoodlum-havoc",
+    "gog"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-13",
+  "updated": "2026-10-13",
+  "game": {
+    "name": "Rayman 3: Hoodlum Havoc",
+    "platform": "Computer",
+    "keys": [
+      {
+        "name": "Rayman 3: Hoodlum Havoc",
+        "platform": "Computer"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 35,
+    "achievementOverrides": 1,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 0,
+    "notes": 2,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 35
+  },
+  "package": {
+    "file": "rayman-3-hoodlum-havoc-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 3701779,
+    "sha256": "286ffac0a9a369ee4e0b55ffbfe5e73f4f11f0c33ccdbdbf0cd3cd6925630671",
+    "release": {
+      "tag": "game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}
