@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition",
+  "kind": "GameCustomData",
+  "name": "Sonic and the Secret Rings (Project Reignition)",
+  "description": "Manual PlayniteAchievement set for Sonic Project Reignition, a fanmade remake for Sonic and the Secret Rings.\nContains all achievements from the in-game achievement system, with additional achievements for unlocking the other extras in the Special Book.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "sonic-and-the-secret-rings",
+    "project-reignition",
+    "fanmade"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-13",
+  "updated": "2026-10-13",
+  "game": {
+    "name": "Sonic and the Secret Rings",
+    "platform": "Computer",
+    "keys": [
+      {
+        "name": "Sonic and the Secret Rings",
+        "platform": "Computer"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 46,
+    "achievementOverrides": 0,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": true,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 46
+  },
+  "package": {
+    "file": "sonic-and-the-secret-rings-project-reignition-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 4906191,
+    "sha256": "357af843d9457e99d2c21b8fcfee7ddd3d2b1098e3be607e30d550a723ffdc27",
+    "release": {
+      "tag": "game-data/name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition/sonic-and-the-secret-rings-project-reignition-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}
