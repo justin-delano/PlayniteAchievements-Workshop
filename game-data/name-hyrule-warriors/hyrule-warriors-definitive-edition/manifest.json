@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-hyrule-warriors/hyrule-warriors-definitive-edition",
+  "kind": "GameCustomData",
+  "name": "Hyrule Warriors: Definitive Edition",
+  "description": "Custom Nintendo Switch achievement set for Hyrule Warriors: Definitive Edition. Achievements are based on content exclusive to Hyrule Warriors Legends on the 3DS and Definitive Edition on Switch, and so can not be completed on the Wii U verison.\nAchievement progress can be checked through the in-game Medals in the Gallery and completion percentages on the Adventure Mode menu.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "hyrule-warriors",
+    "the-legend-of-zelda",
+    "legends",
+    "definitive-edition",
+    "nintendo-switch"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-14",
+  "updated": "2026-10-14",
+  "game": {
+    "name": "Hyrule Warriors",
+    "platform": "Nintendo Switch",
+    "keys": [
+      {
+        "name": "Hyrule Warriors",
+        "platform": "Nintendo Switch"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 38,
+    "achievementOverrides": 1,
+    "categoryAssignments": 1,
+    "categories": 1,
+    "categoryImages": 0,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 76
+  },
+  "package": {
+    "file": "hyrule-warriors-definitive-edition-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 5987011,
+    "sha256": "fbbaa85d2e51fdef55987c37dfd6ef8e35a8ed5f856f7618420b19785453a935",
+    "release": {
+      "tag": "game-data/name-hyrule-warriors/hyrule-warriors-definitive-edition",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-hyrule-warriors/hyrule-warriors-definitive-edition/hyrule-warriors-definitive-edition-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}
