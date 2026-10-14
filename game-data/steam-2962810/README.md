@@ -5,4 +5,4 @@ Platform: PC (Windows)
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="galaxy-idle-clicker-categories/cover.jpg" width="120"> | [Galaxy Idle Clicker - Categories!](galaxy-idle-clicker-categories/) | EazyCheeze1978 | 1.0.0 | 1 custom achievements, 36 categories, 1 capstones, 1633 overrides | 0 | 0 | 2026-10-09 |
+| <img src="galaxy-idle-clicker-categories/cover.jpg" width="120"> | [Galaxy Idle Clicker - Categories!](galaxy-idle-clicker-categories/) | EazyCheeze1978 | 1.0.0 | 1 custom achievements, 36 categories, 1 capstones, 1633 overrides | 0 | 1 | 2026-10-09 |
