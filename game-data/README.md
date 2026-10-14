@@ -3,7 +3,7 @@
 
 Per-game customizations: icon sets, categories, capstones, custom achievements, notes and ordering, one folder per game. Install from the Workshop in Playnite (which matches the game in your library), or download the `.pa` and import it from the game's Manage Achievements window.
 
-28 game(s), 28 item(s).
+29 game(s), 29 item(s).
 
 | | Game | Platform | Items | Installs |
 |---|---|---|---:|---:|
@@ -33,5 +33,6 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="name-super-mario-bros-remastered/super-mario-bros-remastered/cover.png" width="120"> | [Super Mario Bros. Remastered](name-super-mario-bros-remastered/) | Computer | 1 | 0 |
 | <img src="steam-3751260/the-blood-of-dawnwalker-platinum-trophy/cover.jpg" width="120"> | [The Blood of Dawnwalker](steam-3751260/) | PC (Windows) | 1 | 0 |
 | <img src="name-the-legend-of-zelda-breath-of-the-wild/the-legend-of-zelda-breath-of-the-wild/cover.png" width="120"> | [The Legend of Zelda: Breath of the Wild](name-the-legend-of-zelda-breath-of-the-wild/) | Nintendo Switch | 1 | 0 |
+| <img src="name-the-legend-of-zelda-link-s-awakening/the-legend-of-zelda-link-s-awakening-switch/cover.png" width="120"> | [The Legend of Zelda: Link's Awakening](name-the-legend-of-zelda-link-s-awakening/) | Nintendo Switch | 1 | 0 |
 | <img src="name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/cover.png" width="120"> | [The Legend of Zelda: Twilight Princess](name-the-legend-of-zelda-twilight-princess/) | Computer | 1 | 0 |
 | <img src="steam-292030/the-witcher-3-wild-hunt-platinum-trophy/cover.jpg" width="120"> | [The Witcher 3: Wild Hunt — Remastered](steam-292030/) | PC (Windows) | 1 | 0 |
