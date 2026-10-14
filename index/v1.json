@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-14T10:44:42Z",
-  "commit": "191fb7ba86f39cfc6e7506d9113bd6395fdb53d5",
+  "generated": "2026-10-14T10:47:42Z",
+  "commit": "c8a84ccfe109a1ef74cc909cf8274e4903871cb4",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -386,6 +386,71 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@3a76a0759268d2f69f79d8c0725da9588e37d1cb/game-data/name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@3a76a0759268d2f69f79d8c0725da9588e37d1cb/game-data/name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-mario-kart-world/mario-kart-world",
+      "kind": "GameCustomData",
+      "name": "Mario Kart World",
+      "description": "Custom Nintendo Switch achievements for Mario Kart World.\nAll progression can be checked through the game's various menus and the map screen on Free Roam.",
+      "author": "IggniFyre",
+      "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "mario-kart-world",
+        "nintendo-switch"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-14",
+      "updated": "2026-10-14",
+      "game": {
+        "name": "Mario Kart World",
+        "platform": "Nintendo Switch 2",
+        "keys": [
+          {
+            "name": "Mario Kart World",
+            "platform": "Nintendo Switch 2"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 76,
+        "achievementOverrides": 0,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 76
+      },
+      "package": {
+        "file": "mario-kart-world-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 3640883,
+        "sha256": "d68e4ea9e16b343101b365e279bb465351b6a9c785f889e586f2a330582d2e8f",
+        "release": {
+          "tag": "game-data/name-mario-kart-world/mario-kart-world",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-mario-kart-world/mario-kart-world/mario-kart-world-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-mario-kart-world/mario-kart-world/mario-kart-world-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@c8a84ccfe109a1ef74cc909cf8274e4903871cb4/game-data/name-mario-kart-world/mario-kart-world/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@c8a84ccfe109a1ef74cc909cf8274e4903871cb4/game-data/name-mario-kart-world/mario-kart-world/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@c8a84ccfe109a1ef74cc909cf8274e4903871cb4/game-data/name-mario-kart-world/mario-kart-world/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-mario-kart-world/mario-kart-world"
       }
     },
     {
