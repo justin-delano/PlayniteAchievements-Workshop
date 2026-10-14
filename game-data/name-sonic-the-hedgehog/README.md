@@ -5,4 +5,4 @@ Platform: Computer
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="sonic-1-forever/cover.png" width="120"> | [Sonic 1 Forever](sonic-1-forever/) | IggniFyre | 1.0.1 | 23 custom achievements | 0 | 0 | 2026-10-11 |
+| <img src="sonic-1-forever/cover.png" width="120"> | [Sonic 1 Forever](sonic-1-forever/) | IggniFyre | 1.0.1 | 23 custom achievements | 0 | 1 | 2026-10-11 |

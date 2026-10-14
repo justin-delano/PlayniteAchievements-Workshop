@@ -5,4 +5,4 @@ Platform: Computer
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="am2r-another-metroid-2-remake/cover.png" width="120"> | [AM2R: Another Metroid 2 Remake](am2r-another-metroid-2-remake/) | IggniFyre | 1.0.0 | 7 custom achievements, 1 capstones | 0 | 0 | 2026-10-10 |
+| <img src="am2r-another-metroid-2-remake/cover.png" width="120"> | [AM2R: Another Metroid 2 Remake](am2r-another-metroid-2-remake/) | IggniFyre | 1.0.0 | 7 custom achievements, 1 capstones | 0 | 1 | 2026-10-10 |
