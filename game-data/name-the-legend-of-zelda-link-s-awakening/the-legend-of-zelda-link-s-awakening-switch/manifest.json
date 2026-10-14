@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-the-legend-of-zelda-link-s-awakening/the-legend-of-zelda-link-s-awakening-switch",
+  "kind": "GameCustomData",
+  "name": "The Legend of Zelda: Link's Awakening (Switch)",
+  "description": "Custom Nintendo Switch achievements for The Legend of Zelda: Link's Awakening, the remake.\nAchievements primarily based on item rewards so progression can be checked through the Inventory menu.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "the-legend-of-zelda",
+    "link-s-awakening",
+    "remake",
+    "nintendo-switch"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-14",
+  "updated": "2026-10-14",
+  "game": {
+    "name": "The Legend of Zelda: Link's Awakening",
+    "platform": "Nintendo Switch",
+    "keys": [
+      {
+        "name": "The Legend of Zelda: Link's Awakening",
+        "platform": "Nintendo Switch"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 21,
+    "achievementOverrides": 0,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 21
+  },
+  "package": {
+    "file": "the-legend-of-zelda-link-s-awakening-switch-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 1549193,
+    "sha256": "e7a46b927c2a43be2fe529e69fa6f894ffce3418b8ffb808c7cb8a286247589c",
+    "release": {
+      "tag": "game-data/name-the-legend-of-zelda-link-s-awakening/the-legend-of-zelda-link-s-awakening-switch",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-the-legend-of-zelda-link-s-awakening/the-legend-of-zelda-link-s-awakening-switch/the-legend-of-zelda-link-s-awakening-switch-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}
