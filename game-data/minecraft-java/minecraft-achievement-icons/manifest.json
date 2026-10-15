@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/minecraft-java/minecraft-achievement-icons",
+  "kind": "GameCustomData",
+  "name": "Minecraft Achievement Icons",
+  "description": "Custom Legacy Minecraft Achievement Icons to replace the default picks",
+  "author": "Flavorfulroom",
+  "ownerHash": "8cec484b0e4ad6a75099ef651b3a282149fd0a5dba86573f1c9eb0cf31915720",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "minecraft-icons"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-15",
+  "updated": "2026-10-15",
+  "game": {
+    "name": "Minecraft",
+    "platform": "Windows",
+    "keys": [
+      {
+        "providerKey": "Minecraft",
+        "providerGameKey": "java",
+        "name": "Minecraft",
+        "platform": "Windows"
+      },
+      {
+        "name": "Minecraft",
+        "platform": "Windows"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 125,
+    "lockedIcons": 0,
+    "customAchievements": 0,
+    "achievementOverrides": 126,
+    "categoryAssignments": 126,
+    "categories": 1,
+    "categoryImages": 0,
+    "capstones": 0,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": true,
+    "manualLink": false,
+    "imageFiles": 131
+  },
+  "package": {
+    "file": "minecraft-achievement-icons-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 7265665,
+    "sha256": "dd3f7f5b907a38aba31471ea98912786f863436900ee617a27c9ba01be1c2c55",
+    "release": {
+      "tag": "game-data/minecraft-java/minecraft-achievement-icons",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/minecraft-java/minecraft-achievement-icons/minecraft-achievement-icons-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.jpg",
+  "readme": "README.md"
+}
