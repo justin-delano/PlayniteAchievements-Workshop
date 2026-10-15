@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-14T10:47:42Z",
-  "commit": "c8a84ccfe109a1ef74cc909cf8274e4903871cb4",
+  "generated": "2026-10-15T03:08:05Z",
+  "commit": "840283e393597d39c129325b0f7e75d9f92f05b3",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -119,6 +119,76 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@918240ff12733ed1f3f3fd6620671af00517fc71/game-data/manual-2084000/shogun-showdown/cover.jpg",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@2e8794e4a0f74f2a26c9568335847d764f644731/game-data/manual-2084000/shogun-showdown/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/manual-2084000/shogun-showdown"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/minecraft-java/minecraft-achievement-icons",
+      "kind": "GameCustomData",
+      "name": "Minecraft Achievement Icons",
+      "description": "Custom Legacy Minecraft Achievement Icons to replace the default picks",
+      "author": "Flavorfulroom",
+      "ownerHash": "8cec484b0e4ad6a75099ef651b3a282149fd0a5dba86573f1c9eb0cf31915720",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "minecraft-icons"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-15",
+      "updated": "2026-10-15",
+      "game": {
+        "name": "Minecraft",
+        "platform": "Windows",
+        "keys": [
+          {
+            "providerKey": "Minecraft",
+            "providerGameKey": "java",
+            "name": "Minecraft",
+            "platform": "Windows"
+          },
+          {
+            "name": "Minecraft",
+            "platform": "Windows"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 125,
+        "lockedIcons": 0,
+        "customAchievements": 0,
+        "achievementOverrides": 126,
+        "categoryAssignments": 126,
+        "categories": 1,
+        "categoryImages": 0,
+        "capstones": 0,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": true,
+        "manualLink": false,
+        "imageFiles": 131
+      },
+      "package": {
+        "file": "minecraft-achievement-icons-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 7265665,
+        "sha256": "dd3f7f5b907a38aba31471ea98912786f863436900ee617a27c9ba01be1c2c55",
+        "release": {
+          "tag": "game-data/minecraft-java/minecraft-achievement-icons",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/minecraft-java/minecraft-achievement-icons/minecraft-achievement-icons-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.jpg",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/minecraft-java/minecraft-achievement-icons/minecraft-achievement-icons-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@840283e393597d39c129325b0f7e75d9f92f05b3/game-data/minecraft-java/minecraft-achievement-icons/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@840283e393597d39c129325b0f7e75d9f92f05b3/game-data/minecraft-java/minecraft-achievement-icons/cover.jpg",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@840283e393597d39c129325b0f7e75d9f92f05b3/game-data/minecraft-java/minecraft-achievement-icons/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/minecraft-java/minecraft-achievement-icons"
       }
     },
     {

@@ -5,4 +5,4 @@ Platform: Nintendo Switch
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="the-legend-of-zelda-breath-of-the-wild/cover.png" width="120"> | [The Legend of Zelda: Breath of the Wild](the-legend-of-zelda-breath-of-the-wild/) | IggniFyre | 1.0.0 | 51 custom achievements, 1 categories, 1 capstones | 0 | 0 | 2026-10-14 |
+| <img src="the-legend-of-zelda-breath-of-the-wild/cover.png" width="120"> | [The Legend of Zelda: Breath of the Wild](the-legend-of-zelda-breath-of-the-wild/) | IggniFyre | 1.0.0 | 51 custom achievements, 1 categories, 1 capstones | 0 | 1 | 2026-10-14 |
