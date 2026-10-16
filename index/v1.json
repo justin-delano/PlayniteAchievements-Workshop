@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-16T10:43:19Z",
-  "commit": "66db02edad8e74c75fd53444c329ac5fd0dd94af",
+  "generated": "2026-10-16T10:53:53Z",
+  "commit": "c387339204642e690c559f8629447f4707304d79",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -648,6 +648,68 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@34b1db940c7e80f7db776693ba10e4940e4396b7/game-data/name-metroid-dread/metroid-dread/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@34b1db940c7e80f7db776693ba10e4940e4396b7/game-data/name-metroid-dread/metroid-dread/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-metroid-dread/metroid-dread"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-planet-of-lana/planet-of-lana",
+      "kind": "GameCustomData",
+      "name": "Planet of Lana",
+      "description": "Added Auto Capstone\nAdded Trophy Ranks\nHigher Resolution Icons",
+      "author": "Blaze21",
+      "ownerHash": "61e607ca390fbe365abcda39c648e2165270d95eaa853ed9d775dd6c013cdd17",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-16",
+      "updated": "2026-10-16",
+      "game": {
+        "name": "Planet of Lana",
+        "platform": "PC",
+        "keys": [
+          {
+            "name": "Planet of Lana",
+            "platform": "PC"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 25,
+        "lockedIcons": 0,
+        "customAchievements": 0,
+        "achievementOverrides": 25,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": true,
+        "imageFiles": 25
+      },
+      "package": {
+        "file": "planet-of-lana-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 463101,
+        "sha256": "7cddfca452156ce52132a2b1857cc1d26f49fd6f4f923979ead4cdb5149a750a",
+        "release": {
+          "tag": "game-data/name-planet-of-lana/planet-of-lana",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-planet-of-lana/planet-of-lana/planet-of-lana-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-planet-of-lana/planet-of-lana/planet-of-lana-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@c387339204642e690c559f8629447f4707304d79/game-data/name-planet-of-lana/planet-of-lana/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@c387339204642e690c559f8629447f4707304d79/game-data/name-planet-of-lana/planet-of-lana/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@c387339204642e690c559f8629447f4707304d79/game-data/name-planet-of-lana/planet-of-lana/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-planet-of-lana/planet-of-lana"
       }
     },
     {
