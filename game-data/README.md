@@ -3,7 +3,7 @@
 
 Per-game customizations: icon sets, categories, capstones, custom achievements, notes and ordering, one folder per game. Install from the Workshop in Playnite (which matches the game in your library), or download the `.pa` and import it from the game's Manage Achievements window.
 
-32 game(s), 32 item(s).
+33 game(s), 33 item(s).
 
 | | Game | Platform | Items | Installs |
 |---|---|---|---:|---:|
@@ -17,6 +17,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="steam-2420110/horizon-forbidden-west-test/cover.png" width="120"> | [Horizon Forbidden West](steam-2420110/) | PC (Windows) | 1 | 0 |
 | <img src="name-hyrule-warriors/hyrule-warriors-definitive-edition/cover.png" width="120"> | [Hyrule Warriors](name-hyrule-warriors/) | Nintendo Switch | 1 | 0 |
 | <img src="name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal/cover.png" width="120"> | [Jak and Daxter: The Precursor Legacy](name-jak-and-daxter-the-precursor-legacy/) | Sony Playstation 2 | 1 | 0 |
+| <img src="name-jusant/jusant/cover.jpg" width="120"> | [Jusant](name-jusant/) | PC | 1 | 0 |
 | <img src="name-mario-kart-world/mario-kart-world/cover.png" width="120"> | [Mario Kart World](name-mario-kart-world/) | Nintendo Switch 2 | 1 | 0 |
 | <img src="steam-412020/metro-exodus/cover.png" width="120"> | [Metro Exodus](steam-412020/) | PC (Windows) | 1 | 1 |
 | <img src="steam-1449560/metro-exodus-enhanced-edition/cover.png" width="120"> | [Metro Exodus Enhanced Edition](steam-1449560/) | PC (Windows) | 1 | 1 |
