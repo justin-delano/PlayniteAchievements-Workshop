@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-16T10:53:53Z",
-  "commit": "c387339204642e690c559f8629447f4707304d79",
+  "generated": "2026-10-16T14:12:39Z",
+  "commit": "28ce8e9984f4a20296a6d656e25e5ce263cc83d4",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -50,6 +50,54 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@e600ed7e5a67b0edd4a209d3b2c5e3fcfa3c8065/notifications/steamstation-5/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@e600ed7e5a67b0edd4a209d3b2c5e3fcfa3c8065/notifications/steamstation-5/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/notifications/steamstation-5"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "showcase-pages/synkro-s-trophy-showcase",
+      "kind": "ShowcasePage",
+      "name": "Synkro's Trophy Showcase",
+      "description": "A Showcase page, designed to showcase Recent Trophies and Platinum Trophies",
+      "author": "Synkro",
+      "ownerHash": "848ca668d311d7a737b301a73ed198352cb733aba5f9b036b65ec4a64ab87d41",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "showcase",
+        "trophy",
+        "platinum",
+        "synkro-s-customs"
+      ],
+      "minPluginVersion": "4.0.0",
+      "created": "2026-10-16",
+      "updated": "2026-10-16",
+      "contents": {
+        "widgets": 12,
+        "blocks": 12,
+        "achievementGrids": 0,
+        "gameGrids": 1,
+        "images": 0
+      },
+      "package": {
+        "file": "synkro-s-trophy-showcase-1.0.0.pashowcase",
+        "formatKind": "PlayniteAchievements.ShowcasePage",
+        "formatVersion": 2,
+        "sizeBytes": 2140,
+        "sha256": "39ba6cdc92d56e6563945c5dde9488f362f0ddb79291fba6853b21eeaacc52ff",
+        "release": {
+          "tag": "showcase-pages/synkro-s-trophy-showcase",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/showcase-pages/synkro-s-trophy-showcase/synkro-s-trophy-showcase-1.0.0.pashowcase"
+        }
+      },
+      "preview": "preview.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/showcase-pages/synkro-s-trophy-showcase/synkro-s-trophy-showcase-1.0.0.pashowcase",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@28ce8e9984f4a20296a6d656e25e5ce263cc83d4/showcase-pages/synkro-s-trophy-showcase/preview.png",
+        "cover": null,
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@28ce8e9984f4a20296a6d656e25e5ce263cc83d4/showcase-pages/synkro-s-trophy-showcase/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/showcase-pages/synkro-s-trophy-showcase"
       }
     },
     {

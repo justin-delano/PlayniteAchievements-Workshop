@@ -3,4 +3,8 @@
 
 Showcase page layouts: which widgets, where, and how their grids are set up. Install from the Workshop in Playnite, or download the `.pashowcase` and import it from the Showcase page menu.
 
-Nothing here yet. Be the first: see [how to share](../README.md#sharing-your-own).
+1 item(s), most installed first.
+
+| | Name | Author | Version | Installs | Likes | Updated |
+|---|---|---|---|---:|---:|---|
+| <img src="synkro-s-trophy-showcase/preview.png" width="120"> | [Synkro's Trophy Showcase](synkro-s-trophy-showcase/) | Synkro | 1.0.0 | 0 | 0 | 2026-10-16 |
