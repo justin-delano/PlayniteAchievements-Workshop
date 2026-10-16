@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-jusant/jusant",
+  "kind": "GameCustomData",
+  "name": "Jusant",
+  "description": "Added Auto Capstone\nAdded Trophy Ranks\nHigher Resolution Icons",
+  "author": "Blaze21",
+  "ownerHash": "61e607ca390fbe365abcda39c648e2165270d95eaa853ed9d775dd6c013cdd17",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-16",
+  "updated": "2026-10-16",
+  "game": {
+    "name": "Jusant",
+    "platform": "PC",
+    "keys": [
+      {
+        "name": "Jusant",
+        "platform": "PC"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 21,
+    "lockedIcons": 0,
+    "customAchievements": 1,
+    "achievementOverrides": 21,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": true,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 22
+  },
+  "package": {
+    "file": "jusant-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 1659943,
+    "sha256": "67cc86dde3ac5b66fb6f469cfabe7cb7dc7127071cab035ecf3ae5c95bd44ebd",
+    "release": {
+      "tag": "game-data/name-jusant/jusant",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-jusant/jusant/jusant-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.jpg",
+  "readme": "README.md"
+}
