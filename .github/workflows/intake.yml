@@ -105,6 +105,7 @@ jobs:
           else
             BODY="This change to an existing item passed validation and waits for a maintainer's approval before it is published. If approval takes longer than a day, share it again."
           fi
+          BODY="$BODY Changes shared from a newer version of PlayniteAchievements are published without waiting."
           gh issue comment "$ISSUE" --repo "$REPO" --body "$BODY"
           gh issue edit "$ISSUE" --repo "$REPO" --add-label in-review --remove-label needs-changes || true
 
