@@ -5,4 +5,4 @@ Platform: PC
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="jusant/cover.jpg" width="120"> | [Jusant](jusant/) | Blaze21 | 1.0.0 | 21 icons, 1 custom achievements, 1 capstones, 21 overrides, order | 0 | 0 | 2026-10-16 |
+| <img src="jusant/cover.jpg" width="120"> | [Jusant](jusant/) | Blaze21 | 1.0.0 | 21 icons, 1 custom achievements, 1 capstones, 21 overrides, order | 0 | 1 | 2026-10-16 |
