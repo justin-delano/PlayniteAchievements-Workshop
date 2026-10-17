@@ -15,8 +15,8 @@ R2_BUCKET = "pa-workshop-uploads"
 # room for several files per share.
 DAILY_SUBMISSIONS_PER_IP = "100"
 DAILY_UPLOADS_PER_IP = "500"
-# Like and unlike presses per client (by IP) per day.
-DAILY_LIKES_PER_IP = "200"
+# Like and unlike presses per client (by IP) per day; 0 means no limit.
+DAILY_LIKES_PER_IP = "0"
 # Installs recorded per client (by IP) per day.
 DAILY_INSTALLS_PER_IP = "500"
 # The index a like or an install is checked against, so an unknown item id cannot seed a row.
