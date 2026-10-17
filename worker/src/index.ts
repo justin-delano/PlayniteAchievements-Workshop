@@ -179,6 +179,9 @@ interface SubmissionRequest {
   existingId?: string | null;
   remove?: boolean;
   readme?: string;
+  /** The extension's secret key; hashed here, never published. */
+  submitterKey?: string;
+  /** What 4.1.0 sends instead of the key. The hash is public, so it proves nothing. */
   submitterHash?: string;
   packageKey?: string;
   previewKey?: string;
@@ -197,11 +200,10 @@ async function createSubmission(request: Request, env: Env): Promise<Response> {
   const license = (body.license ?? "CC-BY-4.0").trim();
   const existingId = (body.existingId ?? "").trim();
   const remove = body.remove === true;
-  const submitterHash = (body.submitterHash ?? "").trim().toLowerCase();
+  const { hash: submitterHash, verified } = await resolveIdentity(body.submitterKey, body.submitterHash, "submitter");
   const tags = Array.isArray(body.tags) ? body.tags.map((t) => String(t).trim()).filter(Boolean).slice(0, 10) : [];
 
   if (!KINDS.has(kind)) throw new HttpError(400, "kind is not one of the Workshop kinds.");
-  if (!/^[a-f0-9]{64}$/.test(submitterHash)) throw new HttpError(400, "submitterHash must be a SHA-256 hex string.");
   if (!remove) {
     if (name.length === 0 || name.length > 80) throw new HttpError(400, "name is required (up to 80 characters).");
     if (author.length === 0 || author.length > 40) throw new HttpError(400, "author is required (up to 40 characters).");
@@ -249,6 +251,10 @@ async function createSubmission(request: Request, env: Env): Promise<Response> {
     ["Package URL (for packages over 25 MB)", ""],
     ["Submitter key (filled in by the extension)", submitterHash],
     ["Rights", "- [x] Everything in this package is my own work or licensed for redistribution under the license above, and it contains no personal progress data I want to keep private."],
+    // Intake trusts this only on issues this Worker opened, and its parser keeps the last
+    // heading of a name, so it must stay last: a heading typed into the README or description
+    // comes earlier and is overridden.
+    ["Submitter verified", verified ? "yes" : "no"],
   ];
   const issueBody =
     sections.map(([label, value]) => `### ${label}\n\n${value.length > 0 ? value : "_No response_"}`).join("\n\n") +
@@ -334,6 +340,9 @@ async function recordInstall(request: Request, env: Env): Promise<Response> {
 
 interface LikeRequest {
   itemId?: string;
+  /** The extension's secret key; the voter is its hash. */
+  voterKey?: string;
+  /** What 4.1.0 sends instead of the key; still accepted, though anyone can send it. */
   voterHash?: string;
   liked?: boolean;
 }
@@ -343,14 +352,11 @@ async function setLikeFor(request: Request, env: Env): Promise<Response> {
   await enforceRateLimit(request, env, "like", env.DAILY_LIKES_PER_IP, "like");
   const body = (await readJson(request)) as LikeRequest;
   const itemId = (body.itemId ?? "").trim();
-  const voter = (body.voterHash ?? "").trim().toLowerCase();
+  const { hash: voter } = await resolveIdentity(body.voterKey, body.voterHash, "voter");
   const liked = body.liked !== false;
 
   if (!isItemId(itemId)) {
     throw new HttpError(400, "itemId is not a Workshop item id.");
-  }
-  if (!isVoter(voter)) {
-    throw new HttpError(400, "voterHash must be a SHA-256 hex string.");
   }
   if (liked && !(await itemExists(env, itemId))) {
     throw new HttpError(404, "The Workshop has no such item.");
@@ -402,6 +408,29 @@ function sanitizeFileName(name: string): string {
  * /v1/submissions, so charging them together let three shares exhaust a limit of ten. A limit
  * of 0 disables the bucket.
  */
+/**
+ * The identity a request acts as. A key (64 hex digits, as the extension holds it) is hashed the
+ * way the extension hashes it, SHA-256 of its lowercase text, and counts as verified. A bare hash
+ * is what 4.1.0 sends; it is public in every manifest, so it is accepted but never verified.
+ */
+async function resolveIdentity(
+  key: string | undefined,
+  hash: string | undefined,
+  field: string,
+): Promise<{ hash: string; verified: boolean }> {
+  const trimmedKey = (key ?? "").trim().toLowerCase();
+  if (trimmedKey.length > 0) {
+    if (!/^[a-f0-9]{64}$/.test(trimmedKey)) throw new HttpError(400, `${field}Key must be 64 hex digits.`);
+    const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(trimmedKey));
+    const hex = [...new Uint8Array(digest)].map((b) => b.toString(16).padStart(2, "0")).join("");
+    return { hash: hex, verified: true };
+  }
+
+  const trimmedHash = (hash ?? "").trim().toLowerCase();
+  if (!/^[a-f0-9]{64}$/.test(trimmedHash)) throw new HttpError(400, `${field}Key must be 64 hex digits.`);
+  return { hash: trimmedHash, verified: false };
+}
+
 async function enforceRateLimit(request: Request, env: Env, bucket: string, limitValue: string, noun: string): Promise<void> {
   const limit = Number(limitValue);
   if (!Number.isFinite(limit) || limit <= 0) {
