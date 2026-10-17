@@ -10,6 +10,7 @@ namespace Workshop.Validator.Intake;
 public sealed partial class IssueForm
 {
     private readonly Dictionary<string, string> _fields = new(StringComparer.OrdinalIgnoreCase);
+    private readonly Dictionary<string, int> _counts = new(StringComparer.OrdinalIgnoreCase);
 
     public static IssueForm Parse(string body)
     {
@@ -46,10 +47,14 @@ public sealed partial class IssueForm
 
         var value = string.Join("\n", buffer).Trim();
         _fields[label] = value == "_No response_" ? string.Empty : value;
+        _counts[label] = Count(label) + 1;
     }
 
-    /// <summary>The field's text by its label, or empty when absent.</summary>
+    /// <summary>The field's text by its label, or empty when absent. A repeated heading keeps its last occurrence.</summary>
     public string Get(string label) => _fields.TryGetValue(label, out var value) ? value : string.Empty;
+
+    /// <summary>How many times a heading occurs; more than one means a free-text field carried a copy of it.</summary>
+    public int Count(string label) => _counts.TryGetValue(label, out var count) ? count : 0;
 
     /// <summary>True when a checkbox whose label starts with <paramref name="optionPrefix"/> is ticked.</summary>
     public bool IsChecked(string fieldLabel, string optionPrefix)
