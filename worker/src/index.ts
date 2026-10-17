@@ -340,10 +340,8 @@ async function recordInstall(request: Request, env: Env): Promise<Response> {
 
 interface LikeRequest {
   itemId?: string;
-  /** The extension's secret key; the voter is its hash. */
+  /** The extension's secret key; the voter is its hash. 4.1.0 sent the public hash instead, which is refused. */
   voterKey?: string;
-  /** What 4.1.0 sends instead of the key; still accepted, though anyone can send it. */
-  voterHash?: string;
   liked?: boolean;
 }
 
@@ -352,7 +350,10 @@ async function setLikeFor(request: Request, env: Env): Promise<Response> {
   await enforceRateLimit(request, env, "like", env.DAILY_LIKES_PER_IP, "like");
   const body = (await readJson(request)) as LikeRequest;
   const itemId = (body.itemId ?? "").trim();
-  const { hash: voter } = await resolveIdentity(body.voterKey, body.voterHash, "voter");
+  if ((body.voterKey ?? "").trim().length === 0) {
+    throw new HttpError(400, "Liking needs a newer version of PlayniteAchievements.");
+  }
+  const { hash: voter } = await resolveIdentity(body.voterKey, undefined, "voter");
   const liked = body.liked !== false;
 
   if (!isItemId(itemId)) {
