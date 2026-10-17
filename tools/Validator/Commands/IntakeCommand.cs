@@ -29,6 +29,8 @@ public static class IntakeCommand
     private const string FilesField = "Files";
     private const string PackageUrlField = "Package URL (for packages over 25 MB)";
     private const string SubmitterHashField = "Submitter key (filled in by the extension)";
+    // Written last by the Worker: "yes" when the request carried the key, not just its public hash.
+    private const string SubmitterVerifiedField = "Submitter verified";
 
     /// <summary>The label a maintainer adds to let a held change to an existing item through.</summary>
     private const string ApprovedLabel = "approved";
@@ -98,6 +100,15 @@ public static class IntakeCommand
             submitterHash = "";
         }
 
+        if (form.Count(SubmitterHashField) > 1 || form.Count(SubmitterVerifiedField) > 1)
+        {
+            throw new ValidationException("The submission repeats the submitter fields. Remove the copied headings from the description and README.");
+        }
+
+        // The Worker marks a request that carried the submitter key itself; only then does the
+        // hash prove ownership on its own, without a maintainer's approval.
+        var verified = isBotIssue && submitterHash.Length > 0 &&
+                       string.Equals(form.Get(SubmitterVerifiedField), "yes", StringComparison.OrdinalIgnoreCase);
         var approved = labels.Contains(ApprovedLabel);
 
         var remove = form.IsChecked(RequestField, "Remove this item");
@@ -119,11 +130,11 @@ public static class IntakeCommand
                 throw new ValidationException($"`{existingId}` was submitted by someone else, so it can only be updated by its author or a listed maintainer.");
             }
 
-            // The extension proves ownership with the public hash alone, so a change to an
-            // existing item that rests on it waits for a maintainer's approved label. A GitHub
-            // author or listed maintainer filing by hand is proven by their login.
+            // A change to an existing item goes through when the Worker verified the submitter
+            // key, or a GitHub author or listed maintainer filed it by hand. One proven by the
+            // public hash alone (what 4.1.0 sends) waits for a maintainer's approved label.
             result["isUpdate"] = true;
-            result["held"] = !approved && (isBotIssue || !existing.IsOwnedBy(login, null));
+            result["held"] = !approved && (isBotIssue ? !verified : !existing.IsOwnedBy(login, null));
         }
         else if (remove)
         {
