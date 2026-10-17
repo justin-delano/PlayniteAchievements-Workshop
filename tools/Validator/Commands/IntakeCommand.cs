@@ -30,6 +30,9 @@ public static class IntakeCommand
     private const string PackageUrlField = "Package URL (for packages over 25 MB)";
     private const string SubmitterHashField = "Submitter key (filled in by the extension)";
 
+    /// <summary>The label a maintainer adds to let a held change to an existing item through.</summary>
+    private const string ApprovedLabel = "approved";
+
     public static async Task<int> RunAsync(Args args)
     {
         var issuePath = args.Require("issue");
@@ -43,6 +46,7 @@ public static class IntakeCommand
             ["ok"] = false,
             ["remove"] = false,
             ["isUpdate"] = false,
+            ["held"] = false,
             ["errors"] = new JsonArray()
         };
 
@@ -69,13 +73,32 @@ public static class IntakeCommand
                     ?? throw new ValidationException("The issue payload could not be read.");
         var form = IssueForm.Parse(issue["body"]?.GetValue<string>() ?? "");
         var login = issue["user"]?["login"]?.GetValue<string>() ?? actor;
+        var labels = (issue["labels"] as JsonArray ?? new JsonArray())
+            .Select(label => label?["name"]?.GetValue<string>())
+            .Where(name => name is not null)
+            .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+        // An issue the Worker opened on a Playnite user's behalf is authored by the bot account
+        // and identifies the real submitter only by hash; a hand-filled form identifies them by
+        // login. The hash is public (every manifest carries it), so it is only taken from issues
+        // the bot opened: anyone could paste it into a hand-filled form.
+        var botLogin = Environment.GetEnvironmentVariable("WORKSHOP_BOT_LOGIN");
+        var isBotIssue = login.EndsWith("[bot]", StringComparison.Ordinal) ||
+                         (!string.IsNullOrWhiteSpace(botLogin) && string.Equals(login, botLogin, StringComparison.OrdinalIgnoreCase));
 
         var submitterHash = form.Get(SubmitterHashField).Trim().ToLowerInvariant();
-        if (submitterHash.Length > 0 && !ManifestChecks.Sha256Pattern().IsMatch(submitterHash))
+        if (submitterHash.Length > 0 && !isBotIssue)
         {
-            errors.Add("The submitter key is not a SHA-256 hex string. Leave it empty when submitting by hand.");
+            errors.Add("The submitter key is filled in by the extension. Leave it empty when submitting by hand.");
             submitterHash = "";
         }
+        else if (submitterHash.Length > 0 && !ManifestChecks.Sha256Pattern().IsMatch(submitterHash))
+        {
+            errors.Add("The submitter key is not a SHA-256 hex string.");
+            submitterHash = "";
+        }
+
+        var approved = labels.Contains(ApprovedLabel);
 
         var remove = form.IsChecked(RequestField, "Remove this item");
         var existingId = form.Get(ExistingIdField).Trim().Trim('`').Trim('/');
@@ -96,7 +119,11 @@ public static class IntakeCommand
                 throw new ValidationException($"`{existingId}` was submitted by someone else, so it can only be updated by its author or a listed maintainer.");
             }
 
+            // The extension proves ownership with the public hash alone, so a change to an
+            // existing item that rests on it waits for a maintainer's approved label. A GitHub
+            // author or listed maintainer filing by hand is proven by their login.
             result["isUpdate"] = true;
+            result["held"] = !approved && (isBotIssue || !existing.IsOwnedBy(login, null));
         }
         else if (remove)
         {
@@ -245,13 +272,7 @@ public static class IntakeCommand
         var today = DateTime.UtcNow.ToString("yyyy-MM-dd");
         var assetName = metadataOnly ? "" : $"{slug}-{version}{CanonicalExtension(report!)}";
 
-        // An issue the Worker opened on a Playnite user's behalf is authored by the bot account
-        // and identifies the real submitter only by hash; a hand-filled form identifies them by
-        // login. A hash therefore means "hash-owned", and the opening login is not recorded.
-        var botLogin = Environment.GetEnvironmentVariable("WORKSHOP_BOT_LOGIN");
-        var isBotIssue = submitterHash.Length > 0 ||
-                         login.EndsWith("[bot]", StringComparison.Ordinal) ||
-                         (botLogin is not null && string.Equals(login, botLogin, StringComparison.OrdinalIgnoreCase));
+        // A bot issue is hash-owned, so the opening login is not recorded.
         if (isBotIssue && author == login)
         {
             errors.Add("Author name is required for submissions made from Playnite.");
