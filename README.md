@@ -34,6 +34,7 @@ Submitting by hand works too: open a [submission issue](../../issues/new?templat
 
 To update an item, share it again from the same Playnite install, or fill in its id in the form.
 Only the original submitter (or a listed maintainer) can update or remove an item; maintainers can revert any merge.
+Updates and removals shared from Playnite wait for a maintainer's approval before they take effect.
 
 Submissions are licensed [CC BY 4.0](CONTENT-LICENSES.md) unless the author chooses CC0.
 Audio and artwork must be the author's own or licensed for redistribution.
