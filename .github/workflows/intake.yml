@@ -78,6 +78,7 @@ jobs:
           echo "asset=$(jq -r .assetName work/result.json)" >> "$GITHUB_OUTPUT"
           echo "name=$(jq -r .name work/result.json)" >> "$GITHUB_OUTPUT"
           echo "metadataOnly=$(jq -r '.metadataOnly // false' work/result.json)" >> "$GITHUB_OUTPUT"
+          echo "held=$(jq -r '.held // false' work/result.json)" >> "$GITHUB_OUTPUT"
 
       - name: Report validation errors
         if: steps.issue.outputs.state == 'open' && steps.intake.outputs.ok != 'true'
@@ -93,8 +94,22 @@ jobs:
           gh issue edit "$ISSUE" --repo "$REPO" --add-label needs-changes --remove-label in-review || true
           exit 0
 
+      # The extension proves ownership with a hash the index publishes, so a change to an existing
+      # item made that way waits here until a maintainer adds the "approved" label, which re-runs
+      # this workflow. Uploads expire from the Worker's bucket after a day.
+      - name: Hold for approval
+        if: steps.issue.outputs.state == 'open' && steps.intake.outputs.ok == 'true' && steps.intake.outputs.held == 'true'
+        run: |
+          if [ "${{ steps.intake.outputs.remove }}" = "true" ]; then
+            BODY="Removing an existing item waits for a maintainer's approval before it takes effect."
+          else
+            BODY="This change to an existing item passed validation and waits for a maintainer's approval before it is published. If approval takes longer than a day, share it again."
+          fi
+          gh issue comment "$ISSUE" --repo "$REPO" --body "$BODY"
+          gh issue edit "$ISSUE" --repo "$REPO" --add-label in-review --remove-label needs-changes || true
+
       - name: Upload the package to the item's release
-        if: steps.issue.outputs.state == 'open' && steps.intake.outputs.ok == 'true' && steps.intake.outputs.remove != 'true' && steps.intake.outputs.metadataOnly != 'true'
+        if: steps.issue.outputs.state == 'open' && steps.intake.outputs.ok == 'true' && steps.intake.outputs.held != 'true' && steps.intake.outputs.remove != 'true' && steps.intake.outputs.metadataOnly != 'true'
         run: |
           TAG="${{ steps.intake.outputs.tag }}"
           if ! gh release view "$TAG" --repo "$REPO" >/dev/null 2>&1; then
@@ -109,7 +124,7 @@ jobs:
             --item "work/item/${{ steps.intake.outputs.id }}" --asset-url "$ASSET_URL"
 
       - name: Commit the item to main
-        if: steps.issue.outputs.state == 'open' && steps.intake.outputs.ok == 'true'
+        if: steps.issue.outputs.state == 'open' && steps.intake.outputs.ok == 'true' && steps.intake.outputs.held != 'true'
         run: |
           ID="${{ steps.intake.outputs.id }}"
           git config user.name "github-actions[bot]"
