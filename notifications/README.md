@@ -7,4 +7,4 @@ Looks for the unlock notification: colors, layout, badges, backgrounds, and opti
 
 | | Name | Author | Version | Installs | Likes | Updated |
 |---|---|---|---|---:|---:|---|
-| <img src="steamstation-5/cover.png" width="120"> | [Steamstation 5](steamstation-5/) | Luxas | 1.0.1 | 0 | 3 | 2026-10-07 |
+| <img src="steamstation-5/cover.png" width="120"> | [Steamstation 5](steamstation-5/) | Luxas | 1.0.1 | 4 | 3 | 2026-10-07 |
