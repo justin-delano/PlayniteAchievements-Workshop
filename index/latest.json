@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-19T16:15:13Z",
-  "commit": "30ccf00c0e54fb486153b1332b1aa17b33e1b705",
+  "generated": "2026-10-19T23:01:23Z",
+  "commit": "a0fa8fc294678d337df7eaceac0a360b9e18f6e7",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -1972,6 +1972,84 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@11155ace70495de35a5c6fbea457bf54de270220/game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art/cover.jpg",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@11155ace70495de35a5c6fbea457bf54de270220/game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/steam-1133760/chrono-cross-the-radical-dreamers-edition",
+      "kind": "GameCustomData",
+      "name": "CHRONO CROSS: THE RADICAL DREAMERS EDITION",
+      "description": "Todas as conquistas (incluindo a platina) do CHRONO CROSS: THE RADICAL DREAMERS EDITION da Steam em Português Brasileiro",
+      "author": "gbszx",
+      "ownerHash": "f0f3916542ea1ac00aa1f91b6e54b9b6c07a102597dc6f7510b42d5418563daf",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "chrono-cross",
+        "rpg",
+        "ptbr",
+        "traduzido",
+        "portugues",
+        "portugues-brasileiro",
+        "chronocross",
+        "chrono",
+        "tradu-o"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-19",
+      "updated": "2026-10-19",
+      "game": {
+        "name": "CHRONO CROSS: THE RADICAL DREAMERS EDITION",
+        "platform": "PC",
+        "keys": [
+          {
+            "providerKey": "Steam",
+            "providerGameId": 1133760,
+            "name": "CHRONO CROSS: THE RADICAL DREAMERS EDITION",
+            "platform": "PC"
+          },
+          {
+            "name": "CHRONO CROSS: THE RADICAL DREAMERS EDITION",
+            "platform": "PC"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 1,
+        "achievementOverrides": 38,
+        "categoryAssignments": 1,
+        "categories": 1,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": true,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 1
+      },
+      "package": {
+        "file": "chrono-cross-the-radical-dreamers-edition-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 10826,
+        "sha256": "75600f6d9627261dbaf19803137cce690580d5fb11cea82f64177971f4b30b06",
+        "release": {
+          "tag": "game-data/steam-1133760/chrono-cross-the-radical-dreamers-edition",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-1133760/chrono-cross-the-radical-dreamers-edition/chrono-cross-the-radical-dreamers-edition-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.jpg",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-1133760/chrono-cross-the-radical-dreamers-edition/chrono-cross-the-radical-dreamers-edition-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@a0fa8fc294678d337df7eaceac0a360b9e18f6e7/game-data/steam-1133760/chrono-cross-the-radical-dreamers-edition/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@a0fa8fc294678d337df7eaceac0a360b9e18f6e7/game-data/steam-1133760/chrono-cross-the-radical-dreamers-edition/cover.jpg",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@a0fa8fc294678d337df7eaceac0a360b9e18f6e7/game-data/steam-1133760/chrono-cross-the-radical-dreamers-edition/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-1133760/chrono-cross-the-radical-dreamers-edition"
       }
     },
     {

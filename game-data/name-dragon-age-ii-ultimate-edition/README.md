@@ -5,4 +5,4 @@ Platform: PC (Windows)
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="dragon-age-ii-ultimate-edition/cover.jpg" width="120"> | [Dragon Age II: Ultimate Edition](dragon-age-ii-ultimate-edition/) | Nicolaus | 1.0.0 | 65 custom achievements, 4 categories, 15 overrides | 0 | 0 | 2026-10-19 |
+| <img src="dragon-age-ii-ultimate-edition/cover.jpg" width="120"> | [Dragon Age II: Ultimate Edition](dragon-age-ii-ultimate-edition/) | Nicolaus | 1.0.0 | 65 custom achievements, 4 categories, 15 overrides | 1 | 0 | 2026-10-19 |
