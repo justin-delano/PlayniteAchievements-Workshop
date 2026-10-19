@@ -3,4 +3,8 @@
 
 Bundles of colors, sounds, notifications and frames, each part saved as a preset on install. Install from the Workshop in Playnite, or download the `.pabundle` and import it under Settings > Workshop > Bundles.
 
-Nothing here yet. Be the first: see [how to share](../README.md#sharing-your-own).
+1 item(s), most installed first.
+
+| | Name | Author | Version | Installs | Likes | Updated |
+|---|---|---|---|---:|---:|---|
+| <img src="steamstation-2-0/preview.png" width="120"> | [SteamStation 2.0](steamstation-2-0/) | Luxas | 1.0.0 | 0 | 0 | 2026-10-19 |

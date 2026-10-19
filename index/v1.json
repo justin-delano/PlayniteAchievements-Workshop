@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-19T08:48:07Z",
-  "commit": "18da233e786ad50569360567a9becd4f20bd1268",
+  "generated": "2026-10-19T12:50:42Z",
+  "commit": "91302f4b1b13dd14a705dc7612414e9950e7cf57",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -98,6 +98,67 @@
         "cover": null,
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@28ce8e9984f4a20296a6d656e25e5ce263cc83d4/showcase-pages/synkro-s-trophy-showcase/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/showcase-pages/synkro-s-trophy-showcase"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "bundles/steamstation-2-0",
+      "kind": "Bundle",
+      "name": "SteamStation 2.0",
+      "description": "The same good old Steamstation preset, but now with the new (and animated) Steam trophy icons!",
+      "author": "Luxas",
+      "ownerHash": "8a0b56d82c6786d91fd7a6b02188d94d9f8a98b551f342ff44bfc48df1d973af",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "steam",
+        "playstation"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-19",
+      "updated": "2026-10-19",
+      "contents": {
+        "toast": {
+          "toastStyle": true,
+          "frameStyle": false,
+          "toastTemplate": false,
+          "frameTemplate": false,
+          "images": 12,
+          "kindStyles": 1
+        },
+        "frame": {
+          "toastStyle": false,
+          "frameStyle": true,
+          "toastTemplate": false,
+          "frameTemplate": false,
+          "images": 11,
+          "kindStyles": 1
+        },
+        "parts": [
+          "Toast",
+          "Frame"
+        ]
+      },
+      "package": {
+        "file": "steamstation-2-0-1.0.0.pabundle",
+        "formatKind": "PlayniteAchievements.Bundle",
+        "formatVersion": 1,
+        "sizeBytes": 10171289,
+        "sha256": "848793d035c8cc111798a620911278b46a87c16ae6d5653c6fbcdad40d45cebd",
+        "release": {
+          "tag": "bundles/steamstation-2-0",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/bundles/steamstation-2-0/steamstation-2-0-1.0.0.pabundle"
+        }
+      },
+      "preview": "preview.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/bundles/steamstation-2-0/steamstation-2-0-1.0.0.pabundle",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@91302f4b1b13dd14a705dc7612414e9950e7cf57/bundles/steamstation-2-0/preview.png",
+        "cover": null,
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@91302f4b1b13dd14a705dc7612414e9950e7cf57/bundles/steamstation-2-0/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/bundles/steamstation-2-0"
       }
     },
     {
