@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-19T13:51:01Z",
-  "commit": "11155ace70495de35a5c6fbea457bf54de270220",
+  "generated": "2026-10-19T13:55:56Z",
+  "commit": "47be67e43d72fe69247227fe3c07fd2657167704",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -430,6 +430,68 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@12c4a3916ac7620d9a388d29b228687ad1d898c3/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@12c4a3916ac7620d9a388d29b228687ad1d898c3/game-data/name-banjo-kazooie/banjo-kazooie-recompiled/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-banjo-kazooie/banjo-kazooie-recompiled"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition",
+      "kind": "GameCustomData",
+      "name": "Dragon Age II: Ultimate Edition",
+      "description": "DA2 Achievements",
+      "author": "Nicolaus",
+      "ownerHash": "d4b57965482389f5b7f9ecd73ff3f4a879d304b9131e45bd984d7e707692d518",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-19",
+      "updated": "2026-10-19",
+      "game": {
+        "name": "Dragon Age II: Ultimate Edition",
+        "platform": "PC (Windows)",
+        "keys": [
+          {
+            "name": "Dragon Age II: Ultimate Edition",
+            "platform": "PC (Windows)"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 65,
+        "achievementOverrides": 15,
+        "categoryAssignments": 15,
+        "categories": 4,
+        "categoryImages": 0,
+        "capstones": 0,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 65
+      },
+      "package": {
+        "file": "dragon-age-ii-ultimate-edition-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 217314,
+        "sha256": "aa650824a45698ff909f1fca2d150b4a5d6a29e796ca73fe99187ec5a2f57b6e",
+        "release": {
+          "tag": "game-data/name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.jpg",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@47be67e43d72fe69247227fe3c07fd2657167704/game-data/name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@47be67e43d72fe69247227fe3c07fd2657167704/game-data/name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition/cover.jpg",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@47be67e43d72fe69247227fe3c07fd2657167704/game-data/name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition"
       }
     },
     {

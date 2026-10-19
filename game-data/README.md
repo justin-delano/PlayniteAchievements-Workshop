@@ -3,7 +3,7 @@
 
 Per-game customizations: icon sets, categories, capstones, custom achievements, notes and ordering, one folder per game. Install from the Workshop in Playnite (which matches the game in your library), or download the `.pa` and import it from the game's Manage Achievements window.
 
-35 game(s), 35 item(s).
+36 game(s), 36 item(s).
 
 | | Game | Platform | Items | Installs |
 |---|---|---|---:|---:|
@@ -12,6 +12,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="name-banjo-kazooie/banjo-kazooie-recompiled/cover.png" width="120"> | [Banjo-Kazooie](name-banjo-kazooie/) | Computer | 1 | 0 |
 | <img src="steam-3669870/control-resonant-platinum/cover.jpg" width="120"> | [CONTROL Resonant](steam-3669870/) | PC (Windows) | 1 | 3 |
 | <img src="steam-1693980/dead-space-test/preview.png" width="120"> | [Dead Space](steam-1693980/) | PC (Windows) | 1 | 1 |
+| <img src="name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition/cover.jpg" width="120"> | [Dragon Age II: Ultimate Edition](name-dragon-age-ii-ultimate-edition/) | PC (Windows) | 1 | 0 |
 | <img src="steam-2962810/galaxy-idle-clicker-categories/cover.jpg" width="120"> | [Galaxy Idle Clicker](steam-2962810/) | PC (Windows) | 1 | 0 |
 | <img src="retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art/cover.jpg" width="120"> | [Grand Theft Auto - San Andreas](retroachievements-2772/) | Sony PlayStation 2 | 1 | 0 |
 | <img src="retroachievements-2739/grand-theft-auto-vice-city-categories/cover.jpg" width="120"> | [Grand Theft Auto - Vice City](retroachievements-2739/) | Sony PlayStation 2 | 1 | 0 |
