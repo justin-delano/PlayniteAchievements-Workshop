@@ -64,6 +64,11 @@ public static class PackageInspector
             return report;
         }
 
+        if (report.Ok)
+        {
+            FieldAllowlist.Check(entries, report);
+        }
+
         if (expectedKind is not null && report.Kind is not null && report.Kind != expectedKind)
         {
             // A toast-only style submitted under "Frames" (or the reverse) is a form
