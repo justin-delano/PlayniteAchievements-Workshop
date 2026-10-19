@@ -35,7 +35,7 @@ public static class Kinds
     // Newest format version of each package type the validator understands. A package from a
     // newer extension is refused until the validator is updated.
     public const int ColorsMaxVersion = 1;
-    public const int NotificationStyleMaxVersion = 3;
+    public const int NotificationStyleMaxVersion = 4;
     public const int ShowcasePageMaxVersion = 2;
     public const int GameCustomDataMaxSchema = 8;
     public const int UnlockSoundsMaxVersion = 1;
