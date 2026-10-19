@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-19T13:55:56Z",
-  "commit": "47be67e43d72fe69247227fe3c07fd2657167704",
+  "generated": "2026-10-19T15:57:01Z",
+  "commit": "5ab2276755fd1a05cb0ab6608f45fd25a02a1c4e",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -1972,6 +1972,85 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@11155ace70495de35a5c6fbea457bf54de270220/game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art/cover.jpg",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@11155ace70495de35a5c6fbea457bf54de270220/game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/steam-12210/grand-theft-auto-iv-the-complete-edition",
+      "kind": "GameCustomData",
+      "name": "Grand Theft Auto IV: The Complete Edition",
+      "description": "Todas as conquistas (incluindo a platina) do GTA 4 The Complete Edition da Steam em Português Brasileiro",
+      "author": "gbszx",
+      "ownerHash": "f0f3916542ea1ac00aa1f91b6e54b9b6c07a102597dc6f7510b42d5418563daf",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "gta",
+        "grand-theft-auto",
+        "pt-br",
+        "portuguese",
+        "brazilian",
+        "platinum",
+        "gta-4",
+        "gta4",
+        "grand-theft-auto-iv",
+        "ptbr"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-19",
+      "updated": "2026-10-19",
+      "game": {
+        "name": "Grand Theft Auto IV: The Complete Edition",
+        "platform": "PC",
+        "keys": [
+          {
+            "providerKey": "Steam",
+            "providerGameId": 12210,
+            "name": "Grand Theft Auto IV: The Complete Edition",
+            "platform": "PC"
+          },
+          {
+            "name": "Grand Theft Auto IV: The Complete Edition",
+            "platform": "PC"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 1,
+        "achievementOverrides": 56,
+        "categoryAssignments": 1,
+        "categories": 1,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": true,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 1
+      },
+      "package": {
+        "file": "grand-theft-auto-iv-the-complete-edition-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 8528,
+        "sha256": "d4b52b6cf875d5d3f61a28c3103743e4f81c037bf84a0a327dd43435444a5e94",
+        "release": {
+          "tag": "game-data/steam-12210/grand-theft-auto-iv-the-complete-edition",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-12210/grand-theft-auto-iv-the-complete-edition/grand-theft-auto-iv-the-complete-edition-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.jpg",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-12210/grand-theft-auto-iv-the-complete-edition/grand-theft-auto-iv-the-complete-edition-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@5ab2276755fd1a05cb0ab6608f45fd25a02a1c4e/game-data/steam-12210/grand-theft-auto-iv-the-complete-edition/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@5ab2276755fd1a05cb0ab6608f45fd25a02a1c4e/game-data/steam-12210/grand-theft-auto-iv-the-complete-edition/cover.jpg",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@5ab2276755fd1a05cb0ab6608f45fd25a02a1c4e/game-data/steam-12210/grand-theft-auto-iv-the-complete-edition/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-12210/grand-theft-auto-iv-the-complete-edition"
       }
     },
     {
