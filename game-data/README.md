@@ -3,7 +3,7 @@
 
 Per-game customizations: icon sets, categories, capstones, custom achievements, notes and ordering, one folder per game. Install from the Workshop in Playnite (which matches the game in your library), or download the `.pa` and import it from the game's Manage Achievements window.
 
-34 game(s), 34 item(s).
+35 game(s), 35 item(s).
 
 | | Game | Platform | Items | Installs |
 |---|---|---|---:|---:|
@@ -13,6 +13,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="steam-3669870/control-resonant-platinum/cover.jpg" width="120"> | [CONTROL Resonant](steam-3669870/) | PC (Windows) | 1 | 3 |
 | <img src="steam-1693980/dead-space-test/preview.png" width="120"> | [Dead Space](steam-1693980/) | PC (Windows) | 1 | 1 |
 | <img src="steam-2962810/galaxy-idle-clicker-categories/cover.jpg" width="120"> | [Galaxy Idle Clicker](steam-2962810/) | PC (Windows) | 1 | 0 |
+| <img src="retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art/cover.jpg" width="120"> | [Grand Theft Auto - San Andreas](retroachievements-2772/) | Sony PlayStation 2 | 1 | 0 |
 | <img src="retroachievements-2739/grand-theft-auto-vice-city-categories/cover.jpg" width="120"> | [Grand Theft Auto - Vice City](retroachievements-2739/) | Sony PlayStation 2 | 1 | 0 |
 | <img src="steam-2420110/horizon-forbidden-west-test/cover.png" width="120"> | [Horizon Forbidden West](steam-2420110/) | PC (Windows) | 1 | 0 |
 | <img src="name-hyrule-warriors/hyrule-warriors-definitive-edition/cover.png" width="120"> | [Hyrule Warriors](name-hyrule-warriors/) | Nintendo Switch | 1 | 0 |

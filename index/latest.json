@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-19T12:51:25Z",
-  "commit": "30508c0b41b679b3fe11f3165baa1f261b8a152d",
+  "generated": "2026-10-19T13:51:01Z",
+  "commit": "11155ace70495de35a5c6fbea457bf54de270220",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -1833,6 +1833,83 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0ad6081a8c81bc261d376a18722cc765f3872ade/game-data/retroachievements-2739/grand-theft-auto-vice-city-categories/cover.jpg",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@0a16ddfc1ba03f3ec8fbad618afef983bccbd1f1/game-data/retroachievements-2739/grand-theft-auto-vice-city-categories/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/retroachievements-2739/grand-theft-auto-vice-city-categories"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art",
+      "kind": "GameCustomData",
+      "name": "Grand Theft Auto - San Andreas (PS2) categories with art!",
+      "description": "Another in the series of epic GTA games accessible via PlayStation 2 emulation, with all achievements in categories!",
+      "author": "EazyCheeze1978",
+      "ownerHash": "6f0ce6cd3794a5fb1e3d7b5afcab3ccdb77655e755e885143f6439364e5f699d",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "gta",
+        "violence",
+        "sandbox",
+        "retroachievements",
+        "emulation",
+        "collectibles",
+        "races",
+        "story"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-19",
+      "updated": "2026-10-19",
+      "game": {
+        "name": "Grand Theft Auto - San Andreas",
+        "platform": "Sony PlayStation 2",
+        "keys": [
+          {
+            "providerKey": "RetroAchievements",
+            "providerGameId": 2772,
+            "name": "Grand Theft Auto - San Andreas",
+            "platform": "Sony PlayStation 2"
+          },
+          {
+            "name": "Grand Theft Auto - San Andreas",
+            "platform": "Sony PlayStation 2"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 0,
+        "achievementOverrides": 181,
+        "categoryAssignments": 181,
+        "categories": 41,
+        "categoryImages": 29,
+        "capstones": 0,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 29
+      },
+      "package": {
+        "file": "grand-theft-auto-san-andreas-ps2-categories-with-art-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 2824474,
+        "sha256": "3c5f93e8d8a57996b2adb3edd3e3a27544fcb3c08f7b27dad0dfa7cb54e33c08",
+        "release": {
+          "tag": "game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art/grand-theft-auto-san-andreas-ps2-categories-with-art-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.jpg",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art/grand-theft-auto-san-andreas-ps2-categories-with-art-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@11155ace70495de35a5c6fbea457bf54de270220/game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@11155ace70495de35a5c6fbea457bf54de270220/game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art/cover.jpg",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@11155ace70495de35a5c6fbea457bf54de270220/game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art"
       }
     },
     {
