@@ -16,4 +16,9 @@
     <NoWarn>$(NoWarn);nullable</NoWarn>
   </PropertyGroup>
 
+  <ItemGroup>
+    <!-- Byte-identical copy of the extension's WorkshopPackageFields.json; the drift workflow keeps it that way. -->
+    <EmbeddedResource Include="package-fields.json" LogicalName="package-fields.json" />
+  </ItemGroup>
+
 </Project>
