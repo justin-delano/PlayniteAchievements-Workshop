@@ -5,4 +5,4 @@ Platform: PC
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="grand-theft-auto-iv-the-complete-edition/cover.jpg" width="120"> | [Grand Theft Auto IV: The Complete Edition](grand-theft-auto-iv-the-complete-edition/) | gbszx | 1.0.0 | 1 custom achievements, 1 categories, 1 capstones, 56 overrides, order | 0 | 0 | 2026-10-19 |
+| <img src="grand-theft-auto-iv-the-complete-edition/cover.jpg" width="120"> | [Grand Theft Auto IV: The Complete Edition](grand-theft-auto-iv-the-complete-edition/) | gbszx | 1.0.0 | 1 custom achievements, 1 categories, 1 capstones, 56 overrides, order | 0 | 1 | 2026-10-19 |
