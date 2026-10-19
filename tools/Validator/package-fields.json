@@ -1,0 +1,422 @@
+{
+  "roots": {
+    "colors.json": "ColorPackFile",
+    "notification-style.pastyle": "NotificationStylePortableFile",
+    "showcase-page.json": "ShowcasePagePortableFile",
+    "unlock-sounds.json": "UnlockSoundPackFile",
+    "bundle.json": "BundleFile",
+    "custom-data.pa": "GameCustomDataPortableFile"
+  },
+  "types": {
+    "AchievementGridOptions": {
+      "ColorNamesByRarity": "value",
+      "ColorRarityColumnsByRarity": "value",
+      "Columns": "GridColumnLayoutOptions",
+      "HideCategorySummaryRow": "value",
+      "MaxHeight": "value",
+      "MaxRows": "value",
+      "RowHeight": "value",
+      "ShowColumnHeaders": "value",
+      "ShowControlBar": "value",
+      "ShowRarityGlow": "value",
+      "SortDescending": "value",
+      "SortMode": "value",
+      "StartInCategoryMode": "value",
+      "UnlockDateMode": "value",
+      "UseCoverImages": "value"
+    },
+    "AchievementOverride": {
+      "Category": "value",
+      "CategoryType": "value",
+      "ClearDescription": "value",
+      "ClearTrophyType": "value",
+      "ClearUnlockTime": "value",
+      "Description": "value",
+      "DisplayName": "value",
+      "Hidden": "value",
+      "LockedIconPath": "value",
+      "Note": "value",
+      "Points": "value",
+      "TrophyType": "value",
+      "UnlockTimeUtc": "value",
+      "UnlockedIconPath": "value"
+    },
+    "BundleFile": {
+      "Kind": "value",
+      "Parts": {
+        "list": "value"
+      },
+      "Version": "value"
+    },
+    "CapstoneAssignment": {
+      "ApiName": "value"
+    },
+    "CategoryImageOverrideData": {
+      "Art": "value"
+    },
+    "ColorPackFile": {
+      "Kind": "value",
+      "ProviderColorOverrides": {
+        "map": "value"
+      },
+      "RarityColors": "RarityColorSettings",
+      "ResourceOverrides": {
+        "map": "ResourceOverrideSetting"
+      },
+      "Version": "value"
+    },
+    "CustomAchievementDefinition": {
+      "Category": "value",
+      "CategoryType": "value",
+      "Description": "value",
+      "DisplayName": "value",
+      "GlobalPercentUnlocked": "value",
+      "Hidden": "value",
+      "Id": "value",
+      "IsAutoCapstone": "value",
+      "IsCapstone": "value",
+      "IsWholeGameAutoCapstone": "value",
+      "LockedIconPath": "value",
+      "Points": "value",
+      "ProgressDenom": "value",
+      "ProgressNum": "value",
+      "Rarity": "value",
+      "ScaledPoints": "value",
+      "TrophyType": "value",
+      "UnlockTimeUtc": "value",
+      "Unlocked": "value",
+      "UnlockedIconPath": "value"
+    },
+    "CustomProviderDefinition": {
+      "ColorHex": "value",
+      "IconPathData": "value",
+      "IconSource": "value",
+      "Id": "value",
+      "Name": "value"
+    },
+    "GameCustomDataPortableFile": {
+      "AchievementCategoryImageOverrides": {
+        "map": "CategoryImageOverrideData"
+      },
+      "AchievementCategoryOrder": {
+        "list": "value"
+      },
+      "AchievementCategoryOverrides": {
+        "map": "value"
+      },
+      "AchievementCategoryTypeOverrides": {
+        "map": "value"
+      },
+      "AchievementLockedIconOverrides": {
+        "map": "value"
+      },
+      "AchievementNotes": {
+        "map": "value"
+      },
+      "AchievementOrder": {
+        "list": "value"
+      },
+      "AchievementOverrides": {
+        "map": "AchievementOverride"
+      },
+      "AchievementUnlockedIconOverrides": {
+        "map": "value"
+      },
+      "AutoCapstoneGenerated": "value",
+      "Capstones": {
+        "list": "CapstoneAssignment"
+      },
+      "CapstonesMaterialized": "value",
+      "CustomAchievements": {
+        "list": "CustomAchievementDefinition"
+      },
+      "CustomProvider": "CustomProviderDefinition",
+      "CustomProviderId": "value",
+      "ExophaseEnrichmentSlugOverride": "value",
+      "ExophaseSlugOverride": "value",
+      "FilteredAchievementApiNames": {
+        "list": "value"
+      },
+      "ForceUseExophase": "value",
+      "GameKeys": {
+        "list": "PortableGameKey"
+      },
+      "GameSummaryCategory": "GameSummaryCategoryData",
+      "GoalAchievementApiNames": {
+        "list": "value"
+      },
+      "Kind": "value",
+      "ManualCapstoneApiName": "value",
+      "ManualLink": "ManualAchievementLink",
+      "NotificationAppearanceOverride": "GameNotificationAppearanceOverride",
+      "PlayniteGameId": "value",
+      "ProviderOverride": "ProviderOverrideData",
+      "RetroAchievementsGameIdOverride": "value",
+      "SchemaVersion": "value",
+      "ShadPS4MatchIdOverride": "value",
+      "SummaryFilteredAchievementApiNames": {
+        "list": "value"
+      },
+      "UseSeparateLockedIconsOverride": "value",
+      "XeniaTitleIdOverride": "value"
+    },
+    "GameNotificationAppearanceOverride": {
+      "FrameUseThemeStyling": "value",
+      "Style": "NotificationStyleSettings",
+      "ToastUseThemeStyling": "value"
+    },
+    "GameSummaryCategoryData": {
+      "Label": "value",
+      "ProviderLabel": "value"
+    },
+    "GameSummaryGridOptions": {
+      "ColorRarityColumnsByRarity": "value",
+      "Columns": "GridColumnLayoutOptions",
+      "LastPlayedDateMode": "value",
+      "MaxRows": "value",
+      "RowHeight": "value",
+      "ShowColumnHeaders": "value",
+      "ShowCompletionFrame": "value",
+      "ShowCompletionGlow": "value",
+      "ShowControlBar": "value",
+      "ShowMetadataPlatform": "value",
+      "ShowMetadataPlaytime": "value",
+      "ShowMetadataRegion": "value",
+      "ShowNameAboveProgress": "value",
+      "ShowRarityBadgesBelowProgress": "value",
+      "SortDescending": "value",
+      "SortMode": "value",
+      "UseCoverImages": "value"
+    },
+    "GridColumnLayoutOptions": {
+      "CellAlignments": {
+        "map": "value"
+      },
+      "CellVerticalAlignments": {
+        "map": "value"
+      },
+      "HeaderAlignments": {
+        "map": "value"
+      },
+      "Locked": {
+        "map": "value"
+      },
+      "Order": {
+        "map": "value"
+      },
+      "Visibility": {
+        "map": "value"
+      },
+      "Widths": {
+        "map": "value"
+      }
+    },
+    "ManualAchievementLink": {
+      "AllowUnauthenticatedSchemaFetch": "value",
+      "CreatedUtc": "value",
+      "DisplayPlatformKeyOverride": "value",
+      "LastModifiedUtc": "value",
+      "SourceGameId": "value",
+      "SourceKey": "value",
+      "UnlockStates": {
+        "map": "value"
+      },
+      "UnlockTimes": {
+        "map": "value"
+      }
+    },
+    "NotificationBadgeImageSet": {
+      "CommonPath": "value",
+      "CompletionPath": "value",
+      "RarePath": "value",
+      "UltraRarePath": "value",
+      "UncommonPath": "value"
+    },
+    "NotificationHeaderTextSettings": {
+      "CompletionHeader": "value",
+      "FriendCompletionHeaderFormat": "value",
+      "FriendUnlockHeaderFormat": "value",
+      "ProgressHeader": "value",
+      "UnlockHeader": "value"
+    },
+    "NotificationStylePortableFile": {
+      "HasFrame": "value",
+      "HasToast": "value",
+      "Kind": "value",
+      "Style": "NotificationStyleSettings",
+      "Version": "value"
+    },
+    "NotificationStyleSettings": {
+      "Frame": "NotificationSurfaceStyle",
+      "FrameBackgroundImagePath": "value",
+      "KindStyles": {
+        "map": "NotificationStyleSettings"
+      },
+      "Toast": "NotificationSurfaceStyle",
+      "ToastBackgroundImagePath": "value"
+    },
+    "NotificationSurfaceStyle": {
+      "BadgeImages": "NotificationBadgeImageSet",
+      "BodyEmphasis": "value",
+      "BodyFontFamily": "value",
+      "BodyFontSize": "value",
+      "CardHeight": "value",
+      "CardPaddingLeft": "value",
+      "CardPaddingRight": "value",
+      "CardWidth": "value",
+      "CountdownBarColor": "value",
+      "EntranceMotion": "value",
+      "ExitMotion": "value",
+      "FontFamily": "value",
+      "FrameVignette": "value",
+      "FrameVignetteStrength": "value",
+      "GameCategoryEmphasis": "value",
+      "GameCategoryFontFamily": "value",
+      "GameCategoryFontSize": "value",
+      "HeaderEmphasis": "value",
+      "HeaderFontFamily": "value",
+      "HeaderFontSize": "value",
+      "HeaderTexts": "NotificationHeaderTextSettings",
+      "IconSize": "value",
+      "ImageKeyframeMs": "value",
+      "ImageShadowOffset": "value",
+      "ImageShadowOpacity": "value",
+      "InlineGameRarityBadge": "value",
+      "InlineRarityBadge": "value",
+      "LineOrder": {
+        "list": "value"
+      },
+      "LinePadding": "value",
+      "MotionFeel": "value",
+      "MotionSpeed": "value",
+      "NotificationBorderGlow": "value",
+      "Position": "value",
+      "ProgressEmphasis": "value",
+      "ProgressFontFamily": "value",
+      "ProgressFontSize": "value",
+      "ProviderIconSize": "value",
+      "RarityBadgeSize": "value",
+      "RarityColoredName": "value",
+      "RarityEmphasis": "value",
+      "RarityFontFamily": "value",
+      "RarityFontSize": "value",
+      "RarityPercentUnderBadge": "value",
+      "RightRarityBadge": "value",
+      "ShowAccentStrip": "value",
+      "ShowCategory": "value",
+      "ShowCountdownBar": "value",
+      "ShowDescription": "value",
+      "ShowGameName": "value",
+      "ShowHeader": "value",
+      "ShowIcon": "value",
+      "ShowName": "value",
+      "ShowProviderIcon": "value",
+      "ShowRarityBadge": "value",
+      "ShowRarityGlow": "value",
+      "ShowRarityPercent": "value",
+      "ShowUnlockTime": "value",
+      "TextShadowOffset": "value",
+      "TextShadowOpacity": "value",
+      "TitleEmphasis": "value",
+      "TitleFontFamily": "value",
+      "TitleFontSize": "value",
+      "TitleLineOffset": "value"
+    },
+    "PortableGameKey": {
+      "Name": "value",
+      "Platform": "value",
+      "ProviderGameId": "value",
+      "ProviderGameKey": "value",
+      "ProviderKey": "value",
+      "ProviderPlatformKey": "value"
+    },
+    "ProviderOverrideData": {
+      "ProviderKey": "value",
+      "Value": "value"
+    },
+    "RarityColorSettings": {
+      "Common": "value",
+      "CompletedEnd": "value",
+      "CompletedStart": "value",
+      "Rare": "value",
+      "TrophyBronze": "value",
+      "TrophyGold": "value",
+      "TrophyPlatinum": "value",
+      "TrophySilver": "value",
+      "UltraRare": "value",
+      "Uncommon": "value"
+    },
+    "ResourceOverrideSetting": {
+      "CustomValue": "value",
+      "Mode": "value"
+    },
+    "ShowcaseBlockSettings": {
+      "BlockId": "value",
+      "Column": "value",
+      "ColumnSpan": "value",
+      "Row": "value",
+      "RowSpan": "value",
+      "WidgetInstanceId": "value"
+    },
+    "ShowcasePagePortableFile": {
+      "AchievementGridSurfaces": {
+        "map": "AchievementGridOptions"
+      },
+      "GameGridSurfaces": {
+        "map": "GameSummaryGridOptions"
+      },
+      "Kind": "value",
+      "LayoutVersion": "value",
+      "Page": "ShowcasePageSettings",
+      "Version": "value",
+      "Widgets": {
+        "list": "ShowcaseWidgetInstanceSettings"
+      }
+    },
+    "ShowcasePageSettings": {
+      "Blocks": {
+        "list": "ShowcaseBlockSettings"
+      },
+      "ColumnCount": "value",
+      "ColumnWeights": {
+        "list": "value"
+      },
+      "GridSize": "value",
+      "Name": "value",
+      "PageId": "value",
+      "RowCount": "value",
+      "RowWeights": {
+        "list": "value"
+      }
+    },
+    "ShowcaseProfileLink": {
+      "ProviderKey": "value",
+      "Value": "value"
+    },
+    "ShowcaseProfileSettings": {
+      "AvatarPath": "value",
+      "BackgroundPath": "value",
+      "DisplayName": "value",
+      "Links": {
+        "list": "ShowcaseProfileLink"
+      },
+      "Subtitle": "value"
+    },
+    "ShowcaseWidgetInstanceSettings": {
+      "CustomTitle": "value",
+      "InstanceId": "value",
+      "Kind": "value",
+      "Options": {
+        "map": "value"
+      },
+      "Profile": "ShowcaseProfileSettings"
+    },
+    "UnlockSoundPackFile": {
+      "Kind": "value",
+      "Slots": {
+        "map": "value"
+      },
+      "Version": "value"
+    }
+  }
+}
