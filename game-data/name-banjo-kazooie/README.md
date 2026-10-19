@@ -5,4 +5,4 @@ Platform: Computer
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="banjo-kazooie-recompiled/cover.png" width="120"> | [Banjo-Kazooie (Recompiled)](banjo-kazooie-recompiled/) | IggniFyre | 1.0.1 | 10 icons, 11 custom achievements, 1 capstones, 5 overrides, order | 0 | 1 | 2026-10-10 |
+| <img src="banjo-kazooie-recompiled/cover.png" width="120"> | [Banjo-Kazooie (Recompiled)](banjo-kazooie-recompiled/) | IggniFyre | 1.0.1 | 10 icons, 11 custom achievements, 1 capstones, 5 overrides, order | 0 | 2 | 2026-10-10 |

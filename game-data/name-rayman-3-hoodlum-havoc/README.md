@@ -5,4 +5,4 @@ Platform: Computer
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="rayman-3-hoodlum-havoc/cover.png" width="120"> | [Rayman 3: Hoodlum Havoc](rayman-3-hoodlum-havoc/) | IggniFyre | 1.0.0 | 35 custom achievements, 1 overrides, 2 notes | 0 | 1 | 2026-10-13 |
+| <img src="rayman-3-hoodlum-havoc/cover.png" width="120"> | [Rayman 3: Hoodlum Havoc](rayman-3-hoodlum-havoc/) | IggniFyre | 1.0.0 | 35 custom achievements, 1 overrides, 2 notes | 1 | 3 | 2026-10-13 |

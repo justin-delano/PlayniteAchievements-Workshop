@@ -5,4 +5,4 @@ Platform: Nintendo Switch
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="the-legend-of-zelda-link-s-awakening-switch/cover.png" width="120"> | [The Legend of Zelda: Link's Awakening (Switch)](the-legend-of-zelda-link-s-awakening-switch/) | IggniFyre | 1.0.0 | 21 custom achievements, 1 capstones | 1 | 2 | 2026-10-14 |
+| <img src="the-legend-of-zelda-link-s-awakening-switch/cover.png" width="120"> | [The Legend of Zelda: Link's Awakening (Switch)](the-legend-of-zelda-link-s-awakening-switch/) | IggniFyre | 1.0.0 | 21 custom achievements, 1 capstones | 3 | 3 | 2026-10-14 |

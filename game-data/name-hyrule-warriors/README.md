@@ -5,4 +5,4 @@ Platform: Nintendo Switch
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="hyrule-warriors-definitive-edition/cover.png" width="120"> | [Hyrule Warriors: Definitive Edition](hyrule-warriors-definitive-edition/) | IggniFyre | 1.0.0 | 38 custom achievements, 1 categories, 1 capstones, 1 overrides | 0 | 1 | 2026-10-14 |
+| <img src="hyrule-warriors-definitive-edition/cover.png" width="120"> | [Hyrule Warriors: Definitive Edition](hyrule-warriors-definitive-edition/) | IggniFyre | 1.0.0 | 38 custom achievements, 1 categories, 1 capstones, 1 overrides | 0 | 2 | 2026-10-14 |
