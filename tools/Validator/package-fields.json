@@ -148,6 +148,9 @@
       "Kind": "value",
       "ManualCapstoneApiName": "value",
       "ManualLink": "ManualAchievementLink",
+      "MetadataLinks": {
+        "map": "MetadataLinkData"
+      },
       "NotificationAppearanceOverride": "GameNotificationAppearanceOverride",
       "PlayniteGameId": "value",
       "ProviderOverride": "ProviderOverrideData",
@@ -222,6 +225,14 @@
         "map": "value"
       },
       "UnlockTimes": {
+        "map": "value"
+      }
+    },
+    "MetadataLinkData": {
+      "Id": "value",
+      "IsUserSet": "value",
+      "Label": "value",
+      "Pairings": {
         "map": "value"
       }
     },
