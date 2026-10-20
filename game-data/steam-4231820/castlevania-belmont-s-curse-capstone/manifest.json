@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/steam-4231820/castlevania-belmont-s-curse-capstone",
+  "kind": "GameCustomData",
+  "name": "Castlevania: Belmont's Curse Capstone",
+  "description": "Capstone Achievement for Steam version of CV:BC",
+  "author": "SuaveIV",
+  "ownerHash": "f0d295c89a98af5e7198e9a3e485957dbed1678354449b08f36a6eb53c5929e0",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "capstone",
+    "platinum"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-20",
+  "updated": "2026-10-20",
+  "game": {
+    "name": "Castlevania: Belmont's Curse",
+    "platform": "PC (Windows)",
+    "keys": [
+      {
+        "providerKey": "Steam",
+        "providerGameId": 4231820,
+        "name": "Castlevania: Belmont's Curse",
+        "platform": "PC (Windows)"
+      },
+      {
+        "name": "Castlevania: Belmont's Curse",
+        "platform": "PC (Windows)"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 1,
+    "achievementOverrides": 1,
+    "categoryAssignments": 1,
+    "categories": 1,
+    "categoryImages": 0,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": true,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 1
+  },
+  "package": {
+    "file": "castlevania-belmont-s-curse-capstone-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 2763,
+    "sha256": "e496c998d24e0afcb2b06cbcd2298d69d6782612dace3024ffbeee9abc9436f5",
+    "release": {
+      "tag": "game-data/steam-4231820/castlevania-belmont-s-curse-capstone",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-4231820/castlevania-belmont-s-curse-capstone/castlevania-belmont-s-curse-capstone-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}
