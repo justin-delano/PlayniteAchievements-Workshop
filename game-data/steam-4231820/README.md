@@ -5,4 +5,4 @@ Platform: PC (Windows)
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="castlevania-belmont-s-curse-capstone/cover.png" width="120"> | [Castlevania: Belmont's Curse Capstone](castlevania-belmont-s-curse-capstone/) | SuaveIV | 1.0.0 | 1 custom achievements, 1 categories, 1 capstones, 1 overrides, order | 0 | 0 | 2026-10-20 |
+| <img src="castlevania-belmont-s-curse-capstone/cover.png" width="120"> | [Castlevania: Belmont's Curse Capstone](castlevania-belmont-s-curse-capstone/) | SuaveIV | 1.0.0 | 1 custom achievements, 1 categories, 1 capstones, 1 overrides, order | 0 | 1 | 2026-10-20 |
