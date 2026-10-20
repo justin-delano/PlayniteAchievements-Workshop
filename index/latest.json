@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-19T23:01:23Z",
-  "commit": "a0fa8fc294678d337df7eaceac0a360b9e18f6e7",
+  "generated": "2026-10-20T01:53:38Z",
+  "commit": "45ba66f5be573c215599536e3e14dff711d62635",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -2687,6 +2687,77 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@e93f9b6833c81f140da4083a95f839b4a36b6eda/game-data/steam-412020/metro-exodus/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@461e7030e213c112819c68922a5ffd35f7f18fca/game-data/steam-412020/metro-exodus/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-412020/metro-exodus"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/steam-4231820/castlevania-belmont-s-curse-capstone",
+      "kind": "GameCustomData",
+      "name": "Castlevania: Belmont's Curse Capstone",
+      "description": "Capstone Achievement for Steam version of CV:BC",
+      "author": "SuaveIV",
+      "ownerHash": "f0d295c89a98af5e7198e9a3e485957dbed1678354449b08f36a6eb53c5929e0",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "capstone",
+        "platinum"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-20",
+      "updated": "2026-10-20",
+      "game": {
+        "name": "Castlevania: Belmont's Curse",
+        "platform": "PC (Windows)",
+        "keys": [
+          {
+            "providerKey": "Steam",
+            "providerGameId": 4231820,
+            "name": "Castlevania: Belmont's Curse",
+            "platform": "PC (Windows)"
+          },
+          {
+            "name": "Castlevania: Belmont's Curse",
+            "platform": "PC (Windows)"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 1,
+        "achievementOverrides": 1,
+        "categoryAssignments": 1,
+        "categories": 1,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": true,
+        "notificationStyle": false,
+        "manualLink": false,
+        "imageFiles": 1
+      },
+      "package": {
+        "file": "castlevania-belmont-s-curse-capstone-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 2763,
+        "sha256": "e496c998d24e0afcb2b06cbcd2298d69d6782612dace3024ffbeee9abc9436f5",
+        "release": {
+          "tag": "game-data/steam-4231820/castlevania-belmont-s-curse-capstone",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-4231820/castlevania-belmont-s-curse-capstone/castlevania-belmont-s-curse-capstone-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-4231820/castlevania-belmont-s-curse-capstone/castlevania-belmont-s-curse-capstone-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@45ba66f5be573c215599536e3e14dff711d62635/game-data/steam-4231820/castlevania-belmont-s-curse-capstone/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@45ba66f5be573c215599536e3e14dff711d62635/game-data/steam-4231820/castlevania-belmont-s-curse-capstone/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@45ba66f5be573c215599536e3e14dff711d62635/game-data/steam-4231820/castlevania-belmont-s-curse-capstone/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/steam-4231820/castlevania-belmont-s-curse-capstone"
       }
     },
     {

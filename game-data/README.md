@@ -3,14 +3,15 @@
 
 Per-game customizations: icon sets, categories, capstones, custom achievements, notes and ordering, one folder per game. Install from the Workshop in Playnite (which matches the game in your library), or download the `.pa` and import it from the game's Manage Achievements window.
 
-38 game(s), 38 item(s).
+39 game(s), 39 item(s).
 
 | | Game | Platform | Items | Installs |
 |---|---|---|---:|---:|
 | <img src="name-am2r-return-of-samus/am2r-another-metroid-2-remake/cover.png" width="120"> | [AM2R: Return of Samus](name-am2r-return-of-samus/) | Computer | 1 | 3 |
 | <img src="steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/cover.png" width="120"> | [Atelier Sophie: The Alchemist of the Mysterious Book](steam-527270/) | PC (Windows) | 1 | 0 |
 | <img src="name-banjo-kazooie/banjo-kazooie-recompiled/cover.png" width="120"> | [Banjo-Kazooie](name-banjo-kazooie/) | Computer | 1 | 0 |
-| <img src="steam-1133760/chrono-cross-the-radical-dreamers-edition/cover.jpg" width="120"> | [CHRONO CROSS: THE RADICAL DREAMERS EDITION](steam-1133760/) | PC | 1 | 0 |
+| <img src="steam-4231820/castlevania-belmont-s-curse-capstone/cover.png" width="120"> | [Castlevania: Belmont's Curse](steam-4231820/) | PC (Windows) | 1 | 0 |
+| <img src="steam-1133760/chrono-cross-the-radical-dreamers-edition/cover.jpg" width="120"> | [CHRONO CROSS: THE RADICAL DREAMERS EDITION](steam-1133760/) | PC | 1 | 1 |
 | <img src="steam-3669870/control-resonant-platinum/cover.jpg" width="120"> | [CONTROL Resonant](steam-3669870/) | PC (Windows) | 1 | 3 |
 | <img src="steam-1693980/dead-space-test/preview.png" width="120"> | [Dead Space](steam-1693980/) | PC (Windows) | 1 | 1 |
 | <img src="name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition/cover.jpg" width="120"> | [Dragon Age II: Ultimate Edition](name-dragon-age-ii-ultimate-edition/) | PC (Windows) | 1 | 1 |
@@ -31,7 +32,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="name-rayman-2-the-great-escape/rayman-2-the-great-escape/cover.png" width="120"> | [Rayman 2: The Great Escape](name-rayman-2-the-great-escape/) | Computer | 1 | 1 |
 | <img src="name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc/cover.png" width="120"> | [Rayman 3: Hoodlum Havoc](name-rayman-3-hoodlum-havoc/) | Computer | 1 | 2 |
 | <img src="name-rayman-redemption/rayman-redemption/cover.png" width="120"> | [Rayman Redemption](name-rayman-redemption/) | Computer | 1 | 0 |
-| <img src="manual-2084000/shogun-showdown/cover.jpg" width="120"> | [Shogun Showdown](manual-2084000/) | PC (Windows) | 1 | 1 |
+| <img src="manual-2084000/shogun-showdown/cover.jpg" width="120"> | [Shogun Showdown](manual-2084000/) | PC (Windows) | 1 | 2 |
 | <img src="name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition/cover.png" width="120"> | [Sonic and the Secret Rings](name-sonic-and-the-secret-rings/) | Computer | 1 | 0 |
 | <img src="name-sonic-heroes/sonic-heroes/cover.png" width="120"> | [Sonic Heroes](name-sonic-heroes/) | Computer | 1 | 1 |
 | <img src="name-sonic-the-hedgehog/sonic-1-forever/cover.png" width="120"> | [Sonic the Hedgehog](name-sonic-the-hedgehog/) | Computer | 1 | 2 |

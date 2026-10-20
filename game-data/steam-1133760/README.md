@@ -5,4 +5,4 @@ Platform: PC
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="chrono-cross-the-radical-dreamers-edition/cover.jpg" width="120"> | [CHRONO CROSS: THE RADICAL DREAMERS EDITION](chrono-cross-the-radical-dreamers-edition/) | gbszx | 1.0.0 | 1 custom achievements, 1 categories, 1 capstones, 38 overrides, order | 0 | 0 | 2026-10-19 |
+| <img src="chrono-cross-the-radical-dreamers-edition/cover.jpg" width="120"> | [CHRONO CROSS: THE RADICAL DREAMERS EDITION](chrono-cross-the-radical-dreamers-edition/) | gbszx | 1.0.0 | 1 custom achievements, 1 categories, 1 capstones, 38 overrides, order | 1 | 1 | 2026-10-19 |
