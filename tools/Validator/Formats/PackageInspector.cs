@@ -513,6 +513,7 @@ public static class PackageInspector
             ["achievementOrder"] = (manifest["AchievementOrder"] as JsonArray)?.Count > 0,
             ["notificationStyle"] = manifest["NotificationAppearanceOverride"] is JsonObject,
             ["manualLink"] = manifest["ManualLink"] is JsonObject,
+            ["metadataLinks"] = (manifest["MetadataLinks"] as JsonObject)?.Count ?? 0,
             ["imageFiles"] = images
         };
 
