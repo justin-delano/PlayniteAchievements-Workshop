@@ -149,6 +149,7 @@ public static class ReadmeGenerator
         Add("achievementOverrides", "overrides");
         Add("notes", "notes");
         Add("achievementOrder", "order");
+        Add("metadataLinks", "metadata links");
         return parts.Count == 0 ? "" : string.Join(", ", parts);
     }
 
