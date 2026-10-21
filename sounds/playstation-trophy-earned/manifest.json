@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "sounds/playstation-trophy-earned",
+  "kind": "UnlockSounds",
+  "name": "PlayStation Trophy Earned",
+  "description": "Feels like earning PlayStation trophies on emulators",
+  "author": "CrashSpyro",
+  "ownerHash": "eb309c9f4e0e94d2542f60ec44d36cb4882d150776d6269cdf15238cb19c15e0",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "playstation"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-21",
+  "updated": "2026-10-21",
+  "contents": {
+    "slots": [
+      "Common",
+      "Uncommon",
+      "Rare",
+      "UltraRare",
+      "Hidden",
+      "Capstone"
+    ],
+    "files": 6
+  },
+  "package": {
+    "file": "playstation-trophy-earned-1.0.0.pasounds",
+    "formatKind": "PlayniteAchievements.UnlockSounds",
+    "formatVersion": 1,
+    "sizeBytes": 1048224,
+    "sha256": "e876a9a047edb61158a1c282bb7d490da60cd1513ff3cddd358f6e8807ba42aa",
+    "release": {
+      "tag": "sounds/playstation-trophy-earned",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/sounds/playstation-trophy-earned/playstation-trophy-earned-1.0.0.pasounds"
+    }
+  },
+  "preview": "preview.png",
+  "readme": "README.md"
+}
