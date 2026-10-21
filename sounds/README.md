@@ -3,4 +3,8 @@
 
 Sounds for unlock notifications, one file per rarity tier. Install from the Workshop in Playnite, or download the `.pasounds` and import it under Settings > Notifications > Unlock sounds.
 
-Nothing here yet. Be the first: see [how to share](../README.md#sharing-your-own).
+1 item(s), most installed first.
+
+| | Name | Author | Version | Installs | Likes | Updated |
+|---|---|---|---|---:|---:|---|
+| <img src="playstation-trophy-earned/preview.png" width="120"> | [PlayStation Trophy Earned](playstation-trophy-earned/) | CrashSpyro | 1.0.0 | 0 | 0 | 2026-10-21 |
