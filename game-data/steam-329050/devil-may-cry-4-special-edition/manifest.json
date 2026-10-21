@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/steam-329050/devil-may-cry-4-special-edition",
+  "kind": "GameCustomData",
+  "name": "Devil May Cry 4 Special Edition",
+  "description": "Todas as conquistas (incluindo a platina) do Devil May Cry 4 Special Edition da Steam em Português Brasileiro",
+  "author": "gbszx",
+  "ownerHash": "f0f3916542ea1ac00aa1f91b6e54b9b6c07a102597dc6f7510b42d5418563daf",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "dmc",
+    "devil-may-cry",
+    "pt-br",
+    "portuguese",
+    "brazilian",
+    "platinum",
+    "dmc-4",
+    "dmc4",
+    "devil-may-cry-4",
+    "ptbr"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-21",
+  "updated": "2026-10-21",
+  "game": {
+    "name": "Devil May Cry 4 Special Edition",
+    "platform": "PC",
+    "keys": [
+      {
+        "providerKey": "Steam",
+        "providerGameId": 329050,
+        "name": "Devil May Cry 4 Special Edition",
+        "platform": "PC"
+      },
+      {
+        "name": "Devil May Cry 4 Special Edition",
+        "platform": "PC"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 1,
+    "achievementOverrides": 43,
+    "categoryAssignments": 1,
+    "categories": 1,
+    "categoryImages": 0,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": true,
+    "notificationStyle": false,
+    "manualLink": false,
+    "imageFiles": 1
+  },
+  "package": {
+    "file": "devil-may-cry-4-special-edition-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 12233,
+    "sha256": "2d2a30a233c80cc4beaa841c8d644d0e3903260d72996d655787178255f888c9",
+    "release": {
+      "tag": "game-data/steam-329050/devil-may-cry-4-special-edition",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-329050/devil-may-cry-4-special-edition/devil-may-cry-4-special-edition-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.jpg",
+  "readme": "README.md"
+}
