@@ -18,7 +18,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="steam-2962810/galaxy-idle-clicker-categories/cover.jpg" width="120"> | [Galaxy Idle Clicker](steam-2962810/) | PC (Windows) | 1 | 0 |
 | <img src="retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art/cover.jpg" width="120"> | [Grand Theft Auto - San Andreas](retroachievements-2772/) | Sony PlayStation 2 | 1 | 0 |
 | <img src="retroachievements-2739/grand-theft-auto-vice-city-categories/cover.jpg" width="120"> | [Grand Theft Auto - Vice City](retroachievements-2739/) | Sony PlayStation 2 | 1 | 0 |
-| <img src="steam-12210/grand-theft-auto-iv-the-complete-edition/cover.jpg" width="120"> | [Grand Theft Auto IV: The Complete Edition](steam-12210/) | PC | 1 | 0 |
+| <img src="steam-12210/grand-theft-auto-iv-the-complete-edition/cover.jpg" width="120"> | [Grand Theft Auto IV: The Complete Edition](steam-12210/) | PC | 1 | 1 |
 | <img src="steam-2420110/horizon-forbidden-west-test/cover.png" width="120"> | [Horizon Forbidden West](steam-2420110/) | PC (Windows) | 1 | 0 |
 | <img src="name-hyrule-warriors/hyrule-warriors-definitive-edition/cover.png" width="120"> | [Hyrule Warriors](name-hyrule-warriors/) | Nintendo Switch | 1 | 0 |
 | <img src="name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal/cover.png" width="120"> | [Jak and Daxter: The Precursor Legacy](name-jak-and-daxter-the-precursor-legacy/) | Sony Playstation 2 | 1 | 1 |
@@ -31,7 +31,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="name-planet-of-lana/planet-of-lana/cover.png" width="120"> | [Planet of Lana](name-planet-of-lana/) | PC | 1 | 0 |
 | <img src="name-rayman-2-the-great-escape/rayman-2-the-great-escape/cover.png" width="120"> | [Rayman 2: The Great Escape](name-rayman-2-the-great-escape/) | Computer | 1 | 1 |
 | <img src="name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc/cover.png" width="120"> | [Rayman 3: Hoodlum Havoc](name-rayman-3-hoodlum-havoc/) | Computer | 1 | 2 |
-| <img src="name-rayman-redemption/rayman-redemption/cover.png" width="120"> | [Rayman Redemption](name-rayman-redemption/) | Computer | 1 | 0 |
+| <img src="name-rayman-redemption/rayman-redemption/cover.png" width="120"> | [Rayman Redemption](name-rayman-redemption/) | Computer | 1 | 1 |
 | <img src="manual-2084000/shogun-showdown/cover.jpg" width="120"> | [Shogun Showdown](manual-2084000/) | PC (Windows) | 1 | 2 |
 | <img src="name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition/cover.png" width="120"> | [Sonic and the Secret Rings](name-sonic-and-the-secret-rings/) | Computer | 1 | 0 |
 | <img src="name-sonic-heroes/sonic-heroes/cover.png" width="120"> | [Sonic Heroes](name-sonic-heroes/) | Computer | 1 | 2 |
