@@ -5,4 +5,4 @@ Platform: Computer
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="sonic-and-the-secret-rings-project-reignition/cover.png" width="120"> | [Sonic and the Secret Rings (Project Reignition)](sonic-and-the-secret-rings-project-reignition/) | IggniFyre | 1.0.0 | 46 custom achievements, 1 capstones, order | 0 | 2 | 2026-10-13 |
+| <img src="sonic-and-the-secret-rings-project-reignition/cover.png" width="120"> | [Sonic and the Secret Rings (Project Reignition)](sonic-and-the-secret-rings-project-reignition/) | IggniFyre | 1.0.0 | 46 custom achievements, 1 capstones, order | 2 | 2 | 2026-10-13 |
