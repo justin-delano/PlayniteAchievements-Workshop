@@ -51,6 +51,7 @@
     },
     "AchievementTagDefinition": {
       "Color": "value",
+      "Hidden": "value",
       "Icon": "value",
       "Key": "value",
       "Name": "value"
@@ -260,6 +261,7 @@
       "Points": "value",
       "Rarity": "value",
       "Tags": "value",
+      "Text": "value",
       "TrophyTypes": "value"
     },
     "MetadataLinkData": {
