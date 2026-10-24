@@ -37,7 +37,7 @@ public static class Kinds
     public const int ColorsMaxVersion = 1;
     public const int NotificationStyleMaxVersion = 4;
     public const int ShowcasePageMaxVersion = 2;
-    public const int GameCustomDataMaxSchema = 8;
+    public const int GameCustomDataMaxSchema = 9;
     public const int UnlockSoundsMaxVersion = 1;
     public const int BundleMaxVersion = 1;
 
@@ -121,7 +121,9 @@ public static class Kinds
     {
         // Color sets, sounds, bundles and game keys in .pa files arrived with the Workshop release.
         ItemKind.Colors or ItemKind.UnlockSounds or ItemKind.Bundle => "4.1.0",
-        ItemKind.GameCustomData => "4.1.0",
+        // Schema 9 splits category types into category kinds and achievement tags, which older
+        // extensions drop on import.
+        ItemKind.GameCustomData => formatVersion >= 9 ? "4.2.0" : "4.1.0",
         _ => "4.0.0"
     };
 }
