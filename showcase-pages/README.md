@@ -7,4 +7,4 @@ Showcase page layouts: which widgets, where, and how their grids are set up. Ins
 
 | | Name | Author | Version | Installs | Likes | Updated |
 |---|---|---|---|---:|---:|---|
-| <img src="synkro-s-trophy-showcase/preview.png" width="120"> | [Synkro's Trophy Showcase](synkro-s-trophy-showcase/) | Synkro | 1.0.0 | 22 | 4 | 2026-10-16 |
+| <img src="synkro-s-trophy-showcase/preview.png" width="120"> | [Synkro's Trophy Showcase](synkro-s-trophy-showcase/) | Synkro | 1.0.0 | 25 | 4 | 2026-10-16 |
