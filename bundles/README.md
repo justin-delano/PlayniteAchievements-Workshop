@@ -7,4 +7,4 @@ Bundles of colors, sounds, notifications and frames, each part saved as a preset
 
 | | Name | Author | Version | Installs | Likes | Updated |
 |---|---|---|---|---:|---:|---|
-| <img src="steamstation-2-0/preview.png" width="120"> | [SteamStation 2.0](steamstation-2-0/) | Luxas | 1.0.0 | 29 | 3 | 2026-10-19 |
+| <img src="steamstation-2-0/preview.png" width="120"> | [SteamStation 2.0](steamstation-2-0/) | Luxas | 1.0.0 | 36 | 3 | 2026-10-19 |

@@ -7,4 +7,4 @@ Sounds for unlock notifications, one file per rarity tier. Install from the Work
 
 | | Name | Author | Version | Installs | Likes | Updated |
 |---|---|---|---|---:|---:|---|
-| <img src="playstation-trophy-earned/preview.png" width="120"> | [PlayStation Trophy Earned](playstation-trophy-earned/) | CrashSpyro | 1.0.0 | 11 | 1 | 2026-10-21 |
+| <img src="playstation-trophy-earned/preview.png" width="120"> | [PlayStation Trophy Earned](playstation-trophy-earned/) | CrashSpyro | 1.0.0 | 13 | 1 | 2026-10-21 |

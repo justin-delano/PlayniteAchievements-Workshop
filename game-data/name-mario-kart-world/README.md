@@ -5,4 +5,4 @@ Platform: Nintendo Switch 2
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="mario-kart-world/cover.png" width="120"> | [Mario Kart World](mario-kart-world/) | IggniFyre | 1.0.0 | 76 custom achievements, 1 capstones | 1 | 2 | 2026-10-14 |
+| <img src="mario-kart-world/cover.png" width="120"> | [Mario Kart World](mario-kart-world/) | IggniFyre | 1.0.0 | 76 custom achievements, 1 capstones | 2 | 2 | 2026-10-14 |

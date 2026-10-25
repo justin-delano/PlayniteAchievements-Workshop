@@ -5,4 +5,4 @@ Platform: Computer
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="sonic-heroes/cover.png" width="120"> | [Sonic Heroes](sonic-heroes/) | IggniFyre | 1.0.0 | 19 custom achievements, 1 capstones | 2 | 2 | 2026-10-13 |
+| <img src="sonic-heroes/cover.png" width="120"> | [Sonic Heroes](sonic-heroes/) | IggniFyre | 1.0.0 | 19 custom achievements, 1 capstones | 3 | 2 | 2026-10-13 |
