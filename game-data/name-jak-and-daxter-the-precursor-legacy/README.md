@@ -5,4 +5,4 @@ Platform: Sony Playstation 2
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="jak-and-daxter-the-precursor-legacy-opengoal/cover.png" width="120"> | [Jak and Daxter: The Precursor Legacy (OpenGOAL)](jak-and-daxter-the-precursor-legacy-opengoal/) | IggniFyre | 1.0.0 | 19 custom achievements | 1 | 2 | 2026-10-13 |
+| <img src="jak-and-daxter-the-precursor-legacy-opengoal/cover.png" width="120"> | [Jak and Daxter: The Precursor Legacy (OpenGOAL)](jak-and-daxter-the-precursor-legacy-opengoal/) | IggniFyre | 1.0.0 | 19 custom achievements | 2 | 2 | 2026-10-13 |

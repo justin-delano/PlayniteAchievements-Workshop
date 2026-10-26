@@ -5,4 +5,4 @@ Platform: PC
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="planet-of-lana/cover.png" width="120"> | [Planet of Lana](planet-of-lana/) | Blaze21 | 1.0.0 | 25 icons, 1 capstones, 25 overrides | 0 | 1 | 2026-10-16 |
+| <img src="planet-of-lana/cover.png" width="120"> | [Planet of Lana](planet-of-lana/) | Blaze21 | 1.0.0 | 25 icons, 1 capstones, 25 overrides | 1 | 1 | 2026-10-16 |
