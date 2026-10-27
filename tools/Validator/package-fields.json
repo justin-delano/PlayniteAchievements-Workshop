@@ -69,6 +69,16 @@
     "CategoryImageOverrideData": {
       "Art": "value"
     },
+    "CategorySummaryGridOptions": {
+      "ColorRarityColumnsByRarity": "value",
+      "Columns": "GridColumnLayoutOptions",
+      "RowHeight": "value",
+      "ShowColumnHeaders": "value",
+      "ShowCompletionGlow": "value",
+      "ShowNameAboveProgress": "value",
+      "ShowRarityBadgesBelowProgress": "value",
+      "UseCoverImages": "value"
+    },
     "ColorPackFile": {
       "Kind": "value",
       "ProviderColorOverrides": {
@@ -227,6 +237,9 @@
       "HeaderAlignments": {
         "map": "value"
       },
+      "HiddenHeaders": {
+        "map": "value"
+      },
       "Locked": {
         "map": "value"
       },
@@ -281,6 +294,7 @@
     },
     "NotificationHeaderTextSettings": {
       "CompletionHeader": "value",
+      "CompletionTitle": "value",
       "FriendCompletionHeaderFormat": "value",
       "FriendUnlockHeaderFormat": "value",
       "ProgressHeader": "value",
@@ -411,6 +425,9 @@
     "ShowcasePagePortableFile": {
       "AchievementGridSurfaces": {
         "map": "AchievementGridOptions"
+      },
+      "CategoryGridSurfaces": {
+        "map": "CategorySummaryGridOptions"
       },
       "GameGridSurfaces": {
         "map": "GameSummaryGridOptions"
