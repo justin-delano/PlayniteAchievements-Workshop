@@ -5,4 +5,4 @@ Platform: Sony PlayStation 2
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="grand-theft-auto-san-andreas-ps2-categories-with-art/cover.jpg" width="120"> | [Grand Theft Auto - San Andreas (PS2) categories with art!](grand-theft-auto-san-andreas-ps2-categories-with-art/) | EazyCheeze1978 | 1.0.0 | 41 categories, 181 overrides | 0 | 1 | 2026-10-19 |
+| <img src="grand-theft-auto-san-andreas-ps2-categories-with-art/cover.jpg" width="120"> | [Grand Theft Auto - San Andreas (PS2) categories with art!](grand-theft-auto-san-andreas-ps2-categories-with-art/) | EazyCheeze1978 | 1.0.0 | 41 categories, 181 overrides | 1 | 1 | 2026-10-19 |
