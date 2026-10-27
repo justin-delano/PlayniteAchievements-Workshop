@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-crash-team-racing-nitro-fueled/crash-team-racing-nitro-fueled-custom",
+  "kind": "GameCustomData",
+  "name": "Crash Team Racing: Nitro-Fueled (custom)",
+  "description": "Custom/Manual achievement set for Crash Team Racing Nitro-Fueled, for Nintendo Switch or the fanmade PC port.\nThis is a custom set different from the official achievements on Playstation and Xbox. Achievements centered around including the additional free content that was added post-launch, which also contains much more challenging Time Trials.\nSee notes for important details.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "crash-bandicoot",
+    "crash-team-racing",
+    "ctr",
+    "nitro-fueled",
+    "remake",
+    "custom"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-27",
+  "updated": "2026-10-27",
+  "game": {
+    "name": "Crash Team Racing: Nitro-Fueled",
+    "platform": "Computer",
+    "keys": [
+      {
+        "name": "Crash Team Racing: Nitro-Fueled",
+        "platform": "Computer"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 23,
+    "achievementOverrides": 0,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 0,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "metadataLinks": 0,
+    "imageFiles": 23
+  },
+  "package": {
+    "file": "crash-team-racing-nitro-fueled-custom-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 1481843,
+    "sha256": "6df497b98bb369550296a805faba241e5df2dc300d6e503dd13124dec749c5fe",
+    "release": {
+      "tag": "game-data/name-crash-team-racing-nitro-fueled/crash-team-racing-nitro-fueled-custom",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-crash-team-racing-nitro-fueled/crash-team-racing-nitro-fueled-custom/crash-team-racing-nitro-fueled-custom-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}
