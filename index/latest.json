@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-28T09:35:59Z",
-  "commit": "bafcb9f8e8fe0b7496284a63c3b98a2624dbc4e3",
+  "generated": "2026-10-28T16:37:53Z",
+  "commit": "5b615a426bedfb54ba59c487039fa6e701bb4d33",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -208,6 +208,75 @@
         "cover": null,
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@91302f4b1b13dd14a705dc7612414e9950e7cf57/bundles/steamstation-2-0/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/bundles/steamstation-2-0"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/gog-1454315831/fallout-3-game-of-the-year-edition",
+      "kind": "GameCustomData",
+      "name": "Fallout 3 - Game of the Year Edition",
+      "description": "Fallout 3 GOTY Achievements",
+      "author": "Nicolaus",
+      "ownerHash": "d4b57965482389f5b7f9ecd73ff3f4a879d304b9131e45bd984d7e707692d518",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-28",
+      "updated": "2026-10-28",
+      "game": {
+        "name": "Fallout 3 - Game of the Year Edition",
+        "platform": "PC (Windows)",
+        "keys": [
+          {
+            "providerKey": "GOG",
+            "providerGameId": 1454315831,
+            "name": "Fallout 3 - Game of the Year Edition",
+            "platform": "PC (Windows)"
+          },
+          {
+            "name": "Fallout 3 - Game of the Year Edition",
+            "platform": "PC (Windows)"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 72,
+        "achievementOverrides": 22,
+        "categoryAssignments": 22,
+        "categories": 6,
+        "categoryImages": 0,
+        "capstones": 0,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "metadataLinks": 0,
+        "imageFiles": 72
+      },
+      "package": {
+        "file": "fallout-3-game-of-the-year-edition-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 433801,
+        "sha256": "b7ddb3fd3abade7d80b3ed41ddae33d8172de4e8012edfb5cdd184a9d9cde619",
+        "release": {
+          "tag": "game-data/gog-1454315831/fallout-3-game-of-the-year-edition",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/gog-1454315831/fallout-3-game-of-the-year-edition/fallout-3-game-of-the-year-edition-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.jpg",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/gog-1454315831/fallout-3-game-of-the-year-edition/fallout-3-game-of-the-year-edition-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@5b615a426bedfb54ba59c487039fa6e701bb4d33/game-data/gog-1454315831/fallout-3-game-of-the-year-edition/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@5b615a426bedfb54ba59c487039fa6e701bb4d33/game-data/gog-1454315831/fallout-3-game-of-the-year-edition/cover.jpg",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@5b615a426bedfb54ba59c487039fa6e701bb4d33/game-data/gog-1454315831/fallout-3-game-of-the-year-edition/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/gog-1454315831/fallout-3-game-of-the-year-edition"
       }
     },
     {
