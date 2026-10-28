@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-fable-ii/fable-ii",
+  "kind": "GameCustomData",
+  "name": "Fable II",
+  "description": "Achievements data for Fable II, got from TureAchievements:\nhttps://www.trueachievements.com/game/Fable-2/achievements",
+  "author": "ToMatt",
+  "ownerHash": "60514761f31f062404ff613d1f2ebe466533347d5f3be37038690fc4e93c9ea6",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "fable",
+    "achievements"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-28",
+  "updated": "2026-10-28",
+  "game": {
+    "name": "Fable II",
+    "platform": "Microsoft Xbox 360",
+    "keys": [
+      {
+        "name": "Fable II",
+        "platform": "Microsoft Xbox 360"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 66,
+    "achievementOverrides": 66,
+    "categoryAssignments": 66,
+    "categories": 4,
+    "categoryImages": 0,
+    "capstones": 0,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "metadataLinks": 0,
+    "imageFiles": 66
+  },
+  "package": {
+    "file": "fable-ii-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 307888,
+    "sha256": "58e8383339157090e07d91da35831318e5d8c8f18c78b646bf71fa764cbdbb39",
+    "release": {
+      "tag": "game-data/name-fable-ii/fable-ii",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-fable-ii/fable-ii/fable-ii-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.jpg",
+  "readme": "README.md"
+}
