@@ -5,4 +5,4 @@ Platform: Computer
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="crash-team-racing-nitro-fueled-custom/cover.png" width="120"> | [Crash Team Racing: Nitro-Fueled (custom)](crash-team-racing-nitro-fueled-custom/) | IggniFyre | 1.0.0 | 23 custom achievements | 0 | 0 | 2026-10-27 |
+| <img src="crash-team-racing-nitro-fueled-custom/cover.png" width="120"> | [Crash Team Racing: Nitro-Fueled (custom)](crash-team-racing-nitro-fueled-custom/) | IggniFyre | 1.0.0 | 23 custom achievements | 0 | 1 | 2026-10-27 |
