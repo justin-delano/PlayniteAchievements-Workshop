@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-vs-impostor-legacy/vs-impostor-legacy",
+  "kind": "GameCustomData",
+  "name": "VS IMPOSTOR: LEGACY",
+  "description": "a vs impostor legacy achievement set, manually check achievements in the achievements tab in-game",
+  "author": "Beanie",
+  "ownerHash": "1aff57621b68e9677ea263df78bb60d022efd03be6f004fa5ab84e7535660893",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "fnf"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-10-28",
+  "updated": "2026-10-28",
+  "game": {
+    "name": "VS IMPOSTOR: LEGACY",
+    "platform": "PC (Windows)",
+    "keys": [
+      {
+        "name": "VS IMPOSTOR: LEGACY",
+        "platform": "PC (Windows)"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 28,
+    "achievementOverrides": 0,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "metadataLinks": 0,
+    "imageFiles": 56
+  },
+  "package": {
+    "file": "vs-impostor-legacy-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 124474,
+    "sha256": "0b96e424accb16381c9200d381d11064edde5d24bfd311761897f58fc0e1dc64",
+    "release": {
+      "tag": "game-data/name-vs-impostor-legacy/vs-impostor-legacy",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-vs-impostor-legacy/vs-impostor-legacy/vs-impostor-legacy-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "readme": "README.md"
+}
