@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-28T16:37:53Z",
-  "commit": "5b615a426bedfb54ba59c487039fa6e701bb4d33",
+  "generated": "2026-10-28T18:06:22Z",
+  "commit": "5c80b316e43f9a5d3cee35e090767fd14c3cdd75",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -680,6 +680,72 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@47be67e43d72fe69247227fe3c07fd2657167704/game-data/name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition/cover.jpg",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@47be67e43d72fe69247227fe3c07fd2657167704/game-data/name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-fable-ii/fable-ii",
+      "kind": "GameCustomData",
+      "name": "Fable II",
+      "description": "Achievements data for Fable II, got from TureAchievements:\nhttps://www.trueachievements.com/game/Fable-2/achievements",
+      "author": "ToMatt",
+      "ownerHash": "60514761f31f062404ff613d1f2ebe466533347d5f3be37038690fc4e93c9ea6",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "fable",
+        "achievements"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-28",
+      "updated": "2026-10-28",
+      "game": {
+        "name": "Fable II",
+        "platform": "Microsoft Xbox 360",
+        "keys": [
+          {
+            "name": "Fable II",
+            "platform": "Microsoft Xbox 360"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 66,
+        "achievementOverrides": 66,
+        "categoryAssignments": 66,
+        "categories": 4,
+        "categoryImages": 0,
+        "capstones": 0,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "metadataLinks": 0,
+        "imageFiles": 66
+      },
+      "package": {
+        "file": "fable-ii-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 307888,
+        "sha256": "58e8383339157090e07d91da35831318e5d8c8f18c78b646bf71fa764cbdbb39",
+        "release": {
+          "tag": "game-data/name-fable-ii/fable-ii",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-fable-ii/fable-ii/fable-ii-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.jpg",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-fable-ii/fable-ii/fable-ii-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@5c80b316e43f9a5d3cee35e090767fd14c3cdd75/game-data/name-fable-ii/fable-ii/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@5c80b316e43f9a5d3cee35e090767fd14c3cdd75/game-data/name-fable-ii/fable-ii/cover.jpg",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@5c80b316e43f9a5d3cee35e090767fd14c3cdd75/game-data/name-fable-ii/fable-ii/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-fable-ii/fable-ii"
       }
     },
     {
