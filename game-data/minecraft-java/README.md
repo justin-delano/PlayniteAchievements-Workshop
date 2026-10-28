@@ -5,4 +5,4 @@ Platform: Windows
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="minecraft-achievement-icons/cover.jpg" width="120"> | [Minecraft Achievement Icons](minecraft-achievement-icons/) | Flavorfulroom | 1.0.0 | 125 icons, 1 categories, 126 overrides | 18 | 3 | 2026-10-15 |
+| <img src="minecraft-achievement-icons/cover.jpg" width="120"> | [Minecraft Achievement Icons](minecraft-achievement-icons/) | Flavorfulroom | 1.0.0 | 125 icons, 1 categories, 126 overrides | 19 | 3 | 2026-10-15 |

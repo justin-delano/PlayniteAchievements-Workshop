@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-28T18:06:22Z",
-  "commit": "5c80b316e43f9a5d3cee35e090767fd14c3cdd75",
+  "generated": "2026-10-28T23:09:49Z",
+  "commit": "e2042af4425c9db301ce6cba20555d24a478ac9b",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -2072,6 +2072,70 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@6c333b71b5fa14d8cbe9673de833962593469838/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@6c333b71b5fa14d8cbe9673de833962593469838/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-vs-impostor-legacy/vs-impostor-legacy",
+      "kind": "GameCustomData",
+      "name": "VS IMPOSTOR: LEGACY",
+      "description": "a vs impostor legacy achievement set, manually check achievements in the achievements tab in-game",
+      "author": "Beanie",
+      "ownerHash": "1aff57621b68e9677ea263df78bb60d022efd03be6f004fa5ab84e7535660893",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "fnf"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-10-28",
+      "updated": "2026-10-28",
+      "game": {
+        "name": "VS IMPOSTOR: LEGACY",
+        "platform": "PC (Windows)",
+        "keys": [
+          {
+            "name": "VS IMPOSTOR: LEGACY",
+            "platform": "PC (Windows)"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 28,
+        "achievementOverrides": 0,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "metadataLinks": 0,
+        "imageFiles": 56
+      },
+      "package": {
+        "file": "vs-impostor-legacy-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 124474,
+        "sha256": "0b96e424accb16381c9200d381d11064edde5d24bfd311761897f58fc0e1dc64",
+        "release": {
+          "tag": "game-data/name-vs-impostor-legacy/vs-impostor-legacy",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-vs-impostor-legacy/vs-impostor-legacy/vs-impostor-legacy-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-vs-impostor-legacy/vs-impostor-legacy/vs-impostor-legacy-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@e2042af4425c9db301ce6cba20555d24a478ac9b/game-data/name-vs-impostor-legacy/vs-impostor-legacy/preview.png",
+        "cover": null,
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@e2042af4425c9db301ce6cba20555d24a478ac9b/game-data/name-vs-impostor-legacy/vs-impostor-legacy/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-vs-impostor-legacy/vs-impostor-legacy"
       }
     },
     {
