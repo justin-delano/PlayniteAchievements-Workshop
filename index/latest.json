@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-28T23:09:49Z",
-  "commit": "e2042af4425c9db301ce6cba20555d24a478ac9b",
+  "generated": "2026-10-29T08:41:36Z",
+  "commit": "f211663a5c21c0493de0505e562a004306f9e5a3",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -2290,6 +2290,85 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@11155ace70495de35a5c6fbea457bf54de270220/game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art/cover.jpg",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@11155ace70495de35a5c6fbea457bf54de270220/game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/retroachievements-2772/grand-theft-auto-san-andreas-ps2-categories-with-art"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/retroachievements-2992/shadow-of-the-colossus-ps2-categories-and-notes",
+      "kind": "GameCustomData",
+      "name": "Shadow of the Colossus (PS2) - Categories and notes!",
+      "description": "I have again provided some organization for one of my favorite games, as well as given some notes on how to beat each Colossus - you may be patient, track my own progress through the game as I'll add them as I defeat the big beasts, then update this - or you can add your own!",
+      "author": "EazyCheeze1978",
+      "ownerHash": "6f0ce6cd3794a5fb1e3d7b5afcab3ccdb77655e755e885143f6439364e5f699d",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "ps2",
+        "pcsx2",
+        "emulation",
+        "shadow-of-the-colossus",
+        "action",
+        "puzzle",
+        "platforming",
+        "epic",
+        "great-music"
+      ],
+      "minPluginVersion": "4.2.0",
+      "created": "2026-10-29",
+      "updated": "2026-10-29",
+      "game": {
+        "name": "Shadow of the Colossus",
+        "platform": "Sony PlayStation 2",
+        "keys": [
+          {
+            "providerKey": "RetroAchievements",
+            "providerGameId": 2992,
+            "name": "Shadow of the Colossus",
+            "platform": "Sony PlayStation 2"
+          },
+          {
+            "name": "Shadow of the Colossus",
+            "platform": "Sony PlayStation 2"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 1,
+        "achievementOverrides": 93,
+        "categoryAssignments": 93,
+        "categories": 13,
+        "categoryImages": 0,
+        "capstones": 1,
+        "notes": 3,
+        "achievementOrder": true,
+        "notificationStyle": false,
+        "manualLink": false,
+        "metadataLinks": 0,
+        "imageFiles": 1
+      },
+      "package": {
+        "file": "shadow-of-the-colossus-ps2-categories-and-notes-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 9,
+        "sizeBytes": 45589,
+        "sha256": "7beb8e6f78bad09b827cf1a2f854fc66457dbcfc0c48470102d21c034988f2e9",
+        "release": {
+          "tag": "game-data/retroachievements-2992/shadow-of-the-colossus-ps2-categories-and-notes",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/retroachievements-2992/shadow-of-the-colossus-ps2-categories-and-notes/shadow-of-the-colossus-ps2-categories-and-notes-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.jpg",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/retroachievements-2992/shadow-of-the-colossus-ps2-categories-and-notes/shadow-of-the-colossus-ps2-categories-and-notes-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@f211663a5c21c0493de0505e562a004306f9e5a3/game-data/retroachievements-2992/shadow-of-the-colossus-ps2-categories-and-notes/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@f211663a5c21c0493de0505e562a004306f9e5a3/game-data/retroachievements-2992/shadow-of-the-colossus-ps2-categories-and-notes/cover.jpg",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@f211663a5c21c0493de0505e562a004306f9e5a3/game-data/retroachievements-2992/shadow-of-the-colossus-ps2-categories-and-notes/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/retroachievements-2992/shadow-of-the-colossus-ps2-categories-and-notes"
       }
     },
     {
