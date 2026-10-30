@@ -5,4 +5,4 @@ Platform: Sony PlayStation 2
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="shadow-of-the-colossus-ps2-categories-and-notes/cover.jpg" width="120"> | [Shadow of the Colossus (PS2) - Categories and notes!](shadow-of-the-colossus-ps2-categories-and-notes/) | EazyCheeze1978 | 1.0.0 | 1 custom achievements, 13 categories, 1 capstones, 93 overrides, 3 notes, order | 0 | 0 | 2026-10-29 |
+| <img src="shadow-of-the-colossus-ps2-categories-and-notes/cover.jpg" width="120"> | [Shadow of the Colossus (PS2) - Categories and notes!](shadow-of-the-colossus-ps2-categories-and-notes/) | EazyCheeze1978 | 1.0.0 | 1 custom achievements, 13 categories, 1 capstones, 93 overrides, 3 notes, order | 0 | 1 | 2026-10-29 |

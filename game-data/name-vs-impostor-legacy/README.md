@@ -5,4 +5,4 @@ Platform: PC (Windows)
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="vs-impostor-legacy/preview.png" width="120"> | [VS IMPOSTOR: LEGACY](vs-impostor-legacy/) | Beanie | 1.0.0 | 28 custom achievements, 1 capstones | 0 | 0 | 2026-10-28 |
+| <img src="vs-impostor-legacy/preview.png" width="120"> | [VS IMPOSTOR: LEGACY](vs-impostor-legacy/) | Beanie | 1.0.0 | 28 custom achievements, 1 capstones | 0 | 1 | 2026-10-28 |

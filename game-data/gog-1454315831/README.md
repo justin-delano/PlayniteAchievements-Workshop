@@ -5,4 +5,4 @@ Platform: PC (Windows)
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="fallout-3-game-of-the-year-edition/cover.jpg" width="120"> | [Fallout 3 - Game of the Year Edition](fallout-3-game-of-the-year-edition/) | Nicolaus | 1.0.0 | 72 custom achievements, 6 categories, 22 overrides | 2 | 0 | 2026-10-28 |
+| <img src="fallout-3-game-of-the-year-edition/cover.jpg" width="120"> | [Fallout 3 - Game of the Year Edition](fallout-3-game-of-the-year-edition/) | Nicolaus | 1.0.0 | 72 custom achievements, 6 categories, 22 overrides | 4 | 0 | 2026-10-28 |
