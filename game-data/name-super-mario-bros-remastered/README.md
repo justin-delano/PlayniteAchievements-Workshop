@@ -5,4 +5,4 @@ Platform: Computer
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="super-mario-bros-remastered/cover.png" width="120"> | [Super Mario Bros. Remastered](super-mario-bros-remastered/) | IggniFyre | 1.0.0 | 28 custom achievements | 5 | 4 | 2026-10-13 |
+| <img src="super-mario-bros-remastered/cover.png" width="120"> | [Super Mario Bros. Remastered](super-mario-bros-remastered/) | IggniFyre | 1.0.0 | 28 custom achievements | 6 | 4 | 2026-10-13 |

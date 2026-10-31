@@ -5,4 +5,4 @@ Platform: PC
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="devil-may-cry-4-special-edition/cover.jpg" width="120"> | [Devil May Cry 4 Special Edition](devil-may-cry-4-special-edition/) | gbszx | 1.0.0 | 1 custom achievements, 1 categories, 1 capstones, 43 overrides, order | 2 | 1 | 2026-10-21 |
+| <img src="devil-may-cry-4-special-edition/cover.jpg" width="120"> | [Devil May Cry 4 Special Edition](devil-may-cry-4-special-edition/) | gbszx | 1.0.0 | 1 custom achievements, 1 categories, 1 capstones, 43 overrides, order | 3 | 1 | 2026-10-21 |

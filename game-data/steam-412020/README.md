@@ -5,4 +5,4 @@ Platform: PC (Windows)
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="metro-exodus/cover.png" width="120"> | [Metro Exodus](metro-exodus/) | Synkro | 1.0.0 | 136 icons, 1 custom achievements, 5 categories, 1 capstones, 69 overrides, order | 28 | 4 | 2026-10-12 |
+| <img src="metro-exodus/cover.png" width="120"> | [Metro Exodus](metro-exodus/) | Synkro | 1.0.0 | 136 icons, 1 custom achievements, 5 categories, 1 capstones, 69 overrides, order | 29 | 4 | 2026-10-12 |

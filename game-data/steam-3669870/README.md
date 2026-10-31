@@ -5,4 +5,4 @@ Platform: PC (Windows)
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="control-resonant-platinum/cover.jpg" width="120"> | [CONTROL Resonant - Platinum](control-resonant-platinum/) | Luxas | 1.0.0 | 1 custom achievements, 1 categories, 1 capstones, 1 overrides, order | 3 | 1 | 2026-10-08 |
+| <img src="control-resonant-platinum/cover.jpg" width="120"> | [CONTROL Resonant - Platinum](control-resonant-platinum/) | Luxas | 1.0.0 | 1 custom achievements, 1 categories, 1 capstones, 1 overrides, order | 36 | 1 | 2026-10-08 |

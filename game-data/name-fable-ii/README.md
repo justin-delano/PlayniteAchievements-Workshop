@@ -5,4 +5,4 @@ Platform: Microsoft Xbox 360
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="fable-ii/cover.jpg" width="120"> | [Fable II](fable-ii/) | ToMatt | 1.0.0 | 66 custom achievements, 4 categories, 66 overrides | 0 | 0 | 2026-10-28 |
+| <img src="fable-ii/cover.jpg" width="120"> | [Fable II](fable-ii/) | ToMatt | 1.0.0 | 66 custom achievements, 4 categories, 66 overrides | 1 | 0 | 2026-10-28 |
