@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-super-mario-galaxy-2/super-mario-galaxy-2",
+  "kind": "GameCustomData",
+  "name": "Super Mario Galaxy 2",
+  "description": "Custom/Manual achievement set for Super Mario Galaxy 2, for Nintendo Switch or any other version not compatible with RetroAchievements.\nAll achievement progress can be checked through the in-game Star List found on the Starship.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "super-mario-galaxy-2",
+    "nintendo-switch",
+    "custom-achievements"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-11-01",
+  "updated": "2026-11-01",
+  "game": {
+    "name": "Super Mario Galaxy 2",
+    "platform": "Nintendo Switch",
+    "keys": [
+      {
+        "name": "Super Mario Galaxy 2",
+        "platform": "Nintendo Switch"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 23,
+    "achievementOverrides": 0,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 0,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "metadataLinks": 0,
+    "imageFiles": 23
+  },
+  "package": {
+    "file": "super-mario-galaxy-2-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 2699065,
+    "sha256": "d6a39f54cc9e70651862993ec1eb86a1fca6811ae8da69a07361f63867c753ab",
+    "release": {
+      "tag": "game-data/name-super-mario-galaxy-2/super-mario-galaxy-2",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-super-mario-galaxy-2/super-mario-galaxy-2/super-mario-galaxy-2-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}
