@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-super-mario-galaxy/super-mario-galaxy",
+  "kind": "GameCustomData",
+  "name": "Super Mario Galaxy",
+  "description": "Custom/Manual achievement set for Super Mario Galaxy, for Nintendo Switch or any other version not compatible with RetroAchievements.\nAll achievement progress can be checked through the in-game Star List and Comet Observatory Map from talking to the black Luma.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "super-mario-galaxy",
+    "nintendo-switch",
+    "custom-achievements"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-11-01",
+  "updated": "2026-11-01",
+  "game": {
+    "name": "Super Mario Galaxy",
+    "platform": "Nintendo Switch",
+    "keys": [
+      {
+        "name": "Super Mario Galaxy",
+        "platform": "Nintendo Switch"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 21,
+    "achievementOverrides": 0,
+    "categoryAssignments": 0,
+    "categories": 0,
+    "categoryImages": 0,
+    "capstones": 0,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "metadataLinks": 0,
+    "imageFiles": 21
+  },
+  "package": {
+    "file": "super-mario-galaxy-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 2257408,
+    "sha256": "afd4bea0db948bddd4ce2bd1f6fbb02f135646fceb2b32636ee29a722599259d",
+    "release": {
+      "tag": "game-data/name-super-mario-galaxy/super-mario-galaxy",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-super-mario-galaxy/super-mario-galaxy/super-mario-galaxy-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}
