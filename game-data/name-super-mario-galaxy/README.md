@@ -5,4 +5,4 @@ Platform: Nintendo Switch
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="super-mario-galaxy/cover.png" width="120"> | [Super Mario Galaxy](super-mario-galaxy/) | IggniFyre | 1.0.0 | 21 custom achievements | 1 | 1 | 2026-11-01 |
+| <img src="super-mario-galaxy/cover.png" width="120"> | [Super Mario Galaxy](super-mario-galaxy/) | IggniFyre | 1.0.0 | 21 custom achievements | 2 | 1 | 2026-11-01 |
