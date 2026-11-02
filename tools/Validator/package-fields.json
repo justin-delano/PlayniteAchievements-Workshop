@@ -75,8 +75,11 @@
       "RowHeight": "value",
       "ShowColumnHeaders": "value",
       "ShowCompletionGlow": "value",
+      "ShowMetadataPoints": "value",
+      "ShowMetadataTotal": "value",
       "ShowNameAboveProgress": "value",
       "ShowRarityBadgesBelowProgress": "value",
+      "ShowTreeOnly": "value",
       "UseCoverImages": "value"
     },
     "ColorPackFile": {
@@ -220,7 +223,9 @@
       "ShowControlBar": "value",
       "ShowMetadataPlatform": "value",
       "ShowMetadataPlaytime": "value",
+      "ShowMetadataPoints": "value",
       "ShowMetadataRegion": "value",
+      "ShowMetadataTotal": "value",
       "ShowNameAboveProgress": "value",
       "ShowRarityBadgesBelowProgress": "value",
       "SortDescending": "value",
