@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/steam-529340/victoria-3-dlcs-sorted-by-patch-and-dlc",
+  "kind": "GameCustomData",
+  "name": "Victoria 3 DLCs sorted by Patch and DLC",
+  "description": "All the Victoria 3 achievements sorted and categorized by DLC and patches.",
+  "author": "semtex13",
+  "ownerHash": "0a64d2f692b982877eb571bb248cfd8c019a2906d8b60e3ab4f4756bf34fde06",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "victoria-3"
+  ],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-11-06",
+  "updated": "2026-11-06",
+  "game": {
+    "name": "Victoria 3",
+    "platform": "PC (Windows)",
+    "keys": [
+      {
+        "providerKey": "Steam",
+        "providerGameId": 529340,
+        "name": "Victoria 3",
+        "platform": "PC (Windows)"
+      },
+      {
+        "name": "Victoria 3",
+        "platform": "PC (Windows)"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 0,
+    "achievementOverrides": 62,
+    "categoryAssignments": 62,
+    "categories": 20,
+    "categoryImages": 10,
+    "capstones": 0,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "metadataLinks": 0,
+    "imageFiles": 10
+  },
+  "package": {
+    "file": "victoria-3-dlcs-sorted-by-patch-and-dlc-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 8,
+    "sizeBytes": 508889,
+    "sha256": "dfb521be4edc59d3246d65e5d0576e157555387dbd9d5e7266ef3bcb10742fc9",
+    "release": {
+      "tag": "game-data/steam-529340/victoria-3-dlcs-sorted-by-patch-and-dlc",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/steam-529340/victoria-3-dlcs-sorted-by-patch-and-dlc/victoria-3-dlcs-sorted-by-patch-and-dlc-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}
