@@ -3,7 +3,7 @@
 
 Per-game customizations: icon sets, categories, capstones, custom achievements, notes and ordering, one folder per game. Install from the Workshop in Playnite (which matches the game in your library), or download the `.pa` and import it from the game's Manage Achievements window.
 
-48 game(s), 48 item(s).
+49 game(s), 49 item(s).
 
 | | Game | Platform | Items | Installs |
 |---|---|---|---:|---:|
@@ -26,12 +26,13 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="steam-2420110/horizon-forbidden-west-test/cover.png" width="120"> | [Horizon Forbidden West](steam-2420110/) | PC (Windows) | 1 | 0 |
 | <img src="name-hyrule-warriors/hyrule-warriors-definitive-edition/cover.png" width="120"> | [Hyrule Warriors](name-hyrule-warriors/) | Nintendo Switch | 1 | 0 |
 | <img src="name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal/cover.png" width="120"> | [Jak and Daxter: The Precursor Legacy](name-jak-and-daxter-the-precursor-legacy/) | Sony Playstation 2 | 1 | 3 |
-| <img src="name-jusant/jusant/cover.jpg" width="120"> | [Jusant](name-jusant/) | PC | 1 | 1 |
+| <img src="name-jusant/jusant/cover.jpg" width="120"> | [Jusant](name-jusant/) | PC | 1 | 2 |
 | <img src="name-mario-kart-world/mario-kart-world/cover.png" width="120"> | [Mario Kart World](name-mario-kart-world/) | Nintendo Switch 2 | 1 | 2 |
 | <img src="steam-412020/metro-exodus/cover.png" width="120"> | [Metro Exodus](steam-412020/) | PC (Windows) | 1 | 30 |
 | <img src="steam-1449560/metro-exodus-enhanced-edition/cover.png" width="120"> | [Metro Exodus Enhanced Edition](steam-1449560/) | PC (Windows) | 1 | 4 |
 | <img src="name-metroid-dread/metroid-dread/cover.png" width="120"> | [Metroid Dread](name-metroid-dread/) | Nintendo Switch | 1 | 7 |
 | <img src="minecraft-java/minecraft-achievement-icons/cover.jpg" width="120"> | [Minecraft](minecraft-java/) | Windows | 1 | 23 |
+| <img src="name-monster-girl-quest-1-3/monster-girl-quest-1-3/cover.jpg" width="120"> | [Monster Girl Quest 1-3](name-monster-girl-quest-1-3/) | PC (Windows) | 1 | 0 |
 | <img src="name-planet-of-lana/planet-of-lana/cover.png" width="120"> | [Planet of Lana](name-planet-of-lana/) | PC | 1 | 2 |
 | <img src="name-rayman-2-the-great-escape/rayman-2-the-great-escape/cover.png" width="120"> | [Rayman 2: The Great Escape](name-rayman-2-the-great-escape/) | Computer | 1 | 1 |
 | <img src="name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc/cover.png" width="120"> | [Rayman 3: Hoodlum Havoc](name-rayman-3-hoodlum-havoc/) | Computer | 1 | 3 |
@@ -51,7 +52,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="steam-3751260/the-blood-of-dawnwalker-platinum-trophy/cover.jpg" width="120"> | [The Blood of Dawnwalker](steam-3751260/) | PC (Windows) | 1 | 3 |
 | <img src="name-the-legend-of-zelda-breath-of-the-wild/the-legend-of-zelda-breath-of-the-wild/cover.png" width="120"> | [The Legend of Zelda: Breath of the Wild](name-the-legend-of-zelda-breath-of-the-wild/) | Nintendo Switch | 1 | 21 |
 | <img src="name-the-legend-of-zelda-link-s-awakening/the-legend-of-zelda-link-s-awakening-switch/cover.png" width="120"> | [The Legend of Zelda: Link's Awakening](name-the-legend-of-zelda-link-s-awakening/) | Nintendo Switch | 1 | 5 |
-| <img src="name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/cover.png" width="120"> | [The Legend of Zelda: Twilight Princess](name-the-legend-of-zelda-twilight-princess/) | Computer | 1 | 20 |
+| <img src="name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/cover.png" width="120"> | [The Legend of Zelda: Twilight Princess](name-the-legend-of-zelda-twilight-princess/) | Computer | 1 | 21 |
 | <img src="steam-292030/the-witcher-3-wild-hunt-platinum-trophy/cover.jpg" width="120"> | [The Witcher 3: Wild Hunt — Remastered](steam-292030/) | PC (Windows) | 1 | 37 |
 | <img src="steam-529340/victoria-3-dlcs-sorted-by-patch-and-dlc/cover.png" width="120"> | [Victoria 3](steam-529340/) | PC (Windows) | 1 | 0 |
 | <img src="name-vs-impostor-legacy/vs-impostor-legacy/preview.png" width="120"> | [VS IMPOSTOR: LEGACY](name-vs-impostor-legacy/) | PC (Windows) | 1 | 0 |

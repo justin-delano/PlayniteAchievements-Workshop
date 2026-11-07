@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-11-07T10:01:34Z",
-  "commit": "f729d783c8e0efc64def3a1cd8e12f609d910e1f",
+  "generated": "2026-11-07T15:42:05Z",
+  "commit": "3d7970adf090f0a113b2c2c3ebba2a86cb79ea66",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -1073,6 +1073,75 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@34b1db940c7e80f7db776693ba10e4940e4396b7/game-data/name-metroid-dread/metroid-dread/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@34b1db940c7e80f7db776693ba10e4940e4396b7/game-data/name-metroid-dread/metroid-dread/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-metroid-dread/metroid-dread"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "game-data/name-monster-girl-quest-1-3/monster-girl-quest-1-3",
+      "kind": "GameCustomData",
+      "name": "Monster Girl Quest 1-3",
+      "description": "Translated the in-game achievements for all 3 chapter combined into playnite and gave them names and icons, all achievements have SFW ìcons and are properly marked hidden, the descriptions are the same as in game while the titles i made up trying to be at least a little on theme, the icons are all either a meme or an image of what the achievement is talking about, rarities are based on what i feel",
+      "author": "Creator565",
+      "ownerHash": "9e560abf53805b67c6acb84216b81edd84c29b6ae0e2f1bf9a8c8982d34f814b",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "achievement-set",
+        "achievements",
+        "icons",
+        "has-types",
+        "in-game"
+      ],
+      "minPluginVersion": "4.1.0",
+      "created": "2026-11-07",
+      "updated": "2026-11-07",
+      "game": {
+        "name": "Monster Girl Quest 1-3",
+        "platform": "PC (Windows)",
+        "keys": [
+          {
+            "name": "Monster Girl Quest 1-3",
+            "platform": "PC (Windows)"
+          }
+        ]
+      },
+      "contents": {
+        "achievementIcons": 0,
+        "lockedIcons": 0,
+        "customAchievements": 37,
+        "achievementOverrides": 37,
+        "categoryAssignments": 0,
+        "categories": 0,
+        "categoryImages": 0,
+        "capstones": 0,
+        "notes": 0,
+        "achievementOrder": false,
+        "notificationStyle": false,
+        "manualLink": false,
+        "metadataLinks": 0,
+        "imageFiles": 37
+      },
+      "package": {
+        "file": "monster-girl-quest-1-3-1.0.0.pa",
+        "formatKind": "PlayniteAchievements.GameCustomData",
+        "formatVersion": 8,
+        "sizeBytes": 1122715,
+        "sha256": "4db52569777ea565c5366bc45d37b4ce276c3f1e78aed5596cc946fdcf2228e0",
+        "release": {
+          "tag": "game-data/name-monster-girl-quest-1-3/monster-girl-quest-1-3",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-monster-girl-quest-1-3/monster-girl-quest-1-3/monster-girl-quest-1-3-1.0.0.pa"
+        }
+      },
+      "preview": "preview.png",
+      "cover": "cover.jpg",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-monster-girl-quest-1-3/monster-girl-quest-1-3/monster-girl-quest-1-3-1.0.0.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@3d7970adf090f0a113b2c2c3ebba2a86cb79ea66/game-data/name-monster-girl-quest-1-3/monster-girl-quest-1-3/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@3d7970adf090f0a113b2c2c3ebba2a86cb79ea66/game-data/name-monster-girl-quest-1-3/monster-girl-quest-1-3/cover.jpg",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@3d7970adf090f0a113b2c2c3ebba2a86cb79ea66/game-data/name-monster-girl-quest-1-3/monster-girl-quest-1-3/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-monster-girl-quest-1-3/monster-girl-quest-1-3"
       }
     },
     {
