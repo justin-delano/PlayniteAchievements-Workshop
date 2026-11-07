@@ -12,7 +12,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="name-banjo-kazooie/banjo-kazooie-recompiled/cover.png" width="120"> | [Banjo-Kazooie](name-banjo-kazooie/) | Computer | 1 | 3 |
 | <img src="steam-4231820/castlevania-belmont-s-curse-capstone/cover.png" width="120"> | [Castlevania: Belmont's Curse](steam-4231820/) | PC (Windows) | 1 | 3 |
 | <img src="steam-1133760/chrono-cross-the-radical-dreamers-edition/cover.jpg" width="120"> | [CHRONO CROSS: THE RADICAL DREAMERS EDITION](steam-1133760/) | PC | 1 | 1 |
-| <img src="steam-3669870/control-resonant-platinum/cover.jpg" width="120"> | [CONTROL Resonant](steam-3669870/) | PC (Windows) | 1 | 36 |
+| <img src="steam-3669870/control-resonant-platinum/cover.jpg" width="120"> | [CONTROL Resonant](steam-3669870/) | PC (Windows) | 1 | 37 |
 | <img src="name-crash-team-racing-nitro-fueled/crash-team-racing-nitro-fueled-custom/cover.png" width="120"> | [Crash Team Racing: Nitro-Fueled](name-crash-team-racing-nitro-fueled/) | Computer | 1 | 4 |
 | <img src="steam-1693980/dead-space-test/preview.png" width="120"> | [Dead Space](steam-1693980/) | PC (Windows) | 1 | 6 |
 | <img src="steam-329050/devil-may-cry-4-special-edition/cover.jpg" width="120"> | [Devil May Cry 4 Special Edition](steam-329050/) | PC | 1 | 5 |

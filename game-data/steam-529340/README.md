@@ -5,4 +5,4 @@ Platform: PC (Windows)
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="victoria-3-dlcs-sorted-by-patch-and-dlc/cover.png" width="120"> | [Victoria 3 DLCs sorted by Patch and DLC](victoria-3-dlcs-sorted-by-patch-and-dlc/) | semtex13 | 1.0.0 | 20 categories, 62 overrides | 0 | 0 | 2026-11-06 |
+| <img src="victoria-3-dlcs-sorted-by-patch-and-dlc/cover.png" width="120"> | [Victoria 3 DLCs sorted by Patch and DLC](victoria-3-dlcs-sorted-by-patch-and-dlc/) | semtex13 | 1.0.0 | 20 categories, 62 overrides | 0 | 1 | 2026-11-06 |
