@@ -5,4 +5,4 @@ Platform: PC (Windows)
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="monster-girl-quest-1-3/cover.jpg" width="120"> | [Monster Girl Quest 1-3](monster-girl-quest-1-3/) | Creator565 | 1.0.0 | 37 custom achievements, 37 overrides | 0 | 0 | 2026-11-07 |
+| <img src="monster-girl-quest-1-3/cover.jpg" width="120"> | [Monster Girl Quest 1-3](monster-girl-quest-1-3/) | Creator565 | 1.0.0 | 37 custom achievements, 37 overrides | 0 | 1 | 2026-11-07 |

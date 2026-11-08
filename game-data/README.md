@@ -16,7 +16,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="name-crash-team-racing-nitro-fueled/crash-team-racing-nitro-fueled-custom/cover.png" width="120"> | [Crash Team Racing: Nitro-Fueled](name-crash-team-racing-nitro-fueled/) | Computer | 1 | 4 |
 | <img src="steam-1693980/dead-space-test/preview.png" width="120"> | [Dead Space](steam-1693980/) | PC (Windows) | 1 | 6 |
 | <img src="steam-329050/devil-may-cry-4-special-edition/cover.jpg" width="120"> | [Devil May Cry 4 Special Edition](steam-329050/) | PC | 1 | 5 |
-| <img src="name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition/cover.jpg" width="120"> | [Dragon Age II: Ultimate Edition](name-dragon-age-ii-ultimate-edition/) | PC (Windows) | 1 | 3 |
+| <img src="name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition/cover.jpg" width="120"> | [Dragon Age II: Ultimate Edition](name-dragon-age-ii-ultimate-edition/) | PC (Windows) | 1 | 4 |
 | <img src="name-fable-ii/fable-ii/cover.jpg" width="120"> | [Fable II](name-fable-ii/) | Microsoft Xbox 360 | 1 | 2 |
 | <img src="gog-1454315831/fallout-3-game-of-the-year-edition/cover.jpg" width="120"> | [Fallout 3 - Game of the Year Edition](gog-1454315831/) | PC (Windows) | 1 | 11 |
 | <img src="steam-2962810/galaxy-idle-clicker-categories/cover.jpg" width="120"> | [Galaxy Idle Clicker](steam-2962810/) | PC (Windows) | 1 | 0 |

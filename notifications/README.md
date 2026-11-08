@@ -3,8 +3,9 @@
 
 Looks for the unlock notification: colors, layout, badges, backgrounds, and optionally a custom template. Install from the Workshop in Playnite, or download the `.panotif` from the item's release and import it under Settings > Notifications > Appearance.
 
-1 item(s), most installed first.
+2 item(s), most installed first.
 
 | | Name | Author | Version | Installs | Likes | Updated |
 |---|---|---|---|---:|---:|---|
-| <img src="steamstation-5/cover.png" width="120"> | [Steamstation 5](steamstation-5/) | Luxas | 1.0.1 | 194 | 18 | 2026-10-07 |
+| <img src="steamstation-5/cover.png" width="120"> | [Steamstation 5](steamstation-5/) | Luxas | 1.0.1 | 198 | 18 | 2026-10-07 |
+| <img src="simple/preview.png" width="120"> | [Simple](simple/) | NinjaShadic17 | 1.0.0 | 0 | 0 | 2026-11-08 |
