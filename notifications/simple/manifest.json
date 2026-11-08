@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "notifications/simple",
+  "kind": "NotificationStyle",
+  "name": "Simple",
+  "description": "A simple notification",
+  "author": "NinjaShadic17",
+  "ownerHash": "c2326d50e3abaefd7ccfd17a0636d7e708f66eb5414be020aac4e26ff8759082",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [],
+  "minPluginVersion": "4.0.0",
+  "created": "2026-11-08",
+  "updated": "2026-11-08",
+  "contents": {
+    "toastStyle": true,
+    "frameStyle": false,
+    "toastTemplate": false,
+    "frameTemplate": false,
+    "images": 0,
+    "kindStyles": 0
+  },
+  "package": {
+    "file": "simple-1.0.0.panotif",
+    "formatKind": "PlayniteAchievements.NotificationStyle",
+    "formatVersion": 4,
+    "sizeBytes": 687,
+    "sha256": "8adccd7ba6c0fd4b3f816cec131cc0506a730b0566de41965c3a61400ec571b8",
+    "release": {
+      "tag": "notifications/simple",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/notifications/simple/simple-1.0.0.panotif"
+    }
+  },
+  "preview": "preview.png",
+  "readme": "README.md"
+}
