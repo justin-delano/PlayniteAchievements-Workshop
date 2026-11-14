@@ -13,7 +13,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="steam-4231820/castlevania-belmont-s-curse-capstone/cover.png" width="120"> | [Castlevania: Belmont's Curse](steam-4231820/) | PC (Windows) | 1 | 3 |
 | <img src="steam-1133760/chrono-cross-the-radical-dreamers-edition/cover.jpg" width="120"> | [CHRONO CROSS: THE RADICAL DREAMERS EDITION](steam-1133760/) | PC | 1 | 1 |
 | <img src="steam-3669870/control-resonant-platinum/cover.jpg" width="120"> | [CONTROL Resonant](steam-3669870/) | PC (Windows) | 1 | 38 |
-| <img src="name-crash-team-racing-nitro-fueled/crash-team-racing-nitro-fueled-custom/cover.png" width="120"> | [Crash Team Racing: Nitro-Fueled](name-crash-team-racing-nitro-fueled/) | Computer | 1 | 4 |
+| <img src="name-crash-team-racing-nitro-fueled/crash-team-racing-nitro-fueled-custom/cover.png" width="120"> | [Crash Team Racing: Nitro-Fueled](name-crash-team-racing-nitro-fueled/) | Computer | 1 | 5 |
 | <img src="steam-1693980/dead-space-test/preview.png" width="120"> | [Dead Space](steam-1693980/) | PC (Windows) | 1 | 6 |
 | <img src="steam-329050/devil-may-cry-4-special-edition/cover.jpg" width="120"> | [Devil May Cry 4 Special Edition](steam-329050/) | PC | 1 | 5 |
 | <img src="name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition/cover.jpg" width="120"> | [Dragon Age II: Ultimate Edition](name-dragon-age-ii-ultimate-edition/) | PC (Windows) | 1 | 4 |
@@ -29,7 +29,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="name-jusant/jusant/cover.jpg" width="120"> | [Jusant](name-jusant/) | PC | 1 | 2 |
 | <img src="name-mario-kart-world/mario-kart-world/cover.png" width="120"> | [Mario Kart World](name-mario-kart-world/) | Nintendo Switch 2 | 1 | 2 |
 | <img src="steam-412020/metro-exodus/cover.png" width="120"> | [Metro Exodus](steam-412020/) | PC (Windows) | 1 | 30 |
-| <img src="steam-1449560/metro-exodus-enhanced-edition/cover.png" width="120"> | [Metro Exodus Enhanced Edition](steam-1449560/) | PC (Windows) | 1 | 4 |
+| <img src="steam-1449560/metro-exodus-enhanced-edition/cover.png" width="120"> | [Metro Exodus Enhanced Edition](steam-1449560/) | PC (Windows) | 1 | 5 |
 | <img src="name-metroid-dread/metroid-dread/cover.png" width="120"> | [Metroid Dread](name-metroid-dread/) | Nintendo Switch | 1 | 7 |
 | <img src="minecraft-java/minecraft-achievement-icons/cover.jpg" width="120"> | [Minecraft](minecraft-java/) | Windows | 1 | 23 |
 | <img src="name-monster-girl-quest-1-3/monster-girl-quest-1-3/cover.jpg" width="120"> | [Monster Girl Quest 1-3](name-monster-girl-quest-1-3/) | PC (Windows) | 1 | 0 |
@@ -37,7 +37,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="name-rayman-2-the-great-escape/rayman-2-the-great-escape/cover.png" width="120"> | [Rayman 2: The Great Escape](name-rayman-2-the-great-escape/) | Computer | 1 | 1 |
 | <img src="name-rayman-3-hoodlum-havoc/rayman-3-hoodlum-havoc/cover.png" width="120"> | [Rayman 3: Hoodlum Havoc](name-rayman-3-hoodlum-havoc/) | Computer | 1 | 3 |
 | <img src="name-rayman-redemption/rayman-redemption/cover.png" width="120"> | [Rayman Redemption](name-rayman-redemption/) | Computer | 1 | 4 |
-| <img src="retroachievements-2992/shadow-of-the-colossus-ps2-categories-and-notes/cover.jpg" width="120"> | [Shadow of the Colossus](retroachievements-2992/) | Sony PlayStation 2 | 1 | 2 |
+| <img src="retroachievements-2992/shadow-of-the-colossus-ps2-categories-and-notes/cover.jpg" width="120"> | [Shadow of the Colossus](retroachievements-2992/) | Sony PlayStation 2 | 1 | 3 |
 | <img src="manual-2084000/shogun-showdown/cover.jpg" width="120"> | [Shogun Showdown](manual-2084000/) | PC (Windows) | 1 | 2 |
 | <img src="name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition/cover.png" width="120"> | [Sonic and the Secret Rings](name-sonic-and-the-secret-rings/) | Computer | 1 | 3 |
 | <img src="name-sonic-heroes/sonic-heroes/cover.png" width="120"> | [Sonic Heroes](name-sonic-heroes/) | Computer | 1 | 6 |
@@ -45,7 +45,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="name-sonic-the-hedgehog-2/sonic-2-absolute/cover.png" width="120"> | [Sonic the Hedgehog 2](name-sonic-the-hedgehog-2/) | Computer | 1 | 6 |
 | <img src="name-sonic-the-hedgehog-3/sonic-3-a-i-r/cover.png" width="120"> | [Sonic the Hedgehog 3](name-sonic-the-hedgehog-3/) | Computer | 1 | 6 |
 | <img src="name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/cover.png" width="120"> | [Sonic the Hedgehog: Project 06](name-sonic-the-hedgehog-project-06/) | Computer | 1 | 4 |
-| <img src="name-super-mario-64/super-mario-64/cover.png" width="120"> | [Super Mario 64](name-super-mario-64/) | Computer | 1 | 9 |
+| <img src="name-super-mario-64/super-mario-64/cover.png" width="120"> | [Super Mario 64](name-super-mario-64/) | Computer | 1 | 10 |
 | <img src="name-super-mario-bros-remastered/super-mario-bros-remastered/cover.png" width="120"> | [Super Mario Bros. Remastered](name-super-mario-bros-remastered/) | Computer | 1 | 8 |
 | <img src="name-super-mario-galaxy/super-mario-galaxy/cover.png" width="120"> | [Super Mario Galaxy](name-super-mario-galaxy/) | Nintendo Switch | 1 | 2 |
 | <img src="name-super-mario-galaxy-2/super-mario-galaxy-2/cover.png" width="120"> | [Super Mario Galaxy 2](name-super-mario-galaxy-2/) | Nintendo Switch | 1 | 3 |
