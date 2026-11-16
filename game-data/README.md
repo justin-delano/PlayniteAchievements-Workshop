@@ -45,7 +45,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="name-sonic-the-hedgehog-2/sonic-2-absolute/cover.png" width="120"> | [Sonic the Hedgehog 2](name-sonic-the-hedgehog-2/) | Computer | 1 | 6 |
 | <img src="name-sonic-the-hedgehog-3/sonic-3-a-i-r/cover.png" width="120"> | [Sonic the Hedgehog 3](name-sonic-the-hedgehog-3/) | Computer | 1 | 6 |
 | <img src="name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/cover.png" width="120"> | [Sonic the Hedgehog: Project 06](name-sonic-the-hedgehog-project-06/) | Computer | 1 | 4 |
-| <img src="name-super-mario-64/super-mario-64/cover.png" width="120"> | [Super Mario 64](name-super-mario-64/) | Computer | 1 | 11 |
+| <img src="name-super-mario-64/super-mario-64/cover.png" width="120"> | [Super Mario 64](name-super-mario-64/) | Computer | 1 | 12 |
 | <img src="name-super-mario-bros-remastered/super-mario-bros-remastered/cover.png" width="120"> | [Super Mario Bros. Remastered](name-super-mario-bros-remastered/) | Computer | 1 | 8 |
 | <img src="name-super-mario-galaxy/super-mario-galaxy/cover.png" width="120"> | [Super Mario Galaxy](name-super-mario-galaxy/) | Nintendo Switch | 1 | 2 |
 | <img src="name-super-mario-galaxy-2/super-mario-galaxy-2/cover.png" width="120"> | [Super Mario Galaxy 2](name-super-mario-galaxy-2/) | Nintendo Switch | 1 | 3 |
