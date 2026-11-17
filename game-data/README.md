@@ -3,7 +3,7 @@
 
 Per-game customizations: icon sets, categories, capstones, custom achievements, notes and ordering, one folder per game. Install from the Workshop in Playnite (which matches the game in your library), or download the `.pa` and import it from the game's Manage Achievements window.
 
-50 game(s), 50 item(s).
+49 game(s), 49 item(s).
 
 | | Game | Platform | Items | Installs |
 |---|---|---|---:|---:|
@@ -55,5 +55,4 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="name-the-legend-of-zelda-link-s-awakening/the-legend-of-zelda-link-s-awakening-switch/cover.png" width="120"> | [The Legend of Zelda: Link's Awakening](name-the-legend-of-zelda-link-s-awakening/) | Nintendo Switch | 1 | 5 |
 | <img src="name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/cover.png" width="120"> | [The Legend of Zelda: Twilight Princess](name-the-legend-of-zelda-twilight-princess/) | Nintendo GameCube | 1 | 25 |
 | <img src="steam-292030/the-witcher-3-wild-hunt-platinum-trophy/cover.jpg" width="120"> | [The Witcher 3: Wild Hunt — Remastered](steam-292030/) | PC (Windows) | 1 | 37 |
-| <img src="steam-529340/victoria-3-dlcs-sorted-by-patch-and-dlc/cover.png" width="120"> | [Victoria 3](steam-529340/) | PC (Windows) | 1 | 0 |
 | <img src="name-vs-impostor-legacy/vs-impostor-legacy/preview.png" width="120"> | [VS IMPOSTOR: LEGACY](name-vs-impostor-legacy/) | PC (Windows) | 1 | 0 |
