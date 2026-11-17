@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "id": "game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight",
   "kind": "GameCustomData",
-  "name": "The Legend of Zelda: Twilight Princess (Dusklight)",
-  "description": "Manual PlayniteAchievements set for Dusklight, a playable fanmade recompilation of The Legend of Zelda: Twilight Princess.\nAll achievements taken directly from Dusklight's own in-game achievement system.",
+  "name": "Linked achievements for Dusklight",
+  "description": "Import Dusklight's in-game achievement's directly into PlayniteAchievements and they will be tracked automatically as you unlock them. See notes for instructions on how to link the game's achievement file to this custom set.\nIcons made by me.",
   "author": "IggniFyre",
   "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
   "maintainers": [],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "CC-BY-4.0",
   "tags": [
     "the-legend-of-zelda",
@@ -16,43 +16,44 @@
     "dawnlight",
     "recompilation"
   ],
-  "minPluginVersion": "4.1.0",
+  "minPluginVersion": "4.2.0",
   "created": "2026-10-13",
-  "updated": "2026-10-13",
+  "updated": "2026-11-17",
   "game": {
     "name": "The Legend of Zelda: Twilight Princess",
-    "platform": "Computer",
+    "platform": "Nintendo GameCube",
     "keys": [
       {
         "name": "The Legend of Zelda: Twilight Princess",
-        "platform": "Computer"
+        "platform": "Nintendo GameCube"
       }
     ]
   },
   "contents": {
     "achievementIcons": 0,
     "lockedIcons": 0,
-    "customAchievements": 38,
-    "achievementOverrides": 0,
+    "customAchievements": 50,
+    "achievementOverrides": 42,
     "categoryAssignments": 0,
     "categories": 0,
     "categoryImages": 0,
-    "capstones": 1,
+    "capstones": 0,
     "notes": 0,
     "achievementOrder": true,
     "notificationStyle": false,
     "manualLink": false,
-    "imageFiles": 38
+    "metadataLinks": 0,
+    "imageFiles": 50
   },
   "package": {
-    "file": "the-legend-of-zelda-twilight-princess-dusklight-1.0.0.pa",
+    "file": "the-legend-of-zelda-twilight-princess-dusklight-1.0.1.pa",
     "formatKind": "PlayniteAchievements.GameCustomData",
-    "formatVersion": 8,
-    "sizeBytes": 3102106,
-    "sha256": "8e5d8d4dd6dc254adee7eb397750e06dabe2e09b6f9d147d9550556cd159ea9b",
+    "formatVersion": 9,
+    "sizeBytes": 4006327,
+    "sha256": "a78e454f76cc49331cfca9518e83391b5ea00e90efd0ca97761f5d095ad16ffd",
     "release": {
       "tag": "game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight",
-      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/the-legend-of-zelda-twilight-princess-dusklight-1.0.0.pa"
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/the-legend-of-zelda-twilight-princess-dusklight-1.0.1.pa"
     }
   },
   "preview": "preview.png",
