@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "game-data/name-super-mario-all-stars/linked-achievements-for-super-mario-all-stars-pc-port",
+  "kind": "GameCustomData",
+  "name": "Linked achievements for Super Mario All-Stars (PC Port)",
+  "description": "Import Super Mario Bros. All-Stars PC Port's in-game achievement's directly into PlayniteAchievements and they will be tracked automatically as you unlock them. See notes for instructions on how to link the game's achievement file to this custom set.",
+  "author": "IggniFyre",
+  "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "super-mario-bros",
+    "all-stars",
+    "snes",
+    "super-nintendo",
+    "recompiled",
+    "pc-port"
+  ],
+  "minPluginVersion": "4.2.0",
+  "created": "2026-11-17",
+  "updated": "2026-11-17",
+  "game": {
+    "name": "Super Mario All-Stars",
+    "platform": "Nintendo SNES",
+    "keys": [
+      {
+        "name": "Super Mario All-Stars",
+        "platform": "Nintendo SNES"
+      }
+    ]
+  },
+  "contents": {
+    "achievementIcons": 0,
+    "lockedIcons": 0,
+    "customAchievements": 82,
+    "achievementOverrides": 81,
+    "categoryAssignments": 80,
+    "categories": 5,
+    "categoryImages": 5,
+    "capstones": 1,
+    "notes": 0,
+    "achievementOrder": false,
+    "notificationStyle": false,
+    "manualLink": false,
+    "metadataLinks": 0,
+    "imageFiles": 169
+  },
+  "package": {
+    "file": "linked-achievements-for-super-mario-all-stars-pc-port-1.0.0.pa",
+    "formatKind": "PlayniteAchievements.GameCustomData",
+    "formatVersion": 9,
+    "sizeBytes": 2257393,
+    "sha256": "6c3a54cc7e8b8882273631d89074ee9ed8a10a57812a69abe51b1caccee3284f",
+    "release": {
+      "tag": "game-data/name-super-mario-all-stars/linked-achievements-for-super-mario-all-stars-pc-port",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-super-mario-all-stars/linked-achievements-for-super-mario-all-stars-pc-port/linked-achievements-for-super-mario-all-stars-pc-port-1.0.0.pa"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}
