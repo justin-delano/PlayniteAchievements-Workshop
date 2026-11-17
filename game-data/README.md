@@ -27,7 +27,7 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="name-hyrule-warriors/hyrule-warriors-definitive-edition/cover.png" width="120"> | [Hyrule Warriors](name-hyrule-warriors/) | Nintendo Switch | 1 | 0 |
 | <img src="name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal/cover.png" width="120"> | [Jak and Daxter: The Precursor Legacy](name-jak-and-daxter-the-precursor-legacy/) | Sony Playstation 2 | 1 | 3 |
 | <img src="name-jusant/jusant/cover.jpg" width="120"> | [Jusant](name-jusant/) | PC | 1 | 2 |
-| <img src="name-mario-kart-world/mario-kart-world/cover.png" width="120"> | [Mario Kart World](name-mario-kart-world/) | Nintendo Switch 2 | 1 | 3 |
+| <img src="name-mario-kart-world/mario-kart-world/cover.png" width="120"> | [Mario Kart World](name-mario-kart-world/) | Nintendo Switch 2 | 1 | 4 |
 | <img src="steam-412020/metro-exodus/cover.png" width="120"> | [Metro Exodus](steam-412020/) | PC (Windows) | 1 | 30 |
 | <img src="steam-1449560/metro-exodus-enhanced-edition/cover.png" width="120"> | [Metro Exodus Enhanced Edition](steam-1449560/) | PC (Windows) | 1 | 5 |
 | <img src="name-metroid-dread/metroid-dread/cover.png" width="120"> | [Metroid Dread](name-metroid-dread/) | Nintendo Switch | 1 | 7 |
