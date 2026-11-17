@@ -106,9 +106,12 @@ public static class IntakeCommand
         }
 
         // The Worker marks a request that carried the submitter key itself; only then does the
-        // hash prove ownership on its own, without a maintainer's approval.
+        // hash prove ownership on its own, without a maintainer's approval. The field is the
+        // last section of the body, so its text also holds the Worker's closing comment; the
+        // answer is its first line.
+        var verifiedAnswer = form.Get(SubmitterVerifiedField).Split('\n')[0].Trim();
         var verified = isBotIssue && submitterHash.Length > 0 &&
-                       string.Equals(form.Get(SubmitterVerifiedField), "yes", StringComparison.OrdinalIgnoreCase);
+                       string.Equals(verifiedAnswer, "yes", StringComparison.OrdinalIgnoreCase);
         var approved = labels.Contains(ApprovedLabel);
 
         var remove = form.IsChecked(RequestField, "Remove this item");
