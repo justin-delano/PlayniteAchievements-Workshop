@@ -2,20 +2,20 @@
   "schemaVersion": 1,
   "id": "game-data/name-rayman-redemption/rayman-redemption",
   "kind": "GameCustomData",
-  "name": "Rayman Redemption",
-  "description": "Manual PlayniteAchievements set for Rayman Redemption, a fanmade remake of the original Rayman.\nAll achievements taken directly from the in-game achievement system and can be tracked through the Extras menu.",
+  "name": "Linked achievements for Rayman Redemption",
+  "description": "Import Rayman Redemption's in-game achievement's directly into PlayniteAchievements and they will be tracked automatically as you unlock them. See notes for instructions on how to link the game's achievement file to this custom set.\nIcons made by me.",
   "author": "IggniFyre",
   "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
   "maintainers": [],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "CC-BY-4.0",
   "tags": [
     "rayman",
     "rayman-redemption"
   ],
-  "minPluginVersion": "4.1.0",
+  "minPluginVersion": "4.2.0",
   "created": "2026-10-13",
-  "updated": "2026-10-13",
+  "updated": "2026-11-17",
   "game": {
     "name": "Rayman Redemption",
     "platform": "Computer",
@@ -30,7 +30,7 @@
     "achievementIcons": 0,
     "lockedIcons": 0,
     "customAchievements": 38,
-    "achievementOverrides": 0,
+    "achievementOverrides": 2,
     "categoryAssignments": 0,
     "categories": 0,
     "categoryImages": 0,
@@ -39,17 +39,18 @@
     "achievementOrder": false,
     "notificationStyle": false,
     "manualLink": false,
+    "metadataLinks": 0,
     "imageFiles": 38
   },
   "package": {
-    "file": "rayman-redemption-1.0.0.pa",
+    "file": "rayman-redemption-1.0.1.pa",
     "formatKind": "PlayniteAchievements.GameCustomData",
-    "formatVersion": 8,
-    "sizeBytes": 2121142,
-    "sha256": "7eaa59ca1ad16668d05078529a4d491ed5c53907333e84900f3bf6ddc1e643b0",
+    "formatVersion": 9,
+    "sizeBytes": 2120379,
+    "sha256": "bcd88525f40264dbb0f23efda6857303a1f700463b1dcc63f1b7dba2f84bbdfe",
     "release": {
       "tag": "game-data/name-rayman-redemption/rayman-redemption",
-      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-rayman-redemption/rayman-redemption/rayman-redemption-1.0.0.pa"
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-rayman-redemption/rayman-redemption/rayman-redemption-1.0.1.pa"
     }
   },
   "preview": "preview.png",

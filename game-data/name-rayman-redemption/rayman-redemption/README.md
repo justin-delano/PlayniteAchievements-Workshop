@@ -4,7 +4,5 @@
 ![Preview](preview.png)
 <!-- /workshop:images -->
 
-# Rayman Redemption
-
-Manual PlayniteAchievements set for Rayman Redemption, a fanmade remake of the original Rayman.
-All achievements taken directly from the in-game achievement system and can be tracked through the Extras menu.
+Instructions: From the achievement editor, go to link file, then browse to your User folder or AppData folder and navigate to AppData\Local\RaymanRedemption\achievements.txt
+Select achievements.txt and hit 'Apply', the editor should link each achievement directly to the file.
