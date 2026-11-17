@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-11-17T18:57:00Z",
-  "commit": "0b3a471b1dc9ed032b525642efc86c992f2b9030",
+  "generated": "2026-11-17T18:57:52Z",
+  "commit": "ae12c9676caf4725feb85c492605585edfa9db6c",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -1994,11 +1994,11 @@
       "id": "game-data/name-super-mario-bros-remastered/super-mario-bros-remastered",
       "kind": "GameCustomData",
       "name": "Super Mario Bros. Remastered",
-      "description": "Manual PlayniteAchievements set for Super Mario Bros. Remastered, a fanmade remaster of the original Super Mario Bros. with many additional features.\nAll achievements and icons taken directly from the in-game achievement system, progression can be checked through the Extras menu.",
+      "description": "Import Super Mario Bros. Remastered's in-game achievement's directly into PlayniteAchievements and they will be tracked automatically as you unlock them. See notes for instructions on how to link the game's achievement file to this custom set.",
       "author": "IggniFyre",
       "ownerHash": "7df92ceda01b3c38434d4e954fe85674d74e95eb523e3068f70cd7017c291cdd",
       "maintainers": [],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "license": "CC-BY-4.0",
       "tags": [
         "super-mario-bros",
@@ -2006,16 +2006,16 @@
         "recompilation",
         "fanmade"
       ],
-      "minPluginVersion": "4.1.0",
+      "minPluginVersion": "4.2.0",
       "created": "2026-10-13",
-      "updated": "2026-10-13",
+      "updated": "2026-11-17",
       "game": {
         "name": "Super Mario Bros. Remastered",
-        "platform": "Computer",
+        "platform": "Nintendo Entertainment System",
         "keys": [
           {
             "name": "Super Mario Bros. Remastered",
-            "platform": "Computer"
+            "platform": "Nintendo Entertainment System"
           }
         ]
       },
@@ -2023,36 +2023,37 @@
         "achievementIcons": 0,
         "lockedIcons": 0,
         "customAchievements": 28,
-        "achievementOverrides": 0,
+        "achievementOverrides": 28,
         "categoryAssignments": 0,
-        "categories": 0,
+        "categories": 1,
         "categoryImages": 0,
-        "capstones": 0,
+        "capstones": 1,
         "notes": 0,
         "achievementOrder": false,
         "notificationStyle": false,
         "manualLink": false,
+        "metadataLinks": 0,
         "imageFiles": 28
       },
       "package": {
-        "file": "super-mario-bros-remastered-1.0.0.pa",
+        "file": "super-mario-bros-remastered-1.0.1.pa",
         "formatKind": "PlayniteAchievements.GameCustomData",
-        "formatVersion": 8,
-        "sizeBytes": 69485,
-        "sha256": "862259632dd86376db34004feda6354bfc0e472cb29c7d6d8e13580fa592982b",
+        "formatVersion": 9,
+        "sizeBytes": 68909,
+        "sha256": "7567177b6beac4f7d63fa99adeab0cbe813e9ef0c59011a9e85810500a05493e",
         "release": {
           "tag": "game-data/name-super-mario-bros-remastered/super-mario-bros-remastered",
-          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/super-mario-bros-remastered-1.0.0.pa"
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/super-mario-bros-remastered-1.0.1.pa"
         }
       },
       "preview": "preview.png",
       "cover": "cover.png",
       "readme": "README.md",
       "urls": {
-        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/super-mario-bros-remastered-1.0.0.pa",
-        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@a41e1fbcbdf4c65866d623bb1657682463b0e650/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/preview.png",
-        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@a41e1fbcbdf4c65866d623bb1657682463b0e650/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/cover.png",
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@a41e1fbcbdf4c65866d623bb1657682463b0e650/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/README.md",
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/super-mario-bros-remastered-1.0.1.pa",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ae12c9676caf4725feb85c492605585edfa9db6c/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/preview.png",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ae12c9676caf4725feb85c492605585edfa9db6c/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@ae12c9676caf4725feb85c492605585edfa9db6c/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/game-data/name-super-mario-bros-remastered/super-mario-bros-remastered"
       }
     },
