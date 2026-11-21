@@ -5,4 +5,4 @@ Platform: Nintendo SNES
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="linked-achievements-for-super-mario-all-stars-pc-port/cover.png" width="120"> | [Linked achievements for Super Mario All-Stars (PC Port)](linked-achievements-for-super-mario-all-stars-pc-port/) | IggniFyre | 1.0.0 | 82 custom achievements, 5 categories, 1 capstones, 81 overrides | 1 | 1 | 2026-11-17 |
+| <img src="linked-achievements-for-super-mario-all-stars-pc-port/cover.png" width="120"> | [Linked achievements for Super Mario All-Stars (PC Port)](linked-achievements-for-super-mario-all-stars-pc-port/) | IggniFyre | 1.0.0 | 82 custom achievements, 5 categories, 1 capstones, 81 overrides | 1 | 2 | 2026-11-17 |

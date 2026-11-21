@@ -5,4 +5,4 @@ Platform: Nintendo Switch
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="metroid-dread/cover.png" width="120"> | [Metroid Dread](metroid-dread/) | IggniFyre | 1.0.0 | 18 custom achievements, 1 capstones | 8 | 3 | 2026-10-13 |
+| <img src="metroid-dread/cover.png" width="120"> | [Metroid Dread](metroid-dread/) | IggniFyre | 1.0.0 | 18 custom achievements, 1 capstones | 9 | 3 | 2026-10-13 |
