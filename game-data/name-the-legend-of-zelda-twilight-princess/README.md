@@ -5,4 +5,4 @@ Platform: Nintendo GameCube
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="the-legend-of-zelda-twilight-princess-dusklight/cover.png" width="120"> | [Linked achievements for Dusklight](the-legend-of-zelda-twilight-princess-dusklight/) | IggniFyre | 1.0.1 | 50 custom achievements, 42 overrides, order | 40 | 7 | 2026-11-17 |
+| <img src="the-legend-of-zelda-twilight-princess-dusklight/cover.png" width="120"> | [Linked achievements for Dusklight](the-legend-of-zelda-twilight-princess-dusklight/) | IggniFyre | 1.0.1 | 50 custom achievements, 42 overrides, order | 41 | 7 | 2026-11-17 |

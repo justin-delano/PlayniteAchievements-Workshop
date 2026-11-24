@@ -5,4 +5,4 @@ Platform: Nintendo Entertainment System
 
 | | Name | Author | Version | Customizes | Installs | Likes | Updated |
 |---|---|---|---|---|---:|---:|---|
-| <img src="super-mario-bros-remastered/cover.png" width="120"> | [Super Mario Bros. Remastered](super-mario-bros-remastered/) | IggniFyre | 1.0.1 | 28 custom achievements, 1 categories, 1 capstones, 28 overrides | 14 | 4 | 2026-11-17 |
+| <img src="super-mario-bros-remastered/cover.png" width="120"> | [Super Mario Bros. Remastered](super-mario-bros-remastered/) | IggniFyre | 1.0.1 | 28 custom achievements, 1 categories, 1 capstones, 28 overrides | 15 | 4 | 2026-11-17 |
