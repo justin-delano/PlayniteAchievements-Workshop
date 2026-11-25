@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-11-25T07:11:27Z",
-  "commit": "eb1469b38edadfe7029bb5f1a0f80a186331d832",
+  "generated": "2026-11-25T07:14:36Z",
+  "commit": "a34175264c2bb166f7bc752b3c8ee9ad885a50ee",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -133,12 +133,13 @@
         }
       },
       "preview": "preview.png",
+      "cover": "cover.png",
       "readme": "README.md",
       "urls": {
         "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/showcase-pages/global-stats-dashboard/global-stats-dashboard-1.0.0.pashowcase",
         "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@7e357b563146844725a458d7e2728e1dcb624dba/showcase-pages/global-stats-dashboard/preview.png",
-        "cover": null,
-        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@7e357b563146844725a458d7e2728e1dcb624dba/showcase-pages/global-stats-dashboard/README.md",
+        "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@a34175264c2bb166f7bc752b3c8ee9ad885a50ee/showcase-pages/global-stats-dashboard/cover.png",
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@a34175264c2bb166f7bc752b3c8ee9ad885a50ee/showcase-pages/global-stats-dashboard/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/showcase-pages/global-stats-dashboard"
       }
     },
