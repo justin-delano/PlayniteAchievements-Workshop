@@ -3,8 +3,9 @@
 
 Showcase page layouts: which widgets, where, and how their grids are set up. Install from the Workshop in Playnite, or download the `.pashowcase` and import it from the Showcase page menu.
 
-1 item(s), most installed first.
+2 item(s), most installed first.
 
 | | Name | Author | Version | Installs | Likes | Updated |
 |---|---|---|---|---:|---:|---|
-| <img src="synkro-s-trophy-showcase/preview.png" width="120"> | [Synkro's Trophy Showcase](synkro-s-trophy-showcase/) | Synkro | 1.0.0 | 65 | 7 | 2026-10-16 |
+| <img src="synkro-s-trophy-showcase/preview.png" width="120"> | [Synkro's Trophy Showcase](synkro-s-trophy-showcase/) | Synkro | 1.0.0 | 66 | 7 | 2026-10-16 |
+| <img src="global-stats-dashboard/preview.png" width="120"> | [Global Stats Dashboard](global-stats-dashboard/) | ariesps | 1.0.0 | 0 | 0 | 2026-11-25 |

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-11-25T02:47:10Z",
-  "commit": "e1b485f8e45d4b01541c1fadf18aa9bb73fad52d",
+  "generated": "2026-11-25T07:03:13Z",
+  "commit": "7e357b563146844725a458d7e2728e1dcb624dba",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -94,6 +94,52 @@
         "cover": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@e600ed7e5a67b0edd4a209d3b2c5e3fcfa3c8065/notifications/steamstation-5/cover.png",
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@e600ed7e5a67b0edd4a209d3b2c5e3fcfa3c8065/notifications/steamstation-5/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/notifications/steamstation-5"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "showcase-pages/global-stats-dashboard",
+      "kind": "ShowcasePage",
+      "name": "Global Stats Dashboard",
+      "description": "Global Library Stats",
+      "author": "ariesps",
+      "ownerHash": "e3b686d1ccdbf681bbedc60e585f5fcbee577efa259ff26ba01e14eb65e32073",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "dashboard",
+        "global"
+      ],
+      "minPluginVersion": "4.0.0",
+      "created": "2026-11-25",
+      "updated": "2026-11-25",
+      "contents": {
+        "widgets": 9,
+        "blocks": 9,
+        "achievementGrids": 2,
+        "gameGrids": 0,
+        "images": 1
+      },
+      "package": {
+        "file": "global-stats-dashboard-1.0.0.pashowcase",
+        "formatKind": "PlayniteAchievements.ShowcasePage",
+        "formatVersion": 2,
+        "sizeBytes": 2224447,
+        "sha256": "1e3840572e6a0685317a05e2fb538d9344daff1f1917be4b13643e9927f5c16d",
+        "release": {
+          "tag": "showcase-pages/global-stats-dashboard",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/showcase-pages/global-stats-dashboard/global-stats-dashboard-1.0.0.pashowcase"
+        }
+      },
+      "preview": "preview.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/showcase-pages/global-stats-dashboard/global-stats-dashboard-1.0.0.pashowcase",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@7e357b563146844725a458d7e2728e1dcb624dba/showcase-pages/global-stats-dashboard/preview.png",
+        "cover": null,
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@7e357b563146844725a458d7e2728e1dcb624dba/showcase-pages/global-stats-dashboard/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/showcase-pages/global-stats-dashboard"
       }
     },
     {
