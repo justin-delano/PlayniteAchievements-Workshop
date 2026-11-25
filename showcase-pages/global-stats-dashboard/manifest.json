@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "showcase-pages/global-stats-dashboard",
+  "kind": "ShowcasePage",
+  "name": "Global Stats Dashboard",
+  "description": "Global Library Stats",
+  "author": "ariesps",
+  "ownerHash": "e3b686d1ccdbf681bbedc60e585f5fcbee577efa259ff26ba01e14eb65e32073",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [
+    "dashboard",
+    "global"
+  ],
+  "minPluginVersion": "4.0.0",
+  "created": "2026-11-25",
+  "updated": "2026-11-25",
+  "contents": {
+    "widgets": 9,
+    "blocks": 9,
+    "achievementGrids": 2,
+    "gameGrids": 0,
+    "images": 1
+  },
+  "package": {
+    "file": "global-stats-dashboard-1.0.0.pashowcase",
+    "formatKind": "PlayniteAchievements.ShowcasePage",
+    "formatVersion": 2,
+    "sizeBytes": 2224447,
+    "sha256": "1e3840572e6a0685317a05e2fb538d9344daff1f1917be4b13643e9927f5c16d",
+    "release": {
+      "tag": "showcase-pages/global-stats-dashboard",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/showcase-pages/global-stats-dashboard/global-stats-dashboard-1.0.0.pashowcase"
+    }
+  },
+  "preview": "preview.png",
+  "readme": "README.md"
+}
