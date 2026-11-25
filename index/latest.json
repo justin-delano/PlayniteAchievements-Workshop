@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-11-25T07:03:13Z",
-  "commit": "7e357b563146844725a458d7e2728e1dcb624dba",
+  "generated": "2026-11-25T07:04:05Z",
+  "commit": "e72382f2aee1f08024863cb14337485520115d47",
   "repository": "justin-delano/PlayniteAchievements-Workshop",
   "items": [
     {
@@ -140,6 +140,52 @@
         "cover": null,
         "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@7e357b563146844725a458d7e2728e1dcb624dba/showcase-pages/global-stats-dashboard/README.md",
         "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/showcase-pages/global-stats-dashboard"
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "id": "showcase-pages/individual-stats",
+      "kind": "ShowcasePage",
+      "name": "Individual Stats",
+      "description": "Stats by Platform",
+      "author": "ariesps",
+      "ownerHash": "e3b686d1ccdbf681bbedc60e585f5fcbee577efa259ff26ba01e14eb65e32073",
+      "maintainers": [],
+      "version": "1.0.0",
+      "license": "CC-BY-4.0",
+      "tags": [
+        "dashboard",
+        "stats"
+      ],
+      "minPluginVersion": "4.0.0",
+      "created": "2026-11-25",
+      "updated": "2026-11-25",
+      "contents": {
+        "widgets": 28,
+        "blocks": 28,
+        "achievementGrids": 0,
+        "gameGrids": 0,
+        "images": 7
+      },
+      "package": {
+        "file": "individual-stats-1.0.0.pashowcase",
+        "formatKind": "PlayniteAchievements.ShowcasePage",
+        "formatVersion": 2,
+        "sizeBytes": 116799,
+        "sha256": "6d242b61dc4ca4ab9d8d9245a33a60b8d1555af4473cb25cc078c661a8abc1b0",
+        "release": {
+          "tag": "showcase-pages/individual-stats",
+          "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/showcase-pages/individual-stats/individual-stats-1.0.0.pashowcase"
+        }
+      },
+      "preview": "preview.png",
+      "readme": "README.md",
+      "urls": {
+        "package": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/showcase-pages/individual-stats/individual-stats-1.0.0.pashowcase",
+        "preview": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@e72382f2aee1f08024863cb14337485520115d47/showcase-pages/individual-stats/preview.png",
+        "cover": null,
+        "readme": "https://cdn.jsdelivr.net/gh/justin-delano/PlayniteAchievements-Workshop@e72382f2aee1f08024863cb14337485520115d47/showcase-pages/individual-stats/README.md",
+        "folder": "https://github.com/justin-delano/PlayniteAchievements-Workshop/tree/main/showcase-pages/individual-stats"
       }
     },
     {
