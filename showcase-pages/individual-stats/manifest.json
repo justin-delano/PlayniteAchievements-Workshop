@@ -35,5 +35,6 @@
     }
   },
   "preview": "preview.png",
+  "cover": "cover.png",
   "readme": "README.md"
 }
