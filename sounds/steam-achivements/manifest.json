@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "sounds/steam-achivements",
+  "kind": "UnlockSounds",
+  "name": "Steam Achivements",
+  "description": "Steam notification unlock",
+  "author": "ImCursedM8",
+  "ownerHash": "b54bb48a3ebd43596b0ab83e5c9e7f0a00f606ad4e61cad2f3bb25e02965eee7",
+  "maintainers": [],
+  "version": "1.0.0",
+  "license": "CC-BY-4.0",
+  "tags": [],
+  "minPluginVersion": "4.1.0",
+  "created": "2026-11-27",
+  "updated": "2026-11-27",
+  "contents": {
+    "slots": [
+      "Common",
+      "Uncommon",
+      "Rare",
+      "UltraRare",
+      "Hidden",
+      "Capstone"
+    ],
+    "files": 6
+  },
+  "package": {
+    "file": "steam-achivements-1.0.0.pasounds",
+    "formatKind": "PlayniteAchievements.UnlockSounds",
+    "formatVersion": 1,
+    "sizeBytes": 142770,
+    "sha256": "adb903f3b1dce9b69b50b3f2d207a1a54ffaea95bd28fd4782958694be1be246",
+    "release": {
+      "tag": "sounds/steam-achivements",
+      "url": "https://github.com/justin-delano/PlayniteAchievements-Workshop/releases/download/sounds/steam-achivements/steam-achivements-1.0.0.pasounds"
+    }
+  },
+  "preview": "preview.png",
+  "cover": "cover.png",
+  "readme": "README.md"
+}
