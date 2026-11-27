@@ -8,5 +8,5 @@ Showcase page layouts: which widgets, where, and how their grids are set up. Ins
 | | Name | Author | Version | Installs | Likes | Updated |
 |---|---|---|---|---:|---:|---|
 | <img src="synkro-s-trophy-showcase/preview.png" width="120"> | [Synkro's Trophy Showcase](synkro-s-trophy-showcase/) | Synkro | 1.0.0 | 67 | 7 | 2026-10-16 |
-| <img src="individual-stats/cover.png" width="120"> | [Individual Stats](individual-stats/) | ariesps | 1.0.0 | 2 | 1 | 2026-11-25 |
-| <img src="global-stats-dashboard/cover.png" width="120"> | [Global Stats Dashboard](global-stats-dashboard/) | ariesps | 1.0.0 | 1 | 1 | 2026-11-25 |
+| <img src="individual-stats/cover.png" width="120"> | [Individual Stats](individual-stats/) | ariesps | 1.0.0 | 5 | 1 | 2026-11-25 |
+| <img src="global-stats-dashboard/cover.png" width="120"> | [Global Stats Dashboard](global-stats-dashboard/) | ariesps | 1.0.0 | 4 | 1 | 2026-11-25 |
