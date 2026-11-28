@@ -7,16 +7,16 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 
 | | Game | Platform | Items | Installs |
 |---|---|---|---:|---:|
-| <img src="name-am2r-return-of-samus/am2r-another-metroid-2-remake/cover.png" width="120"> | [AM2R: Return of Samus](name-am2r-return-of-samus/) | Computer | 1 | 5 |
+| <img src="name-am2r-return-of-samus/am2r-another-metroid-2-remake/cover.png" width="120"> | [AM2R: Return of Samus](name-am2r-return-of-samus/) | Computer | 1 | 6 |
 | <img src="steam-527270/atelier-sophie-the-alchemist-of-the-mysterious-book-test/cover.png" width="120"> | [Atelier Sophie: The Alchemist of the Mysterious Book](steam-527270/) | PC (Windows) | 1 | 0 |
 | <img src="name-banjo-kazooie/banjo-kazooie-recompiled/cover.png" width="120"> | [Banjo-Kazooie](name-banjo-kazooie/) | Computer | 1 | 6 |
-| <img src="steam-4231820/castlevania-belmont-s-curse-capstone/cover.png" width="120"> | [Castlevania: Belmont's Curse](steam-4231820/) | PC (Windows) | 1 | 4 |
+| <img src="steam-4231820/castlevania-belmont-s-curse-capstone/cover.png" width="120"> | [Castlevania: Belmont's Curse](steam-4231820/) | PC (Windows) | 1 | 5 |
 | <img src="steam-1133760/chrono-cross-the-radical-dreamers-edition/cover.jpg" width="120"> | [CHRONO CROSS: THE RADICAL DREAMERS EDITION](steam-1133760/) | PC | 1 | 1 |
 | <img src="steam-3669870/control-resonant-platinum/cover.jpg" width="120"> | [CONTROL Resonant](steam-3669870/) | PC (Windows) | 1 | 44 |
 | <img src="name-crash-team-racing-nitro-fueled/crash-team-racing-nitro-fueled-custom/cover.png" width="120"> | [Crash Team Racing: Nitro-Fueled](name-crash-team-racing-nitro-fueled/) | Computer | 1 | 6 |
 | <img src="steam-1693980/dead-space-test/preview.png" width="120"> | [Dead Space](steam-1693980/) | PC (Windows) | 1 | 6 |
 | <img src="steam-329050/devil-may-cry-4-special-edition/cover.jpg" width="120"> | [Devil May Cry 4 Special Edition](steam-329050/) | PC | 1 | 6 |
-| <img src="name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition/cover.jpg" width="120"> | [Dragon Age II: Ultimate Edition](name-dragon-age-ii-ultimate-edition/) | PC (Windows) | 1 | 4 |
+| <img src="name-dragon-age-ii-ultimate-edition/dragon-age-ii-ultimate-edition/cover.jpg" width="120"> | [Dragon Age II: Ultimate Edition](name-dragon-age-ii-ultimate-edition/) | PC (Windows) | 1 | 5 |
 | <img src="name-fable-ii/fable-ii/cover.jpg" width="120"> | [Fable II](name-fable-ii/) | Microsoft Xbox 360 | 1 | 2 |
 | <img src="gog-1454315831/fallout-3-game-of-the-year-edition/cover.jpg" width="120"> | [Fallout 3 - Game of the Year Edition](gog-1454315831/) | PC (Windows) | 1 | 11 |
 | <img src="steam-2962810/galaxy-idle-clicker-categories/cover.jpg" width="120"> | [Galaxy Idle Clicker](steam-2962810/) | PC (Windows) | 1 | 0 |
@@ -25,9 +25,9 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="steam-12210/grand-theft-auto-iv-the-complete-edition/cover.jpg" width="120"> | [Grand Theft Auto IV: The Complete Edition](steam-12210/) | PC | 1 | 4 |
 | <img src="steam-2420110/horizon-forbidden-west-test/cover.png" width="120"> | [Horizon Forbidden West](steam-2420110/) | PC (Windows) | 1 | 0 |
 | <img src="name-hyrule-warriors/hyrule-warriors-definitive-edition/cover.png" width="120"> | [Hyrule Warriors](name-hyrule-warriors/) | Nintendo Switch | 1 | 0 |
-| <img src="name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal/cover.png" width="120"> | [Jak and Daxter: The Precursor Legacy](name-jak-and-daxter-the-precursor-legacy/) | Sony Playstation 2 | 1 | 3 |
+| <img src="name-jak-and-daxter-the-precursor-legacy/jak-and-daxter-the-precursor-legacy-opengoal/cover.png" width="120"> | [Jak and Daxter: The Precursor Legacy](name-jak-and-daxter-the-precursor-legacy/) | Sony Playstation 2 | 1 | 4 |
 | <img src="name-jusant/jusant/cover.jpg" width="120"> | [Jusant](name-jusant/) | PC | 1 | 2 |
-| <img src="name-mario-kart-world/mario-kart-world/cover.png" width="120"> | [Mario Kart World](name-mario-kart-world/) | Nintendo Switch 2 | 1 | 8 |
+| <img src="name-mario-kart-world/mario-kart-world/cover.png" width="120"> | [Mario Kart World](name-mario-kart-world/) | Nintendo Switch 2 | 1 | 10 |
 | <img src="steam-412020/metro-exodus/cover.png" width="120"> | [Metro Exodus](steam-412020/) | PC (Windows) | 1 | 30 |
 | <img src="steam-1449560/metro-exodus-enhanced-edition/cover.png" width="120"> | [Metro Exodus Enhanced Edition](steam-1449560/) | PC (Windows) | 1 | 6 |
 | <img src="name-metroid-dread/metroid-dread/cover.png" width="120"> | [Metroid Dread](name-metroid-dread/) | Nintendo Switch | 1 | 10 |
@@ -39,20 +39,20 @@ Per-game customizations: icon sets, categories, capstones, custom achievements, 
 | <img src="name-rayman-redemption/rayman-redemption/cover.png" width="120"> | [Rayman Redemption](name-rayman-redemption/) | Computer | 1 | 6 |
 | <img src="retroachievements-2992/shadow-of-the-colossus-ps2-categories-and-notes/cover.jpg" width="120"> | [Shadow of the Colossus](retroachievements-2992/) | Sony PlayStation 2 | 1 | 5 |
 | <img src="manual-2084000/shogun-showdown/cover.jpg" width="120"> | [Shogun Showdown](manual-2084000/) | PC (Windows) | 1 | 2 |
-| <img src="name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition/cover.png" width="120"> | [Sonic and the Secret Rings](name-sonic-and-the-secret-rings/) | Computer | 1 | 3 |
+| <img src="name-sonic-and-the-secret-rings/sonic-and-the-secret-rings-project-reignition/cover.png" width="120"> | [Sonic and the Secret Rings](name-sonic-and-the-secret-rings/) | Computer | 1 | 4 |
 | <img src="name-sonic-heroes/sonic-heroes/cover.png" width="120"> | [Sonic Heroes](name-sonic-heroes/) | Computer | 1 | 7 |
 | <img src="name-sonic-the-hedgehog/sonic-1-forever/cover.png" width="120"> | [Sonic the Hedgehog](name-sonic-the-hedgehog/) | Computer | 1 | 11 |
 | <img src="name-sonic-the-hedgehog-2/sonic-2-absolute/cover.png" width="120"> | [Sonic the Hedgehog 2](name-sonic-the-hedgehog-2/) | Computer | 1 | 8 |
 | <img src="name-sonic-the-hedgehog-3/sonic-3-a-i-r/cover.png" width="120"> | [Sonic the Hedgehog 3](name-sonic-the-hedgehog-3/) | Computer | 1 | 6 |
 | <img src="name-sonic-the-hedgehog-project-06/sonic-the-hedgehog-project-06/cover.png" width="120"> | [Sonic the Hedgehog: Project 06](name-sonic-the-hedgehog-project-06/) | Computer | 1 | 5 |
-| <img src="name-super-mario-64/super-mario-64/cover.png" width="120"> | [Super Mario 64](name-super-mario-64/) | Computer | 1 | 15 |
+| <img src="name-super-mario-64/super-mario-64/cover.png" width="120"> | [Super Mario 64](name-super-mario-64/) | Computer | 1 | 16 |
 | <img src="name-super-mario-all-stars/linked-achievements-for-super-mario-all-stars-pc-port/cover.png" width="120"> | [Super Mario All-Stars](name-super-mario-all-stars/) | Nintendo SNES | 1 | 1 |
 | <img src="name-super-mario-bros-remastered/super-mario-bros-remastered/cover.png" width="120"> | [Super Mario Bros. Remastered](name-super-mario-bros-remastered/) | Nintendo Entertainment System | 1 | 17 |
 | <img src="name-super-mario-galaxy/super-mario-galaxy/cover.png" width="120"> | [Super Mario Galaxy](name-super-mario-galaxy/) | Nintendo Switch | 1 | 4 |
 | <img src="name-super-mario-galaxy-2/super-mario-galaxy-2/cover.png" width="120"> | [Super Mario Galaxy 2](name-super-mario-galaxy-2/) | Nintendo Switch | 1 | 5 |
 | <img src="steam-3751260/the-blood-of-dawnwalker-platinum-trophy/cover.jpg" width="120"> | [The Blood of Dawnwalker](steam-3751260/) | PC (Windows) | 1 | 4 |
-| <img src="name-the-legend-of-zelda-breath-of-the-wild/the-legend-of-zelda-breath-of-the-wild/cover.png" width="120"> | [The Legend of Zelda: Breath of the Wild](name-the-legend-of-zelda-breath-of-the-wild/) | Nintendo Switch | 1 | 28 |
+| <img src="name-the-legend-of-zelda-breath-of-the-wild/the-legend-of-zelda-breath-of-the-wild/cover.png" width="120"> | [The Legend of Zelda: Breath of the Wild](name-the-legend-of-zelda-breath-of-the-wild/) | Nintendo Switch | 1 | 29 |
 | <img src="name-the-legend-of-zelda-link-s-awakening/the-legend-of-zelda-link-s-awakening-switch/cover.png" width="120"> | [The Legend of Zelda: Link's Awakening](name-the-legend-of-zelda-link-s-awakening/) | Nintendo Switch | 1 | 5 |
-| <img src="name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/cover.png" width="120"> | [The Legend of Zelda: Twilight Princess](name-the-legend-of-zelda-twilight-princess/) | Nintendo GameCube | 1 | 43 |
+| <img src="name-the-legend-of-zelda-twilight-princess/the-legend-of-zelda-twilight-princess-dusklight/cover.png" width="120"> | [The Legend of Zelda: Twilight Princess](name-the-legend-of-zelda-twilight-princess/) | Nintendo GameCube | 1 | 44 |
 | <img src="steam-292030/the-witcher-3-wild-hunt-platinum-trophy/cover.jpg" width="120"> | [The Witcher 3: Wild Hunt — Remastered](steam-292030/) | PC (Windows) | 1 | 39 |
 | <img src="name-vs-impostor-legacy/vs-impostor-legacy/preview.png" width="120"> | [VS IMPOSTOR: LEGACY](name-vs-impostor-legacy/) | PC (Windows) | 1 | 0 |
